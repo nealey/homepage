@@ -1,0 +1,13 @@
+[[meta title="Nintendo DS Links"]]
+
+* [NDS Homebrew](http://www.ndshb.com/)
+
+----
+
+* [DS Frotz](http://gugusse.central.free.fr/papafuji/DSFrotz.html) for playing Infocom ZIP files
+* [Rick Dangerous](http://gpf.dcemu.co.uk/xrickds.shtml)
+* [robotfindskitten](http://gpf.dcemu.co.uk/robotfindskitten.shtml)
+* [ScummVM](http://scummvm.drunkencoders.com/)
+* [Python](http://www.develer.com/~lmancini/dspython/)
+* [MythTV Remote](http://grizzly.thewaffleiron.net/mythremote/)
+* [PAlib](http://www.palib.info) for writing my own stuff
