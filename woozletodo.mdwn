@@ -1,0 +1,1 @@
+* Postfix STMP authentication to use Dovecot method
