@@ -1,11 +1,43 @@
-[[meta title="Bike Wishlist"]]
+[[meta title="Bike Todo"]]
 
-Things we need to get for our bikes:
+General
+=======
 
-* Shifter cable and housing
-* Bar tape
-* Helmet for Amy
-* Spare tube for trailer
-* Spare tube for Bike Friday
-* Wedge pack for Bike Friday
-* Rear light for trailer
+* Spare shifter cables
+* Spare brake cables
+* Spare shifter housing
+* Spare brake housing
+* Spare housing end caps
+* Spare cable crimp-on end thingies
+
+Amy's Rodriguez
+===============
+
+* New helmet
+* Mirror
+
+Doosoo
+======
+
+* Another rear light
+
+Neale's Rodriguez
+=================
+
+
+Neale's ALAN
+============
+
+* New brake hoods
+* Brake and shifter cables
+* Bar tape (yellow, maybe?)
+
+
+Bike Friday
+===========
+* Spare tube
+* Spare tire
+* Wedge pack
+* Normal brake levers
+* Move bar-end shifters from Fuji
+* Bar tape (definitely purple)
