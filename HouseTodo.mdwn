@@ -1,4 +1,4 @@
-[[meta title="House Projects"]]
+[[meta title="House Todo"]]
 
 * Front door
 * Paint the house
