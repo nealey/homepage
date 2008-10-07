@@ -25,6 +25,7 @@ Doosoo
 
 Neale's Rodriguez
 =================
+* Clean off remaining bug guts
 
 
 ALAN
@@ -33,6 +34,7 @@ ALAN
 * New brake hoods
 * Brake and shifter cables
 * Bar tape (yellow, maybe?)
+* Tires
 
 
 Bike Friday
