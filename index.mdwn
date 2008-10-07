@@ -2,6 +2,6 @@ Welcome to the wiki, chump.
 
 * HouseProjects
 * DsLinks
-* BikeWishlist
+* BikeTodo
 * OurBikes
 * WoozleTodo
