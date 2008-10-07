@@ -1,6 +1,6 @@
 Welcome to the wiki, chump.
 
-* HouseProjects
+* HouseTodo
 * DsLinks
 * BikeTodo
 * OurBikes
