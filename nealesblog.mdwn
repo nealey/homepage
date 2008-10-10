@@ -1,0 +1,4 @@
+[[inline pages="blog/* and !*/Discussion" show="10" rootpage="blog!]]
+[[title "Snot"]]
+
+Merf.
