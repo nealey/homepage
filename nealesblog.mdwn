@@ -1,1 +1,2 @@
+[[!meta title="Neale's Blog"]]
 [[!inline pages="nealesblog/* and !*/Discussion" show="10" rootpage="nealesblog"]]
