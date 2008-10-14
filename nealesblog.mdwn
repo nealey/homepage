@@ -1,4 +1,4 @@
-[[inline pages="blog/* and !*/Discussion" show="10" rootpage="blog!]]
+[[inline pages="nealesblog/* and !*/Discussion" show="10" rootpage="nealesblog"]]
 [[title "Snot"]]
 
 Merf.
