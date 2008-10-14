@@ -1,8 +1,15 @@
-Welcome to the wiki, chump.
+[[!meta title="Neale's Wiki"]]
 
-* HouseTodo
-* DsLinks
-* BikeTodo
-* OurBikes
-* WoozleTodo
-* NealesBlog
+[[!map pages="*"]]
+
+One day a pirate walks into a bar with a steering wheel attached to his crotch. So the bartender says to him, "You know you have a steering wheel attached to your crotch?"
+
+And the pirate says, "Aaar, it's driving me nuts!"
+
+----
+
+* [Neale's wish list](/wishlist/neale)
+* [Pickett Genealogy](geneweb.cgi?b=pickett)
+
+
+
