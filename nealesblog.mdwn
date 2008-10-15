@@ -1,2 +1,2 @@
 [[!meta title="Neale's Blog" author="Neale Pickett" authorurl="http://woozle.org/~neale/"]]
-[[!inline pages="nealesblog/* and !*/Discussion" show="10" rootpage="nealesblog" actions=yes description="Neale's Blog" postform="no"]]
+[[!inline pages="nealesblog/* and !*/Discussion" show="10" rootpage="nealesblog" actions="yes" description="Neale's Blog" postform="no"]]
