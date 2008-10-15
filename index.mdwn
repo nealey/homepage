@@ -5,6 +5,6 @@ It's my blog, yo.
 * BikeTodo
 * HouseTodo
 * WoozleTodo
-* NealesBlog
+* [[Blog]]
 * OurBikes
-* NealesBlogPost
+* BlogPost
