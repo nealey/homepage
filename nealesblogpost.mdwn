@@ -1,0 +1,1 @@
+[!inline pages="nealesblog/* and !*/Discussion" rootpage="nealesblog" show="10" postform="no" actions="yes" description="Neale's Blog"]]
