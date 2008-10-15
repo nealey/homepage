@@ -1,2 +1,2 @@
-[[!meta title="Neale's Blog"]]
+[[!meta title="Neale's Blog" author="Neale Pickett"]]
 [[!inline pages="nealesblog/* and !*/Discussion" show="10" rootpage="nealesblog"]]
