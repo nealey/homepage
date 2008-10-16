@@ -1,1 +1,0 @@
-[[!inline pages="nealesblog/* and !*/Discussion" rootpage="nealesblog" show="10" feeds="no" archive="yes"]]
