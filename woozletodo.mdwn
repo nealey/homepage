@@ -1,1 +1,5 @@
-* Postfix STMP authentication to use Dovecot method
+* datedblog entries, special characters, and attachments
+* photo album authentication
+* apply stylesheet to planet
+* apply stylesheet to people.cgi
+
