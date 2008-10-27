@@ -1,0 +1,167 @@
+[[!meta title="Firebot"]]
+
+FireBot is a winner!
+
+Firebot is an IRC bot combining the functionality of a Linkbot, an
+Infobot, and a Clickolinko, which is this cool thing Emad El-Haraty and
+I came up with to make short URLs out of stuff posted into the channel,
+for people with text browsers that wrap URLs.
+
+Note that, in addition to interacting with FireBot within a channel, you
+can also communicate directly with FireBot via `/msg` commands. Just in
+case you need a little one-on-one action and don't want spew your
+playtime around some channel with other folks watching. That can be *so*
+distracting. Some commands still require you to preface them with
+FireBot's name. Example:
+
+    /msg firebot firebot: literal ...
+
+
+Downloading
+-----------
+
+You can download a [tarball snapshot of the latest release](http://woozle.org/~neale/gitweb.cgi?p=firebot;a=snapshot;h=HEAD), or use cogito:
+
+    git clone http://woozle.org/~neale/repos/firebot
+
+
+LinkBot Features
+----------------
+
+Firebot can link channels across networks.  It is present in all
+channels and the same functions can be accessed on either side.
+Everything said on one channel is relayed to the others.
+
+It is possible to link multiple channels on multiple servers, including
+multiple channels on a single server.
+
+
+
+ClickLinko (UrlBot)
+-------------------
+
+Whenever FireBot sees a URL in the channel, he makes a note of it and
+creates a shorter URL out of it.
+
+
+
+InfoBot
+-------
+
+As an InfoBot, FireBot listens in the channel for anything of the form
+"x is y", and then stores that little tidbit.  Later, when someone asks
+a question about x ("what is x?", "who is x?", "wtf is x?"), FireBot
+answers with the factoid he gathered.
+
+<dl>
+<dt>firebot, _x_</dt>
+<dd>look up a factoid for _x_</dd>
+
+<dt>firebot, _x_ is _y_</dt>
+<dd>store _y_ as a factiod about _x_</dd>
+
+<dt>firebot, _x_ is also _y_</dt>
+<dd>store _y_ as another factoid about _x_</dd>
+
+<dt>firebot, append _x_ &lt;= _y_</dt>
+<dd>store _y_ as another factoid about _x_.  You'd use this for things where _x_ has the word "is" in it, or other things that you can't store with the preceding commands.</dd>
+
+<dt>no, firebot, _x_ is _y_</dt>
+<dd>store _y_ as the only factoid about _x_, even if _x_ already has factoids</dd>
+
+<dt>firebot, literal _x_</dt>
+<dd>display all factoids about _x_</dd>
+
+<dt>firebot, lock _x_</dt>
+<dd>do not learn any more factoids about _x_</dd>
+
+<dt>firebot, unlock _x_</dt>
+<dd>resume learning factoids about _x_</dd>
+
+<dt>firebot, forget _x_</dt>
+<dd>forget all factoids about _x_</dd>
+
+<dt>firebot, forget _x_ from _y_</dt>
+<dd>forget a single entry (<em>x</em>) that is listed in _y_; _x_ can be a single word, it does not need to be the whole entry</dd>
+
+<dt>firebot, shut up</td>
+<dd>make the bot only respond to factoids when addressed specifically</dd>
+
+<dt>firebot, be chatty</td>
+<dd>make the bot respond to factoids even when not addressed</dd>
+
+</dl>
+
+In addition, the following tricks can be used within factiods:
+
+* Any factoid beginning with `\\` (a backslash) is displayed directly.
+  That is, instead of saying "<firebot> x is y", FireBot just says
+  "<firebot> y". 
+* Any factoid beginning with <code>:</code> (a colon) is
+  displayed an action.  That is, instead of saying "<firebot> x is y",
+  FireBot says "* firebot y" 
+* You may put `%(sender)s` in the factoid to print the name of the
+  person who asked about the factoid (when sent to a user in a private
+  message, it's the recipient of the message)
+
+
+
+Utilities
+---------
+
+<dl>
+
+<dt>firebot, later tell _whom_ _what_</dt>
+<dd>The next time _whom_ says something in the channel, deliver the message _what_ publically.</dd>
+
+<dt>firebot, in _time_ say _what_</dt>
+<dd>after _time_ (eg. "15 seconds", "2 hours", "5 days"), announce _what_ in the channel</dd>
+
+<dt>seen _whom_</dt>
+<dd>Report the last thing said in the channel by _whom_, and how long ago it was said.</dd>
+
+<dt>dict _word_</dt>
+<dd>look _word_ up in the dictionary</dd>
+
+<dt>quote _symbol_</dt>
+<dd>get a stock quote for _symbol_</dd>
+
+<dt>pollen _zip_</dt>
+<dd>report pollen forecast for US zip code _zip_</dd>
+
+<dt>cdecl explain _jibberish_</dt>
+<dd>explain the C declaration _jibberish_ (eg. "cdecl explain struct bar *(*foo)[](int)")</dd>
+
+<dt>cdecl declare _english_</dt>
+<dd>give the C declaration for _english_ (eg. "cdecl declare foo as pointer to array of function (int) returning pointer to struct bar")</dd>
+
+<dt>how many _x_ in _y_ _z_</dt>
+<dd>determine the number of _x_ items that are contained in _y_ amount of _z_ items (eg. how many miles in 1 light year)</dd>
+
+<dt>how much is _amt_ _source_ in _dest_</dt>
+<dd>do a currency conversion from _source_ to _dest_.  Both must be three-letter currency codes. (eg. "how much is 100 USD in EUR")</dd>
+
+<dt>calc _expr_</dt>
+<dd>calculate _expr_ (eg. "calc 2 * 5")</dd>
+
+</dl>
+
+
+Toys
+----
+
+<dl>
+
+<dt>8ball, _question_</dt>
+<dd>consult the magic 8-ball regarding _question_</dd>
+
+<dt>_nickname_++</dt>
+<dd>add a whuffie point for _nickname_</dd>
+
+<dt>_nickname_--</dt>
+<dd>remove a whuffie point for _nickname_</dd>
+
+<dt>whuffie for _nickname_</dt>
+<dd>check the whuffie for _nickname_</dd>
+
+</dl>

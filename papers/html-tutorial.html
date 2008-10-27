@@ -1,0 +1,110 @@
+[[!meta title="The 3-minute HTML tutorial"]]
+
+<p>As computer formats go, HTML is really easy and logical.  It's all just
+text that you can edit with any basic text editor, like gedit nder
+Gnome, or notepad in Windows.  Let's start out with an example.  Say you
+have a sentence, and you want one word in it to be bold.  That sentence
+would look like this:</p>
+
+<pre>Guess which word is &lt;b&gt;bold&lt;/b&gt;?</pre>
+
+<p>As should be obvious, the bold word in that sentence is "word".  Just
+kidding, it's the word "bold", in between <code>&lt;b&gt;</code> and <code>&lt;/b&gt;</code> tags.
+The sentence will show up like so:</p>
+
+<blockquote>Guess which word is <b>bold</b>?</blockquote>
+
+<p>You now know HTML, the rest is just learning the names of the tags.</p>
+
+<hr />
+
+<p>Seriously!  Here's a slightly larger example:</p>
+
+<pre>&lt;title&gt;My first web page&lt;/title&gt;
+&lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;
+  Welcome to my &lt;b&gt;first ever&lt;/b&gt; web page!
+  It features:
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A title!&lt;/li&gt;
+  &lt;li&gt;A header!&lt;/li&gt;
+  &lt;li&gt;A paragraph!&lt;/li&gt;
+  &lt;li&gt;An unordered list!&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>So what you end up with in the end is something like this:</p>
+
+<blockquote>
+  <div style="background: #ddd; border: solid black 3px;">
+<div style="background: #00A; color: white; width: 100%;">
+  My first web page - WoozWeb Browser
+</div>
+<h1 style="text-align: left;">Welcome</h1>
+<p>
+  Welcome to my <b>first ever</b> web page!
+  It features:
+</p>
+<ul>
+  <li>A title!</li>
+  <li>A header!</li>
+  <li>A paragraph!</li>
+  <li>An unordered list!</li>
+</ul>
+  </div>
+</blockquote>
+
+<p>The part inside the <code>&lt;title&gt;</code> and the <code>&lt;/title&gt;</code> is the title of your
+page; that's what goes in the window frame at the very top of your web
+browser window, above the menus and everything else.</p>
+
+<p>The stuff in between <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> is a "level-1 header".  That
+means that it's the biggest header you can get.  There are also h2, h3,
+h4, h5, and h6 headers, with h6 being the smallest.</p>
+
+<p>The stuff inside <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> is a paragraph.  Since HTML treats
+spaces the same as line breaks, you need to use paragraph tags around
+each paragraph.  Inside the example paragraph is our old friend bold.</p>
+
+<p>Then, there's <code>&lt;ul&gt;</code> and <code>&lt;/ul&gt;</code>, an "unordered list" (as opposed to an
+ordered list, which would have a number by each item).  Inside the list
+are four "list items", enclosed in <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code>.</p>
+
+<hr/>
+
+<p>Now check this action out:</p>
+
+<pre>&lt;p&gt;
+This is an
+&lt;img src="http://www.woozle.org/images/star.png"
+  alt="star"&gt;&lt;/img&gt; image, and
+&lt;a href="http://woozle.org/"&gt;this&lt;/a&gt; is a link.
+&lt;/p&gt;
+</pre>
+
+<p>Which will show up like this:</p>
+
+<blockquote>
+  <p>This is an <img src="http://www.woozle.org/images/star.png" alt="star"> image, and <a href="http://woozle.org/">this</a> is a link.
+</blockquote>
+
+<p>The example above has an image tag, with two "attributes", "src" and
+"alt".  The "src" attribute in an <code>&lt;img&gt;</code> tag gives the
+URL to a picture, and the "alt" attribute is the text that's displayed
+to people who can't see images (blind users, folks without graphics
+capabilities, or if there's a problem on your web server).  The "alt"
+attribue is required, but you can set it to <code>""</code> if there's
+nothing appropriate for alternate text.</p>
+
+<p>Lastly, the infamous link, enclosed inside of <code>&lt;a&gt;</code>
+and <code>&lt;/a&gt;</code>.  The "href" attribute gives the URL that
+the browser will go to if you click the link.</p>
+
+<hr/>
+
+<p>That's it for basic HTML, and it should be enough to get you started
+writing your own pages.  So go write something!  The best way to learn
+it is to try stuff out and see what it does.  For more neat HTML tags,
+check out <a href="http://www.cs.tut.fi/~jkorpela/HTML3.2/">HTML 3.2 by
+Examples</a>, which is what I used to learn HTML.</p> 

@@ -1,0 +1,14 @@
+[[!meta title="Toys"]]
+
+Some various junk I've done.  Maybe you'll find it amusing.  Maybe
+you'll just wonder why I spend so much time on this garbage.
+
+* This [A Mind Forever Voyaging Decoder](amfv-decoder.cgi) is the sort
+  of thing where you'll only know what it is if you have a need for it.
+* Play [a fun game](fungame)!
+* Or you could play [robotfindskitten](robotfindskitten.cgi), which is
+  also fun!
+* If you need to write someone a letter but really don't want to, try my
+  [smalltalk generator](smalltalk.cgi).
+* Maybe you'd rather see a [magic trick](omg-magic)?
+* How about some [Internet Reiki](reiki)?

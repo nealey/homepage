@@ -1,0 +1,7 @@
+[[!meta title="Papers"]]
+
+These are papers I have written. Most of them were written to explain a
+concept to someone on woozle.  Hopefully other people will find them
+useful, too.
+
+[[!map pages="papers/*" show="title"]]

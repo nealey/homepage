@@ -1,0 +1,226 @@
+/*
+ * Global
+ */
+
+html {
+  color:#061208; 
+  background:#bfb8a6;
+}
+
+body {
+  background:#e1d8c9;
+  border: solid black 1px;
+  font-family: serif;
+  color: #000;
+  margin: 1em auto;
+  padding: 2px;
+  min-width: 20em;
+  max-width: 50em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "MgOpen Moderna", sans-serif;
+  color: #c17f6f;
+}
+
+a {
+  color: #2A70E0;
+  text-decoration: none;
+}
+a:visited {
+  color: #469;
+}
+a:hover {
+  color: #bb3;
+}
+
+pre {
+  background: silver;
+}
+
+.notice {
+  background: yellow;
+}
+
+.figure {
+  float: right;
+  text-align: center;
+  background-color: #eeeeee;
+  border: solid gray 2px;
+  padding: 4px;
+  margin: 5px 15px;
+}
+
+.left {
+  float: left;
+}
+
+/*
+ * Header elements
+ */
+
+h1#head {
+  background:#5c5f80;
+  border: 1px solid black;
+  text-align: left;
+  padding: 0em 0px 1em 10px;
+  margin: 0em;
+  font: normal 2em "URW Gothic L" sans-serif;
+  letter-spacing: 0.33em;
+}
+#head a {
+  color: #ffe;
+}
+#head img {
+  float: right;
+  border: 2px solid black;
+  margin: 0px 30px 5px 0px;
+}
+
+
+/*
+ * Navigation menu
+ *
+ * IE6 doesn't understand CSS selectors.  So we use the > selector to
+ * specify stuff IE6 shouldn't see.  This has the effect of permanently
+ * hiding the pop-up menus.
+ */
+
+#nav {
+  position: absolute;
+  top: 4em;
+
+  text-align: left;
+  padding: 0em 1em;
+  margin: 0px auto;
+}
+
+#nav li {
+  display: inline;
+}
+#nav li a {
+  background: #bdcde4;
+  color: #5c5f80;
+  padding: 1px 10px;
+}
+#nav li a:hover {
+  color: yellow;
+}
+#nav li ul {
+  background:#bdcde4;
+  display: none;
+}
+#nav > li ul li {
+  display: list-item;
+  padding: 0px;
+}
+#nav > li:hover {
+  position: relative;
+}
+#nav > li:hover ul {
+  color: white;
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 1.2em;
+  left: 0px;
+  margin: 0px 0px;
+  padding: 5px 5px;
+  min-width: 10em;
+  list-style-type: square;
+}
+#nav > li ul li {
+  display: list-item;
+  margin-left: 1em;
+}
+#nav ul.this {
+  color: #555;
+}
+
+
+ /*
+  * Main body
+  */
+
+#body {
+  margin: 10px;
+}
+
+address {
+  background:#5c5f80;
+  color: #bdcde4;
+  border: 1px solid black;
+  margin: 0;
+  clear: both;
+  padding: 0.5em;
+  font-size: 80%;
+}
+address a {
+  color: #ffe;
+}
+
+/*
+ * IkiWiki crap
+ */
+
+.actions {
+  font-size: 80%;
+  margin: 0;
+  padding: 1px 5px;
+  text-align: right;
+}
+
+.actions ul {
+  margin: 0;
+}
+
+.actions li {
+  display: inline;
+  padding: 2px;
+  margin: 0;
+}
+
+.inlinepage {
+  border: solid black 1px;
+  margin: 1em 2em;
+  background: #eee;
+  padding: 0em 1em;
+}
+
+.inlinepage .header a {
+  font-size: 150%;
+}
+
+/* Orange feed button. */
+.feedbutton {
+  background: #f60;
+  color: white;
+  border: outset black 1px;
+  padding: 0px 0.5em 0px 0.5em;
+  font: bold 8pt sans-serif;
+}
+
+.feedbutton:hover {
+  background: #f90;
+}
+
+.pagedate {
+  color: #666;
+  font-size: 75%;
+}
+
+table.img {
+  float: right;
+  background-color: #eef;
+  border: solid #ccd;
+  border-width: 1px 1px 0px 1px;
+}
+
+table.img caption {
+  font-size: 80%;
+  caption-side: bottom;
+  text-align: center;
+  background-color: #eef;
+  border: solid #ccd;
+  border-width: 0px 1px 1px 1px;
+}

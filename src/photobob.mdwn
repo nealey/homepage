@@ -1,0 +1,59 @@
+[[!meta title="Photobob"]]
+
+I don't have a lot to say about photobob.  It's the 7th or so photo
+album package I've written, and probably the best.  You just put
+pictures and movies in a directory, and away you go.  This works
+really well with [an automated digicam photo sucking
+thing](/~neale/blog/2006-10-18.The_automatic_camera_suck_script/).
+
+Like all web applications I write, photobob does not use tables for
+layout, and will change layout depending on your browser's width.  It
+uses CSS but still looks passable in non-CSS browsers.  There is no
+database back-end because it doesn't need one.  It's just files in
+directories.
+
+Motivation
+----------
+
+I want my photo albums to survive longer than the software that serves
+them up.  My grandparents have shoeboxes full of photos, categorized by
+date and event.  This is nice because it doesn't require any additional
+tools to determine the categorization.
+
+All the web-based photo albums I've run across require some way to store
+metadata.  In one extreme example (PHP Gallery), all the images are
+stored in one flat directory.  Should the metadata ever become corrupted
+or disappear, or should you decide to switch programs, you're left with
+a huge mess and your categorization work is lost.
+
+Photobob uses the file system as its categorization.  You put photos in
+directories, and attach comments to the photos themselves (using the
+JFIF comment field).  This makes it easy to press CDs or DVDs of your
+photo albums and still preserve the categorization and narration you've
+done.  Should you decide to quit using Photobob, your photos will still
+be tucked away in their directories, with no droppings from the album
+software.
+
+Photobob also takes advantage of a special property of JPEG files: size
+reductions by powers of two (½, ¼, 1/8, etc.) are a very inexpensive
+operation when done at decoding time.  Additionally, many digital
+cameras write small "thumbnail" images in the JFIF headers.  Photobob
+takes advantage of both of these properties to serve up scaled images
+quickly and without needing to write anything to the hard drive.
+
+
+Getting it
+----------
+
+It's not really packaged up for distribution, but that's only because I
+doubt anyone will want it.  If you're interested in trying it out on
+your site, email me and I'll be glad to help you set it up.
+
+You can check out the [woozle albums](http://woozle.org/albums)
+for a live demo.
+
+To get your own copy, run
+
+     git clone http://woozle.org/~neale/repos/photobob
+
+Or you can do a [download the latest commit as a tarball](http://woozle.org/~neale/gitweb.cgi?p=photobob;a=snapshot;h=HEAD).

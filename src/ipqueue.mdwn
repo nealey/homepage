@@ -1,0 +1,62 @@
+[[!meta title="Python ipqueue"]]
+
+This is the Netfilter userspace IPQueue module for Python. It allows you
+to do all your Linux IPQueue stuff from the comfort of Python. This only
+works with Linux.
+
+Put in simpler terms, this is a way to hook a Python script into your
+kernel's networking stack. This could be the fundamental building block
+of a firewall. You can use it to snoop on traffic, modify or discard
+certain packets, make routing decisions, masquerade stuff, whatever--and
+you get it all with garbage collection :)
+
+Download
+--------
+
+* [Latest version](ipqueue.tar.gz)
+* [Netfilter QUEUE bindings](nfqueue-0.1.tar.bz2) Mike Auty &lt;mike.auty&#64;gmail&#46;com&gt;
+</ul>
+
+License
+-------
+
+GPL, of course.
+
+Screen Shots
+------------
+
+Here's an example program which transparently proxies all traffic it
+gets to port 25 of 10.1.1.2. This is just an example, a real-world
+transparent proxy would be much more sophisticated.
+
+<pre>
+#! /usr/bin/env python
+
+import ipqueue
+import iputils
+
+rewrite = 1
+
+q = ipqueue.IPQ(ipqueue.IPQ_COPY_PACKET)
+while 1:
+    p = q.read()
+    tcp = iputils.TCP(p[ipqueue.PAYLOAD])
+    print "Got %s -> %s on hook %d" % (iputils.ntoa(tcp.saddr),
+                                       iputils.ntoa(tcp.daddr),
+                                       p[ipqueue.HOOK])
+
+    if rewrite and p[ipqueue.HOOK] == 0:
+        tcp.daddr = iputils.aton("10.1.1.2")
+        tcp.th_dport = 25
+        q.set_verdict(p[0], ipqueue.NF_ACCEPT, tcp.to_str())
+    else:
+        q.set_verdict(p[0], ipqueue.NF_ACCEPT)
+</pre>
+
+Help me out
+-----------
+
+If you're using this in a project, let me know and I'll link to it. If
+you find any bugs, or want any features, please let me know about that
+too. If you've got a hankering to write better documentation, that would
+also be welcome :)

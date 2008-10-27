@@ -1,0 +1,89 @@
+[[!meta title="pysieved: Python Managesieve Server"]]
+
+This is a GPL managesieve server.  It uses a plug-in architecture to
+support different authentication, homedir lookup, and storage
+back-ends.
+
+I wrote this so I could use avelsieve (SquirrelMail) with Postfix
+and Dovecot.  It should work with other managesieve clients too.
+Please share with me your successes and failures.
+
+
+Plugin architecture
+-------------------
+
+The server ships with the following plug-ins:
+
+Authentication:
+
+* Dovecot
+* PAM
+* SASL
+* MySQL
+
+Homedir lookup & session initiation:
+
+* Dovecot
+* /etc/passwd
+* MySQL
+* simple virtual hosting (eg. /var/lib/virtual/username)
+
+Storage:
+
+* Dovecot
+
+
+Additional back-ends are easy to write, just copy one of the existing
+back-ends and start hacking.  No modifications are needed to any
+existing code, so you don't have to worry about things like the 
+managesieve protocol or forking.
+
+
+Download
+--------
+
+[Version 1.0](http://woozle.org/~neale/gitweb.cgi?p=pysieved;a=commit;h=1.0)
+was released on May 10, 2008 after release candidate 3 had been out for
+6 weeks with no bug reports.
+
+You can get the latest version [as
+a tarball](http://woozle.org/~neale/gitweb.cgi?p=pysieved;a=snapshot;h=HEAD),
+or with git:
+
+    git clone http://woozle.org/~neale/repos/pysieved
+
+A [web view of revisions](http://woozle.org/~neale/gitweb.cgi?p=pysieved) is
+also available for those without git.
+
+
+Installation
+------------
+
+Put all the files somewhere.  I put mine in /usr/local/lib/pysieved.
+Copy pysieved.ini into /usr/local/etc/, and edit to taste.  It's
+commented.
+
+To run from inetd, add the following line to /etc/inetd.conf:
+
+    sieve  stream  tcp  nowait  root  /usr/bin/python python /usr/local/lib/pysieved/pysieved.py --inetd
+
+To run as a daemon, just run
+
+    python pysieved.py
+
+
+
+
+Mail list / IRC channel
+-----------------------
+
+If you use pysieved, please join the pysieved mail list by emailing
+[pysieved-subscribe@woozle.org](mailto:pysieved-subscribe@woozle.org) or
+visiting the [subscription page](http://woozle.org/lists/pysieved).
+
+To talk about pysieved on IRC, join us in
+[#pysieved on irc.oftc.net](irc://irc.oftc.net/pysieved).
+
+--------
+
+Neale Pickett <neale@woozle.org>
