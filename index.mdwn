@@ -1,9 +1,12 @@
-[[!meta title="Neale's Wiki"]]
+[[!meta title="Neale Pickett Page"]]
 
-It's my blog, yo.
+One day a pirate walks into a bar with a steering wheel attached to his
+crotch. So the bartender says to him, "You know you have a steering
+wheel attached to your crotch?"
 
-* BikeTodo
-* HouseTodo
-* WoozleTodo
-* [[Blog]], BlogArchive
-* OurBikes
+And the pirate says, "Aaar, it's driving me nuts!"
+
+----
+
+* [Neale's wish list](/wishlists/neale/)
+* [Pickett Genealogy](geneweb.cgi?b=pickett)
