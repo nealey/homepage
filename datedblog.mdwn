@@ -1,1 +1,3 @@
-[[!datedblog pages="blog/* and !blog/*/*" show="2" archive="yes"]]
+[[!datedblog pages="blog/* and !blog/*/*" show="2"]]
+
+[[!inline page="blog/* and !blog/*/*" show="2"]]
