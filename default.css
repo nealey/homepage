@@ -170,8 +170,13 @@ address a {
   text-align: right;
 }
 
+.actions:hover ul {
+  visibility: visible;
+}
+
 .actions ul {
   margin: 0;
+  visibility: hidden;
 }
 
 .actions li {
