@@ -1,0 +1,1 @@
+[[!datedblog pages="blog/* and !blog/*/*" show="10" postform="no" actions="yes" description="Neale's Blog" author="Neale Pickett"]]
