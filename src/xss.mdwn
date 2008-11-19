@@ -1,4 +1,4 @@
-[[!meta title="xss"]]
+[[!meta title="xss: X Screensaver Construction Kit"]]
 
 [xss](http://woozle.org/~neale/src/xss) is a suite of X screensaver
 utilities.  You can use shell scripts to glue the tools together to

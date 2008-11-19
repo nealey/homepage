@@ -1,0 +1,559 @@
+%!PS-Adobe-2.0
+%%Title: Résumé
+%%Creator: Neale Pickett <neale@lanl.gov>
+%%CreationDate: Thu Nov 22 15:27:53 MST 1998
+%% Time-stamp: <2007-10-15 22:16:40 neale>
+%%EndComments
+
+%%
+%%
+%%
+%% If you are reading this, I really want to work for you :-)
+%%
+%% Seriously.
+%%
+%%
+%%
+
+% You know, this was kinda fun.  I'd never really used a stack-based
+% language before, except for programming my HP calculator.
+%
+% Feel free to do with this as you please, but it comes with ABSOLUTELY
+% NO WARRANTY, express or implied, including merchantability or fitness
+% for a particular purpose.  To quote man chat(1): "If it breaks, you
+% get to keep both pieces."
+
+[/linux /database /documentation /sysadmin /windows /math /humor] {
+  false def
+} forall
+
+/position (System Administrator or Database Engineer in a fast-paced\
+ and challenging environment) def
+%/linux true def
+/database true def
+%/documentation true def
+/sysadmin true def
+%/windows true def
+%/math true def
+/humor true def
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some definitions.  Season to taste.
+
+/FontSize 12 def
+
+/RegFont /Times-Roman def
+/BoldFont /Times-Bold def
+/ItalFont /Times-Italic def
+
+/RegFSet RegFont findfont FontSize scalefont def
+/BoldFSet BoldFont findfont FontSize scalefont def
+/HeadFSet BoldFont findfont FontSize 1.1 mul scalefont def
+/ItalFSet ItalFont findfont FontSize scalefont def
+
+/SetRegFont { RegFSet setfont } def
+/SetBoldFont { BoldFSet setfont } def
+/SetHeadFont { HeadFSet setfont } def
+/SetItalFont { ItalFSet setfont } def
+
+/LM 50 def
+/BM 50 def
+/RM 580 LM sub def
+/TM 760 BM sub def
+
+/indentLevel 30 def
+
+% A little buffer around left and right-justified text
+SetRegFont
+(M) stringwidth pop
+/padwidth exch def
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some handy operations.
+
+% concatenate two strings
+/strcat {
+  /s2 exch def
+  /s1 exch def
+
+  s1 length s2 length add
+  string /s exch def
+  s 0 s1 putinterval
+  s s1 length s2 putinterval
+  s
+} def
+
+/lm LM def
+/rm RM def
+
+% set the tab stop
+/settab {
+  stringwidth pop
+  currentpoint pop add
+  /tabstop exch def
+} def
+
+% tab out there
+/tab {
+  tabstop currentpoint exch pop moveto
+} def
+
+% The TeX logo thingy
+/TeX {
+  % Times Roman has smaller serifs and shallower angles than Computer
+  % Modern Roman, so I had to be creative about how things line up.  I
+  % think I did mostly okay, and I hope you do too.
+  /Times-Roman findfont FontSize scalefont setfont
+  (T) show
+  FontSize 8 div neg   FontSize 6.666666666666 div neg  rmoveto
+  (E) show
+  FontSize 15 div neg  FontSize 6.666666666666 div  rmoveto
+  (X) show
+} def
+
+% The LaTeX logo thingy
+/LaTeX {
+  /Times-Roman findfont dup FontSize scalefont setfont
+  (L) show
+  gsave
+    FontSize 1.25 div scalefont setfont
+    FontSize 3.428571428571 div neg  FontSize 6 div rmoveto
+    (A) show
+  grestore
+  FontSize 4.8 div  0 rmoveto
+  TeX
+} def
+
+% Bullet-list an item
+/bullet {
+  gsave
+    indentLevel 3 div neg 0 rmoveto
+    SetRegFont
+    (\267) show
+  grestore
+} def
+
+
+%%
+%% In theory, all this lm, LM, rm, RM stuff should make it so that if
+%% you right- or left-justify something, the word wrapper will be smart
+%% enough to wrap around it on that line.  In practice, this doesn't
+%% work.  But I've left the code in that was supposed to do it, in case
+%% I get bored some day.
+%%
+
+% Re-set the margins
+/reset_margins {
+  /lm LM def
+  /rm RM def
+} def  
+
+% Move down just a little
+/down {
+  reset_margins
+  lm indentation add currentpoint exch pop
+  FontSize 3 div sub
+  moveto
+} def
+
+% Move to the next line
+/next {
+  reset_margins
+  lm indentation add currentpoint exch pop % LM Y
+  FontSize 1.1 mul sub			% LM Y'
+  moveto
+  currentpoint exch pop
+  BM lt {
+    showpage
+    TM LM moveto
+  } {} ifelse
+} def
+
+% Move to the previous line
+/prev {
+  lm indentation add currentpoint exch pop % LM Y
+  FontSize 1.1 mul add			% LM Y'
+  moveto
+} def
+
+% Re-align the indentation
+/align {
+  lm indentation add currentpoint exch pop moveto
+} def
+
+% Indent once
+/indentation 0 def
+/indent {
+  /indentation indentation indentLevel add def
+  align
+} def
+
+% Deindent
+/deindent {
+  /indentation indentation indentLevel sub def
+  align
+} def
+
+% Show left justified
+/lshow {
+  gsave
+    % Set the left margin
+    dup
+    stringwidth pop
+    LM add
+    /lm exch def
+  
+    currentpoint exch pop		% (str) Y
+    LM exch				% (str) x Y
+    moveto show
+  grestore
+} def
+
+% Show centered
+/cshow {
+  gsave
+    dup					% (str) (str)
+    stringwidth pop			% (str) x
+    2 div				% (str) x/2
+    RM LM sub 2 div			% (str) x/2 RM/2
+    exch sub LM add			% (str) x'
+    currentpoint exch pop		% (str) x' Y
+    moveto show
+  grestore
+} def
+
+% Show right justified
+/rshow {
+  gsave
+    dup					% (str) (str)
+    stringwidth pop			% (str) x
+
+    % set the right margin
+    dup
+    RM exch sub padwidth sub
+    /rm exch def
+
+    RM exch sub				% (str) x'
+    currentpoint exch pop		% (str) x' Y
+    moveto show
+  grestore
+} def
+
+% Show in a bold font
+/bshow {
+  SetBoldFont
+  show
+  SetRegFont
+} def
+
+% Show in a italics font
+/ishow {
+  SetItalFont
+  show
+  SetRegFont
+} def
+
+% I totally stole this out of the blue book.
+/wordbreak ( ) def
+/BreakIntoLines  {
+  /proc exch def
+  /linelength exch def
+  /textstring exch def
+  
+  /breakwidth wordbreak stringwidth pop def
+  /curwidth 0 def
+  /lastwordbreak 0 def
+  
+  /startchar 0 def
+  /restoftext textstring def
+  
+  {
+    restoftext wordbreak search
+
+    {
+      /done false def
+    } {
+      () exch
+      wordbreak exch
+      /done true def
+    } ifelse
+
+    /nextword exch def pop
+    /restoftext exch def
+    /wordwidth nextword stringwidth pop def
+    
+    curwidth wordwidth add linelength gt
+    {
+      textstring startchar
+      lastwordbreak startchar sub
+      getinterval proc
+      /startchar lastwordbreak def
+      /curwidth wordwidth breakwidth add def
+    } {
+      /curwidth curwidth wordwidth add
+      breakwidth add def
+    } ifelse
+    
+    /lastwordbreak lastwordbreak
+    nextword length add 1 add def
+
+    done {
+      exit
+    } {
+    } ifelse
+  } loop
+  /lastchar textstring length def
+  textstring startchar lastchar startchar sub
+  getinterval proc
+} def
+
+% Show some text, and word-wrap it if necessary, then move to the next line
+/wshow {
+  /x currentpoint pop def
+  rm x sub				% Line length
+  {
+    show next
+    x currentpoint exch pop moveto
+  }
+  BreakIntoLines
+} def
+
+% Show as a heading (larger font, and move to next line)
+/hshow {
+  FontSize exch
+  /FontSize FontSize 1.1 mul def
+  gsave
+    BoldFont findfont FontSize scalefont setfont
+    show
+  grestore
+  next
+  /FontSize exch def
+} def
+
+% Draw a horizontal line from margin to margin
+/hline {
+  gsave
+    LM currentpoint exch pop 1 sub moveto
+    1 setlinewidth
+    RM LM sub 0 rlineto
+    stroke
+  grestore
+} def
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The actual text.
+
+
+newpath
+
+
+0 TM moveto
+SetHeadFont
+(Neale Pickett) cshow next
+SetRegFont
+(neale@pobox.com) cshow next
+(134 Long View Dr. #11) cshow next
+(White Rock, NM 87544) cshow next
+(\(505\) 665-3740) cshow next
+(http://people.lanl.gov/neale) cshow next
+
+next
+next
+
+(Desired Position: ) hshow
+indent position wshow deindent
+
+next
+
+
+(Work History:) hshow
+
+
+indent
+(1997-Present ) bshow
+(Technical Staff Member: Network Engineering Group, LANL) wshow
+indent
+bullet (Designed and implemented a high-availability, encrypted\
+ database proxy server capable of handling over 45,000 transactions\
+ per day at rates exceeding 4 per second) wshow
+bullet (Specified, created, and administered 18,000-record LDAP\
+ directory server, web phonebook, and mission-critical locator\
+ client) wshow
+bullet (Designed and created web \(CGI\) programming tools, now in use\
+ by three major lab-wide applications, each of which service over\
+ 20,000 users) wshow
+bullet (Created Linux device driver for 1.28+1.28 Gbit/sec networking\
+ project) wshow
+deindent
+
+down
+
+(1996-1997 ) bshow
+(Lab Assistant / Grader, New Mexico Tech) wshow
+
+down
+
+(1994-1996 ) bshow
+(User Consultant and Systems Programmer, New Mexico Tech) wshow
+indent
+bullet (Designed, created, and supported 20-machine campus Macintosh\
+ lab and associated configuration integrity package) wshow
+bullet (Maintained and assisted installation of 160+ machine SunOS and\
+ Linux network, including all campus-wide servers) wshow
+deindent
+deindent
+
+windows {
+  down
+
+  (Summer, 1992 ) bshow
+  (Student Aid/GS, NMERI, Albuquerque, NM) wshow
+  indent
+  bullet (Created custom application to link output from a DOS program\
+ to any Windows program, using DDE) wshow
+  deindent
+} {} ifelse
+
+next
+
+linux {
+  (Linux Experience:) hshow
+
+  indent
+  bullet (4 years Linux administration and programming experience) wshow
+  bullet (6 months experience coding Linux device drivers and kernel\
+ hacking) wshow
+  bullet (Debian package maintainer \(pending 2.1 release\)) wshow
+  bullet (Installed and maintain 2.0.x Linux on Intel, Alpha, \
+ M68k, and PPC machines) wshow
+  humor {
+    bullet (Can create an XF86Config by hand) show
+    /Courier findfont FontSize scalefont setfont
+    0 FontSize 14 div rmoveto
+    ( ;) show
+    0 FontSize 14 div neg rmoveto
+    FontSize 6 div neg 0 rmoveto
+    (-) show
+    FontSize 6 div neg 0 rmoveto
+    (\)) show
+    SetRegFont
+    next
+  } {} ifelse
+  deindent
+
+  next
+} {} ifelse
+
+(Authored GPL Software:) hshow
+
+indent
+SetBoldFont (phonebook  ) settab
+  
+(whiz) bshow
+(\(Python\)) rshow
+tab (Sequential CGI forms tool \(Presented at 7th annual International Python Conference\)) wshow
+align
+
+(SQLd) bshow
+(\(C\)) rshow
+tab (Lightweight, encrypted, database proxy) wshow
+align
+
+(fmsh) bshow
+(\(C\)) rshow
+tab (Restricted execution shell \(used in LANL's lab-wide firewall\
+ proxy\)) wshow
+align
+
+(phonebook) bshow
+(\(Python\)) rshow
+tab (Web-based phonebook view of LDAP data) wshow
+align
+deindent
+
+next
+
+(Brief Knowledge List:) hshow
+
+indent
+
+/other () def
+
+linux {
+  SetBoldFont (Server Software  ) settab
+  /other other (Unix, Windows, MacOS, ) strcat def
+} {
+  SetBoldFont (Operating Systems  ) settab
+  (Operating Systems) bshow
+  tab
+  (Linux \(Red Hat and Debian\) expert, Solaris, Windows, MacOS) wshow align
+} ifelse
+
+(Languages) bshow
+tab
+(Python, C/C++, Perl, sh, Tcl, PostScript, ) show TeX (, etc.) show next
+
+documentation {
+  (Documentation) bshow
+  tab
+  (HTML, DocBook, LinuxDoc, ) show LaTeX next
+} {
+  /other other (documentation tools \(HTML, SGML\), ) strcat def
+} ifelse
+
+database {
+  (Databases) bshow
+  tab
+  (SQL, Sybase, Postgres, OpenDB library) wshow align
+} {
+  /other other (databases, ) strcat def
+} ifelse
+
+sysadmin {
+  (Server Software) bshow
+  tab
+  (Apache, UMich LDAP, ssh, Sendmail, inn) wshow align
+
+  (Unix Utilities) bshow
+  tab
+  (GNU Shellutils, Emacs, vi, awk, sed, etc.) wshow align
+
+  (Networking) bshow
+  tab
+  (Firewalls, proxies, routing, troubleshooting) wshow align
+} {
+  /other other (servers \(email, LDAP, web, etc.\), Unix tools,\
+ networking, ) strcat def
+} ifelse
+
+other () eq {} {
+  (Other) bshow
+  tab
+  other (etc.) strcat wshow
+} ifelse
+
+deindent
+
+next
+
+(Education:) hshow
+
+indent
+(BS Comp. Sci. ) bshow
+(New Mexico Tech \(1997, ) show (cum laude) ishow (\)) show
+math {
+  indent
+  (Emphasis in mathematics/music) wshow
+  deindent
+
+  (Math/Music studies ) bshow
+  (Texas Tech \(1992-1993\)) wshow
+} {} ifelse
+deindent
+
+showpage
+

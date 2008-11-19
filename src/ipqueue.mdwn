@@ -10,6 +10,9 @@ of a firewall. You can use it to snoop on traffic, modify or discard
 certain packets, make routing decisions, masquerade stuff, whatever--and
 you get it all with garbage collection :)
 
+Apparently this program appears in a book called "Security Power Tools".
+That means I'm *Internet Famous*!
+
 Download
 --------
 
@@ -21,6 +24,12 @@ License
 -------
 
 GPL, of course.
+
+Support
+-------
+
+You can email me at <neale@woozle.org>, or try the IRC channel
+[#py-ipqueue on irc.oftc.net](irc://irc.oftc.net/py-ipqueue).
 
 Screen Shots
 ------------

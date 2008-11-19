@@ -1,0 +1,117 @@
+%!PS-Adobe-2.0
+%Description: Displays dimensions of the page, and where your printer clips.
+
+/TM 792 def
+/RM 612 def
+
+/margin 18 def
+/linelen 18 def
+
+/step 18 def
+
+
+.1 setlinewidth
+/ruler {
+  newpath
+  
+  0 0 moveto
+  0 1 18 {
+    0 6 rlineto
+    1 -6 rmoveto
+  } for
+  
+  0 0 moveto
+  0 3 18 {
+    0 12 rlineto
+    3 -12 rmoveto
+  } for
+  
+  9 0 moveto
+  0 15 rlineto
+  
+  0 0 moveto
+  0 18 rlineto
+  18 0 moveto
+  0 18 rlineto
+  
+  stroke
+} def
+
+
+/Times-Roman findfont 10 scalefont setfont
+
+
+/str 20 string def
+0 step TM {
+  dup dup
+  margin exch
+  gsave
+    translate
+
+    0 0 moveto
+    step 2 mul le {
+      pop
+    } {
+      18 0 rmoveto
+      str cvs str show
+    } ifelse
+    0 18 translate
+    -90 rotate
+    ruler
+
+  grestore
+} for
+
+/str 20 string def
+newpath
+0 step RM {
+  dup dup
+  margin
+  gsave
+    translate
+    0 0 moveto
+
+    step 2 mul le {
+      pop
+    } {
+      0 18 rmoveto
+      str cvs str show
+    } ifelse
+    ruler
+  grestore
+} for
+
+1 setlinewidth
+
+% Score 1" in on all sides
+newpath
+
+72 0 moveto
+0 36 rlineto
+
+72 TM moveto
+0 -36 rlineto
+
+RM 72 sub 0 moveto
+0 36 rlineto
+
+RM 72 sub TM moveto
+0 -36 rlineto
+
+
+0 72 moveto
+36 0 rlineto
+
+RM 72 moveto
+-36 0 rlineto
+
+0 TM 72 sub moveto
+36 0 rlineto
+
+RM TM 72 sub moveto
+-37 0 rlineto
+
+stroke
+
+
+showpage

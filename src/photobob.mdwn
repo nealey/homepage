@@ -1,4 +1,4 @@
-[[!meta title="Photobob"]]
+[[!meta title="Photobob: Web photo albums"]]
 
 I don't have a lot to say about photobob.  It's the 7th or so photo
 album package I've written, and probably the best.  You just put

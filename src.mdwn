@@ -4,28 +4,6 @@ I write software for a living. I like doing it so much that sometimes I
 even write software just for fun. Here are some of the better hacks I've
 created over the years.
 
-[Firebot](firebot) is an IRC automaton (bot) that works as an InfoBot,
-LinkBot (links multiple channels, even across servers), command bot
-(displays the output of programs), web bot (fetches and parses web
-pages, returning the results), and more. Everything runs in an
-asynchronous select() loop with a very easy-to-use high-level interface.
+[[!map pages="src/*" show="title"]]
 
-[Photobob](photobob) is a web-based photo album. There's nothing to
-differentiate this from the myriad other web-based photo albums out
-there, except that this one doesn't need a database and doesn't write
-any meta-information.  You just point it at a directory full of
-images/movies and it serves 'em up.
-
-[eguile](eguile) is a text preprocessor using guile scheme.
-[escm](escm) is the same thing for gauche.  You could use these to build
-a web site with a common theme.  I used to use them, but now I use a
-very simple m4 template.
-
-The [Universal Boardgame Kit](ubk/) is a kit you can build for under $5
-to use with a number of boardgames. A few boards are included. I
-designed the pieces and most of the boards, and hand-coded them all in
-PostScript.  That makes me feel manly.
-
-I also have some little [Python](python/), [PostScript](ps-hacks), and
-[other](misc) hacks, which do clever things.
 

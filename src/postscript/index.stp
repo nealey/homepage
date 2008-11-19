@@ -1,0 +1,8 @@
+<?scm (define title "PostScript Hacks") ?>
+<?scm (define (body) ?>
+<p>Here is some neat stuff that's too small or self-explanatory
+   to deserve its own web page.</p>
+<dl>
+<?scm (html-index-files (string-split "alice.ps banner.ps emergency-card.ps graph-paper.ps logo.ps page_dimensions.ps resume.ps ruled-paper.ps skel.ps" " ")) ?>
+</dl>
+<?scm ) ?>
