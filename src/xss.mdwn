@@ -90,7 +90,7 @@ download a [tarball of the latest
 commit](http://woozle.org/~neale/gitweb.cgi?p=xss;a=snapshot), or clone the
 git repository:
 
-    git clone http://woozle.org/~neale/repos/xss/
+    git clone http://woozle.org/~neale/projects/xss
 
 
 History

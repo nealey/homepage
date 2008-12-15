@@ -55,6 +55,10 @@ pre {
   float: left;
 }
 
+.right {
+  float: right;
+}
+
 /*
  * Header elements
  */
