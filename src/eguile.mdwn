@@ -16,7 +16,7 @@ need any further description.
 
 ## Downloading it
 
-[eguile.scm](scheme/eguile.scm).
+[eguile.scm](eguile.scm).
 
 
 ## Reference
