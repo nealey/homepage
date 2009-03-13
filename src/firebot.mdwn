@@ -54,35 +54,35 @@ a question about x ("what is x?", "who is x?", "wtf is x?"), FireBot
 answers with the factoid he gathered.
 
 <dl>
-<dt>firebot, _x_</dt>
-<dd>look up a factoid for _x_</dd>
+<dt>firebot, **x**</dt>
+<dd>look up a factoid for **x**</dd>
 
-<dt>firebot, _x_ is _y_</dt>
-<dd>store _y_ as a factiod about _x_</dd>
+<dt>firebot, **x** is **y**</dt>
+<dd>store **y** as a factiod about **x**</dd>
 
-<dt>firebot, _x_ is also _y_</dt>
-<dd>store _y_ as another factoid about _x_</dd>
+<dt>firebot, **x** is also **y**</dt>
+<dd>store **y** as another factoid about **x**</dd>
 
-<dt>firebot, append _x_ &lt;= _y_</dt>
-<dd>store _y_ as another factoid about _x_.  You'd use this for things where _x_ has the word "is" in it, or other things that you can't store with the preceding commands.</dd>
+<dt>firebot, append **x** &lt;= **y**</dt>
+<dd>store **y** as another factoid about **x**.  You'd use this for things where **x** has the word "is" in it, or other things that you can't store with the preceding commands.</dd>
 
-<dt>no, firebot, _x_ is _y_</dt>
-<dd>store _y_ as the only factoid about _x_, even if _x_ already has factoids</dd>
+<dt>no, firebot, **x** is **y**</dt>
+<dd>store **y** as the only factoid about **x**, even if **x** already has factoids</dd>
 
-<dt>firebot, literal _x_</dt>
-<dd>display all factoids about _x_</dd>
+<dt>firebot, literal **x**</dt>
+<dd>display all factoids about **x**</dd>
 
-<dt>firebot, lock _x_</dt>
-<dd>do not learn any more factoids about _x_</dd>
+<dt>firebot, lock **x**</dt>
+<dd>do not learn any more factoids about **x**</dd>
 
-<dt>firebot, unlock _x_</dt>
-<dd>resume learning factoids about _x_</dd>
+<dt>firebot, unlock **x**</dt>
+<dd>resume learning factoids about **x**</dd>
 
-<dt>firebot, forget _x_</dt>
-<dd>forget all factoids about _x_</dd>
+<dt>firebot, forget **x**</dt>
+<dd>forget all factoids about **x**</dd>
 
-<dt>firebot, forget _x_ from _y_</dt>
-<dd>forget a single entry (<em>x</em>) that is listed in _y_; _x_ can be a single word, it does not need to be the whole entry</dd>
+<dt>firebot, forget **x** from **y**</dt>
+<dd>forget a single entry (**x**) that is listed in **y**; **x** can be a single word, it does not need to be the whole entry</dd>
 
 <dt>firebot, shut up</td>
 <dd>make the bot only respond to factoids when addressed specifically</dd>
@@ -111,38 +111,38 @@ Utilities
 
 <dl>
 
-<dt>firebot, later tell _whom_ _what_</dt>
-<dd>The next time _whom_ says something in the channel, deliver the message _what_ publically.</dd>
+<dt>firebot, later tell **whom** **what**</dt>
+<dd>The next time **whom** says something in the channel, deliver the message **what** publically.</dd>
 
-<dt>firebot, in _time_ say _what_</dt>
-<dd>after _time_ (eg. "15 seconds", "2 hours", "5 days"), announce _what_ in the channel</dd>
+<dt>firebot, in **time** say **what**</dt>
+<dd>after **time** (eg. "15 seconds", "2 hours", "5 days"), announce **what** in the channel</dd>
 
-<dt>seen _whom_</dt>
-<dd>Report the last thing said in the channel by _whom_, and how long ago it was said.</dd>
+<dt>seen **whom**</dt>
+<dd>Report the last thing said in the channel by **whom**, and how long ago it was said.</dd>
 
-<dt>dict _word_</dt>
-<dd>look _word_ up in the dictionary</dd>
+<dt>dict **word**</dt>
+<dd>look **word** up in the dictionary</dd>
 
-<dt>quote _symbol_</dt>
-<dd>get a stock quote for _symbol_</dd>
+<dt>quote **symbol**</dt>
+<dd>get a stock quote for **symbol**</dd>
 
-<dt>pollen _zip_</dt>
-<dd>report pollen forecast for US zip code _zip_</dd>
+<dt>pollen **zip**</dt>
+<dd>report pollen forecast for US zip code **zip**</dd>
 
-<dt>cdecl explain _jibberish_</dt>
-<dd>explain the C declaration _jibberish_ (eg. "cdecl explain struct bar *(*foo)[](int)")</dd>
+<dt>cdecl explain **jibberish**</dt>
+<dd>explain the C declaration **jibberish** (eg. "cdecl explain struct bar *(*foo)[](int)")</dd>
 
-<dt>cdecl declare _english_</dt>
-<dd>give the C declaration for _english_ (eg. "cdecl declare foo as pointer to array of function (int) returning pointer to struct bar")</dd>
+<dt>cdecl declare **english**</dt>
+<dd>give the C declaration for **english** (eg. "cdecl declare foo as pointer to array of function (int) returning pointer to struct bar")</dd>
 
-<dt>how many _x_ in _y_ _z_</dt>
-<dd>determine the number of _x_ items that are contained in _y_ amount of _z_ items (eg. how many miles in 1 light year)</dd>
+<dt>how many **x** in **y** **z**</dt>
+<dd>determine the number of **x** items that are contained in **y** amount of **z** items (eg. how many miles in 1 light year)</dd>
 
-<dt>how much is _amt_ _source_ in _dest_</dt>
-<dd>do a currency conversion from _source_ to _dest_.  Both must be three-letter currency codes. (eg. "how much is 100 USD in EUR")</dd>
+<dt>how much is **amt** **source** in **dest**</dt>
+<dd>do a currency conversion from **source** to **dest**.  Both must be three-letter currency codes. (eg. "how much is 100 USD in EUR")</dd>
 
-<dt>calc _expr_</dt>
-<dd>calculate _expr_ (eg. "calc 2 * 5")</dd>
+<dt>calc **expr**</dt>
+<dd>calculate **expr** (eg. "calc 2 * 5")</dd>
 
 </dl>
 
@@ -152,16 +152,16 @@ Toys
 
 <dl>
 
-<dt>8ball, _question_</dt>
-<dd>consult the magic 8-ball regarding _question_</dd>
+<dt>8ball, **question**</dt>
+<dd>consult the magic 8-ball regarding **question**</dd>
 
-<dt>_nickname_++</dt>
-<dd>add a whuffie point for _nickname_</dd>
+<dt>**nickname**++</dt>
+<dd>add a whuffie point for **nickname**</dd>
 
-<dt>_nickname_--</dt>
-<dd>remove a whuffie point for _nickname_</dd>
+<dt>**nickname**--</dt>
+<dd>remove a whuffie point for **nickname**</dd>
 
-<dt>whuffie for _nickname_</dt>
-<dd>check the whuffie for _nickname_</dd>
+<dt>whuffie for **nickname**</dt>
+<dd>check the whuffie for **nickname**</dd>
 
 </dl>
