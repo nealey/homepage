@@ -16,7 +16,7 @@ Just write the text of a smiley to display it.
 * \\:-|	[[smileys/neutral.png]]
 * \\:(	[[smileys/sad.png]]
 * \\:-(	[[smileys/sad.png]]
-* \\:<  [[smilyes/sad.png]]
+* \\:<  [[smileys/sad.png]]
 * \\:-?	[[smileys/tongue.png]]
 * \\:-P	[[smileys/tongue.png]]
 * \\:o	[[smileys/shock.png]]
