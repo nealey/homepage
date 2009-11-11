@@ -1,10 +1,10 @@
 Title: The 3-minute HTML tutorial
 
-As computer formats go, HTML are really easy and logical.  It's all just
-text that you can edit with any basic text editor, like gedit nder
-Gnome, or notepad in Windows.  Let's start out with an example.  Say you
-have a sentence, and you want one word in it to be bold.  That sentence
-would look like this:
+As computer formats go, HTML is easy and logical.  It's all just text
+that you can edit with any basic text editor, like gedit under Gnome, or
+notepad in Windows.  Let's start out with an example.  Say you have a
+sentence, and you want one word in it to be bold.  That sentence would
+look like this:
 
     Guess which word is <b>bold</b>?
 
