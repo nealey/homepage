@@ -1,13 +1,9 @@
+@import "format.css";
+
 #nav {
   display: none;
 }
 
-p {
-  text-align: justify;
-}
-
 pre {
-  margin: 1em 2em;
-  padding: 1em;
   border: solid black 1px;
 }

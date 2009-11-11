@@ -1,0 +1,21 @@
+p, li, dd {
+  text-align: justify;
+}
+
+body > p {
+  text-indent: 1.5em;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  text-indent: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "URW Gothic L", sans-serif;
+}
+
+pre {
+  margin: 1em 2em;
+  padding: 1em;
+  border: solid black 1px;
+}

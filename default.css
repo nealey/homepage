@@ -1,10 +1,8 @@
+@import "format.css";
+
 body {
   max-width: 35em;
   background-color: #eee;
-}
-
-p, li, dd {
-  text-align: justify;
 }
 
 h1:first-child {
@@ -30,9 +28,6 @@ a:hover {
 
 pre {
   background: #ccc;
-  margin: 1em 2em;
-  padding: 1em;
-  border: solid black 1px;
 }
 
 #nav {
