@@ -3,7 +3,7 @@ Title: Software
 I write software for a living. I like doing it so much that sometimes I
 even write software just for fun.
 
-My [version control](/~neale/gitweb.cgi), holds the source code to most
+My [version control](/~neale/gitweb.cgi) holds the source code to most
 of these packages.
 
 Networky things
