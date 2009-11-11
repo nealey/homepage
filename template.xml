@@ -5,9 +5,9 @@
   <head>
     <title>TITLE</title>
     <link rel="stylesheet" type="text/css" media="screen"
-          href="/~neale/www/default.css" />
+          href="/~neale/default.css" />
     <link rel="stylesheet" type="text/css" media="print"
-          href="/~neale/www/print.css" />
+          href="/~neale/print.css" />
     <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
 
@@ -15,10 +15,10 @@
     <h1>TITLE</h1>
 divert(1)
     <ul id="nav">
-      <li><a href="/~neale/www/src/" title="Free Software">Software</a></li>
-      <li><a href="/~neale/www/toys/" title="Various fun things">Toys</a></li>
-      <li><a href="/~neale/www/poems/" title="I won't quit my day job">Poems</a></li>
-      <li><a href="/~neale/www/papers/" title="Various writings">Papers</a></li>
+      <li><a href="/~neale/src/" title="Free Software">Software</a></li>
+      <li><a href="/~neale/toys/" title="Various fun things">Toys</a></li>
+      <li><a href="/~neale/poems/" title="I won't quit my day job">Poems</a></li>
+      <li><a href="/~neale/papers/" title="Various writings">Papers</a></li>
     </ul>
 
     <address>

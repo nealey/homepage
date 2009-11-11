@@ -32,10 +32,12 @@ rule Webify {
   }
 }
 
-actions MdwnToHtml {
-  $(MDWNTOHTML) $(TEMPLATE) < $(2) > $(1)
-}
+
 
 actions DirList {
   $(DIRLIST) $(HEAD) $(2) > $(1)
+}
+
+actions MdwnToHtml {
+  $(MDWNTOHTML) $(TEMPLATE) < $(2) > $(1)
 }
