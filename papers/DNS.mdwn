@@ -1,4 +1,4 @@
-[[!meta title="How DNS Works"]]
+Title: How DNS Works
 
 When you request a URL like `http://goob.woozle.org/~neale/foo.html`,
 the first thing your browser does is send out a DNS query on
@@ -23,9 +23,9 @@ The reason the .org domain said to go to 216.39.146.229 is because
 that's what I listed as the primary authoritative name server for the
 "woozle.org" domain with my host registrar (pacificroot.com). A lot of
 people use networksolutions.com as their host registrar. So on
-216.39.146.229, I have an authoritative name server (nsd) that knows
-about the woozle.org domain.  Some other authoritative name servers are
-tinydns and BIND (the Buggy Internet Name Daemon).
+216.39.146.229, I have an authoritative name server that knows about the
+woozle.org domain.  Some examples of authoritative name server software
+are nsd, tinydns, and BIND.
 
 Your recursive resolver has now obtained the mapping from
 "goob.woozle.org" to 216.39.146.229, so it returns that IP address to
