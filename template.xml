@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>TITLE</title>
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="/~neale/www/default.css" />
+    <link rel="stylesheet" type="text/css" media="print"
+          href="/~neale/www/print.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+
+  <body>
+    <h1>TITLE</h1>
+divert(1)
+    <ul id="nav">
+      <li><a href="/~neale/www/src/" title="Free Software">Software</a></li>
+      <li><a href="/~neale/www/toys/" title="Various fun things">Toys</a></li>
+      <li><a href="/~neale/www/poems/" title="I won't quit my day job">Poems</a></li>
+      <li><a href="/~neale/www/papers/" title="Various writings">Papers</a></li>
+    </ul>
+
+    <address>
+      Neale Pickett &lt;<a href="mailto: neale&#64;woozle&#46;org">neale&#64;woozle&#46;org</a>&gt;
+    </address>
+  </body>
+</html>
+divert(0)

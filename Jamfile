@@ -1,0 +1,8 @@
+SubDir TOP ;
+
+Webify index.mdwn ;
+
+SubInclude TOP papers ;
+SubInclude TOP poems ;
+SubInclude TOP src ;
+SubInclude TOP toys ;

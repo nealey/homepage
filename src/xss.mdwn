@@ -1,4 +1,5 @@
-[[!meta title="xss: X Screensaver Construction Kit"]]
+Title: xss: X Screensaver Construction Kit
+Author: Neale Pickett <neale@woozle.org>
 
 [xss](http://woozle.org/~neale/src/xss) is a suite of X screensaver
 utilities.  You can use shell scripts to glue the tools together to
@@ -104,8 +105,3 @@ else like the rest of the programs, which is why I wrote them.
 I lifted some code from `beforelight` from the X11 distribution, and
 from `slock` from [suckless.org](http://suckless.org/).  Both have a
 BSD/X11-like license.
-
-
-------
-
-Neale Pickett <neale@woozle.org>

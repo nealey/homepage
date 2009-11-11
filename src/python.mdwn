@@ -1,3 +1,0 @@
-[[!meta title="Python hacks"]]
-
-[[!map pages="src/python/*" show="description"]]

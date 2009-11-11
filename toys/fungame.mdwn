@@ -1,4 +1,4 @@
-[[!meta title="Fun Game"]]
+Title: Fun Game
 
 <a name="part1"></a>
 

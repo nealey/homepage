@@ -1,0 +1,30 @@
+Title: Software
+
+I write software for a living. I like doing it so much that sometimes I
+even write software just for fun.
+
+My [version control](/~neale/gitweb.cgi), holds the source code to most
+of these packages.
+
+Networky things
+-------------------------------
+* [pysieved](pysieved/), a Python ManageSieve server
+* [Firebot](firebot.html), an easily-extended IRC bot in continuous use since 1996
+* [Python IPQUEUE library](py-ipqueue/)
+
+X11 things
+-------------------------------
+* [xss](xss.html), a simple (suckless) screen saver for X11
+* [dwm hacks](dwm/) contains my tweaks to [dwm](http://dwm.suckless.org/)
+
+Various and sundry things
+-------------------------------
+* [eguile](eguile/), like PHP for Guile Scheme
+* [escm](escm.html), like PHP for Gauche Scheme and others
+* [Python hacks](python/) of diminutive size and quality
+* [Postscript hacks](postscript/) of diminutive size and quality
+* [Other hacks](misc/) of diminutive size and quality
+
+
+
+

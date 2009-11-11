@@ -1,9 +1,9 @@
-[[!meta title="Optimized"]]
+Title: Optimized
 
 This poem made for Wooz-Web 8  
 So please download today.  
-On my computer, it looks great!  
-On yours, it might turn gray.
+On my computer, it sounds great!  
+On yours, it might not play.
 
 It uses ActivePoetry  
 (By WoozleSoft, v4.3)  

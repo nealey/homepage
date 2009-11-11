@@ -1,4 +1,0 @@
-[[!meta title="Neale's Blog"]]
-[[!meta author="Neale Pickett" authorurl="http://woozle.org/~neale/"]]
-[[!inline pages="blog/* and !blog/*/*" show="10" postform="no" actions="yes" description="Neale's Blog" author="Neale Pickett"]]
-[[older_entries|BlogArchive]]

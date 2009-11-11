@@ -1,0 +1,41 @@
+MDWNTOHTML = $(TOP)/mdwntohtml ;
+DIRLIST = $(TOP)/dirlist ;
+TEMPLATE = $(TOP)/template.xml ;
+
+rule Copy {
+  local tgt = $(1:D=$(SUBDIR)) ;
+  File $(tgt) : $(2) ;
+  Clean clean : $(tgt) ;
+}
+
+rule AutoIndex {
+  local tgt = $(1:D=$(SUBDIR)) ;
+  local src = $(3:D=$(SUBDIR)) ;
+  local head = $(2:D=$(SUBDIR)) ;
+
+  HEAD on $(tgt) = $(head) ;
+  Depends $(tgt) : $(src) $(head) $(DIRLIST) ;
+  Clean clean : $(tgt) ;
+  DirList $(tgt) : $(src) ;
+}
+
+rule Webify {
+  local html ;
+
+  for i in $(1:D=$(SUBDIR)) {
+    html = $(i:S=.html) ;
+
+    Depends $(html) : $(i) $(TEMPLATE) $(MDWNTOHTML) ;
+    Depends all : $(html) ;
+    Clean clean : $(html) ;
+    MdwnToHtml $(html) : $(i) ;
+  }
+}
+
+actions MdwnToHtml {
+  $(MDWNTOHTML) $(TEMPLATE) < $(2) > $(1)
+}
+
+actions DirList {
+  $(DIRLIST) $(HEAD) $(2) > $(1)
+}

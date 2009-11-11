@@ -1,4 +1,4 @@
-[[!meta title="Firebot: IRC Automaton"]]
+Title: Firebot: IRC Automaton
 
 FireBot is a winner!
 

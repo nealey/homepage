@@ -1,4 +1,4 @@
-[[!meta title="Introduction To TCP Sockets"]]
+Title: Introduction To TCP Sockets
 
 Client Sockets
 --------------

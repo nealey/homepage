@@ -1,12 +1,11 @@
 #! /usr/bin/gosh
 
-;;
-;; Neale Pickett <neale@woozle.org> wrote this.
-;;
+;; Description: 9p implementation in Scheme
+;; Author: Neale Pickett <neale@woozle.org>
 
 ;; This uses gauche's networking stuff, but no other gauche stuff.  It
-;; should be simple to substitute your implementation's networking
-;; procedures.
+;; should be possible to substitute your implementation's networking
+;; procedures without too much effort.
 (use gauche.net)
 (require-extension (srfi 1 4 8 9))
 

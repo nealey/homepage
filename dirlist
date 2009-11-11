@@ -1,0 +1,13 @@
+#! /bin/sh
+
+cat $1; shift
+
+echo '<dl>'
+for i in "$@"; do
+    size=$(du --si $i | cut -f1)
+    desc=$(sed -n '1,3 s/.*\(Description: \|Title: \|-- \)//p' $i)
+    fn=$(basename $i)
+    echo "  <dt><a href=\"$fn\">$fn</a> ($size)</dt>"
+    echo "  <dd>$desc</dd>"
+done
+echo '</dl>'

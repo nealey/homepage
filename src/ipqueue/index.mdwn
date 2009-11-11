@@ -1,4 +1,4 @@
-[[!meta title="Python ipqueue"]]
+Title: Python ipqueue
 
 This is the Netfilter userspace IPQueue module for Python. It allows you
 to do all your Linux IPQueue stuff from the comfort of Python. This only
@@ -17,8 +17,7 @@ Download
 --------
 
 * [Latest version](ipqueue.tar.gz)
-* [Netfilter QUEUE bindings](nfqueue-0.1.tar.bz2) Mike Auty &lt;mike.auty&#64;gmail&#46;com&gt;
-</ul>
+* [Netfilter QUEUE bindings](nfqueue-0.1.tar.bz2) by Mike Auty <mike.auty@gmail.com>
 
 License
 -------
@@ -38,29 +37,28 @@ Here's an example program which transparently proxies all traffic it
 gets to port 25 of 10.1.1.2. This is just an example, a real-world
 transparent proxy would be much more sophisticated.
 
-<pre>
-#! /usr/bin/env python
+    #! /usr/bin/env python
 
-import ipqueue
-import iputils
+    import ipqueue
+    import iputils
 
-rewrite = 1
+    rewrite = 1
 
-q = ipqueue.IPQ(ipqueue.IPQ_COPY_PACKET)
-while 1:
-    p = q.read()
-    tcp = iputils.TCP(p[ipqueue.PAYLOAD])
-    print "Got %s -> %s on hook %d" % (iputils.ntoa(tcp.saddr),
-                                       iputils.ntoa(tcp.daddr),
-                                       p[ipqueue.HOOK])
+    q = ipqueue.IPQ(ipqueue.IPQ_COPY_PACKET)
+    while 1:
+        p = q.read()
+        tcp = iputils.TCP(p[ipqueue.PAYLOAD])
+        print "Got %s -> %s on hook %d" % (iputils.ntoa(tcp.saddr),
+                                           iputils.ntoa(tcp.daddr),
+                                           p[ipqueue.HOOK])
 
-    if rewrite and p[ipqueue.HOOK] == 0:
-        tcp.daddr = iputils.aton("10.1.1.2")
-        tcp.th_dport = 25
-        q.set_verdict(p[0], ipqueue.NF_ACCEPT, tcp.to_str())
-    else:
-        q.set_verdict(p[0], ipqueue.NF_ACCEPT)
-</pre>
+        if rewrite and p[ipqueue.HOOK] == 0:
+            tcp.daddr = iputils.aton("10.1.1.2")
+            tcp.th_dport = 25
+            q.set_verdict(p[0], ipqueue.NF_ACCEPT, tcp.to_str())
+        else:
+            q.set_verdict(p[0], ipqueue.NF_ACCEPT)
+
 
 Help me out
 -----------

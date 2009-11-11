@@ -1,4 +1,4 @@
-[[!meta title="escm: a scheme preprocessor"]]
+Title: escm: a scheme preprocessor
 
 This is my port of [eguile](http://woozle.org/~neale/src/eguile) to
 gauche scheme.  It uses regular expressions and as a result is faster

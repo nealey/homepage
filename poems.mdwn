@@ -1,7 +1,0 @@
-[[!meta title="Poems"]]
-
-If wishes were horses  
-And poets were kings  
-I guess I'd still have my day job.
-
-[[!map pages="poems/*" show="title"]]

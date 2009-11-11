@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-"""ndstrunc -- Trims .nds ROM files."""
+### ndstrunc -- Trims .nds ROM files
 
 
 import struct

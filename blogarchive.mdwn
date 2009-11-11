@@ -1,2 +1,0 @@
-[[!meta title="All blog entries"]]
-[[!inline pages="blog/* and !blog/*/*" rootpage="blog" feeds="no" archive="yes"]]
