@@ -3,27 +3,34 @@ DIRLIST = $(TOP)/dirlist ;
 TEMPLATE = $(TOP)/template.xml ;
 
 rule Copy {
-  local tgt = $(1:D=$(SUBDIR)) ;
-  File $(tgt) : $(2) ;
+  local tgt = [ FGristFiles $(1) ] ;
+  local src = [ FGristFiles $(2) ] ;
+  MakeLocate $(tgt) : $(LOCATE_TARGET) ;
+  File $(tgt) : $(src) ;
   Clean clean : $(tgt) ;
 }
 
 rule AutoIndex {
-  local tgt = $(1:D=$(SUBDIR)) ;
-  local src = $(3:D=$(SUBDIR)) ;
-  local head = $(2:D=$(SUBDIR)) ;
+  local tgt = [ FGristFiles $(1) ] ;
+  local head = [ FGristFiles $(2) ] ;
+  local src = [ FGristFiles $(3) ] ;
 
-  HEAD on $(tgt) = $(head) ;
+  MakeLocate $(tgt) : $(LOCATE_TARGET) ;
+  SEARCH on $(head) = $(SEARCH_SOURCE) ;
+  SEARCH on $(src) = $(SEARCH_SOURCE) ;
+
   Depends $(tgt) : $(src) $(head) $(DIRLIST) ;
   Clean clean : $(tgt) ;
-  DirList $(tgt) : $(src) ;
+  DirList $(tgt) : $(head) $(src) ;
 }
 
 rule Webify {
   local html ;
 
-  for i in $(1:D=$(SUBDIR)) {
+  for i in [ FGristFiles $(1) ] {
     html = $(i:S=.html) ;
+    MakeLocate $(html) : $(LOCATE_TARGET) ;
+    SEARCH on $(i) = $(SEARCH_SOURCE) ;
 
     Depends $(html) : $(i) $(TEMPLATE) $(MDWNTOHTML) ;
     Depends all : $(html) ;
@@ -35,7 +42,7 @@ rule Webify {
 
 
 actions DirList {
-  $(DIRLIST) $(HEAD) $(2) > $(1)
+  $(DIRLIST) $(2) > $(1)
 }
 
 actions MdwnToHtml {
