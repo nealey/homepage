@@ -3,7 +3,6 @@ Title: Toys
 Here is some various junk I've done.  Maybe you'll find it amusing.
 Maybe you'll just wonder why I spend so much time on this garbage.
 
-* I like [tartans](../tartans/).
 * Play [a fun game](fungame.html)!
 * If you need to write someone a letter but really don't want to, try my
   [smalltalk generator](smalltalk.cgi).

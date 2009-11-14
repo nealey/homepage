@@ -13,9 +13,9 @@ description.
   LG8 LV32 R4 G32 LG32 Y4 LG4
 </div>
 
-I've written a [tartan designer](design) that will take a sett pattern
-in modified xtartan format, and output a PNG image of said tartan. Below
-are some tartans I've made with it.
+I've written a [tartan designer](design.cgi) that will take a sett
+pattern in modified xtartan format, and output a PNG image of said
+tartan. Below are some tartans I've made with it.
 
 If you have one you'd like to contribute to my database, or would like
 the code that generates this stuff, feel free to [email
