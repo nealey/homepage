@@ -1,0 +1,7 @@
+#! /bin/sh
+
+for i in "$@"; do
+    base=$(basename $i .tartan)
+    name=$(awk -F': ' '(/^Name:/) {print $2; exit;}' $i)
+    echo "* [$name]($base.html)"
+done

@@ -1,0 +1,22 @@
+#! /bin/sh
+
+header () {
+    while IFS=: read key val; do
+        tval=$(echo $val | sed "s/'/\&apos;/g")
+        case $key in
+            Name)
+                echo -n "TARTAN='$tval';"
+                ;;
+            Sett)
+                echo -n "SETT='$tval'"
+                ;;
+            "")
+                break
+                ;;
+        esac
+    done
+}
+
+eval $(header)
+m4 -DTARTAN="$TARTAN" -DSETT="$SETT" -DBASE="$1" tartan.m4 -
+

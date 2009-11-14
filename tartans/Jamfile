@@ -1,0 +1,44 @@
+SubDir TOP tartans ;
+
+TARTAN_TMPL = $(SUBDIR)/tartan.m4 ;
+TARTANTOMDWN = $(SUBDIR)/tartantomdwn ;
+LOOM = $(SUBDIR)/loom.py ;
+
+rule Tartan {
+  local tartans = [ FGristFiles $(1:S=.tartan) ] ;
+  
+  for t in $(tartans) {
+    local png = $(t:S=.png:D=img:G=) ;
+    local mdwn = $(t:S=.mdwn) ;
+
+    TartanToMdwn $(mdwn) : $(t) ;
+    TartanToPng $(png) : $(t) ;
+    Webify $(mdwn) ;
+    Depends $(mdwn:S=.html) : $(png) ;
+  }
+}
+
+rule TartanToMdwn {
+  Depends $(1) : $(2) $(TARTAN_TMPL) $(TARTANTOMDWN) ;
+  Clean clean : $(1) ;
+  MakeLocate $(1) : $(LOCATE_TARGET) ;
+  SEARCH on $(2) = $(SEARCH_SOURCE) ;
+}
+
+rule TartanToPng {
+  Depends $(1) : $(2) $(LOOM) ;
+  Clean clean : $(1) ;
+  MakeLocate $(1) : $(LOCATE_TARGET) ;
+  SEARCH on $(2) = $(SEARCH_SOURCE) ;
+}
+
+actions TartanToMdwn {
+  $(TARTANTOMDWN) $(1:S=) < $(2) > $(1)
+}
+
+actions TartanToPng {
+  $(LOOM) < $(2) > $(1)
+}
+
+Webify index.mdwn ;
+Tartan albuquerque armstrong az blackwatch buchanan co nm nmloe nv ok pjs pjs2 shrek tx ut wa ;
