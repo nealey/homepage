@@ -2,11 +2,15 @@ SubDir TOP tartans ;
 
 TARTAN_TMPL = $(SUBDIR)/tartan.m4 ;
 TARTANTOMDWN = $(SUBDIR)/tartantomdwn ;
+LSTARTANS = $(SUBDIR)/lstartans ;
 LOOM = $(SUBDIR)/loom.py ;
 
 rule Tartan {
   local tartans = [ FGristFiles $(1:S=.tartan) ] ;
   
+  DIRLIST on [ FGristFiles index.mdwn ] = $(LSTARTANS) ;
+  AutoIndex index.mdwn : index.head.mdwn : $(1:S=.tartan) ;
+
   for t in $(tartans) {
     local png = $(t:S=.png:D=img:G=) ;
     local mdwn = $(t:S=.mdwn) ;
@@ -32,8 +36,10 @@ rule TartanToPng {
   SEARCH on $(2) = $(SEARCH_SOURCE) ;
 }
 
+
+
 actions TartanToMdwn {
-  $(TARTANTOMDWN) $(1:S=) < $(2) > $(1)
+  $(TARTANTOMDWN) $(1:S=.png:D=img) $(TARTAN_TMPL) < $(2) > $(1)
 }
 
 actions TartanToPng {

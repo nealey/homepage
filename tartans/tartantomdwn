@@ -18,5 +18,5 @@ header () {
 }
 
 eval $(header)
-m4 -DTARTAN="$TARTAN" -DSETT="$SETT" -DBASE="$1" tartan.m4 -
+m4 -DTARTAN="$TARTAN" -DSETT="$SETT" -DIMAGE="$1" $2 -
 

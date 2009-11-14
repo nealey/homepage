@@ -1,11 +1,12 @@
 Title: TARTAN Tartan
 
-divert(1)
-<div style="background: url(img/BASE.png);
-            height: 400px;
-            border: solid black 40px;
+<div style="background: url(IMAGE);
+            height: 300px;
+            border: solid black 10px;
             clear: both;">
 </div>
+
+divert(1)
 
 I place this image in the public domain, in the hope that it will
 increase interest in tartans and tartan design.
@@ -13,8 +14,8 @@ increase interest in tartans and tartan design.
 <form action="design.cgi">
   <fieldset>
     <legend>Tartan Designer</legend>
-    <label for="t">Name:</label> <input name="t" value="TARTAN" /> <br/>
-    <label for="s">Sett:</label> <input name="s" value="SETT" /> <br/>
+    <label for="t">Name:</label> <input name="t" id="t" value="TARTAN" /> <br/>
+    <label for="s">Sett:</label> <input name="s" id="s" value="SETT" style="width: 90%" /> <br/>
     <input type="submit" value="Design" />
   </fieldset>
 </form>

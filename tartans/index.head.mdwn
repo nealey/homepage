@@ -6,7 +6,7 @@ description.
 <div class="figure">
   <img src="img/nmloe.png" alt="tartan image" />
   <br />
-  <a href="nmloe">
+  <a href="nmloe.html">
     New Mexico Land Of Enchantment
   </a>
   <br />
@@ -20,3 +20,4 @@ are some tartans I've made with it.
 If you have one you'd like to contribute to my database, or would like
 the code that generates this stuff, feel free to [email
 me](mailto:neale-tartan@woozle.org).
+
