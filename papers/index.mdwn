@@ -4,6 +4,7 @@ These are papers I have written. Most of them were written to explain a
 concept to someone on woozle.  Hopefully other people will find them
 useful, too.
 
+* ["Tank Tread" key-signing protocol](tank-tread.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
 * [Introduction to TCP Sockets](sockets.html)
 * [3-Minute HTML Tutorial](html-tutorial.html)

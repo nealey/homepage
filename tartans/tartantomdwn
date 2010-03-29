@@ -1,22 +1,19 @@
 #! /bin/sh
 
-header () {
-    while IFS=: read key val; do
-        tval=$(echo $val | sed "s/'/\&apos;/g")
-        case $key in
-            Name)
-                echo -n "TARTAN='$tval';"
-                ;;
-            Sett)
-                echo -n "SETT='$tval'"
-                ;;
-            "")
-                break
-                ;;
-        esac
-    done
-}
+while IFS=: read key val; do
+    tval=$(echo $val | sed "s/'/\&apos;/g")
+    case $key in
+        Name)
+            tartan="$tval"
+            ;;
+        Sett)
+            sett="$tval"
+            ;;
+        "")
+            break
+            ;;
+    esac
+done
 
-eval $(header)
-m4 -DTARTAN="$TARTAN" -DSETT="$SETT" -DIMAGE="$1" $2 -
+m4 -DTARTAN="$tartan" -DSETT="$sett" -DIMAGE="$1" $2 -
 

@@ -1,5 +1,5 @@
-#body {
-  max-width: 100%;
+body {
+  max-width: inherit;
 }
 
 span.cntrl {
@@ -71,7 +71,7 @@ div.title, a.title {
 }
 
 a.title:hover {
-	background-color: #d9d8d1;
+	background-color: #fff;
 }
 
 div.title_text {
@@ -184,19 +184,19 @@ th {
 }
 
 tr.light:hover {
-	background-color: #edece6;
+	background-color: #fff;
 }
 
 tr.dark {
-	background-color: #f6f6f0;
+	background-color: #c6c6c0;
 }
 
 tr.dark2 {
-	background-color: #f6f6f0;
+	background-color: #c6c6c0;
 }
 
 tr.dark:hover {
-	background-color: #edece6;
+	background-color: #fff;
 }
 
 td {

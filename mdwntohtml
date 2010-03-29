@@ -8,9 +8,8 @@ while IFS=: read field value; do
         Title)
             # echo strips leading and trailing whitespace
             title=$(echo $value)
-            break
             ;;
     esac
 done
 
-cat | markdown | m4 -DTITLE="$title" $1 -
+markdown | m4 -DTITLE="$title" $1 -
