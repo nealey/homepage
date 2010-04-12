@@ -22,7 +22,7 @@ Downloading
 
 You can download a [tarball snapshot of the latest release](http://woozle.org/~neale/gitweb.cgi?p=firebot;a=snapshot;h=HEAD), or use cogito:
 
-    git clone http://woozle.org/~neale/repos/firebot
+    git clone http://woozle.org/~neale/projects/firebot
 
 
 LinkBot Features
