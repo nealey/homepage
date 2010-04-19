@@ -1,5 +1,23 @@
 Title: Python ipqueue
 
+No Longer Maintained
+--------------------
+
+This software is no longer maintained.
+
+ipqueue has been deprecated in favor of nfqueue.  You can download a [Python
+nfqueue module](http://software.inl.fr/trac/wiki/nfqueue-bindings) which should
+support all the functionality of ipqueue.  In Debian or Ubuntu, you can just
+
+    # apt-get install libnetfilter-queue-python
+
+This page remains here for those who know what they're doing and are
+still using the old libipq.  This software will not compile with the
+backwards-compatibility library provided by nfqueue.
+
+About
+-----
+
 This is the Netfilter userspace IPQueue module for Python. It allows you
 to do all your Linux IPQueue stuff from the comfort of Python. This only
 works with Linux.
@@ -16,6 +34,9 @@ That means I'm *Internet Famous*!
 Download
 --------
 
+This software is no longer maintained (see above).
+
+* [nfqueue bindings](http://software.inl.fr/trac/wiki/nfqueue-bindings)
 * [Latest version](ipqueue.tar.gz)
 * [Netfilter QUEUE bindings](nfqueue-0.1.tar.bz2) by Mike Auty <mike.auty@gmail.com>
 
@@ -27,8 +48,10 @@ GPL, of course.
 Support
 -------
 
-You can email me at <neale@woozle.org>, or try the IRC channel
-[#py-ipqueue on irc.oftc.net](irc://irc.oftc.net/py-ipqueue).
+This software is no longer maintained (see above).  Support requests
+will be politely redirected to the newer [nfqueue
+bindings](http://software.inl.fr/trac/wiki/nfqueue-bindings).
+
 
 Screen Shots
 ------------
@@ -58,12 +81,3 @@ transparent proxy would be much more sophisticated.
             q.set_verdict(p[0], ipqueue.NF_ACCEPT, tcp.to_str())
         else:
             q.set_verdict(p[0], ipqueue.NF_ACCEPT)
-
-
-Help me out
------------
-
-If you're using this in a project, let me know and I'll link to it. If
-you find any bugs, or want any features, please let me know about that
-too. If you've got a hankering to write better documentation, that would
-also be welcome :)
