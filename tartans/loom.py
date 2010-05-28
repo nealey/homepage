@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import re
+import random
 
 class Yarn:
     """A spool of yarn.
@@ -10,15 +11,32 @@ class Yarn:
     saturation values ranging from 0.0 (no saturation) to
     1.0 (full saturation).
 
+    Since we're pretending to be actual dyes here, we can fuzz it out a
+    bit by not doing full screen saturation and adding a little bit of
+    randomness to the color when queried.
+
     """
+
+    maxval = 190
+    fuzz = 0
 
     def __init__(self, r, g, b):
         self.rgb = (r, g, b)
-        self.color = (int(r * 256), int(g * 256), int(b * 256))
+        self.intrgb = [int(c * self.maxval) for c in self.rgb]
+
+        intfuzz = int(self.fuzz * self.maxval)
+        self.limits = [(max(0, c - intfuzz), min(self.maxval, c + intfuzz))
+                        for c in self.intrgb]
 
     def __repr__(self):
         return '<Yarn %r>' % (self.rgb)
 
+    def get_color(self):
+        if self.fuzz:
+            color = [random.randrange(l, h) for (l, h) in self.limits]
+            return color
+        else:
+            return self.intrgb
 
 
 class Loom:
@@ -64,7 +82,7 @@ class PNGLoom(Loom):
             row = []
             for c in fr:
                 for i in range(scale):
-                    row.extend(c.color)
+                    row.extend(c.get_color())
             for i in range(scale):
                 imgstr.fromlist(row)
         x = len(fr * scale)
@@ -117,39 +135,25 @@ def ascii_test():
 #
 # Colors according to http://www.tartanregister.gov.uk/guidance.aspx
 #
-colors = [('A', '\x00\x44\x99'),  # Azure (light blue)
-          ('B', '\x00\x00\x44'),  # Blue
-          ('C', '\xdc\x14\x3c'),  # Crimson
-          ('G', '\x00\x44\x00'),  # Green
-          ('K', '\x00\x00\x00'),  # Black
-          ('Mn', '\x80\x00\x00'), # Maroon
-          ('N', '\x44\x44\x44'),  # Neutral (gray)
-          ('P', '\x99\x00\x99'),  # Purple
-          ('R', '\x99\x00\x00'),  # Red (scarlet)
-          ('T', '\x66\x66\x00'),  # Tan (brown)
-          ('W', '\x99\x99\x99'),  # White
-          ('Y', '\x99\x99\x00'),  # Yellow
-          ]
-if True:
-    colors = {'R':   Yarn(0.50, 0.00, 0.00), # Red
-              'G':   Yarn(0.00, 0.30, 0.00), # Green
-              'B':   Yarn(0.00, 0.00, 0.50), # Blue
-              'C':   Yarn(0.00, 0.25, 0.25), # Cyan
-              'Y':   Yarn(0.80, 0.80, 0.00), # Yellow
-              'P':   Yarn(0.60, 0.00, 0.60), # Purple (?!)
-              'W':   Yarn(0.60, 0.60, 0.60), # White
-              'K':   Yarn(0.00, 0.00, 0.00), # Black
-              'BK':  Yarn(0.00, 0.00, 0.00), # Black
-              'GR':  Yarn(0.25, 0.25, 0.25), # Gray
-              'DB':  Yarn(0.00, 0.00, 0.30), # Dark Blue
-              'LB':  Yarn(0.00, 0.25, 0.60), # Light Blue
-              'LR':  Yarn(0.60, 0.00, 0.00), # Light Red
-              'LG':  Yarn(0.00, 0.60, 0.00), # Light Green
-              'LV':  Yarn(0.50, 0.25, 0.60), # Lavender
-              'BR':  Yarn(0.30, 0.25, 0.00), # Brown
-              'LGR': Yarn(0.60, 0.60, 0.60), # Light Gray
-              'LBR': Yarn(0.40, 0.40, 0.00), # Light Brown
-              }
+colors = {'R':   Yarn(0.50, 0.00, 0.00), # Red
+          'G':   Yarn(0.00, 0.40, 0.00), # Green
+          'B':   Yarn(0.00, 0.00, 0.50), # Blue
+          'C':   Yarn(0.00, 0.50, 0.50), # Cyan
+          'Y':   Yarn(0.80, 0.80, 0.00), # Yellow
+          'P':   Yarn(0.60, 0.00, 0.60), # Purple
+          'W':   Yarn(0.90, 0.90, 0.90), # White
+          'K':   Yarn(0.00, 0.00, 0.00), # Black
+          'BK':  Yarn(0.00, 0.00, 0.00), # Black
+          'GR':  Yarn(0.50, 0.50, 0.50), # Gray
+          'DB':  Yarn(0.00, 0.00, 0.30), # Dark Blue
+          'LB':  Yarn(0.00, 0.40, 0.90), # Light Blue
+          'LR':  Yarn(0.80, 0.00, 0.00), # Light Red
+          'LG':  Yarn(0.00, 0.60, 0.00), # Light Green
+          'LV':  Yarn(0.50, 0.25, 0.60), # Lavender
+          'BR':  Yarn(0.60, 0.40, 0.20), # Brown
+          'LGR': Yarn(0.60, 0.60, 0.60), # Light Gray
+          'LBR': Yarn(0.80, 0.70, 0.50), # Light Brown
+          }
 sett_re = re.compile('([A-Za-z]{1,3}|\([A-Fa-f0-9]{3}\))(\d{1,3})')
 
 
@@ -177,6 +181,8 @@ def str_to_sett(s):
         o = sett[:]
         o.reverse()
         sett += o
+    if len(sett) % 4:
+        sett += sett
     return sett
 
 def tartan(sett):

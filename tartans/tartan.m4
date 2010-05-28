@@ -6,6 +6,8 @@ Title: TARTAN Tartan
             clear: both;">
 </div>
 
+<p><a href="IMAGE">This image</a></p>
+
 divert(1)
 
 I place this image in the public domain, in the hope that it will
