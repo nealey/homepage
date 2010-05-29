@@ -8,7 +8,7 @@ of these packages.
 
 Networky things
 -------------------------------
-* [pysieved](pysieved/), a Python ManageSieve server
+* [pysieved](pysieved.html), a Python ManageSieve server
 * [Firebot](firebot.html), an easily-extended IRC bot in continuous use since 1996
 * [Python IPQUEUE library](ipqueue/)
 

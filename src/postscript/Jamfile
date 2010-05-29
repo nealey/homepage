@@ -1,4 +1,0 @@
-SubDir TOP src postscript ;
-
-Webify index.mdwn ;
-AutoIndex index.mdwn : index.head.mdwn : alice.ps banner.ps emergency-card.ps graph-paper.ps logo.ps page_dimensions.ps ruled-paper.ps skel.ps ;

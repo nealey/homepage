@@ -1,9 +1,0 @@
-Title: try again
-
-This is where I keep my source code, but a web browser won't be able to
-make much sense of it.  Maybe you should try the [gitweb
-interface](../gitweb.cgi).
-
-If you came here looking for an RSS feed, just replace "repos/"
-in the URL with "gitweb.cgi".
-

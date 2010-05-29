@@ -1,4 +1,0 @@
-SubDir TOP src misc ;
-
-Webify index.mdwn ;
-AutoIndex index.mdwn : index.head.mdwn : 9p.scm ;

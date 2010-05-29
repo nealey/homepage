@@ -4,7 +4,7 @@ I like tartans, they appeal to my geeky need for symmetry and elegant
 description.
   
 <div class="figure">
-  <img src="img/nmloe.png" alt="tartan image" />
+  <img src="nmloe.png" alt="tartan image" />
   <br />
   <a href="nmloe.html">
     New Mexico Land Of Enchantment

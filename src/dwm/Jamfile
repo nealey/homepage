@@ -1,6 +1,0 @@
-SubDir TOP src dwm ;
-
-Webify index.mdwn ;
-Copy config.h : $(HOME)/src/ports/dwm/config.h ;
-Copy status.sh : $(HOME)/bin/status ;
-Copy dwm-button.sh : $(HOME)/bin/dwm-button ;

@@ -33,6 +33,7 @@ pre {
 #nav {
   padding: 0;
   text-align: center;
+  border-top: solid black 1px;
 }
 #nav li {
   display: inline;

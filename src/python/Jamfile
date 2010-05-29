@@ -1,6 +1,0 @@
-SubDir TOP src python ;
-
-Webify index.mdwn ;
-AutoIndex index.mdwn : index.head.mdwn : htmlpp.py ndstrunc.py snpplib.py spampot.py watch.py spamfairy.py mail-expire.py ;
-Copy spamfairy.py : /usr/local/bin/spamfairy ;
-Copy mail-expire.py : /usr/local/bin/mail-expire ;
