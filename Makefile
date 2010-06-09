@@ -8,7 +8,7 @@ HTML = index.html
 
 # Things to copy
 COPY += mdwntohtml template.xml
-COPY += face.png geneweb.cgi chumby-photo.cgi
+COPY += face.png chumby-photo.cgi
 COPY += format.css default.css print.css
 COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
 
@@ -16,7 +16,9 @@ COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
 PLAIN = . papers poems misc
 
 # Other targets for "make all"
-TARGETS = html copy $(DESTDIR)/tmp $(DESTDIR)/footer.xml $(DESTDIR)/projects
+TARGETS = html copy 
+TARGETS += $(DESTDIR)/tmp $(DESTDIR)/footer.xml $(DESTDIR)/projects
+TARGETS += $(DESTDIR)/geneweb.cgi
 
 all: default
 
@@ -38,6 +40,10 @@ $(DESTDIR)/footer.xml: $(TEMPLATE)
 
 $(DESTDIR)/projects:
 	ln -s $(HOME)/projects $@
+
+$(DESTDIR)/geneweb.cgi: geneweb.c
+	$(CC) -o $@ $<
+	chmod +s $@
 
 default: $(TARGETS)
 
