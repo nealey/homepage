@@ -8,7 +8,7 @@ HTML = index.html
 
 # Things to copy
 COPY += mdwntohtml template.xml
-COPY += face.png geneweb.cgi gitweb.cgi
+COPY += face.png geneweb.cgi chumby-photo.cgi
 COPY += format.css default.css print.css
 COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
 
