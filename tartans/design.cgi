@@ -7,6 +7,8 @@ import urllib
 import os
 import sys
 
+os.chdir(os.path.dirname(sys.argv[0]))
+
 f = cgi.FieldStorage()
 
 s = f.getfirst('sett')

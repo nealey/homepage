@@ -1,5 +1,7 @@
 #! /bin/sh
 
+cd $(dirname $0)
+
 randint () {
     seq $1 $2 | shuf -n 1
 }

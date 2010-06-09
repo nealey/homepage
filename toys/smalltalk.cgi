@@ -1,5 +1,7 @@
 #! /bin/sh
 
+cd $(dirname $0)
+
 intro () {
     shuf -n 1 <<EOF
 How's it going?
