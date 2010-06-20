@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <title>TITLE</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" media="screen"
           href="/~neale/default.css" />
     <link rel="stylesheet" type="text/css" media="print"
