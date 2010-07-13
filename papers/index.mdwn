@@ -5,6 +5,7 @@ concept to someone on woozle.  Hopefully other people will find them
 useful, too.
 
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
+* [Converting .docx files to text using unzip and sed](docx.html)
 * [Introduction to TCP Sockets](sockets.html)
 * [3-Minute HTML Tutorial](html-tutorial.html)
 * [How DNS Works](DNS.html)
