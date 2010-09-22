@@ -23,3 +23,6 @@ looks like this:
 
     unzip -qc "$1" word/document.xml | sed 's#</w:p>#\n\n#g;s#<[^>]*>##g'
 
+There are other, probably more powerful, docx to text converters on the
+Internet.  The advantage of mine is simplicity, when all you want to do
+is read the text and move on with your life.
