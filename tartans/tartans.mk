@@ -4,6 +4,7 @@ TARTAN_PNG = $(patsubst %.tartan, %.png, $(TARTAN_LIST))
 TARTAN_TOMDWN = tartans/tartantomdwn
 
 COPY += tartans/design.cgi tartans/loom.py $(TARTAN_TOMDWN) $(TARTAN_TEMPLATE)
+COPY += tartans/nm-proc.png
 HTML += tartans/index.html
 HTML += $(patsubst %.tartan, %.html, $(TARTAN_LIST))
 TARGETS += $(addprefix $(DESTDIR)/, $(TARTAN_PNG))
