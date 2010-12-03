@@ -45,6 +45,9 @@ $(DESTDIR)/geneweb.cgi: geneweb.c
 	$(CC) -o $@ $<
 	chmod +s $@
 
+$(DESTDIR)/%-sm.jpg: %.jpg
+	jpegtopnm $< | pnmscale -xysize 200 200 | pnmtojpeg > $@
+
 default: $(TARGETS)
 
 MDWN = $(wildcard $(addsuffix /*.mdwn, $(PLAIN)))

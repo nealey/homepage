@@ -4,7 +4,7 @@ HTML += $(patsubst %/index.head.mdwn, %/index.html, $(wildcard src/*/index.head.
 
 COPY += $(wildcard src/ipqueue/*.tar.*) src/eguile/eguile.scm
 
-include src/dwm/dwm.mk
+include src/*/*.mk
 
 $(DESTDIR)/src/%/index.html: src/%/index.head.mdwn src/%/*
 	@mkdir -p $(@D)

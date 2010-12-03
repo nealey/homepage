@@ -1,0 +1,139 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: UBK PiecePack
+%%Creator: Neale Pickett
+%%CreationDate: Tue Oct  1 21:34:50 2002
+%%EndComments
+
+64 dict begin
+
+%/paint { eofill } def
+/paint { stroke } def
+
+/fleur {
+    % fleur de lis
+    % args: x y size
+    %% I cheated on this one and drew it with dia, but I subsequently
+    %% hand-tuned the dia output.  Kudos to the dia and gnome-print guys
+    %% for some ace PS output.
+    /mag exch def
+    gsave
+	translate
+	mag 13 div dup dup scale
+	1 exch div setlinewidth
+	-15 -13 translate
+
+	newpath
+	    15 26 moveto
+	    10 23  13 15  14 11 curveto
+	    12 14  10 17   8 17 curveto
+	     0 17   4  8   8  8 curveto
+	     6 16  11 11  14  8 curveto
+
+	    10  9  10  6  14  7 curveto
+
+	    14  7  13  5  10  5 curveto
+	    11  3  12  3  13  3 curveto
+	    13  2  14  0  15  0 curveto
+	    16  0  17  2  17  3 curveto
+	    18  3  19  3  20  5 curveto
+	    17  5  16  6  16  7 curveto
+
+	    20  6  20  9  16  8 curveto
+
+	    19 11  24 16  22  8 curveto
+	    26  8  30 17  22 17 curveto
+	    20 17  18 14  16 11 curveto
+	    17 15  20 23  15 26 curveto
+	closepath paint
+
+    grestore
+} def
+
+/sun {
+    % Draw a sun.
+    %
+    % @arg xcenter
+    % @arg ycenter
+    % @arg inner	Inner radius
+    % @arg outer	Outer radius
+    % @arg tines	number of tines to draw
+
+    /tines exch def
+    /outer exch def
+    /inner exch def
+
+    /theta 180 tines div def
+
+    gsave
+	translate
+	newpath
+	    0 outer moveto
+	    1 1 tines {
+		pop
+		theta rotate
+		0 inner lineto
+		theta rotate
+		0 outer lineto
+	    } for
+	    inner .8 mul 0 moveto
+	    0 0 inner .8 mul 0 360 arc
+	closepath paint
+    grestore
+} def
+
+/moon {
+    % moon
+
+    /r exch def
+    gsave
+	translate
+
+	newpath
+	    0 r moveto
+	    0 0 r 90 270 arc
+
+	    r -0.6 mul  r -0.6 mul
+	    r -0.6 mul  r  0.6 mul
+	    0 r curveto
+	closepath paint
+    grestore
+} def
+
+/crown {
+    /r exch def
+    /u r 6 div def
+    gsave
+	translate
+	u u scale
+	1 u div setlinewidth
+	-4 -2.5 translate
+
+	newpath
+	    0 0 moveto
+	    0 2 lineto
+	    -1 5 lineto
+	    1 2 lineto
+	    2 5 lineto
+	    3 2 lineto
+	    4 5 lineto
+	    5 2 lineto
+	    6 5 lineto
+	    7 2 lineto
+	    9 5 lineto
+	    8 2 lineto
+	    8 0 lineto
+	    0 0 lineto
+	closepath paint
+    grestore
+} def
+
+
+50 50 50 fleur
+150 50 25 50 8 sun
+250 50 50 moon
+350 50 50 crown
+
+end
+showpage
+
+%%EOF

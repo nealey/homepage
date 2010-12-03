@@ -19,6 +19,7 @@ X11 things
 
 Various and sundry things
 -------------------------------
+* The [Universal Boardgame Kit](ubk/)
 * [eguile](eguile/), like PHP for Guile Scheme
 * [escm](escm.html), like PHP for Gauche Scheme and others
 * [Python hacks](python/) of diminutive size and quality

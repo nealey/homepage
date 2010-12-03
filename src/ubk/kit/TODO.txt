@@ -1,0 +1,13 @@
+  * Piecepack pieces
+  * Piecepack pyramids
+  * UBK Money
+  * Clue
+  * Monopoly
+  * Chinese Checkers
+  * Reversi
+  * Mancala (just need an egg carton)
+  * Royal Game of Ur
+  * Go (Pente might be more feasable)
+  * Solitare
+  * Fox and Geese
+

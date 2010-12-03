@@ -1,0 +1,69 @@
+Title: Universal Board Game Kit
+
+What it is
+----------
+
+<a href="mine.jpg" class="figure"><img src="mine-sm.jpg" alt="My kit"></a>
+
+The UBK is a collection of pieces and boards which allows you to play a number of board games with limited resources. This is perfect for people who like board games but don't have a lot of real estate or cash to devote to them: college students, people in tiny apartments, cheapskates, or just plain freaks. 
+
+
+Download
+--------
+
+All components are distributed under the [GPL
+v2.0](http://www.gnu.org/licenses/gpl-2.0.html) unless otherwise
+noted.  This allows you to copy and modify freely, but you may not
+restrict others' access to the source code.
+
+syscmd("src/ubk/parts.sh")
+
+You can download the [source code](/~neale/gitweb.cgi?p=ubk) if you'd
+like it.
+
+
+Components
+----------
+
+Putting (most of) your existing board game pieces into a single
+container is convenient and a good space-saver.  Many games consist of
+merely a board, an instruction set, and a handful of pieces, in a very
+large and otherwise useless box.  By using pieces you already own, most
+people will find they already have all the pieces they need for every
+game in the Universal Boardgame Kit.
+
+* Pieces:
+  * 10 each of 8 colors of gems. I used glass gems from a crafts
+    store--cheap in bulk, but a gaming store might sell smaller
+    quantities.
+  * 8 6-sided dice. These can cost up to 50&cent;
+    each, but you probably have other board games that can donate dice.
+  * 2 colors of token sets (10 tokens per set). These can be cut out
+    of a printed sheet, and glued to little wooden circles if you want
+    more depth to them.
+* Game boards
+
+
+Boards we should add
+--------------------
+
+* [Farkle](http://en.wikipedia.org/wiki/Farkle) (trivial)
+* Cluedo
+* Monopoly
+* Chinese Checkers
+* Reversi
+* Mancala (just need an egg carton)
+* Royal Game of Ur
+* Pente
+* Solitare
+* Fox and Geese
+
+
+How you can help
+----------------
+
+Make some boards! Design them however you want--I do mine by hand in
+PostScript, but you can use whatever tools you'd like--and send me a
+PDF file of the board and the source file: HTML, DIA, VISIO, Word, or
+whatever you used to make it. If you can't generate PDF files or don't
+know how to, email me and I can probably help you out.

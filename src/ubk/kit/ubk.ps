@@ -1,0 +1,496 @@
+%!PS-Adobe-1.0
+%% Author: Neale Pickett <neale@woozle.org>
+%% Description: pieces for the Universal Boardgame Kit
+%% URL: http://woozle.org/~neale/src/ubk/
+
+/radius 24 def
+
+% 0 - Color, all pieces are coins
+% 1 - B/W, just chess pieces
+/piecetype 2 def
+
+% Adjust page offset
+50 50 translate
+
+/solid true def
+/hollow false def
+
+%
+% Queens
+%
+/queen1 {
+    /r exch def
+    /len 150 sin 15 sin div r mul def
+    
+    gsave
+	translate
+
+	r 0 moveto
+	0 0 r 0 360 arc closepath
+	0 setgray
+	fill
+
+	r 0 moveto
+	0 30 330 {
+	    /angle exch def
+	    /x angle 15 add cos len mul def
+	    /y angle 15 add sin len mul def
+
+	    angle 15 add cos r mul
+	    angle 15 add sin r mul 
+	    moveto
+
+	    % Overshoot a little to make sure
+	    x y r  angle 170 add   angle 220 add   arc
+	} for
+	closepath
+	1 setgray
+	fill
+
+	r 4 div 0 moveto
+	0 0 r 4 div 360 0 arcn closepath
+	stroke
+    grestore
+} def
+
+/queen2 {
+    /r exch def
+    /len 150 sin 15 sin div r mul def
+    
+    gsave
+	translate
+
+	newpath
+	0 30 330 {
+	    /angle exch def
+	    /x angle 15 add cos len mul def
+	    /y angle 15 add sin len mul def
+
+	    angle 30 add cos r mul
+	    angle 30 add sin r mul
+	    moveto
+	    
+	    x y r  angle 180 add   angle 210 add   arc
+	} for
+	0 r moveto
+	0 setgray
+	closepath
+	stroke
+    
+	r 4 div 0 moveto
+	0 0 r 4 div 0 360 arc closepath
+	0 setgray
+	closepath
+	stroke
+    grestore
+} def
+
+% I had to go through a couple of iterations before I figured it out.
+/queen3 {
+    /s exch def
+    /r exch def
+    /q r 4 div def
+
+    /x2 10 cos r mul 0.9 mul def
+    /y2 10 sin r mul 0.9 mul def
+
+    /x3 20 cos r mul 0.9 mul def
+    /y3 20 sin r mul 0.9 mul def
+
+    gsave
+	currentpoint translate
+
+	r 0 moveto
+
+	1 1 12 {
+	    pop
+	    
+	    x2 y2
+	    x3 y3
+	    30 cos r mul  30 sin r mul
+	    curveto
+
+	    30 rotate
+	} for
+
+	closepath
+	s { fill } { stroke } ifelse
+
+	r 32 div setlinewidth
+	s { 1 setgray } { 0 setgray } ifelse
+	q 0 moveto
+	0 0 q 0 360 arc
+	closepath
+	stroke
+    grestore
+} def
+
+/queen { queen3 } def
+
+
+% King
+/king {
+    /s exch def
+    /r exch def
+
+    /a .75 r mul def
+    /a- 0 a sub def
+    /b .5 r mul def
+    /b- 0 b sub def
+    
+    gsave
+	currentpoint translate
+	newpath
+
+	a 2 div  a 2 div   moveto
+	b 0 rlineto
+	0 a- rlineto
+	b- 0 rlineto
+
+	0 b- rlineto
+	a- 0 rlineto
+	0 b rlineto
+
+	b- 0 rlineto
+	0 a rlineto
+	b 0 rlineto
+
+	0 b rlineto
+	a 0 rlineto
+	0 b- rlineto
+
+	closepath
+	s { fill } { stroke } ifelse
+    grestore
+} def
+
+
+/rook {
+    /s exch def
+    /r exch def
+    /q r .75 mul def
+
+    gsave
+	currentpoint translate
+
+	/x 15 cos q mul def
+	/y 15 sin q mul def
+
+	1 1 4 {
+	    pop
+	    
+	    x y moveto
+
+	    0 0 r 15 75 arc
+	    0 0 q 75 15 arcn
+
+	    closepath
+	    s { fill } { stroke } ifelse
+
+	    90 rotate
+	} for
+    grestore
+} def
+
+
+/bishop {
+    /s exch def
+    /r exch def
+    /q r 4 div def
+
+    /x2 r .15 mul def
+    /y2 r .53 mul def
+
+    /x3 0 x2 sub def
+    /y3 y2 def
+    
+    gsave
+	currentpoint translate
+
+	/x 50 cos r mul def
+	/y 50 sin r mul def
+
+	x y moveto
+	
+	1 1 4 {
+	    pop
+	    
+	    x y lineto
+
+	    x2 y2
+	    x3 y3
+	    130 cos r mul  130 sin r mul
+	    curveto
+
+	    90 rotate
+	} for
+
+	closepath
+	s { fill } { stroke } ifelse
+
+	r 32 div setlinewidth
+	s { 1 setgray } { 0 setgray } ifelse
+	q 0 moveto
+	0 0 q 0 360 arc
+	closepath
+	stroke
+    grestore
+} def
+
+
+% This knight sucks.  But it's hard to draw a horse with radial
+% symmetry.  Too bad the Indians had more horses than jellyfish.
+/knight1 {
+    /s exch def
+    /r exch def
+
+    gsave
+        currentpoint translate
+
+	1 1 4 {
+	    pop
+	    
+	    0  r 8 div  moveto
+	    50 cos r mul  50 sin r mul
+	    lineto
+	    0 r 0.6 mul
+	    0 r 0.6 mul
+	    130 cos r mul  130 sin r mul
+	    curveto
+
+	    closepath
+	    s { fill } { stroke } ifelse
+
+	    90 rotate
+	} for
+    grestore
+} def
+
+/knight2 {
+    /s exch def
+    /r exch def
+
+    gsave
+        currentpoint translate
+
+	1 1 4 {
+	    pop
+	    
+	    0  r 8 div  moveto
+	    50 cos r mul  50 sin r mul
+	    lineto
+	    130 cos r mul  130 sin r mul
+	    lineto
+
+	    closepath
+	    s { fill } { stroke } ifelse
+
+	    90 rotate
+	} for
+    grestore
+} def
+
+/knight { knight2 } def
+
+
+/pawn {
+    /s exch def
+    /r exch def
+    /q r .40 mul def
+    /p r .65 mul def
+
+    gsave
+	currentpoint translate
+
+	q 0 moveto
+	0 0 q 0 360 arc
+	closepath
+	s { fill } { stroke } ifelse
+
+	r 8 div setlinewidth
+	q 0 moveto
+	0 0 q
+	0 360 arc
+	closepath
+	stroke
+    grestore
+} def
+
+/circle {
+    /s exch def
+    /r exch def
+    /p r 6 div def
+
+    gsave
+	p setlinewidth
+	currentpoint
+	r 0 rmoveto
+	r 0 360 arc
+	closepath
+	s { fill } { stroke } ifelse
+    grestore
+} def
+
+
+
+/pradius radius .75 mul def
+/len radius 2.7 mul def
+
+piecetype 0 eq {
+    gsave
+    1 1 6 {
+	/i exch def
+	/c i 1 and def
+	/m i 2 and 2 div def
+	/y i 4 and 4 div def
+
+	c m y 0.5 setcmykcolor
+
+	gsave
+	    1 1 2 {
+		pop
+	
+		50 50 moveto
+		radius hollow circle
+		pradius solid king
+		
+		100 0 rmoveto
+		radius hollow circle
+		pradius solid queen
+		
+		100 0 rmoveto
+		radius hollow circle
+		pradius solid rook
+		
+		100 0 rmoveto
+		radius hollow circle
+		pradius solid bishop
+		
+		100 0 rmoveto
+		radius hollow circle
+		pradius solid knight
+		
+		100 0 rmoveto
+		radius hollow circle
+		pradius solid pawn
+		
+		0 100 translate
+	    } for
+	    
+	    50 50 moveto
+	    1 1 6 {
+		pop
+		
+		radius hollow circle
+		pradius solid pawn
+		100 0 rmoveto
+	    } for
+	    
+	    0 100 translate
+	    grestore
+	    
+	    showpage
+    } for
+    grestore
+} if
+
+piecetype 1 eq {
+    gsave
+	1 1 2 {
+	    pop
+	    1 1 2 {
+		1 eq {
+		    /filltype hollow def
+		} {
+		    /filltype solid def
+		} ifelse
+		
+		1 1 2 {
+		    pop
+		    
+		    radius radius moveto
+		    radius hollow circle
+		    pradius filltype king
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype queen
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype rook
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype bishop
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype pawn
+		    
+		    0 len translate
+		} for
+	    } for
+	} for
+    grestore
+} if
+
+piecetype 2 eq {
+    gsave
+	1 1 2 {
+	    pop
+	    1 1 2 {
+		2 mod 1 eq {
+		    /filltype hollow def
+		} {
+		    /filltype solid def
+		} ifelse
+		
+		1 1 1 {
+		    pop
+		    
+		    radius radius moveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    len 0 rmoveto
+		    radius hollow circle
+		    pradius filltype knight
+		    
+		    0 len translate
+		} for
+	    } for
+	} for
+    grestore
+} if
+
+showpage
+

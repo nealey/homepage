@@ -1,0 +1,222 @@
+%!
+%% Nine Mens Morris board
+%% for printing on letter-sized paper (8.5" x 11")
+%% Copyright 2000 Randy Cox
+%% http://www.cox-tv.com/games
+%%
+
+/I {72 mul} def
+/BSZ 6.5 I def	% boardsize
+/PH 11 I def	% pageheight
+/PW 8.5 I def	% pagewidth
+/TM 3 I def		% top margin
+/BS 1 I def		% boardspacing
+/VP PH TM sub BSZ sub def	% vertical position
+
+/drawboard {
+	gsave
+	% Outer box
+	newpath
+	1 I VP moveto
+	6.5 I 0 I rlineto
+	0 I 6.5 I rlineto
+	-6.5 I 0 I rlineto
+	closepath
+	stroke
+	
+	% Middle box
+	newpath
+	2 I 1 I VP add moveto
+	4.5 I 0 I rlineto
+	0 I 4.5 I rlineto
+	-4.5 I 0 I rlineto
+	closepath
+	stroke
+	
+	% Inner box
+	newpath
+	3 I 2 I VP add moveto
+	2.5 I 0 I rlineto
+	0 I 2.5 I rlineto
+	-2.5 I 0 I rlineto
+	closepath
+	stroke
+	
+	% Top line
+	newpath
+	PW 2 div VP 6.5 I add moveto
+	0 I -2 I rlineto
+	stroke
+	
+	% Left line
+	newpath
+	1 I VP 6.5 I 2 div add moveto
+	2 I 0 I rlineto
+	stroke
+	
+	% Right Line
+	newpath
+	1 I 6.5 I add VP 6.5 I 2 div add moveto
+	-2 I 0 I rlineto
+	stroke
+	
+	% Bottom Line
+	newpath
+	PW 2 div VP moveto
+	0 I 2 I rlineto
+	stroke
+	grestore
+} def
+
+/drawdot {
+	gsave
+	newpath
+	8 0 360 arc	%location already on the stack
+	gsave
+		0.0 setgray
+		8 setlinewidth
+		stroke
+	grestore
+	0.7 setgray
+	fill
+	grestore
+} def
+
+% draw thick, dark board
+gsave
+6 setlinewidth
+0.0 setgray
+drawboard
+grestore
+
+% draw dots
+/CPDD { currentpoint drawdot } def
+
+	1 I VP moveto
+	CPDD
+	6.5 I 0 I rmoveto
+	CPDD
+	0 I 6.5 I rmoveto
+	CPDD
+	-6.5 I 0 I rmoveto
+	CPDD
+
+	2 I 1 I VP add moveto
+	CPDD
+	4.5 I 0 I rmoveto
+	CPDD
+	0 I 4.5 I rmoveto
+	CPDD
+	-4.5 I 0 I rmoveto
+	CPDD
+
+	3 I 2 I VP add moveto
+	CPDD
+	2.5 I 0 I rmoveto
+	CPDD
+	0 I 2.5 I rmoveto
+	CPDD
+	-2.5 I 0 I rmoveto
+	CPDD
+
+	PW 2 div VP 6.5 I add moveto
+	CPDD
+	0 I -1 I rmoveto
+	CPDD
+	0 I -1 I rmoveto
+	CPDD
+
+	1 I VP 6.5 I 2 div add moveto
+	CPDD
+	1 I 0 I rmoveto
+	CPDD
+	1 I 0 I rmoveto
+	CPDD
+
+	1 I 6.5 I add VP 6.5 I 2 div add moveto
+	CPDD
+	-1 I 0 I rmoveto
+	CPDD
+	-1 I 0 I rmoveto
+	CPDD
+
+	PW 2 div VP moveto
+	CPDD
+	0 I 1 I rmoveto
+	CPDD
+	0 I 1 I rmoveto
+	CPDD
+
+% draw thin, light board
+gsave
+2 setlinewidth
+0.7 setgray
+% drawboard
+grestore
+
+% Text
+/temp VP 0.5 I add def
+/VP temp def
+/FG {
+gsave
+	0.7 setgray
+	fill
+grestore
+stroke
+} def
+
+gsave
+1 setlinewidth
+0.0 setgray
+newpath
+/Helvetica-Bold findfont 40 scalefont setfont
+1 I VP 7.6 I add moveto
+(N) false charpath 
+FG
+
+newpath
+/Helvetica-Bold findfont 35 scalefont setfont
+1.4 I VP 7.6 I add moveto
+(INE ) false charpath 
+FG
+
+newpath
+/Helvetica-Bold findfont 40 scalefont setfont
+2.4 I VP 7.6 I add moveto
+(M) false charpath 
+FG
+
+newpath
+/Helvetica-Bold findfont 35 scalefont setfont
+2.87 I VP 7.6 I add moveto
+(ENS ) false charpath 
+FG
+
+newpath
+/Helvetica-Bold findfont 40 scalefont setfont
+4 I VP 7.6 I add moveto
+(M) false charpath 
+FG
+
+newpath
+/Helvetica-Bold findfont 35 scalefont setfont
+4.47 I VP 7.6 I add moveto
+(ORRIS) false charpath 
+FG
+
+newpath
+1 I VP 7.49 I add moveto
+5 I 0 I rlineto
+5 setlinewidth
+stroke
+
+grestore
+
+gsave
+newpath
+/Helvetica-Oblique findfont 17 scalefont setfont
+1 I VP 7.2 I add moveto
+(www.cox-tv.com/games) show
+grestore
+
+showpage
