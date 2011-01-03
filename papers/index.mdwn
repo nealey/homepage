@@ -4,6 +4,7 @@ These are papers I have written. Most of them were written to explain a
 concept to someone on woozle.  Hopefully other people will find them
 useful, too.
 
+* [How to make the game of Monopoly suck less](monopoly.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
 * [Converting .docx files to text using unzip and sed](docx.html)
 * [Introduction to TCP Sockets](sockets.html)

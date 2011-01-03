@@ -22,8 +22,19 @@ You can download the [source code](/~neale/gitweb.cgi?p=ubk) if you'd
 like it.
 
 
-Components
-----------
+Game Parts Required
+-------------------
+
+The Universal Boardgame Kit is designed to re-use pieces you already
+own, or can make yourself.
+
+* Some markers: coins, the pawns from commercial games like Cluedo or
+  Monopoly, or the printable "Chess Coins" provided above.  Some games
+  (like Pachesi) require multiple markers in the same group.
+* Many games require at least one 6-sided die.  Some require up to 6
+  dice.
+* A few games (Chess, Xiang Qi) are best played with chess pieces.
+  The "Chess Coins" board can be printed and cut out for this purpose.
 
 Putting (most of) your existing board game pieces into a single
 container is convenient and a good space-saver.  Many games consist of
@@ -31,17 +42,6 @@ merely a board, an instruction set, and a handful of pieces, in a very
 large and otherwise useless box.  By using pieces you already own, most
 people will find they already have all the pieces they need for every
 game in the Universal Boardgame Kit.
-
-* Pieces:
-  * 10 each of 8 colors of gems. I used glass gems from a crafts
-    store--cheap in bulk, but a gaming store might sell smaller
-    quantities.
-  * 8 6-sided dice. These can cost up to 50&cent;
-    each, but you probably have other board games that can donate dice.
-  * 2 colors of token sets (10 tokens per set). These can be cut out
-    of a printed sheet, and glued to little wooden circles if you want
-    more depth to them.
-* Game boards
 
 
 Boards we should add

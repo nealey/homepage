@@ -7,5 +7,7 @@ UBK_PS = $(shell git --git-dir=$(UBK_GIT_DIR) ls-tree HEAD | awk '/ps$$/{print $
 UBK_PDF = $(patsubst %.ps,$(DESTDIR)/src/ubk/%.pdf,$(UBK_PS))
 TARGETS += $(UBK_PDF)
 
-$(DESTDIR)/src/ubk/%.pdf:
+$(DESTDIR)/src/ubk/%.pdf: $(UBK_GIT_DIR)/refs/heads/master
 	git --git-dir=$(UBK_GIT_DIR) show HEAD:$*.ps | ps2pdf - $@
+
+$(DESTDIR)/src/ubk/index.html: $(UBK_GIT_DIR)/refs/heads/master
