@@ -4,16 +4,10 @@ These are papers I have written. Most of them were written to explain a
 concept to someone on woozle.  Hopefully other people will find them
 useful, too.
 
+* [Dirtbags DJ Setup](dj.html)
 * [How to make the game of Monopoly suck less](monopoly.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
 * [Converting .docx files to text using unzip and sed](docx.html)
 * [Introduction to TCP Sockets](sockets.html)
 * [3-Minute HTML Tutorial](html-tutorial.html)
 * [How DNS Works](DNS.html)
-
----
-
-The rest of these are old, and probably irrelevant, but I'm keeping them
-here on the off chance that someone still needs the information.
-
-* [Debian on the Digimatrix (2004)](digimatrix.html)
