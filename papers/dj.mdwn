@@ -81,7 +81,8 @@ The reviews I read on the APS15 speakers were mixed, with half saying
 "they're just fine" and the other half complaining about hum, uneven
 frequency response, etc.  I'm in the "just fine" camp, and will go on
 the record stating that for a beginning club DJ, which is what I do
-with Derby and CTF, the TH-15A is not twice as good as the APS15.
+with Derby and CTF, the TH-15A is not twice as good as the APS15, despite
+costing twice as much.
 
 The speakers do hum, but it doesn't get louder as I increase volume,
 and I can't hear it once I start playing music.  They're a little
@@ -125,6 +126,18 @@ in the 1980s and 1990s, I don't feel qualified to comment on the Xenyx
 series.
 
 
+DJ Controller
+-------------
+
+I don't currently use a DJ controller, although I understand the
+appeal for practicality and showmanship.  I'm experimenting with a
+friend's Hercules MP3 e2 and may ask for one for a holiday gift.  So
+far I can say that I prefer using the mouse for setting cue points and
+loading tracks.  I'm hardly ever using the platters, which seems like
+the main point in having one.
+
+
+
 Other equipment
 ---------------
 
@@ -132,7 +145,7 @@ For $60 more I bought a Nady 2-channel wireless mic system.  Then, $14
 for four 9v low self-discharge NiMH batteries for them.  They work just
 fine, but the plastic body will probably crack if anybody drops one.
 
-I'm driving the entire thing with [Mixxx](http://www.mixxx.com/) through
+I'm driving the entire thing with [Mixxx](http://www.mixxx.org/) through
 a $10 USB Audio device, with a ⅛-inch stereo to two ¼-inch unbalanced
 cable.  This is definitely the most sneer-inducing piece of the entire
 setup, but after working with analog audio equipment in the 90s I feel
@@ -159,5 +172,5 @@ to verify, that a netbook with a full Gnome2 setup would struggle to
 keep up.  In particular, I would look first at gvfsd and pulseaudio as
 a source of latency.  Even though pulseaudio is a tremendous
 improvement over esd, it's still an additional layer between mixxx and
-the sound driver; and I have seen gvfs lose its mind and busy loop,
-chewing 100% CPU, many times.
+the sound driver; and many times I have seen gvfs lose its mind and
+busy loop, chewing 100% CPU.
