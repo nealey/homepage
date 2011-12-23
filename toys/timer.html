@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <!-- Presentation Timer    2011 Neale Pickett -->
 <!-- Placed in the public domain. -->
-<!-- Time-stamp: "2011-11-09 18:15:56 neale" -->
+<!-- Time-stamp: "2011-11-10 11:12:04 neale" -->
 <html>
   <head>
     <title>Presentation Timer</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <style>
+      body {
+          text-align: center;
+      }
       #timer {
+          background: #eee;
           font-size: 10em;
           text-align: center;
-          margin: 0.1em;
+          border-radius: 15px;
+          box-shadow: 10px 10px 5px #aaa;
       }
       #tools {
           text-align: center;
@@ -41,7 +47,7 @@ function startTimer(element, duration, g, y) {
         var sec = Math.abs(Math.floor(remain / 1000)) % 60;
 
         if (itimer) {
-            element.style.color = "inherit";
+            element.style.color = element.fg;
         } else {
             element.style.color = "#888";
         }
@@ -53,7 +59,7 @@ function startTimer(element, duration, g, y) {
         } else if (remain < g) {
             element.style.backgroundColor = "#0f0";
         } else {
-            element.style.backgroundColor = "inherit";
+            element.style.backgroundColor = element.bg;
         }
 
         element.innerHTML = "";
@@ -98,6 +104,11 @@ function startTimer(element, duration, g, y) {
         y = y?y:30000;          // Yellow @ 30s
     }
 
+    if (element.bg == undefined) {
+        element.bg = element.style.backgroundColor;
+        element.fg = element.style.color;
+    }
+
     display(duration);
 }
 
@@ -137,11 +148,23 @@ function setTime(id) {
     </script>
   </head>
   <body>
-    <p id="timer" onclick="clicked('timer');">--:--</p>
+    <p><span id="timer" onclick="clicked('timer');">--:--</span></p>
     <p id="tools">
-      <input id="timer time" type="time" size="6" value="5:00" onchange="setTime('timer');">
+      <input id="timer time" list="common times" size="6" value="5:00" onchange="setTime('timer');">
       <input type="button" value="Set" onclick="setTime('timer');">
       <input type="button" value="❚❚ ▶" onclick="clicked('timer');">
     </p>
+    <datalist id="common times">
+      <option value="1:00">
+      <option value="2:00">
+      <option value="5:00">
+      <option value="10:00">
+      <option value="15:00">
+      <option value="20:00">
+      <option value="25:00">
+      <option value="30:00">
+      <option value="45:00">
+      <option value="60:00">
+    </datalist>
   </body>
 </html>
