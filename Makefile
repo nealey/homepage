@@ -11,6 +11,7 @@ COPY += mdwntohtml template.xml
 COPY += face.png chumby-photo.cgi
 COPY += format.css default.css print.css
 COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
+COPY += portal.png portal.cgi
 
 # Directories in which %.mdwn generates %.html
 PLAIN = . papers poems misc
