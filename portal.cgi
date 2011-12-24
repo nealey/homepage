@@ -63,9 +63,9 @@ h2 {
   height: 300px;
   float: right;
 }
-    <link rel="icon" type="image/png" href="portal.png" />
-    <meta http-equiv="refresh" content="500">
     </style>
+    <link rel="icon" type="image/png" href="portal.png">
+    <meta http-equiv="refresh" content="500">
   </head>
   <body>
 EOF
