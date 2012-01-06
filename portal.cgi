@@ -19,10 +19,13 @@ weather () {
 }
 
 section () {
-    echo "<h2>$1</h2>"
+    echo "<h2><a href=\"$2\">$1</a></h2>"
     echo "<ul>"
+    if [ -n "$HTTP_X_WAP_PROFILE" ]; then
+        pfx="http://news.google.com/gwt/x?u="
+    fi
     curl -s "$3" | \
-        awk -F '>' -v RS='<' -v m=${4:-5} '
+        awk -F '>' -v RS='<' -v m=${4:-5} -v pfx="$pfx" '
 (/^item[> ]/) {
   a++;
 }
@@ -34,11 +37,10 @@ section () {
 (a && a<m+1 && /^link/) {
   l=$2;
   sub(/.*url=/, "", l);
-  print "<li><a href=\"http://news.google.com/gwt/x?u=" l "\">" title "</a></li>";
+  print "<li><a href=\"" pfx l "\">" title "</a></li>";
 }'
 
     echo "</ul>"
-    echo "<p class=\"more\"><a href=\"$2\">more...</a></p>"
 }
 
 cat <<EOF
@@ -75,24 +77,27 @@ if [ -z "$HTTP_X_WAP_PROFILE" ]; then
 fi
 
 cat <<EOF
-    <form action="http://m.google.com/"><input name="q" size="12"><input type="submit" value="G"></form>
+    <form action="http://www.google.com/"><input name="q" size="12"><input type="submit" value="G"></form>
 EOF
 weather
-section "Top Stories" \
-    'http://news.google.com/m?pz=1&cf=all&ned=us&hl=en' \
-    'http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&gwt=on&output=rss'
-section "World News" \
-    'http://news.google.com/m?pz=1&cf=all&ned=us&hl=en&topic=w' \
-    'http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&topic=w&output=rss'
 section "CSM" \
     'http://www.csmonitor.com/textedition' \
     'http://rss.csmonitor.com/feeds/csm'
 section NPR \
     'http://thin.npr.org/t.php?tid=1001' \
     'http://www.npr.org/rss/rss.php?id=1001'
+section AJE \
+    'http://m.aljazeera.net' \
+    'http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989'
 section "Ars Technica" \
     'http://m.arstechnica.com/' \
     'http://feeds.arstechnica.com/arstechnica/index?format=xml'
+section "Top Stories" \
+    'http://news.google.com/m?pz=1&cf=all&ned=us&hl=en' \
+    'http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&gwt=on&output=rss'
+section "World News" \
+    'http://news.google.com/m?pz=1&cf=all&ned=us&hl=en&topic=w' \
+    'http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&topic=w&output=rss'
 cat <<EOF
   </body>
 </html>
