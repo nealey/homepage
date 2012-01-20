@@ -7,6 +7,7 @@ useful, too.
 * [Dirtbags DJ Setup](dj.html)
 * [How to make the game of Monopoly suck less](monopoly.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
+* [A Call for the Complete Elimination of Joke Haiku Production on the Internet](joke-haiku.html) by Paul H. Henry
 * [Converting .docx files to text using unzip and sed](docx.html)
 * [Introduction to TCP Sockets](sockets.html)
 * [3-Minute HTML Tutorial](html-tutorial.html)
