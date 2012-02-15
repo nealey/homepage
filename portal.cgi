@@ -1,5 +1,11 @@
 #! /bin/sh
 
+case "$HTTP_USER_AGENT" in
+    *MIDP*)
+        TINY=1
+        ;;
+esac
+
 weather () {
     curl -s 'http://rss.wunderground.com/auto/rss_full/NM/Los_Alamos.xml?units=metric' | \
         awk -F ' [-:] ' '
@@ -21,9 +27,7 @@ weather () {
 section () {
     echo "<h2><a href=\"$2\">$1</a></h2>"
     echo "<ul>"
-    if [ -n "$HTTP_X_WAP_PROFILE" ]; then
-        pfx="http://news.google.com/gwt/x?u="
-    fi
+    [ "$TINY" ] && pfx="http://news.google.com/gwt/x?u="
     curl -s "$3" | \
         awk -F '>' -v RS='<' -v m=${4:-5} -v pfx="$pfx" '
 (/^item[> ]/) {
@@ -72,14 +76,16 @@ h2 {
   <body>
 EOF
 
-if [ -z "$HTTP_X_WAP_PROFILE" ]; then
-    echo '<iframe class="calendar" src="https://www.google.com/calendar/embed?showTitle=0&showDate=0&showPrint=0&showCalendars=0&showTz=0&mode=AGENDA&height=350&wkst=1&bgcolor=%23FFFFFF&src=2cdrf19kah6jkonhom8evck38c%40group.calendar.google.com&color=%23333333&src=s531giqfiotabht4qrn59tjf9g%40group.calendar.google.com&color=%231B887A&src=umtjjc250gp0m5gm8h3dn13hcc%40group.calendar.google.com&color=%236E6E41&src=dartcatcher%40gmail.com&color=%23125A12&src=ameigh%40gmail.com&color=%2329527A&src=laderbydames%40gmail.com&color=%2323164E&src=en.usa%23holiday%40group.v.calendar.google.com&color=%238D6F47&ctz=America%2FDenver"></iframe>'
-fi
+[ "$TINY" ] || \
+    echo '<iframe class="calendar" src="https://www.google.com/calendar/embed?title=Calendar&amp;showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=2cdrf19kah6jkonhom8evck38c%40group.calendar.google.com&amp;color=%23333333&amp;src=s531giqfiotabht4qrn59tjf9g%40group.calendar.google.com&amp;color=%231B887A&amp;src=umtjjc250gp0m5gm8h3dn13hcc%40group.calendar.google.com&amp;color=%236E6E41&amp;src=dartcatcher%40gmail.com&amp;color=%23125A12&amp;src=laderbydames%40gmail.com&amp;color=%2323164E&amp;src=uulosalamos.org_gu7e0s8dsh1tn8iktt468tk95k%40group.calendar.google.com&amp;color=%232F6309&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FDenver"></iframe>'
 
 cat <<EOF
     <form action="http://www.google.com/"><input name="q" size="12"><input type="submit" value="G"></form>
 EOF
 weather
+section LA \
+    'http://ladailypost.com/' \
+    'http://ladailypost.com/feed/'
 section "CSM" \
     'http://www.csmonitor.com/textedition' \
     'http://rss.csmonitor.com/feeds/csm'
