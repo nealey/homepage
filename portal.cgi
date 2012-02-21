@@ -48,7 +48,8 @@ section () {
 }
 
 cat <<EOF
-Content-type: text/html
+Content-type: text/html; charset=utf-8
+Refresh: 500
 
 <!DOCTYPE html>
 <html>
@@ -71,7 +72,6 @@ h2 {
 }
     </style>
     <link rel="icon" type="image/png" href="portal.png">
-    <meta http-equiv="refresh" content="500">
   </head>
   <body>
 EOF
@@ -79,14 +79,19 @@ EOF
 [ "$TINY" ] || \
     echo '<iframe class="calendar" src="https://www.google.com/calendar/embed?title=Calendar&amp;showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=2cdrf19kah6jkonhom8evck38c%40group.calendar.google.com&amp;color=%23333333&amp;src=s531giqfiotabht4qrn59tjf9g%40group.calendar.google.com&amp;color=%231B887A&amp;src=umtjjc250gp0m5gm8h3dn13hcc%40group.calendar.google.com&amp;color=%236E6E41&amp;src=dartcatcher%40gmail.com&amp;color=%23125A12&amp;src=laderbydames%40gmail.com&amp;color=%2323164E&amp;src=uulosalamos.org_gu7e0s8dsh1tn8iktt468tk95k%40group.calendar.google.com&amp;color=%232F6309&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FDenver"></iframe>'
 
-cat <<EOF
-    <form action="http://www.google.com/"><input name="q" size="12"><input type="submit" value="G"></form>
-EOF
+echo '<form action="http://www.google.com/"><input name="q" size="12"><input type="submit" value="G">'
+cat $HOME/public_html/activity.txt
+echo '</form>'
+
 weather
+
 section LA \
     'http://ladailypost.com/' \
     'http://ladailypost.com/feed/'
-section "CSM" \
+section "Ars Technica" \
+    'http://m.arstechnica.com/' \
+    'http://feeds.arstechnica.com/arstechnica/index?format=xml'
+section CSM \
     'http://www.csmonitor.com/textedition' \
     'http://rss.csmonitor.com/feeds/csm'
 section NPR \
@@ -95,15 +100,6 @@ section NPR \
 section AJE \
     'http://m.aljazeera.net' \
     'http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989'
-section "Ars Technica" \
-    'http://m.arstechnica.com/' \
-    'http://feeds.arstechnica.com/arstechnica/index?format=xml'
-section "Top Stories" \
-    'http://news.google.com/m?pz=1&cf=all&ned=us&hl=en' \
-    'http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&gwt=on&output=rss'
-section "World News" \
-    'http://news.google.com/m?pz=1&cf=all&ned=us&hl=en&topic=w' \
-    'http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&topic=w&output=rss'
 cat <<EOF
   </body>
 </html>
