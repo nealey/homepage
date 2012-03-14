@@ -111,4 +111,4 @@ echo
     echo '---'
     echo
     echo 'Reload for a new letter!'
-) | ../mdwntohtml ../template.xml
+) | ../mdwntohtml ../template.m4

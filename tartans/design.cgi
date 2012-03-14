@@ -34,7 +34,7 @@ else:
     sys.stdout.flush()
     content = ('Name: %s\nSett: %s\n' % (t, s))
     png = 'design.cgi?sett=%s' % urllib.quote(s_)
-    cvt = os.popen('./tartantomdwn %s tartan.m4 | ../mdwntohtml ../template.xml' % (png,),
+    cvt = os.popen('./tartantomdwn %s tartan.m4 | ../mdwntohtml ../template.m4' % (png,),
                    'w')
     cvt.write(content)
     cvt.close()

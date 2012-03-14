@@ -30,4 +30,4 @@ echo
     done
     echo '<strong>CRUNT<a href="http://www.subgenius.com/bigfist/bulldada/X0033_RAELIAN.TXT.html">!</a></strong>'
     echo '</p>'
-) | m4 -DTITLE=crunt ../template.xml -
+) | m4 -DTITLE=crunt ../template.m4 -

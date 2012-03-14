@@ -1,17 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>TITLE</title>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="/~neale/default.css" />
-    <link rel="stylesheet" type="text/css" media="print"
-          href="/~neale/print.css" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="start" type="text/html" href="/~neale/"
-          title="Neale Pickett Page" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" media="screen" href="/~neale/default.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/~neale/print.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="start" type="text/html" href="/~neale/" title="Neale Pickett Page">
   </head>
 
   <body>

@@ -7,10 +7,10 @@ MDWNTOHTML = ./mdwntohtml $(TEMPLATE)
 HTML = index.html
 
 # Things to copy
-COPY += mdwntohtml template.xml
+COPY += mdwntohtml $(TEMPLATE)
 COPY += face.png chumby-photo.cgi
 COPY += format.css default.css print.css
-COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
+#COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
 COPY += portal.png portal.cgi
 COPY += g.cgi cgitrc cgit-header.html cgit.css
 
