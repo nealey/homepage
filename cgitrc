@@ -1,0 +1,18 @@
+project-list=/home/neale/projects/public.txt
+#photobob pgircd py-pcap wticket gikiwiki unpluck firebot status py-ipqueue dbtl scoreboard eris
+
+snapshots=zip tar.gz
+clone-url=http://woozle.org/~neale/projects/$CGIT_REPO_URL
+scan-path=/home/neale/projects
+virtual-root=/~neale/g.cgi/
+css=/~neale/cgit.css
+
+root-title=Neale's git projects
+root-desc=
+
+logo=
+#embedded=1
+#noheader=1
+#header=/home/neale/public_html/cgit-header.html
+footer=/home/neale/public_html/footer.html
+

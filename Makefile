@@ -12,13 +12,14 @@ COPY += face.png chumby-photo.cgi
 COPY += format.css default.css print.css
 COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
 COPY += portal.png portal.cgi
+COPY += g.cgi cgitrc cgit-header.html cgit.css
 
 # Directories in which %.mdwn generates %.html
 PLAIN = . papers poems misc
 
 # Other targets for "make all"
 TARGETS = html copy 
-TARGETS += $(DESTDIR)/tmp $(DESTDIR)/footer.xml $(DESTDIR)/projects
+TARGETS += $(DESTDIR)/tmp $(DESTDIR)/footer.html $(DESTDIR)/projects
 TARGETS += $(DESTDIR)/geneweb.cgi
 
 all: default
@@ -36,7 +37,7 @@ $(DESTDIR)/%: %
 $(DESTDIR)/tmp:
 	mkdir -p $@
 
-$(DESTDIR)/footer.xml: $(TEMPLATE)
+$(DESTDIR)/footer.html: $(TEMPLATE)
 	awk '(/FOOT/) { a += 1; next; } (a == 1) { print; }' $< > $@
 
 $(DESTDIR)/projects:
@@ -45,6 +46,9 @@ $(DESTDIR)/projects:
 $(DESTDIR)/geneweb.cgi: geneweb.c
 	$(CC) -o $@ $<
 	chmod +s $@
+
+$(DESTDIR)/g.cgi: g.cgi.c
+	$(CC) -o $@ $<
 
 $(DESTDIR)/%-sm.jpg: %.jpg
 	jpegtopnm $< | pnmscale -xysize 200 200 | pnmtojpeg > $@

@@ -3,30 +3,30 @@ Title: Software
 I write software for a living. I like doing it so much that sometimes I
 even write software just for fun.
 
-My [version control](/~neale/gitweb.cgi) holds the source code to most
+My [version control](/~neale/g.cgi) holds the source code to most
 of these packages.
 
 Networky things
 -------------------------------
 * [Eris HTTPd](eris.html), a small HTTP (web) server
-* [pysieved](pysieved.html), a Python ManageSieve server
+* [pysieved](http://www.gitorious.net/pysieved/pages/Home), a Python ManageSieve server
+* [CBot](/~neale/g.cgi/bot), an IRC bot you program with shell scripts or whatever other language you prefer
 * [Firebot](firebot.html), an easily-extended IRC bot in continuous use since 1996
 * [Python IPQUEUE library](ipqueue/)
+* [netre-tools](/~neale/g.cgi/netre-tools), protocol reverse-engineering toolset
 
 X11 things
 -------------------------------
 * [xss](xss.html), a simple (suckless) screen saver for X11
-* [dwm hacks](dwm/) contains my tweaks to [dwm](http://dwm.suckless.org/)
+* [dwm hacks](dwm/), my tweaks to [dwm](http://dwm.suckless.org/)
 
 Various and sundry things
 -------------------------------
+* [Roller Derby Scoreboard](http://woozle.org/scoreboard/)
 * The [Universal Boardgame Kit](ubk/)
 * [eguile](eguile/), like PHP for Guile Scheme
 * [escm](escm.html), like PHP for Gauche Scheme and others
 * [Python hacks](python/) of diminutive size and quality
 * [Postscript hacks](postscript/) of diminutive size and quality
 * [Other hacks](misc/) of diminutive size and quality
-
-
-
 

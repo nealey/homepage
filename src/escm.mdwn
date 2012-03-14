@@ -18,7 +18,7 @@ I'm not going to package it up until someone's interested.
 Downloading it
 --------------
 
-You can download a [tarball of the latest version in git](http://woozle.org/~neale/gitweb.cgi?p=escm;a=snapshot), or check it out yourself:
+You can download a [tarball of the latest version in git](http://woozle.org/~neale/g.cgi/escm/snapshot/escm-master.tar.gz), or check it out yourself:
 
     git clone http://woozle.org/~neale/repos/escm
 

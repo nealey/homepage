@@ -14,7 +14,7 @@ Features
 
 * Actively maintained
 * Small: around 1100 lines of code, 19k binary with glibc
-* Fast: as fast as fnord, at least
+* Fast: as fast as fnord
 * Connection keepalive
 * thttpd-style virtual domains
 * IPv6 and SSL support
@@ -28,17 +28,16 @@ Differences with fnord
 
 * command-line arguments instead of compile-time defines
 * eliminated use of libowfat
-* no build dependency of dietlibc
+* no build dependency on dietlibc
 * elimination of "old style symlink handling"
 * elimination of user switching (you can use tcpserver -[ug])
 * elimination of chroot code (you can use chroot)
 * several bugfixes (sent to the fnord mail list)
-* ignores Accept header (fnord does too)
 
 
 Download
 --------
 
-* [3.0 Release Candidate 1](http://woozle.org/~neale/gitweb.cgi/eris/snapshot/3.0rc1.tar.gz)
-* [Version Control](http://woozle.org/~neale/gitweb.cgi/eris)
+* [3.0 Release Candidate 1](http://woozle.org/~neale/g.cgi/eris/snapshot/eris-3.0rc1.tar.gz)
+* [Version Control](http://woozle.org/~neale/g.cgi/eris)
 

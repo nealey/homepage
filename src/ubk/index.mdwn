@@ -18,7 +18,7 @@ restrict others' access to the source code.
 
 syscmd("src/ubk/parts.sh")
 
-You can download the [source code](/~neale/gitweb.cgi?p=ubk) if you'd
+You can download the [source code](/~neale/g.cgi/ubk) if you'd
 like it.
 
 

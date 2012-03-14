@@ -20,7 +20,7 @@ FireBot's name. Example:
 Downloading
 -----------
 
-You can download a [tarball snapshot of the latest release](http://woozle.org/~neale/gitweb.cgi?p=firebot;a=snapshot;h=HEAD), or use cogito:
+You can download a [tarball snapshot of the latest release](http://woozle.org/~neale/g.cgi/firebot/snapshot/firebot-master.tar.gz), or use cogito:
 
     git clone http://woozle.org/~neale/projects/firebot
 
