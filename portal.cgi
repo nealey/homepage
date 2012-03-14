@@ -3,6 +3,10 @@
 case "$HTTP_USER_AGENT" in
     *MIDP*)
         TINY=1
+        NOCAL=1
+        ;;
+    *Mobile*)
+        NOCAL=1
         ;;
 esac
 
@@ -72,16 +76,18 @@ h2 {
 }
     </style>
     <link rel="icon" type="image/png" href="portal.png">
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
 EOF
 
-[ "$TINY" ] || \
+[ "$NOCAL" ] || \
     echo '<iframe class="calendar" src="https://www.google.com/calendar/embed?title=Calendar&amp;showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=2cdrf19kah6jkonhom8evck38c%40group.calendar.google.com&amp;color=%23333333&amp;src=s531giqfiotabht4qrn59tjf9g%40group.calendar.google.com&amp;color=%231B887A&amp;src=umtjjc250gp0m5gm8h3dn13hcc%40group.calendar.google.com&amp;color=%236E6E41&amp;src=dartcatcher%40gmail.com&amp;color=%23125A12&amp;src=laderbydames%40gmail.com&amp;color=%2323164E&amp;src=uulosalamos.org_gu7e0s8dsh1tn8iktt468tk95k%40group.calendar.google.com&amp;color=%232F6309&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FDenver"></iframe>'
 
-echo '<form action="http://www.google.com/"><input name="q" size="12"><input type="submit" value="G">'
-cat $HOME/public_html/activity.txt
-echo '</form>'
+if [ "$TINY" ]; then
+    echo '<form action="http://www.google.com/"><input name="q" size="12"><input type="submit" value="G">'
+    echo '</form>'
+fi
 
 weather
 

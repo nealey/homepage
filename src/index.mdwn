@@ -8,6 +8,7 @@ of these packages.
 
 Networky things
 -------------------------------
+* [Eris HTTPd](eris.html), a small HTTP (web) server
 * [pysieved](pysieved.html), a Python ManageSieve server
 * [Firebot](firebot.html), an easily-extended IRC bot in continuous use since 1996
 * [Python IPQUEUE library](ipqueue/)

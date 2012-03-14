@@ -17,7 +17,8 @@ browser.
   restarting dwm, multimedia buttons, and
   [xss](http://woozle.org/~neale/src/xss.html) integration (3 lines of
   code).
-* [My status script](status.sh) is responsible for having DWM show the
+* [My status program](http://woozle.org/~neale/gitweb.cgi/status)
+  is responsible for having DWM show the
   current time, load average, battery charge, and wifi status.  It
   gracefully handles machines that lack one or more of these features.
 * [My button script](dwm-button.sh) is invoked when a multimedia button

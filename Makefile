@@ -1,6 +1,6 @@
 DESTDIR = $(HOME)/public_html
 
-TEMPLATE = template.xml
+TEMPLATE = template.m4
 MDWNTOHTML = ./mdwntohtml $(TEMPLATE)
 
 # HTML to be generated
