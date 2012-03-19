@@ -4,6 +4,7 @@ These are papers I have written. Most of them were written to explain a
 concept to someone on woozle.  Hopefully other people will find them
 useful, too.
 
+* [Running Audio/Visual for a Roller Derby Bout](derby-av.html)
 * [Dirtbags DJ Setup](dj.html)
 * [How to make the game of Monopoly suck less](monopoly.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
