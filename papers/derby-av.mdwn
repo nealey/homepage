@@ -5,8 +5,8 @@ worried about the audio and video requirements.
 [LADD](http://losalamosderbydames.com/) worried about this too. 
 Here's what we currently use:
 
-Audio: $310 new, under $200 used
-================================
+Audio: $310 new, under $200 used, $60 budget
+============================================
 
 There are good reasons to hire a DJ:  it's one less thing to worry
 about, and you don't need to drop a lot of money on a sound system. 
@@ -22,6 +22,13 @@ speaker, two wireless mics, and somebody's MP3 playlist.  The
 Harbinger APS-15 provides a built-in amp *and* mixer, so you really
 only need these two items.
 
+If you're really on a budget, forget about music and just buy a mic
+system to plug into somebody's home stereo.  The Nady has an
+unbalanced ¼" output; Radio Shack will have a plug to convert this to
+the stereo RCA adapter on a home tuner.  Just be careful moving that
+stuff around:  home equipment isn't made to take the kind of abuse
+it's going to get on the road.
+
 You do not really need to hire a DJ if you can provide a powered speaker
 and mics.  I have been to a number of bouts, each time with a keen ear
 on the music.  I've talked to as many DJs as I could, and with the
@@ -30,8 +37,9 @@ me their job was to set up equipment and play a mix CD provided by the
 team, or a playlist on some team member's MP3 player.  They've all been
 sort of bored.
 
-If you want to go for a full mobile DJ setup, I have a [separate DJ
-article](dj.html) you might enjoy.  Total cost is $650 for that.
+If you do want to go for a full mobile DJ setup, though, I have a
+[separate DJ article](dj.html) you might enjoy.  Total cost is
+$650 for that.
 
 
 Video: $350 new, under $300 used
