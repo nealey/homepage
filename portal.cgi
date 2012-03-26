@@ -93,7 +93,7 @@ weather
 
 section LA \
     'http://ladailypost.com/' \
-    'http://ladailypost.com/feed/'
+    'http://www.ladailypost.com/rss.xml'
 section "Ars Technica" \
     'http://m.arstechnica.com/' \
     'http://feeds.arstechnica.com/arstechnica/index?format=xml'
