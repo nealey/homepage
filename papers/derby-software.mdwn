@@ -1,5 +1,25 @@
 Title: Software in Roller Derby
 
+You don't need technology to run a derby bout.  It can make things
+a little easier on the NSOs.  Fans might appreciate rinxter
+online updates.  But the focus needs to be on the game, not your
+awesome technological infrastructure.
+
+Main points:
+
+* Shit breaks.  Complicated shit breaks more, and needs bigger
+  nerds to fix it.  Stay simple, and you can recover quicker.
+
+* Low-tech solutions are cheaper, more durable, and easier to
+  repair or replace.
+
+* Integrated solutions are awesome right up until the point
+  when they fail.  A failing scoreboard can be fixed while
+  the bout continues.  Tie your official clock into that system,
+  and now failure means nobody plays derby.
+
+
+
 Possibly because Roller Derby is full of skaters who are huge nerds,
 and skater spouses who are huge nerds, there is a lot more software
 available than you'd see in any other amateur sport.  Leagues may feel
