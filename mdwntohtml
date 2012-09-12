@@ -7,7 +7,7 @@ while IFS=: read field value; do
             ;;
         Title)
             # echo strips leading and trailing whitespace
-            title=$(echo $value)
+            title=${value# }
             ;;
     esac
 done

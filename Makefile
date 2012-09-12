@@ -51,7 +51,7 @@ $(DESTDIR)/g.cgi: g.cgi.c
 	$(CC) -o $@ $<
 
 $(DESTDIR)/%-sm.jpg: %.jpg
-	jpegtopnm $< | pnmscale -xysize 200 200 | pnmtojpeg > $@
+	jpegtopnm $< | pnmscale -xysize 600 600 | pnmtojpeg > $@
 
 default: $(TARGETS)
 
