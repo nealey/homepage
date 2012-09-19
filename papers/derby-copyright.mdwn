@@ -141,3 +141,9 @@ Understand that some folks are going to say you're being unreasonable.
 But it's better to get a little of this early on, than to deal with the
 big drama that will crop up later once it's clear to everybody what
 everybody else expects.
+
+
+Revisions
+---------
+
+* 2012-Sep-18: Added the paragraph about photographers, and a few links
