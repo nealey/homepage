@@ -6,8 +6,8 @@ to chime in with some hard-learned advice that computer nerds worked
 through in the 90s.
 
 A modern derby bout requires people from all different walks of life
-to come together, and so this sport--which began
-with a strong punk "skater-run" ethic--has had to bring in creative types
+to come together, and so this sport—which began
+with a strong punk "skater-run" ethic—has had to bring in creative types
 from all sorts of different cultures which don't necessarily share the
 same values.  This is causing friction, but I think I know
 how to solve it: stick to derby's roots and insist on volunteer work,
@@ -17,8 +17,8 @@ even if the professional stuff would look nicer.
 Some Background on Copyright
 ----------------------------
 
-In most parts of the world, when you create something--like a logo,
-some software, a blog post, or a web page--you get the right to decide
+In most parts of the world, when you create something—like a logo,
+some software, a blog post, or a web page—you get the right to decide
 who is allowed to copy it: the copyright.  In order to use someone
 else's work, be it on its own or as a part of your own work, 
 you need their permission.  Generally speaking, authors will pick one
@@ -98,19 +98,20 @@ advance.  You need to be up front with all of your unpaid artists that you
 have no money and expect them to volunteer their time and skill for
 the love of the game and the gals who play it.
 
-
 Acknowledge that your league is a gift economy.  Embrace it!  You have
 nothing to give in return other than the community of your league, and
 you expect anyone entering that community not to start making demands. 
+Have another look at [that craigslist ad](http://static.happyplace.com/assets/images/2011/10/4e935baa48979.png),
+I think it's on point because he points out "everyone will love you."
 Everyone should feel a profound debt to everyone else who helps out. 
 Beer should be bought.  Invitations to parties should be given.  But
-you need your dues--and ticket sales, if you have those--to pay for
+you need your dues—and ticket sales, if you have those—to pay for
 things you can't get from volunteers, like insurance, paint, photocopies, and
 tape.
 
 Sure, the presentation is going to suffer when you get out-of-focus or
 poorly-framed photos, amateurish artwork, and web sites that look like
-Geocities in 1997; or maybe you'll luck out and get [an awesome artist
+Geocities in 1997; or maybe you'll luck out and find [a talented artist
 who loves the sport](https://secure.flickr.com/photos/nocklebeast/3715669736/).
 But the skater-run, non-professional feel of small
 town derby is one of its distinguishing characteristics, and makes
@@ -143,7 +144,6 @@ big drama that will crop up later once it's clear to everybody what
 everybody else expects.
 
 
-Revisions
 ---------
 
 * 2012-Sep-18: Added the paragraph about photographers, and a few links
