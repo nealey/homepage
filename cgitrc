@@ -1,8 +1,8 @@
-project-list=/home/neale/projects/public.txt
-#photobob pgircd py-pcap wticket gikiwiki unpluck firebot status py-ipqueue dbtl scoreboard eris
+strict-export=git-daemon-export-ok
 
 snapshots=zip tar.gz
-clone-url=http://woozle.org/~neale/projects/$CGIT_REPO_URL
+clone-prefix=http://woozle.org/~neale/g.cgi
+#clone-url=http://woozle.org/~neale/projects/$CGIT_REPO_URL
 scan-path=/home/neale/projects
 virtual-root=/~neale/g.cgi/
 css=/~neale/cgit.css
