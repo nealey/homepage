@@ -4,17 +4,20 @@ I like how runit manages things,
 especially the restarting of dead daemons. 
 I was growing tired of sysvinit when systemd started making inroads,
 and when Arch moved to systemd,
-I figured it's time to make the switch.
-I know a lot of people feel very passionately about systemd.  
-I just prefer to use runit.
+I figured it was a good time to make the switch.
+
+I know a lot of people feel very passionately about systemd;
+I just like runit better.
 My wife's computer uses systemd and I have no issues with that. 
-If you want to continue your holy war about systemd,
+Distribution people have done a swell job making the machine work using systemd,
+and that's just fine by me.
+If you want to rage about systemd,
 there are many web forums available for you to do so.
 
 What's the advantage?
 ---------------------
 
-Runit lets--no, forces--you to write your own startup scripts.
+Runit lets—no, forces—you to write your own startup scripts.
 You can write them in any language you want,
 but Bourne shell is pretty convenient.
 I think this is the biggest selling point for me.
@@ -27,10 +30,23 @@ If a daemon dies, runit restarts it in 2 seconds.
 I find that convenient,
 but some prefer for things with problems to be restarted manually.
 
+Runit wants daemons to run in the foreground.
+Having written many daemons,
+I like this philosophy a lot.
+I never understood why the "fork twice" hack needed to be duplicated in every daemon ever;
+Runit takes care of that for you.
+
 Runit encourages things to log to stdout (or stderr),
-and keeps a log file for each service.
-It also runs one log program per service.
-That log program can be anything you want.
+instead of syslog or custom logging code.
+Writing to stderr is also very convenient from the standpoint of the daemon's author.
+It's a natural way to provide information to the user,
+and all that's needed for "debugging mode" is to launch the daemon at the command line
+instead of from runit.
+stdout from a service is sent to stdin on a log service,
+which runit also keeps track of.
+That log service can be anything you want:
+`svlogd` does a pretty good job timestamping lines,
+and it also rotates logs automatically without needing to stop and start the daemon.
 
 
 Peculiarities of my setup
