@@ -105,7 +105,7 @@ let's make a copy.
     ln -s busybox.static /usr/local/sbin/sv
 
 
-We also need to create a new `/sbin/init` to replace `systemd` (or sysvinit) and launch `runit`.
+We also need to create a new `/sbin/init` to replace `systemd` (or sysvinit) and launch `runsvdir`.
 Arch actually has a pretty nice init setup,
 almost as though they had this use case in mind when they were designing it.
 The early userspace init sets up /, pivots root, and runs /sbin/init.
@@ -301,7 +301,7 @@ Nothing in this page will destroy the old bootup process
 If it does work
 ---------------
 
-Congratulations, you're now using `runit`.
+Congratulations, you're now using runit.
 You now need to write startup scripts for things you like to run,
 like `dhcpcd`, `ntpd`, maybe `xdm`.
 You're an Arch Linux sysadmin,
