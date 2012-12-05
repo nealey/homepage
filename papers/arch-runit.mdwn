@@ -1,0 +1,295 @@
+Title: Runit on Arch
+
+I like how runit manages things,
+especially the restarting of dead daemons. 
+I was growing tired of sysvinit when systemd started making inroads,
+and when Arch moved to systemd,
+I figured it's time to make the switch.
+I know a lot of people feel very passionately about systemd.  
+I just prefer to use runit.
+My wife's computer uses systemd and I have no issues with that. 
+If you want to continue your holy war about systemd,
+there are many web forums available for you to do so.
+
+What's the advantage?
+---------------------
+
+Runit lets--no, forces--you to write your own startup scripts.
+You can write them in any language you want,
+but Bourne shell is pretty convenient.
+I think this is the biggest selling point for me.
+I like doing things with specialized programs,
+and I know Bourne shell pretty well,
+so it's easy for me to figure out what runit is doing,
+and extend it.
+
+If a daemon dies, runit restarts it in 2 seconds.
+I find that convenient,
+but some prefer for things with problems to be restarted manually.
+
+Runit encourages things to log to stdout (or stderr),
+and keeps a log file for each service.
+It also runs one log program per service.
+That log program can be anything you want.
+
+
+Peculiarities of my setup
+-------------------------
+
+I like the runit that comes with busybox,
+so I'm using that.
+If you prefer Gerrit Pape's runit,
+the procedure will be similar,
+but there are subtle differences you will need to watch out for.
+In particural,
+Gerrit's `runsvdir` does not have the `-s` option:
+that functionality is provided by `runit-init`.
+
+I put my runit service directory in `/service`.
+Everything else seems to be making top-level directories these days,
+and, hell, it's my computer.
+You can put yours wherever you want,
+just change `/service` in my examples to your directory.
+
+Ctrl-alt-del does an immediate reboot.
+Once I'm more comfortable with this setup,
+I may change that by writing to the approprate file in `/proc`,
+but I actually like this behavior for now.
+
+
+Warning
+-------
+
+If you screw this up,
+you might not be able to boot your computer up anymore.
+If you're using Arch,
+presumably you're already comfortable administering your computer.
+But messing with `init` can break things in exciting new ways.
+
+Arch's initrd has a nice `break=postmount` kernel commandline option
+to open a shell after mounting root,
+which I used to recover things several times.
+You might want to play with that and understand what the initrd is,
+before you are put into a position where you *have* to use it and can't start a web browser.
+
+
+Let's go
+--------
+
+The version of `busybox` packaged for Arch comes with many "applets" compiled in:
+enough for us to set it all up.
+Because it's statically linked,
+we don't even need to worry about libc updates.
+To prevent a bad `busybox` update from bringing down the entire works, 
+let's make a copy.
+
+    cp /bin/busybox /usr/local/sbin/busybox.static
+    ln -s busybox.static /usr/local/sbin/runsv
+    ln -s busybox.static /usr/local/sbin/runsvdir
+    ln -s busybox.static /usr/local/sbin/sv
+
+
+We also need to create a new `/sbin/init` to replace `systemd` (or sysvinit) and launch `runit`.
+Arch actually has a pretty nice init setup,
+almost as though they had this use case in mind when they were designing it.
+The early userspace init sets up /, pivots root, and runs /sbin/init.
+At that point, we can take over, run `/etc/rc.sysinit`,
+and hand off to `runsvdir`.
+Putting the system initialization stuff into a shell script
+was a nice move on the part of the arch folks,
+and makes this almost trivial.
+
+The other thing `init` needs to handle is being called by programs like `reboot` and `poweroff`,
+which want to signal `init` by changing runlevel.
+So if our new `init` is not PID 1,
+we'll emulate `telinit` from sysvinit,
+by checking what runlevel is being requested and sending the appropriate
+signal to PID 1.
+
+Be sure to move the old `init` to soming like `init.sysv`, 
+then create a new `init` similar to this
+(don't forget to `chmod +x`):
+
+    #! /bin/sh
+
+    PATH=/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin
+    export PATH
+
+    if [ $$ -ne 1 ]; then
+        case $1 in
+            6)
+                exec kill -15 1
+                ;;
+            0)
+                exec kill -12 1
+                ;;
+        esac
+
+        echo "LOL: runit doesn't have run levels" 1>&2
+        exit 1
+    fi
+	
+    # Run arch's sysinit
+    /etc/rc.sysinit
+
+    if grep -q 'break=init' /proc/cmdline; then
+        echo 'Breaking before init, type "exit" to continue booting'
+        /bin/sh
+    fi
+
+    # XXX: Who creates this?
+    rm /run/nologin
+
+    # Hand off to runit
+    exec runsvdir -P -s runit-signal /service
+
+
+This will still run `udev` and `bootlogd` from `/etc/rc.sysinit`.
+I tried to set up `mdev` from busybox as a `udev` replacement,
+but Xorg wants `udev`,
+and I was having other problems getting drivers loaded,
+so I'm just trusting the the Arch devs here.
+If you can figure out another way,
+please email me about it, I'd love to know.
+
+You may also want to install the `dash` package,
+and link `/bin/sh` to that, 
+if you worry (as I do) about libc breaking things
+(`dash` is statically linked).
+
+
+runit-signal
+------------
+
+Busybox's version of `runsvdir` has a `-s` option.
+When runsvdir gets a signal,
+it runs whatever was provided to `-s` with the signal number as the first argument.
+Here's my `/usr/local/sbin/runit-signal`
+(make sure you `chmod +x`):
+
+
+    #! /bin/sh
+
+    ##
+    ## Signal handler for runit
+    ##
+
+    if [ $PPID != 1 ]; then
+        echo "This program should only be invoked by PID 1."
+        # The reason is that killall5 won't kill anything in the same
+        # process group.  That means it won't kill your invoking shell,
+        # getty, or svrun.  That in turn prevents filesystems from
+        # unmounting, or even being remounted ro, since svrun (at least) has
+        # a FIFO open for writes.  And if we reboot without unmounting
+        # filesystems, that's bad.
+    
+        echo "Feel free to read $0 to learn why :)"
+        exit 1
+    fi
+    
+    waitall () {
+        for i in $(seq 50); do
+            # If all processes are in group 0, we're done
+            awk '($5){exit 1;}' /proc/[0-9]*/stat && return 0
+            usleep 200000
+        done
+        return 1
+    }
+    
+    cleanup () {
+        echo "Stopping services..."
+        sv stop /service/*
+        echo "Asking processes to exit..."
+        killall5 -1
+        killall5 -15
+        if waitall; then
+            echo "Forcing processes to exit..."
+            killall5 -9
+            waitall
+        fi
+        echo "Unmounting file systems..."
+        umount -a -r
+            
+        # Sometimes when we reach here we still haven't been able to umount
+        # everything.  Not much more we can do about that, other than flush
+        # write buffers and hope for the best.
+        sync
+    }
+    
+    case $1 in
+        1)                          # SIGHUP
+            ;;
+        15)                         # SIGTERM: reboot
+            cleanup
+            echo "Rebooting..."
+            reboot -f
+            ;;
+        10)                         # SIGUSR1: halt
+            cleanup
+            echo "Halting..."
+            halt -f
+            ;;
+        12)                         # SIGUSR2: power
+            cleanup
+            echo "Shutting down..."
+            poweroff -f
+            ;;
+        *)                          # Everything else
+            ;;
+    esac
+    
+
+
+Create a getty
+--------------
+
+Before we reboot, we need to make sure to create a way to log in.
+The following in `/service/tty2/run` will start a getty on the second virtual console
+(don't forget to `chmod +x`):
+
+    #! /bin/sh
+
+    tty=${$(pwd)##*/}
+    exec agetty $tty
+
+You can make more than one getty by copying this to `/service/tty3/run` and so on.
+
+
+Reboot!
+-------
+
+Double check you did it all right:
+
+* You understand how to use the initrd shell you get passing the `break=postmount` boot argument
+* `/sbin/init` should be an executable shell script
+* At least a getty service will start from the `service` directory you set up
+
+That's not a big checklist. 
+Ready to go?
+Tell the currently-running init to reboot:
+
+    /sbin/init.sysv 6
+
+Cross your fingers!
+
+
+If it doesn't work
+------------------
+
+You can always move `/sbin/init.sysv` back to `/sbin/init` and reboot
+into your old setup.
+Nothing in this page will destroy the old bootup process
+(other than renaming `init`, of course).
+
+
+If it does work
+---------------
+
+Congratulations, you're now using `runit`.
+You now need to write startup scripts for things you like to run,
+like `dhcpcd`, `ntpd`, maybe `xdm`.
+You're an Arch Linux sysadmin,
+you should know what you need,
+and I can't help you past here.
+
+Have fun!
