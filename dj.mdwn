@@ -22,6 +22,8 @@ My mobile DJ setup includes:
 * Ability to play and mix music from any portable device (iPod, phone, etc.)
 * Microphones: wired and wireless
 
+![Photo from 2012 Halloween Party](images/dj-setup.jpg)
+
 I play using a Stanton SCS.3 with [Mixxx](http://www.mixxx.org/): I am also
 a code contributor to Mixxx.
 
