@@ -308,4 +308,20 @@ You're an Arch Linux sysadmin,
 you should know what you need,
 and I can't help you past here.
 
+Getting rid of `systemd`
+------------------------
+
+Some readers might be disappointed that I didn't explain how to get rid of `systemd`.
+Sorry, guys.
+X11 requires `udevd`.
+Until that dependency goes away,
+or until Wayland is usable,
+I don't see any way around having systemd installed.
+When it *is* possbile to remove systemd,
+you might be able to use the `mdev` program in busybox to replace `udevd`.
+I played with this a little bit,
+and it looked promising,
+but I gave up when I saw that I wasn't going to get to run X.
+
+
 Have fun!
