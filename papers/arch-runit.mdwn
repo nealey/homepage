@@ -1,4 +1,4 @@
-Title: Runit on Arch
+Title: Runit on Arch Linux
 
 I like how runit manages things,
 especially the restarting of dead daemons. 

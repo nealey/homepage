@@ -14,6 +14,7 @@ Roller Derby Stuff
 Computer Nerd Stuff
 -------------------
 
+* [Runit on Arch Linux](arch-runit.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
 * [Converting .docx files to text using unzip and sed](docx.html)
 * [Introduction to TCP Sockets](sockets.html)
