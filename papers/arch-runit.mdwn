@@ -127,10 +127,10 @@ then create a new `init` similar to this
 (don't forget to `chmod +x`):
 
     #! /bin/sh
-
+    
     PATH=/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin
     export PATH
-
+    
     if [ $$ -ne 1 ]; then
         case $1 in
             6)
@@ -140,25 +140,46 @@ then create a new `init` similar to this
                 exec kill -12 1
                 ;;
         esac
-
+    
         echo "LOL: runit doesn't have run levels" 1>&2
         exit 1
     fi
-	
+    
     # Run arch's sysinit
-    /etc/rc.sysinit
+    if ! /etc/rc.sysinit; then
+        # Kludge it if there's no rc.sysinit
 
+        mount -t proc proc /proc -o nosuid,noexec,nodev
+        mount -t sysfs sys /sys -o nosuid,noexec,nodev
+        mount -t tmpfs run /run -o mode=0755,nosuid,nodev
+        mount -t devtmpfs dev /dev -o mode=0755,nosuid
+        mkdir -p /dev/{pts,shm}
+        mount -t devpts devpts /dev/pts -o mode=0620,gid=5,nosuid,noexec
+        mount -t tmpfs shm /dev/shm -o mode=1777,nosuid,nodev
+
+        # This doesn't ever run fsck :<
+        mount -o remount,rw /
+
+        : < /etc/hostname > /proc/sys/kernel/hostname
+   
+        hwclock --systz
+        
+        # Start/trigger udev, load MODULES, and settle udev
+        udevd_modprobe sysinit
+    fi
+    
+    
     if grep -q 'break=init' /proc/cmdline; then
         echo 'Breaking before init, type "exit" to continue booting'
         /bin/sh
     fi
 
+    
     # XXX: Who creates this?
     rm /run/nologin
-
+    
     # Hand off to runit
     exec runsvdir -P -s runit-signal /service
-
 
 This will still run `udev` and `bootlogd` from `/etc/rc.sysinit`.
 I tried to set up `mdev` from busybox as a `udev` replacement,
@@ -265,8 +286,9 @@ The following in `/service/tty2/run` will start a getty on the second virtual co
 
     #! /bin/sh
 
-    tty=${$(pwd)##*/}
-    exec agetty $tty
+    pwd=$(pwd)
+    TTY=${pwd##*/}
+    exec agetty $TTY
 
 You can make more than one getty by copying this to `/service/tty3/run` and so on.
 
