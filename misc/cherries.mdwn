@@ -26,7 +26,7 @@ Lastly, I wanted it to be easy to turn into a stencil,
 for spray painting helmets,
 cheeks, or whatever.
 
-
+----
 
 [Here is the source file](cherry-bombs.svg)
 for everybody to play with.
