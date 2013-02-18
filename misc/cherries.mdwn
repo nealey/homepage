@@ -5,22 +5,25 @@ but since I can't skate,
 I have to find ways to contribute from behind the scenes.
 So I worked on another logo.
 
-![Cherry Bombs Logo](cherry-bombs.png)
+<img src="cherry-bombs.png" alt="Monochrome" style="background-color: #222">
 
 This is for a junior (youth) league,
 so it can't be too sexy or aggressive.
+The font I used here is 
+[Spray.ME](http://fontstruct.com/fontstructions/show/718516)
+with an "O" modified to include a jammer star.
 
-![Cherry Bombs, No Text](cherry-bombs-notext.png)
+<img src="cherry-bombs-notext.png" alt="No text" style="background: url(paper.jpg)">
 
 I wanted something kids could sketch easily and quickly,
 on their faces or notebook covers or whatever.
 
-![Monochrome](cherry-bombs-mono.png)
+<img src="cherry-bombs-mono.png" alt="Monochrome">
 
 It needed to work in a single color,
 for cheaper T-shirt prints, temporary tatoos, stickers, and stuff.
 
-![Stencil](cherry-bombs-stencil.png)
+<img src="cherry-bombs-stencil.png" alt="Stencil" style="background: url(cement.jpg) center right /cover">
 
 Lastly, I wanted it to be easy to turn into a stencil,
 for spray painting helmets,
