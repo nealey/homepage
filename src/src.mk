@@ -6,7 +6,12 @@ COPY += $(wildcard src/ipqueue/*.tar.*) src/eguile/eguile.scm
 
 include src/*/*.mk
 
-$(DESTDIR)/src/%/index.html: src/%/index.head.mdwn src/%/*
+$(DESTDIR)/src/%/index.html: src/%/index.head.mdwn
 	@mkdir -p $(@D)
 	cp $(wordlist 2, $(words $^), $^) $(@D)
 	./dirlist $+ | $(MDWNTOHTML) > $@
+
+
+$(DESTDIR)/src/misc/index.html: src/misc/*
+$(DESTDIR)/src/postscript/index.html: src/postscript/*.ps
+$(DESTDIR)/src/python/index.html: src/python/*.py
