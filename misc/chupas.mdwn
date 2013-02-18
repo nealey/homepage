@@ -4,7 +4,8 @@ I would love it if someone could take these sketches
 and turn them into something the team will use,
 because I'd love to have a sticker of this on my laptop.
 
-![Chupas Logo](chupas-logo.png)
+<img src="chupas-logo-inv.png" alt="Chupas Logo: White" style="background: black;">
+
 
 I tried to incorporate New Mexico's Zia symbol with the chupacabra:
 a cryptid sometimes drawn as a "grey" alien with claws.
@@ -23,11 +24,12 @@ as long as you share alike
 
 ----
 
-<img src="chupas-logo-inv.png" alt="Chupas Logo: White" style="background: black;">
+![Chupas Logo](chupas-logo.png)
 
-Here's what it would look like on a black (or dark-colored) T-shirt.
-This really highlights the use of negative space for the "spooky" feel.
-I feel like the eyes are sort of popping out at me.
+Here's a black version.
+Not quite exciting as the white one,
+but still pretty cool,
+and still easy to recognize
 
 ----
 
