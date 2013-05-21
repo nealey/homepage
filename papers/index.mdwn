@@ -16,6 +16,7 @@ Computer Nerd Stuff
 
 * [Runit on Arch Linux](arch-runit.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
+* [Runnning PHP as a CGI](php-cgi.html) in anything other than Apache
 * [Converting .docx files to text using unzip and sed](docx.html)
 * [Introduction to TCP Sockets](sockets.html)
 * [3-Minute HTML Tutorial](html-tutorial.html)

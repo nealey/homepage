@@ -38,6 +38,6 @@ Differences with fnord
 Download
 --------
 
-* [Version 3.1.2](http://woozle.org/~neale/g.cgi/eris/snapshot/eris-3.1.2.tar.gz)
+* [Version 4.1](http://woozle.org/~neale/g.cgi/eris/snapshot/eris-4.1.tar.gz)
 * [Source Control](http://woozle.org/~neale/g.cgi/eris)
 
