@@ -4,6 +4,7 @@ These are papers I have written. Most of them were written to explain a
 concept to someone on woozle.  Hopefully other people will find them
 useful, too.
 
+
 Roller Derby Stuff
 ------------------
 
@@ -11,9 +12,11 @@ Roller Derby Stuff
 * [Dirtbags DJ Setup](dj.html)
 * [Copyright Advice for Small Leagues](derby-copyright.html)
 
+
 Computer Nerd Stuff
 -------------------
 
+* [Writing formal letters with roff](roff-letters.html)
 * [Runit on Arch Linux](arch-runit.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
 * [Runnning PHP as a CGI](php-cgi.html) in anything other than Apache
@@ -21,6 +24,7 @@ Computer Nerd Stuff
 * [Introduction to TCP Sockets](sockets.html)
 * [3-Minute HTML Tutorial](html-tutorial.html)
 * [How DNS Works](DNS.html)
+
 
 Everything Else
 ---------------
