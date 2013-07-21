@@ -4,6 +4,7 @@ If wishes were horses
 And poets were kings  
 I guess I'd still have my day job.
 
+* [Goat on the Water](goat.html)
 * [Ducks](ducks.html)
 * [My Goldfish Wish](goldfish.html)
 * [Poem For A Moonlit Lake With City Lights Reflecting](lake.html)
