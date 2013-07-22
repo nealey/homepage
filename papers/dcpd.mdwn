@@ -28,14 +28,14 @@ Safety
 
 The Los Alamos M'Atom Bombs have been playing against other teams since early 2012.
 
-100% of the two games they have played against Clovis have resulted in a serious injury
-(requiring long-term medical attention and resulting in a roster reduction at future games).
+100% of the two games they have played against Clovis have resulted in a serious injury,
+needing long-term medical attention and resulting in a roster reduction at future games.
 
 0% of the dozens of games they have played against every other team
 (at least 8 teams) have resulted in a serious injury.
 
-I had previously refused to NSO any game with the player named Big Red
-(previously with Amarillo, now with Clovis),
+I had already refused to NSO any game with the player named Big Red
+(formerly with Amarillo, now with Clovis),
 who caused the Bombs' first injury.
 Previously,
 the Las Cruces referee team and the Los Alamos head ref
@@ -140,11 +140,11 @@ The official team account then acknowledges the joke with a wink.
 
 I know things are different in Texas and eastern New Mexico,
 and people get very passionate about sports.
-But I have many professional associates in Lubbock and Amarillo,
+But I have many professional associates in Amarillo and Lubbock,
 and they are all decent, courteous people, with a strong moral compass and sense of pride,
 so I know this isn't a cultural issue.
 
-Joking that the other team is a bunch of whores doesn't engender good feelings,
+Joking that the other team is made up of prostitutes doesn't engender good feelings,
 and doesn't reflect well on the community you've built.
 
 
@@ -185,9 +185,11 @@ You ladies were great,
 and I'm glad I got the opportunity to hang out with you.
 Good luck with your team.
 
-I've gotten word that some of the other Clovis skaters decided to stay at the hotel instead.
+I've gotten word that some of the other Clovis skaters stayed at the hotel instead.
 
-The Bombs tried their best.
+Even though the Bombs tried their best to be good hosts,
+the Clovis team and their fans decided the appropriate response
+was to ditch us and then complain on Facebook.
 
 
 In Closing
@@ -218,7 +220,7 @@ and more.
 I wrote the free woozle.org penalty timer app for Android,
 with almost 1000 active users.
 At 2013's Roller Con, 
- will be unveiling free plans for a build-it-yourself electronic scoreboard,
+I will be unveiling free plans for a build-it-yourself electronic scoreboard,
 and for a build-it-yourself derby-specific stopwatch.
 I'm also co-presenting, with Evil Lucian from Moab,
 best practices for small town derby teams to run a bout with limited staff.
