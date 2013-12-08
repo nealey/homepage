@@ -92,40 +92,40 @@ class PNGLoom(Loom):
 
 
 def ascii_test():
-    print 'Plain weave'
+    print('Plain weave')
     l = Loom('||||||||||||||||||||||||||||||||')
     for i in range(16):
         l.plain_weave('-')
     for row in l.fabric:
-        print '    ', ''.join(row)
+        print('    ', ''.join(row))
 
-    print 'Twill'
+    print('Twill')
     l = Loom('||||||||||||||||||||||||||||||||')
     for i in range(16):
         l.twill('-')
     for row in l.fabric:
-        print '    ', ''.join(row)
+        print('    ', ''.join(row))
 
-    print '2/1 twill'
+    print('2/1 twill')
     l = Loom('||||||||||||||||||||||||||||||||')
     for i in range(16):
         l.twill('-', 2, 1)
     for row in l.fabric:
-        print '    ', ''.join(row)
+        print('    ', ''.join(row))
 
-    print 'Satin weave'
+    print('Satin weave')
     l = Loom('||||||||||||||||||||||||||||||||')
     for i in range(16):
         l.satin_weave('-')
     for row in l.fabric:
-        print '    ', ''.join(row)
+        print('    ', ''.join(row))
 
-    print 'Basketweave'
+    print('Basketweave')
     l = Loom('||||||||||||||||||||||||||||||||')
     for i in range(16):
         l.basket_weave('-')
     for row in l.fabric:
-        print '    ', ''.join(row)
+        print('    ', ''.join(row))
 
 
 ##

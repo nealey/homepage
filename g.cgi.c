@@ -4,6 +4,7 @@
 
 #define GIT_PROJECT_ROOT "/home/neale/projects"
 #define CGIT_CONFIG "/home/neale/public_html/cgitrc"
+#define CGIT "/usr/lib/cgit/cgit.cgi"
 
 int
 main(int argc, char *argv[])
@@ -16,7 +17,7 @@ main(int argc, char *argv[])
         execlp("git", "git", "http-backend", NULL);
     } else {
         setenv("CGIT_CONFIG", CGIT_CONFIG, 1);
-        execl("/usr/local/bin/cgit", "cgit", NULL);
+        execl(CGIT, "cgit", NULL);
     }
 
     return 0;

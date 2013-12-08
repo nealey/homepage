@@ -3,11 +3,11 @@
 import cgitb; cgitb.enable()
 import loom
 import cgi
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import os
 import sys
 
-os.chdir(os.path.dirname(sys.argv[0]))
+os.chdir("/home/neale/public_html/tartans")
 
 f = cgi.FieldStorage()
 
@@ -33,7 +33,7 @@ else:
     print('')
     sys.stdout.flush()
     content = ('Name: %s\nSett: %s\n' % (t, s))
-    png = 'design.cgi?sett=%s' % urllib.quote(s_)
+    png = 'design.cgi?sett=%s' % urllib.parse.quote(s_)
     cvt = os.popen('./tartantomdwn %s tartan.m4 | ../mdwntohtml ../template.m4' % (png,),
                    'w')
     cvt.write(content)
