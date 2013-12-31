@@ -51,7 +51,7 @@ $(DESTDIR)/geneweb.cgi: geneweb.c
 $(DESTDIR)/g.cgi: g.cgi.c
 	$(CC) -o $@ $<
 
-$(DESTDIR)/mp.cgi: mineping.cgi.go
+$(DESTDIR)/mp.cgi: minepig.cgi.go
 	go build -o $@ $<
 
 $(DESTDIR)/%-sm.jpg: %.jpg
