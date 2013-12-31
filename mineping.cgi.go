@@ -46,6 +46,6 @@ func main() {
 		fmt.Println("no")
 	}
 	fmt.Println("</p>")
-	fmt.Println("<p>Use the external server <code>h.woozle.org</code> port <code>30919</code> to connect</p>")
+	fmt.Println("<p>Use the external server address <code>h.woozle.org</code>, port <code>30919</code> to join in.</p>")
 	fmt.Println("</body></html>")
 }
