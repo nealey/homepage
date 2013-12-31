@@ -21,6 +21,7 @@ PLAIN = . papers poems misc
 TARGETS = html copy 
 TARGETS += $(DESTDIR)/tmp $(DESTDIR)/footer.html $(DESTDIR)/projects
 TARGETS += $(DESTDIR)/geneweb.cgi
+TARGETS += $(DESTDIR)/mp.cgi
 
 all: default
 
@@ -49,6 +50,9 @@ $(DESTDIR)/geneweb.cgi: geneweb.c
 
 $(DESTDIR)/g.cgi: g.cgi.c
 	$(CC) -o $@ $<
+
+$(DESTDIR)/mp.cgi: mineping.cgi.go
+	go build -o $@ $<
 
 $(DESTDIR)/%-sm.jpg: %.jpg
 	jpegtopnm $< | pnmscale -xysize 600 600 | pnmtojpeg > $@
