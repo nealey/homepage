@@ -14,20 +14,14 @@ But after a few bouts you might realize you can save money by doing it
 yourself.
 
 * One speaker: Harbinger APS-15 ($250 new)
-* Two wireless mics: Nady DKW Duo ($60 new)
+* Two wired mics: Shure SM-48 ($60 new)
 
 The important thing about sound at a bout is the announcer, *not* the
 music.  I think a small team would do just fine with a single powered
-speaker, two wireless mics, and somebody's MP3 playlist.  The
+speaker, two wired mics (reasonable wireless mics are super expensive,
+and your announcer shouldn't be wandering around), and somebody's MP3 playlist.  The
 Harbinger APS-15 provides a built-in amp *and* mixer, so you really
 only need these two items.
-
-If you're really on a budget, forget about music and just buy a mic
-system to plug into somebody's home stereo.  The Nady has an
-unbalanced ¼" output; Radio Shack will have a plug to convert this to
-the stereo RCA adapter on a home tuner.  Just be careful moving that
-stuff around:  home equipment isn't made to take the kind of abuse
-it's going to get on the road.
 
 You do not really need to hire a DJ if you can provide a powered speaker
 and mics.  I have been to a number of bouts, each time with a keen ear
@@ -36,6 +30,13 @@ notable exception of the 2011 Nationals in Denver, they have all told
 me their job was to set up equipment and play a mix CD provided by the
 team, or a playlist on some team member's MP3 player.  They've all been
 sort of bored.
+
+You should also strongly consider not playing music at all.
+Most music requires royalties payments,
+and playing without securing the right licenses can incur legal threats and
+other BS you don't want to waste time.
+Lastly, can you name another sport that has music during gameplay?
+Just skip it.
 
 If you do want to go for a full mobile DJ setup, though, I have a
 [separate DJ article](dj.html) you might enjoy.  Total cost is

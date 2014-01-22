@@ -1,4 +1,16 @@
-Title: Software in Roller Derby
+Title: Why you shouldn't use Derby Software
+
+Introduction
+-----------
+
+I just (21 Jan, 2014) found this half-written
+unpublished essay on my hard drive.
+There's some good stuff here,
+even though it's not up to my usual standard for publishing.
+Maybe it will help somebody convince their league to keep things simple.
+Maybe I'll rework it to suck less (probably not).
+
+-----
 
 You don't need technology to run a derby bout.  It can make things
 a little easier on the NSOs.  Fans might appreciate rinxter
@@ -53,7 +65,7 @@ computer.
 But their overwhelming desire to automate is precisely why you need to
 be wary of software engineers when you set up your bouts.  We abhor
 mindless repetition--eliminating it is what pays our bills.  But
-someone is going to have start up your infrastructure for every bout,
+someone is going to have start up your infrastructure for every bout and chase down bugs,
 and most nerds are not going to be able to stick with this menial
 task for very long.
 
@@ -67,3 +79,9 @@ $800 computers being dropped or slammed into by skaters/refs, cracked
 screens, etc.  About the biggest problem you might face with the typical
 setup is a 50¢ pen running out of ink, or needing to grab a spare
 $10 stopwatch.
+
+Technology has a place in derby, sure.
+It can help a lot if you bring it in at a rate that you can handle.
+But remember that you can do just fine without it.
+This is coming from a guy who's created three or four derby software packages,
+and two derby hardware gadgets.

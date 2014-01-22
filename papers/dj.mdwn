@@ -5,8 +5,7 @@ Roller Derby bouts for the [Los Alamos Derby
 Dames](http://www.laderbydames.com/), and occasional parties.  All of
 these have pretty similar requirements: music from a PC, maybe some DJ
 mixing, and at least one microphone for announcing.  Derby is slightly
-different because spaces can be larger and the announcer will want a
-wireless mic.
+different because spaces can be larger.
 
 
 My Recommendation
@@ -124,6 +123,16 @@ designs of other manufacturers, and this appears to be the case.
 Having never used a Behringer mixer and having owned many "clone PCs"
 in the 1980s and 1990s, I don't feel qualified to comment on the Xenyx
 series.
+
+
+Nady DKW-DUO Review
+-------------------
+
+They work okay as long as you stay within about 20 feet of the base.
+And they sure are cheap.
+I've since bought better wireless mics,
+and I prefer to use wired ones if possible.
+There's just less that can go wrong with a wired mic.
 
 
 DJ Controller

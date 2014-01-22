@@ -8,8 +8,10 @@ useful, too.
 Roller Derby Stuff
 ------------------
 
+* [Choosing a Roller Derby Helmet](derby-helmet.html)
 * [Running Audio/Visual for a Roller Derby Bout](derby-av.html)
 * [Dirtbags DJ Setup](dj.html)
+* [Why you shouldn't use Derby Software](derby-software.html)
 * [Copyright Advice for Small Leagues](derby-copyright.html)
 
 
