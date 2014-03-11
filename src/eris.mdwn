@@ -5,39 +5,6 @@ Eris HTTPd is a small web server to be run from inetd or tcpserver
 [fnord HTTPd](http://www.fefe.de/fnord/) but shares very little
 code in common now.
 
-I created eris for [Dirtbags CTF](http://dirtbags.net/ctf/), an
-embedded build.  But it is also running woozle.org and many
-other virtual hosts here.
-
-Features
---------
-
-* Actively maintained
-* Small: around 1100 lines of code, 19k binary with glibc
-* Fast: as fast as fnord
-* Connection keepalive
-* thttpd-style virtual domains
-* IPv6 and SSL support
-* CGI
-* Content-Range
-* Directory index generation
-
-
-Differences with fnord
-----------------------
-
-* command-line arguments instead of compile-time defines
-* eliminated use of libowfat
-* no build dependency on dietlibc
-* elimination of "old style symlink handling"
-* elimination of user switching (you can use tcpserver -[ug])
-* elimination of chroot code (you can use chroot)
-* several bugfixes (sent to the fnord mail list)
-
-
-Download
---------
-
-* [Version 4.1](http://woozle.org/~neale/g.cgi/eris/snapshot/eris-4.1.tar.gz)
-* [Source Control](http://woozle.org/~neale/g.cgi/eris)
+* [Eris Versions](/neale/g.cgi/net/eris/)
+* [README](/neale/g.cgi/net/eris/about/)
 

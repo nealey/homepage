@@ -2,6 +2,7 @@ strict-export=git-daemon-export-ok
 
 about-filter=/home/neale/public_html/about-filter.sh
 readme=:README
+section-from-path=1
 
 snapshots=zip tar.gz
 clone-prefix=http://woozle.org/neale/g.cgi
@@ -18,4 +19,3 @@ logo=
 #noheader=1
 #header=/home/neale/public_html/cgit-header.html
 footer=/home/neale/public_html/footer.html
-

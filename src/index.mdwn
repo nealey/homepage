@@ -10,7 +10,7 @@ Current Projects
 * [Woozle Scoreboard](http://woozle.org/scoreboard/), a browser-based roller derby scorebard
 * [Hardware Scoreboard](/neale/g.cgi/avr/scoreboard/about/), a microcontroller-based LED roller derby scoreboard
 * [Runit-Init](/neale/g.cgi/aur/runit-init/about/), an /sbin/init replacement based on busybox
-* [Eris HTTPd](/neale/g.cgi/eris/about/), a small HTTP (web) server
+* [Eris HTTPd](/neale/g.cgi/net/eris/about/), a small HTTP (web) server
 * [9wm](/neale/g.cgi/x11/9wm/about/), an emulation of the Plan 9 window manager
 * [xss](/neale/g.cgi/x11/xss/about/), a suite of X screensaver programs
 * [Penalty Timer](https://play.google.com/store/apps/details?id=org.woozle.penaltytimer), a roller derby penalty timer for Android
@@ -20,8 +20,7 @@ Other Projects
 --------------
 
 * [Networking software](/neale/g.cgi/net/)
-* [Roller Derby software](/neale/g.cgi/derby/)
 * [X11 software](/neale/g.cgi/x11/)
-* [CTF software](/neale/g.cgi/ctf/): related to [Dirtbags CTF](http://dirtbags.net/ctf/)
-* [J2ME software](/neale/g.cgi/j2me/), for old phones (before the smartphone)
+* [CTF software](/neale/g.cgi/ctf/), related to [Dirtbags CTF](http://dirtbags.net/ctf/)
+* [Roller Derby software](/neale/g.cgi/derby/)
 * [Everything in one place](/neale/g.cgi/)
