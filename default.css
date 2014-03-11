@@ -5,7 +5,7 @@ body {
   background-color: #eee;
 }
 
-h1:first-child {
+body>h1:first-child {
   background-color: #cc8;
   margin-top: 0;
 }

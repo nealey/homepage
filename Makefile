@@ -12,7 +12,7 @@ COPY += face.png chumby-photo.cgi
 COPY += format.css default.css print.css
 #COPY += gitweb.cgi git-logo.png gitweb.css gitweb.conf
 COPY += portal.png portal.cgi
-COPY += g.cgi cgitrc cgit-header.html cgit.css
+COPY += g.cgi cgitrc cgit-header.html cgit.css about-filter.sh
 
 # Directories in which %.mdwn generates %.html
 PLAIN = . papers poems misc

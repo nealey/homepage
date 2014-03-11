@@ -1,12 +1,15 @@
 strict-export=git-daemon-export-ok
 
-snapshots=zip tar.gz
-clone-prefix=http://woozle.org/~neale/g.cgi
-#clone-url=http://woozle.org/~neale/projects/$CGIT_REPO_URL
-scan-path=/home/neale/projects
-virtual-root=/~neale/g.cgi/
-css=/~neale/cgit.css
+about-filter=/home/neale/public_html/about-filter.sh
+readme=:README
 
+snapshots=zip tar.gz
+clone-prefix=http://woozle.org/neale/g.cgi
+scan-path=/home/neale/projects
+virtual-root=/neale/g.cgi/
+css=/neale/cgit.css
+
+enable-index-owner=0
 root-title=Neale's git projects
 root-desc=
 
