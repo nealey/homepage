@@ -3,6 +3,7 @@ Author: Neale Pickett <neale@woozle.org>
 
 9wm is an X11 window manager inspired by the Plan 9 window manager 8½.
 It provides a very simple and clean user interface.
+It makes heavy use of the mouse, and no use of the keyboard.
 It is click-to-type.
 It uses the X11 font system (which, unfortunately, means no Unicode support).
 
