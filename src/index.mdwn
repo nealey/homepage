@@ -11,7 +11,7 @@ Current Work
 * [Hardware Scoreboard](/neale/g.cgi/avr/scoreboard/about/), a microcontroller-based LED roller derby scoreboard
 * [Runit-Init](/neale/g.cgi/aur/runit-init/about/), an /sbin/init replacement based on busybox
 * [Eris HTTPd](/neale/g.cgi/net/eris/about/), a small HTTP (web) server
-* [9wm](/neale/g.cgi/x11/9wm/about/), an emulation of the Plan 9 window manager
+* [9wm](9wm/), an emulation of the Plan 9 window manager
 * [xss](/neale/g.cgi/x11/xss/about/), a suite of X screensaver programs
 * [Penalty Timer](https://play.google.com/store/apps/details?id=org.woozle.penaltytimer), a roller derby penalty timer for Android
 * [Hercules DJ Controller Driver](/neale/g.cgi/hdjd/about/)
