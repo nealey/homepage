@@ -14,11 +14,8 @@ I figured it was a good time to make the switch.
 
 I know a lot of people feel very passionately about systemd;
 I just like runit better.
-My wife's computer uses systemd and I have no issues with that. 
-Distribution people have done a swell job making the machine work using systemd,
-and that's just fine by me.
 If you want to rage about systemd,
-there are many web forums available for you to do so.
+there are many online venues available for you to do so.
 
 What's the advantage?
 ---------------------
@@ -55,6 +52,10 @@ which runit also keeps track of.
 That log service can be anything you want:
 `svlogd` does a pretty good job timestamping lines,
 and it also rotates logs automatically without needing to stop and start the daemon.
+
+People aren't using sysvinit anymore (alas), but
+[this essay](http://busybox.net/~vda/init_vs_runsv.html)
+by Denys Vlasenko is still a pretty good overview of other ways runit is neat.
 
 Have I convinced you?
 ---------------------
