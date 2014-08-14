@@ -1,5 +1,11 @@
 Title: Runit on Arch Linux
 
+Last update: 14 August 2014
+
+[The easy method, for the impatient](https://aur.archlinux.org/packages/runit-init/)
+
+------------------------
+
 I like how runit manages things,
 especially the restarting of dead daemons. 
 I was growing tired of sysvinit when systemd started making inroads,
@@ -42,11 +48,37 @@ Writing to stderr is also very convenient from the standpoint of the daemon's au
 It's a natural way to provide information to the user,
 and all that's needed for "debugging mode" is to launch the daemon at the command line
 instead of from runit.
-stdout from a service is sent to stdin on a log service,
+In fact, the "log" package in Go (language) works without any modifications
+in this way.
+stdout from a runit service is sent to stdin on a log service,
 which runit also keeps track of.
 That log service can be anything you want:
 `svlogd` does a pretty good job timestamping lines,
 and it also rotates logs automatically without needing to stop and start the daemon.
+
+Have I convinced you?
+---------------------
+
+Try out my
+[runit-init AUR](https://aur.archlinux.org/packages/runit-init/)
+which does everything described here,
+and also contains updates for things like mdev (instead of udev)
+patches to X to start without udev,
+and cryptographic filesystem mounting.
+
+---------------------------------
+
+
+The Gory Details
+================
+
+Everything below here was written in February 2013.
+Things have changed since then;
+in particular, I have [an AUR](https://aur.archlinux.org/packages/runit-init/)
+which uses busybox runit to boot your system.
+
+I'm leaving the rest for people who want discussion about how to boot their system.
+This will all still work, it's just that the AUR works better :)
 
 
 Peculiarities of my setup
