@@ -1,0 +1,79 @@
+Title: The Setup / Neale Pickett
+
+After reading [Russ Cox's setup](http://russ.cox.usesthis.com/)
+I thought it might be interesting to write up my own.
+
+September 18, 2014
+
+
+Who are you, and what do you do?
+--------------------------------
+
+I write software.
+Mostly I hack around the periphery of free software projects,
+jumping in occasionally to things that interest me with patches.
+A partial portfolio is on my [source code page](src/).
+
+I also do computer security training for middle and high school kids,
+college students, and professionals.
+You can read about that at [dirtbags](http://dirtbags.net/).
+
+My hobbies include being a (laid back) disc jockey,
+and fiddling around with microcontrollers.
+
+
+Hardware
+--------
+
+I've decided to be very energy conscious.
+This means my hardware is low-power and not high-performance.
+
+At home, I have a Thinkpad X200.
+My wife uses a Chromebook, and we have a FitPC that gets turned on
+when we need to print on our HP LaserJet CM2320.
+My pre-teen daughter has a Nexus 7 tablet,
+and my wife and I both use Nexus 4 phones.
+We also have a Chromecast that's mostly used for Netflix,
+and a Wii.
+
+At work, I use an Intel NUC.
+
+
+Software
+--------
+
+I recently switched to Xubuntu from Arch Linux.
+I'm not sure I'll stay here, but I got tired of maintaining my one-off
+/sbin/init that uses runit.
+Linux distributions are all heading toward systemd,
+which I strongly dislike. But I figure it's time to catch up
+and abandon understanding how the computer boots.
+
+On the desktop, I run Google Chrome, xterm, and acme from plan9port.
+Occasionally I kick up inkscape or gimp, and mixxx for my DJ work.
+Most of my non-work computer use is through Chrome, which ties me strongly
+to Linux, for better or worse.
+
+My non-development stuff is almost entirely in the cloud.
+It's very frustrating to have to go to work where people are still emailing
+Excel spreadsheets and hand-merging edits.
+
+My FitPC print server runs Ubuntu and some kind of Chromium Cloud Print server thing.
+All my home printing is through Google Cloud Print.
+
+
+What would be your dream setup?
+-------------------------------
+
+A Chromebook that had Acme and my development tools.
+I really like how my wife's Chromebook updates itself,
+and how it doesn't need dozens of mystifying apps in the default menu.
+
+Some day I may figure out how to get Chrome to expose its window manager,
+and then I'll probably abandon all of XFCE4,
+since I don't really use it for anything other than kicking up Chrome
+and acme.
+
+I would also like to do away with the FitPC print server.
+I'd love to be able to buy a little box that will hop on our wireless network
+and connect our printer to Google Cloud Print.
