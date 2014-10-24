@@ -11,7 +11,7 @@ Who are you, and what do you do?
 
 I write software.
 Mostly I hack around the periphery of free software projects,
-jumping in occasionally to things that interest me with patches.
+occasionally tossing patches to projects that capture my interest.
 A partial portfolio is on my [source code page](src/).
 
 I also do computer security training for middle and high school kids,

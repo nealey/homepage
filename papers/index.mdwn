@@ -18,6 +18,7 @@ Roller Derby Stuff
 Computer Nerd Stuff
 -------------------
 
+* [The Setup](setup.html): the hardware and software I use
 * [Writing formal letters with roff](roff-letters.html)
 * [Runit on Arch Linux](arch-runit.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)

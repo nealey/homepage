@@ -363,20 +363,39 @@ You're an Arch Linux sysadmin,
 you should know what you need,
 and I can't help you past here.
 
+Removing `udev`
+---------------
+
+The `mdev` utility of busybox can replace most of what `udev` does.
+You just need to have the kernel run `mdev` as the hotplug userspace thingy.
+
+Recent precompiled kernels have removed support for `/proc/sys/kernel/hotplug`,
+so it's necessary to run a userspace program to get netlink events.
+You can [use the one I wrote](http://woozle.org/neale/g.cgi/aur/runit-init/tree/src/hurtplurg.c) if you like.
+
+You'll need to configure `mdev` to set up file permissions that work for you.
+A reasonable set of defaults is available
+[as another part of my AUR](http://woozle.org/neale/g.cgi/aur/runit-init/tree/mdev.conf).
+
+Since X11 wants `udevd` for something or other,
+you'll also need to tell it to use whatever the old method is.
+I don't quite understand what they do,
+but the files you need are [in my runit-desktop AUR](http://woozle.org/neale/g.cgi/aur/runit-desktop/tree/etc/X11/xorg.conf.d).
+
+
 Getting rid of `systemd`
 ------------------------
 
-Some readers might be disappointed that I didn't explain how to get rid of `systemd`.
-Sorry, guys.
-X11 requires `udevd`.
-Until that dependency goes away,
-or until Wayland is usable,
-I don't see any way around having systemd installed.
-When it *is* possbile to remove systemd,
-you might be able to use the `mdev` program in busybox to replace `udevd`.
-I played with this a little bit,
-and it looked promising,
-but I gave up when I saw that I wasn't going to get to run X.
+At this point you are not running anything in `systemd`.
+But you still need it installed,
+because a lot of things depend on libraries it's taken over.
+
+Don't panic about this.
+It's going to be okay.
+You have lots of things installed that you don't strictly need.
+I chose Arch over Gentoo because I like precompiled packages,
+even though that means they bring in a couple things I don't need.
+`systemd` is one of those things.
 
 
 Have fun!
