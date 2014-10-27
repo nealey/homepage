@@ -122,6 +122,18 @@ You might want to play with that and understand what the initrd is,
 before you are put into a position where you *have* to use it and can't start a web browser.
 
 
+WARNING
+-------
+
+This document is now pretty old.
+It's unlikely it will work at all on a modern Arch installation.
+[My AUR](https://aur.archlinux.org/packages/runit-init/)
+is usually only a few days behind the latest change in Arch's packages.
+I've left this here because it might help people trying similar things
+with different distributions.
+But if you're using Arch, I strongly recommend you start with the AUR.
+
+
 Let's go
 --------
 
@@ -159,68 +171,123 @@ Be sure to move the old `init` to soming like `init.sysv`,
 then create a new `init` similar to this
 (don't forget to `chmod +x`):
 
-    #! /bin/sh
-    
-    PATH=/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin
-    export PATH
-    
-    if [ $$ -ne 1 ]; then
-        case $1 in
-            6)
-                exec kill -15 1
-                ;;
-            0)
-                exec kill -12 1
-                ;;
-        esac
-    
-        echo "LOL: runit doesn't have run levels" 1>&2
-        exit 1
-    fi
-    
-    # Run arch's sysinit
-    if ! /etc/rc.sysinit; then
-        # Kludge it if there's no rc.sysinit
 
-        mount -t proc proc /proc -o nosuid,noexec,nodev
-        mount -t sysfs sys /sys -o nosuid,noexec,nodev
-        mount -t tmpfs run /run -o mode=0755,nosuid,nodev
-        mount -t devtmpfs dev /dev -o mode=0755,nosuid
-        mkdir -p /dev/{pts,shm}
-        mount -t devpts devpts /dev/pts -o mode=0620,gid=5,nosuid,noexec
-        mount -t tmpfs shm /dev/shm -o mode=1777,nosuid,nodev
+	#! /bin/sh
 
-        # This doesn't ever run fsck :<
-        mount -o remount,rw /
+	PATH=/usr/bin; export PATH
 
-        : < /etc/hostname > /proc/sys/kernel/hostname
-   
-        hwclock --systz
-        
-        # Start/trigger udev, load MODULES, and settle udev
-        udevd_modprobe sysinit
-    fi
-    
-    
-    if grep -q 'break=init' /proc/cmdline; then
-        echo 'Breaking before init, type "exit" to continue booting'
-        /bin/sh
-    fi
+	if [ $$ -ne 1 ]; then
+		case $1 in
+			6)
+				exec kill -15 1
+				;;
+			0)
+				exec kill -12 1
+				;;
+		esac
 
-    
-    # XXX: Who creates this?
-    rm /run/nologin
-    
-    # Hand off to runit
-    exec runsvdir -P -s runit-signal /service
+		echo "LOL: runit doesn't have run levels" 1>&2
+		exit 1
+	fi
 
-This will still run `udev` and `bootlogd` from `/etc/rc.sysinit`.
-I tried to set up `mdev` from busybox as a `udev` replacement,
-but Xorg wants `udev`,
-and I was having other problems getting drivers loaded,
-so I'm just trusting the the Arch devs here.
-If you can figure out another way,
-please email me about it, I'd love to know.
+	echo
+	echo 'Arch Linux'
+	echo 'http://www.archlinux.org/'
+	echo '-----------------------------'
+	echo
+
+	echo ":: Mounting initial filesystems"
+	mountpoint -q /proc || mount -t proc proc /proc -o nosuid,noexec,nodev
+	mountpoint -q /sys || mount -t sysfs sys /sys -o nosuid,noexec,nodev
+	mountpoint -q /run || mount -t tmpfs run /run -o mode=0755,nosuid,nodev
+	mountpoint -q /dev || mount -t devtmpfs dev /dev -o mode=0755,nosuid
+
+	mkdir -p -m0755 /run/runit /run/lock /run/lock/lvm /run/lvm /run/user /dev/pts /dev/shm
+	mountpoint -q /dev/pts || mount -n -t devpts devpts /dev/pts -o mode=0620,gid=5,nosuid,noexec
+	mountpoint -q /dev/shm || mount -n -t tmpfs shm /dev/shm -o mode=1777,nosuid,nodev
+
+	mount -o remount,ro /
+
+	echo ":: Setting up Unicode"
+	for i in /dev/tty[0-9]*;do
+	  unicode_start <$i
+	done &
+
+	echo ":: Setting system clock"
+	hwclock --utc --hctosys
+
+	echo ":: Enabling devices"
+	touch /dev/mdev.seq
+	/usr/bin/mdev -s &
+
+	echo ":: Loading drivers"
+	for i in $(seq 2); do
+		find /sys -name modalias -type f -exec cat {} + | sort -u | xargs modprobe -b -a
+	done 2>/dev/null
+
+	echo ":: Bringing up network"
+	ip link set up dev lo
+	cat /etc/hostname >/proc/sys/kernel/hostname
+
+	echo ":: Setting up cryptographic devices"
+	grep "^[^#]" /etc/crypttab | while read name device password options; do
+			case $options in
+					*swap*)
+						cryptsetup --key-file /dev/urandom open --type plain $device $name
+						mkswap /dev/mapper/$name
+						;;
+					*)
+						cryptsetup luksOpen $device $name < /dev/console
+						;;
+			esac
+	done
+
+	echo ":: Checking filesystems"
+	[ -f /forcefsck ] || grep -q forcefsck /proc/cmdline && FORCEFSCK=-f
+	if ! [ -f /fastboot ] && ! grep -q fastboot /proc/cmdline; then
+		fsck -A -T -C -a -t noopts=_netdev $FORCEFSCK
+		if [ $? -gt 1 ]; then
+			sulogin
+		fi
+	fi
+
+	echo ":: Mounting filesystems"
+	mount -o remount,rw /
+	mount -a -t "nosysfs,nonfs,nonfs4,nosmbfs,nocifs" -O no_netdev
+
+	echo ":: Enabling swap"
+	swapon -a
+
+	echo ":: Tidying up"
+	install -m0664 -o root -g utmp /dev/null /run/utmp  &
+	rm -f /etc/nologin /forcefsck /forcequotacheck /fastboot &
+
+	if grep -q 'break=init' /proc/cmdline; then
+		echo 'Breaking before init, type "exit" to continue booting'
+		/bin/sh
+	fi
+
+	if [ -x /etc/rc.local ]; then
+		echo ":: Sourcing /etc/rc.local"
+		. /etc/rc.local
+	fi
+
+	echo ":: Passing control to runit"
+	echo
+	exec runsvdir -P -s runit-signal /service
+
+This does a couple things:
+
+1. Mounts /proc, /sys, /dev, and some other directories.
+2. Turns on Unicode for 9 TTYs
+3. Sets the system clock from the hardware clock
+4. Runs an initial mdev to populate /dev
+5. Loads modules for things in /sys
+6. Bring up the loopback interface
+7. Initialize your cryptfs, if you have any in /etc/crypttab
+8. fsck then mount everything in /etc/fstab
+9. Run whatever's in /etc/rc.local
+10. Start runsvdir
 
 You may also want to install the `dash` package,
 and link `/bin/sh` to that, 
@@ -292,17 +359,17 @@ Here's my `/usr/local/sbin/runit-signal`
         15)                         # SIGTERM: reboot
             cleanup
             echo "Rebooting..."
-            reboot -f
+            busybox reboot -f
             ;;
         10)                         # SIGUSR1: halt
             cleanup
             echo "Halting..."
-            halt -f
+            busybox halt -f
             ;;
         12)                         # SIGUSR2: power
             cleanup
             echo "Shutting down..."
-            poweroff -f
+            busybox poweroff -f
             ;;
         *)                          # Everything else
             ;;
@@ -363,8 +430,12 @@ You're an Arch Linux sysadmin,
 you should know what you need,
 and I can't help you past here.
 
-Removing `udev`
----------------
+Hotplug events won't work, though.
+For that, you need to either run udev or some other hotplug listener.
+
+
+Setting up `mdev` as a hotplug listener
+---------------------------------------
 
 The `mdev` utility of busybox can replace most of what `udev` does.
 You just need to have the kernel run `mdev` as the hotplug userspace thingy.
