@@ -1,6 +1,6 @@
 Title: Runit on Arch Linux
 
-Last update: 14 August 2014
+Last update: 26 August 2014
 
 [The easy method, for the impatient](https://aur.archlinux.org/packages/runit-init/)
 
