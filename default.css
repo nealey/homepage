@@ -38,6 +38,7 @@ img.right {
 
 pre {
   background: #ccc;
+  overflow-x: auto;
 }
 
 #nav {
