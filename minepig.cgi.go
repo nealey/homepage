@@ -74,9 +74,14 @@ func main() {
 	fmt.Println("<body>")
 	fmt.Println("<h1>Are The Picketts playing Minecraft PE?</h1>")
 	fmt.Println("<ul id=\"a\">")
+	count := 0
 	for msg := range results {
 		fmt.Printf("<li>%s</li>\n", msg)
+		count += 1
 	}
 	fmt.Println("</ul>")
+	if count == 0 {
+		fmt.Println("<p>Sorry, looks like nobody's playing right now.</p>")
+	}
 	fmt.Println("</body></html>")
 }
