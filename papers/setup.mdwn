@@ -42,14 +42,15 @@ At work, I use an Intel NUC.
 Software
 --------
 
-I recently switched to Xubuntu from Arch Linux.
-I'm not sure I'll stay here, but I got tired of maintaining my one-off
-/sbin/init that uses runit.
-Linux distributions are all heading toward systemd,
-which I strongly dislike. But I figure it's time to catch up
-and abandon understanding how the computer boots.
+I run Arch Linux, with a shell script PID 1 that I maintain because I enjoy tinkering with early userspace.
+It uses runit from busybox to manage starting and stopping daemons.
+Runit is a lot like systemd or upstart at core: daemons don't do the double-fork trick, and log to stdout.
 
 On the desktop, I run Google Chrome, xterm, and acme from plan9port.
+My window manager varies a lot.
+Most times it's Openbox plus tint2, but sometimes I go back to 9wm (which I maintain).
+I'm starting to make overtures at Wayland.
+
 Occasionally I kick up inkscape or gimp, and mixxx for my DJ work.
 Most of my non-work computer use is through Chrome, which ties me strongly
 to Linux, for better or worse.
@@ -65,14 +66,17 @@ All my home printing is through Google Cloud Print.
 What would be your dream setup?
 -------------------------------
 
-A Chromebook that had Acme and my development tools.
-I really like how my wife's Chromebook updates itself,
-and how it doesn't need dozens of mystifying apps in the default menu.
+I'm actually not too far away right now.
+I like working in the cloud, and for my development stuff,
+acme is pretty great.
 
-Some day I may figure out how to get Chrome to expose its window manager,
-and then I'll probably abandon all of XFCE4,
-since I don't really use it for anything other than kicking up Chrome
-and acme.
+I spend a lot of time fretting about window managers.
+Hopefully I can move to Wayland soon, and port 9wm to it.
+Or maybe I can get Chrome to expose its window manager.
+
+I kind of wish I didn't need a gazillion packages in order to run my 3 main programs
+(chrome, acme, and xterm).
+But I don't know how I can fix that, and I'm not sure I really even want to.
 
 I would also like to do away with the FitPC print server.
 I'd love to be able to buy a little box that will hop on our wireless network
