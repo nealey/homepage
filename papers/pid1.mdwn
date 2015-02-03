@@ -57,6 +57,12 @@ to runit at the light end,
 managing only the starting and stopping of supervisors,
 which themselves manage the daemons.
 
+Incidentally,
+the threat of kernel panic and immediate halting
+is why some people
+(myself included)
+feel PID1 should be very simple and easy to check for bugs.
+
 
 How Runit Manages Daemons
 ==================
