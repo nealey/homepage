@@ -141,6 +141,15 @@ to make sure a dependency has started.
 `sv down foo` tells runsv to strive to have the `foo` service down.
 (`runsv` will try to kill it.)
 
+`sv check foo` will check if the desired state is the actual state.
+This means if you asked for `foo` to be up,
+it will return 0 if and only if it's up.
+But it also means that if you asked for `foo` to be down,
+it will return 0 if and only if it's down.
+There's a good chance you actually want `sv -v up foo` instead.
+I never use `sv check`, personally,
+but I'm listing it here because it seems to confuse people.
+
 There are more `sv` commands,
 but these are the ones I use most frequently.
 
