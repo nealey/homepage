@@ -48,8 +48,8 @@ $(DESTDIR)/geneweb.cgi: geneweb.c
 	$(CC) -o $@ $<
 	chmod +s $@
 
-$(DESTDIR)/g.cgi: g.cgi.c
-	$(CC) -o $@ $<
+$(DESTDIR)/g.cgi: g.cgi.go
+	go build -o $@ $<
 
 $(DESTDIR)/mp.cgi: minepig.cgi.go
 	go build -o $@ $<

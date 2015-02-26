@@ -1,6 +1,7 @@
 strict-export=git-daemon-export-ok
 
 about-filter=/home/neale/public_html/about-filter.sh
+readme=:README.mdwn
 readme=:README
 section-from-path=1
 
