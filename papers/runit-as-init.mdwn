@@ -7,9 +7,6 @@ distribution,
 I decided to try it out on my laptop, too.
 Here's how that went.
 
-Older Stuff
-===========
-
 My older paper on specifics of the conversion
 is still online: [Runit on Arch](arch-runit.html)
 

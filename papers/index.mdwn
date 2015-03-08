@@ -21,7 +21,7 @@ Computer Nerd Stuff
 * [The Setup](setup.html): the hardware and software I use
 * [Writing formal letters with roff](roff-letters.html)
 * [Plan9 GUI stuff in Unix](gui.html): How to make your X11 stuff feel more like Plan9
-* [Runit as Init](arch-runit.html): My experience using runit as PID 1 for two years
+* [Runit as Init](runit-as-init.html): My experience using runit as PID 1 for two years
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
 * [Runnning PHP as a CGI](php-cgi.html) in anything other than Apache
 * [Converting .docx files to text using unzip and sed](docx.html)
