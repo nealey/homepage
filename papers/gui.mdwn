@@ -1,0 +1,63 @@
+Title: Making Unix a little more Plan9-like
+
+I'm not really interested in defending anything.
+I tried out plan9port and liked it,
+but I have to live in Unix land.
+Here's how I set that up.
+
+A Warning
+--------
+
+The suckless community,
+and some of the plan9 communities,
+are dominated by assholes.
+I hope that's strong enough wording to impress the severity.
+Don't go into IRC for help.
+Stay off the suckless email list.
+The software is great,
+the people who write it are well-spoken and well-reasoned,
+but for some reason the fandom is horrible to everyone.
+
+xterm
+-----
+
+9term has some really cool ideas.
+But Unix has a long history of using graphical terminals,
+and lots of stuff needs VT220 compatibility.
+xterm is a good compromise.
+
+You can make the xterm scroll bar (and all other Athena scrollbars) prettier
+with this in your X resources:
+
+	*Scrollbar.thickness: 10
+	*Scrollbar.thumb: None
+	*Scrollbar.foreground: gray80
+	*Scrollbar.background: gray50
+	*Scrollbar.borderWidth: 3
+	*ScrollBarBorder: 0
+
+This will swap the left and right mouse buttons,
+to work like acme and 9term:
+
+	*Scrollbar.translations: #override\
+		<Btn1Down>: StartScroll(Backward) \n\
+		<Btn3Down>: StartScroll(Forward) \n\
+		<BtnUp>: NotifyScroll(Proportional) EndScroll()
+
+A side note:
+if xrdb is never run and your root window doesn't have a
+`RESOURCE_MANAGER` property set,
+libXaw will read `$HOME/.Xdefaults`.
+This is supposedly deprecated,
+but Xaw is so ancient it will probably never be removed.
+
+
+9wm
+----
+
+I'm now maintaining the 9wm window manager.
+If you like rio you should give it a whirl,
+there are some differences you might prefer.
+http://woozle.org/neale/g.cgi/x11/9wm/
+
+
