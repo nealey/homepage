@@ -5,15 +5,6 @@ concept to someone on woozle.  Hopefully other people will find them
 useful, too.
 
 
-Roller Derby Stuff
-------------------
-
-* [Choosing a Roller Derby Helmet](derby-helmet.html)
-* [Running Audio/Visual for a Roller Derby Bout](derby-av.html)
-* [Dirtbags DJ Setup](dj.html)
-* [Why you shouldn't use Derby Software](derby-software.html)
-* [Copyright Advice for Small Leagues](derby-copyright.html)
-
 
 Computer Nerd Stuff
 -------------------
@@ -28,6 +19,16 @@ Computer Nerd Stuff
 * [Introduction to TCP Sockets](sockets.html)
 * [3-Minute HTML Tutorial](html-tutorial.html)
 * [How DNS Works](DNS.html)
+
+
+Roller Derby Stuff
+------------------
+
+* [Choosing a Roller Derby Helmet](derby-helmet.html)
+* [Running Audio/Visual for a Roller Derby Bout](derby-av.html)
+* [Dirtbags DJ Setup](dj.html)
+* [Why you shouldn't use Derby Software](derby-software.html)
+* [Copyright Advice for Small Leagues](derby-copyright.html)
 
 
 Everything Else
