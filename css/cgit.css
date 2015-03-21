@@ -1,4 +1,5 @@
 @import url("default.css");
+@import url("font-awesome.min.css");
 body {
     max-width: inherit;
 }
@@ -31,6 +32,7 @@ table#header td.form select {
 }
 
 table#header td.sub {
+		display: none;
         color: #777;
         border-top: solid 1px #ccc;
         padding-left: 10px;

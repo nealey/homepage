@@ -6,10 +6,11 @@ readme=:README
 section-from-path=1
 
 snapshots=zip tar.gz
-clone-prefix=http://woozle.org/neale/g.cgi
+clone-prefix=https://woozle.org/neale/g.cgi
 scan-path=/home/neale/projects
 virtual-root=/neale/g.cgi/
-css=/neale/cgit.css
+css=/neale/css/cgit.css
+favicon=/neale/face.png
 
 enable-index-owner=0
 root-title=Neale's git projects
@@ -18,5 +19,5 @@ root-desc=
 logo=
 #embedded=1
 #noheader=1
-#header=/home/neale/public_html/cgit-header.html
-footer=/home/neale/public_html/footer.html
+#header=/home/neale/public_html/tmpl/head.tmpl
+footer=/home/neale/public_html/tmpl/foot.tmpl

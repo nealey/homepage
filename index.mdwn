@@ -1,13 +1,4 @@
-Title: Neale Pickett Page
+Title: Neale Pickett
 
-<img src="face.png" alt="☺" style="float: left; padding: 0.5em; height: 5em;" />
-One day a pirate walks into a bar with a steering wheel attached to his
-crotch. So the bartender says to him, "You know you have a steering
-wheel attached to your crotch?"
-
-And the pirate says, "Aaar, it's driving me nuts!"
-
-----
-
-* [Roller Derby Things](/derby/)
-* [Computer Security Things](http://dirtbags.net/)
+<!-- img src="face.png" alt="☺" style="width: 10em; float: right;" -->
+<img src="face.png" alt="☺" style="width: 10em;">

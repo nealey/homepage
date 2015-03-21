@@ -1,0 +1,68 @@
+#! /bin/sh
+
+DESTDIR=${1:-/home/neale/public_html}
+
+cd $(dirname $0)
+
+html () {
+	target=$DESTDIR/${1%mdwn}html
+	if older $target $1 tmpl/*; then
+		echo "HTML $1"
+		mkdir -p $(dirname $target)
+		./tmpl/mdwntohtml < $1 > $target
+	fi
+}
+
+copy () {
+	target=$DESTDIR/$1
+	if older $target $1; then
+		echo "COPY $1"
+		mkdir -p $(dirname $target)
+		cp $1 $target
+	fi
+}
+
+cc () {
+	target=$DESTDIR/${1%.c}
+	if older $target $1; then
+		echo "CC $1"
+		gcc -o $target $1
+	fi
+}
+
+gc () {
+	target=$DESTDIR/${1%.c}
+	if older $target $1; then
+		echo "GO $1"
+		go build -o $target $1
+	fi
+}
+
+install () {
+	fd=$(dirname $fn)
+	echo "SUBINSTALL $fd"
+	(cd $fd && ./install $DESTDIR/$fd)
+}
+
+
+git ls-files | while read fn; do
+	case "$fn" in
+	.*|*/.*|*~|install)
+		;;
+	*/install)
+		install $fn
+		;;
+	*.mdwn)
+		html $fn
+		;;
+	*.cgi.c)
+		cc $fn
+		;;
+	*.cgi.go)
+		gc $fn
+		;;
+	*)
+		copy $fn
+		;;
+	esac
+done

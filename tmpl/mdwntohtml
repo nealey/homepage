@@ -12,4 +12,12 @@ while IFS=: read field value; do
     esac
 done
 
-markdown | m4 -DTITLE="$title" $1 -
+tmpl=$(dirname $0)
+
+printf '<!DOCTYPE html>\n'
+printf '<html lang="en">\n'
+sed "s~TITLE~$title~" $tmpl/head.tmpl
+printf "<body><h1>%s</h1>\n" "$title"
+markdown
+cat $tmpl/foot.tmpl
+printf '</body></html>\n'

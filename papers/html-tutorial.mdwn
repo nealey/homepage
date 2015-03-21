@@ -8,7 +8,7 @@ look like this:
 
     Guess which word is <b>bold</b>?
 
-As should be obvious, the bold word in that sentence is "bold", in
+As you may have guessed, the bold word in that sentence is "bold", in
 between `<b>` and `</b>` tags.  The sentence will show up like so:
 
 > Guess which word is <b>bold</b>?
@@ -74,15 +74,15 @@ Now, for inline images:
 
     <p>
       This is an
-      <img src="http://www.woozle.org/favicon.png"
-           alt="woozle head"></img> image, and
+      <img src="http://woozle.org/neale/face.png"
+           alt="face"></img> image, and
       <a href="http://woozle.org/">this</a> is a link.
     </p>
 
 Which will show up like this:
 
->  <p>This is an <img src="http://www.woozle.org/favicon.png"
->  alt="woozle head" /> image, and
+>  <p>This is an <img src="http://woozle.org/neale/face.png"
+>  alt="face" /> image, and
 >  <a href="http://woozle.org/">this</a> is a link.
 
 The example above has an image tag, with two "attributes", "src" and
