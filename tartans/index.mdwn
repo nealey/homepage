@@ -1,0 +1,16 @@
+Title: Tartans
+Header: <script src="tartans.js"></script>
+
+<canvas id="loom" width="600" height="300">
+	Sorry, you need HTML5 and JavaScript for this.
+</canvas>
+
+Sett: <input id="sett" value="LG8 LV32 R4 G32 LG32 Y4 LG4" size="30">
+Weight: <input id="thick" type="number" value="2" min="1" max="10" size="1">
+
+Preset: <select id="preset"><option>---</option></select>
+
+<p id="desc"></p>
+
+If you have one you'd like to contribute to my database, or would like the code that generates this stuff, feel free to email me.
+

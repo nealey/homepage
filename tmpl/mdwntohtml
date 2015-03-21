@@ -1,23 +1,43 @@
 #! /bin/sh
 
-while IFS=: read field value; do
+cat <<EOD
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+EOD
+
+while IFS=': ' read field value; do
     case "$field" in
         "")
             break
             ;;
         Title)
             # echo strips leading and trailing whitespace
-            title=${value# }
+            title=$value
             ;;
+		Header)
+			printf "    %s\n" "$value"
+			;;
     esac
 done
 
 tmpl=$(dirname $0)
 
-printf '<!DOCTYPE html>\n'
-printf '<html lang="en">\n'
-sed "s~TITLE~$title~" $tmpl/head.tmpl
-printf "<body><h1>%s</h1>\n" "$title"
+cat <<EOD
+    <title>$title</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/neale/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/neale/css/default.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/neale/css/print.css">
+    <link rel="icon" type="image/png" href="/neale/face.png">
+  </head>
+  <body>
+    <h1>$title</h1>
+EOD
+cat $tmpl/head.tmpl
 markdown
 cat $tmpl/foot.tmpl
-printf '</body></html>\n'
+cat <<EOD
+  </body>
+</html>
+EOD
