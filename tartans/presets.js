@@ -19,6 +19,10 @@ var tartans = {
 		"sett": "Y8 BK2 Y8 BK2 B6 BK2 G8 B4 G8 BK2 B6 BK2 LR10 W2 LR10 BK2 B6 BK2 .",
 		"description": "I typed in this one as an example of an asymmetric sett."
 	},
+	"California": {
+		"sett": "Y8 K2 G20 R4 G20 R8 G20 K32 B56 K2 LB8 K2 B56 K32 G20 R4 G20 K2 Y8",
+		"description": "Contributed by the illustrious Sam Phillips"
+	},
 	"Colorado": {
 		"sett": "Y4 R6 (669)34 K40 G4 W6 LV6 W6 G22",
 		"description": "Wikipedia lists the sett as [Y/6] R4 MB26 K32 G4 W4 Lv4 W4 [G/44]. I'm not familiar with the [Color/Count] notation, the count appears to be doubled, possibly to indicate the total count of that thread in the mirror section.\n\nColorado house joint resolution 97-1016 makes this official but doesnt provide a thread count.  It speaks of \"cerulean blue\" which I approximate with the unique (669) color."

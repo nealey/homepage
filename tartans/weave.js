@@ -54,6 +54,11 @@ function Loom(ctx, warp, threadwidth) {
 
 	ctx.lineWidth = Number(threadwidth || 2);
 
+	// Avoid infinite loop
+	if (warp.length == 0) {
+		return;
+	}
+
 	// Draw the weft
 	for (var x = 0; x < width; ) {
 		for (var i in warp) {
@@ -238,7 +243,11 @@ function init() {
 		presetInput.appendChild(opt);
 	}
 
-	preset();
+	if (presetName) {
+		preset();
+	} else {
+		update();
+	}
 }
 window.addEventListener("load", init);
 
