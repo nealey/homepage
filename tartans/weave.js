@@ -37,6 +37,8 @@ var colors = {
 	"K":   Yarn(0.00, 0.00, 0.00), // Black
 	"BK":  Yarn(0.00, 0.00, 0.00), // Black
 	"GR":  Yarn(0.50, 0.50, 0.50), // Gray
+	"DR":  Yarn(0.30, 0.00, 0.00), // Dark Red
+	"DG":  Yarn(0.00, 0.25, 0.00), // Dark Green
 	"DB":  Yarn(0.00, 0.00, 0.30), // Dark Blue
 	"LB":  Yarn(0.00, 0.40, 0.90), // Light Blue
 	"LR":  Yarn(0.80, 0.00, 0.00), // Light Red
@@ -194,7 +196,8 @@ function preset() {
 	var tartan = tartans[presetName];
 
 	if (! tartan) {
-		presetName = "New Mexico Land Of Enchantment";
+		var keys = Object.keys(tartans);
+		presetName = keys[Math.floor(Math.random() * keys.length)];
 		tartan = tartans[presetName];
 		document.getElementById("preset").value = presetName;
 	}
@@ -245,8 +248,10 @@ function init() {
 
 	if (presetName) {
 		preset();
-	} else {
+	} else if (qs["s"]) {
 		update();
+	} else {
+		preset();
 	}
 }
 window.addEventListener("load", init);
