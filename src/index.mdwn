@@ -8,7 +8,7 @@ Current Work
 ------------
 
 * [Woozle Scoreboard](http://woozle.org/scoreboard/), a browser-based roller derby scorebard
-* [Hardware Scoreboard](/neale/g.cgi/avr/scoreboard/about/), a microcontroller-based LED roller derby scoreboard
+* [Hardware Scoreboard](/neale/g.cgi/derby/hw-scoreboard/about/), a microcontroller-based LED roller derby scoreboard
 * [Runit-Init](/neale/g.cgi/aur/runit-init/about/), an /sbin/init replacement based on busybox
 * [Eris HTTPd](/neale/g.cgi/net/eris/about/), a small HTTP (web) server
 * [9wm](9wm/), an emulation of the Plan 9 window manager

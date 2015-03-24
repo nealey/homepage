@@ -158,7 +158,8 @@ td#content {
 
 div#summary {
 	vertical-align: top;
-	margin-bottom: 1em;
+	max-width: 35em;
+	margin: auto;
 }
 
 table#downloads {
