@@ -7,15 +7,15 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100%;
+	background-position: center;
 }
 
 body {
-  max-width: 35em;
   background-color: rgba(255, 255, 255, 0.8);
   margin: auto;
-  min-height: 100%;
   padding: 1em;
+  border-radius: 1em;
+  max-width: 35em;
 }
 
 body>h1:first-child, td.main {
