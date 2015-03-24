@@ -8,7 +8,7 @@ pre {
   border: solid black 1px;
 }
 
-a:link {
+a:link, a:visited {
     color: inherit;
     text-decoration: underline;
 }

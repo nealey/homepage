@@ -1,5 +1,5 @@
 body {
-  font-family: "URW Palladio L", serif;
+  font-family: "DejaVu Serif", serif;
 }
 
 p, li, dd {
@@ -10,7 +10,7 @@ body > p {
   text-indent: 1.5em;
 }
 
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ol + p, ul + p, pre + p, blockquote + p, img + p {
   text-indent: 0;
 }
 

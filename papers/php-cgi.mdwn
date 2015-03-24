@@ -55,17 +55,17 @@ Now I get this (reformatted for narrow displays):
     <a href="http://php.net/install.windows">the
     manual page</a>.</p>
 
-It's writing out HTML, sort of: I mean, the first paragraph doesn't have P tags, but whatever.
+It's writing out HTML, sort of: I mean, the first paragraph doesn't have `P` tags, but whatever.
 So clearly they intend me to see it from a browser.
 I mean, the interpreter binary is called `php-cgi`, after all.
 And yet, they're not actually writing out a CGI header,
 so the web server thinks it's a broken script and dies.
-So maybe they meant me to view this from the command-line.
-Except, this error only shows up when I run it as CGI.
+So maybe they meant me to view this from the command-line;
+except the only way to get this error is to run it as CGI.
 
 Anyway.
 
-PHP is asking me to set the REDIRECT_STATUS variable,
+PHP is asking me to set the `REDIRECT_STATUS` variable,
 and telling me that this is somehow a security concern.
 It's interesting how Python, Perl, and Lua don't think the lack of this variable is a security problem.
 
@@ -100,7 +100,7 @@ given that PHP has sent its "X-Powered-By" header.
 If it couldn't find the file, it wouldn't have known enough to start php-cgi.
 And, remember, this all works fine from the command line.
 Not to mention Python, Perl, Lua, and even the lowly Awk and Bourne shell,
-have no trouble finding their input file when run as a CGI with the shebang (#! /path/to/binary)
+have no trouble finding their input file when run as a CGI with the shebang (`#! /path/to/binary`)
 as the first line.
 
 What actually fixed it
@@ -133,7 +133,7 @@ Why does PHP do this?
 I have skimmed [the URL that they asked me to](http://us3.php.net/manual/en/security.cgi-bin.attacks.php).
 They list two points:
 
-1. "Interpreters open and execute the file specified as the first argument on the command line." This is true, it's how shebangs work (a file "script.sh" beginning with "#!/bin/sh" is magically transformed to ["/bin/sh", "script.sh"]). It's how Python and Perl launch. I don't get the exploit path here, unless there's some horrible way to misconfigure Apache to do the wrong thing with scripts.
+1. "Interpreters open and execute the file specified as the first argument on the command line." This is true, it's how shebangs work (a file `script.sh` beginning with `#!/bin/sh` is magically transformed to `["/bin/sh", "script.sh"]`). It's how Python and Perl launch. I don't get the exploit path here, unless there's some horrible way to misconfigure Apache to do the wrong thing with scripts.
 
 2. If you put the php interpreter under your web server's document root (where files are served from), and then use it to load up php scripts using the `PATH_INFO` environment variable *which is specified by the end user*, then PHP will dutifully serve up every document on your machine.
 
