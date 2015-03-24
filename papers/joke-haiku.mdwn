@@ -81,16 +81,16 @@ wisdom.
 The problem is that it doesn't take a genius to come up with seventeen
 syllables about anything.  For example:
 
-    Lame flying saucers  
-    You can see the fishing line  
-    What a bad movie.
+> Lame flying saucers  
+> You can see the fishing line  
+> What a bad movie.
 
 It took me all of about ten seconds to write that.  Here, I'll do
 another one:
 
-    Where's my other sock?  
-    It disappeared in the wash  
-    How did that happen?
+> Where's my other sock?  
+> It disappeared in the wash  
+> How did that happen?
 
 I hardly feel that these two stupid poems mark me as being clever or
 witty in any way, yet I defy anyone to show that they're any less
@@ -153,15 +153,15 @@ the remainder of the poem.  Jennifer Jensen points to
 [a fine example of cutting](http://www.peavine.com/haiku/cuttingwords.html),
 from the 17th century haiku master Basho:
 
-    Kutabirete  
-    yado karu koro ya  
-    fuji no hana
+> Kutabirete  
+> yado karu koro ya  
+> fuji no hana
 
 which in English is translated:
 
-    When worn out  
-    And seeking an inn:  
-    Wisteria flowers!
+> When worn out  
+> And seeking an inn:  
+> Wisteria flowers!
 
 The cutting word above is the Japanese ya, which doesn't translate to
 English well; it more or less signals a break in thought,
@@ -175,9 +175,9 @@ another.  By comparison, joke haiku writers typically bull through to
 the end at maximum speed as though they're trying to get home before
 WWF Thursday Night Smackdown starts:
 
-    Cutting my toenails  
-    I cut too deep and I bleed  
-    all over the rug.
+> Cutting my toenails  
+> I cut too deep and I bleed  
+> all over the rug.
 
 Ironically, the one rule to which every joke haiku does
 conform—seventeen syllables in three metrical units of five, seven,
@@ -226,9 +226,9 @@ art form to pass it off as inspired quirkiness.
 
 Consider this example:
 
-    Milk after five months  
-    in my refrigerator  
-    tastes just horrible.
+> Milk after five months  
+> in my refrigerator  
+> tastes just horrible.
 
 The point being made here is that sour milk tastes bad.  Yet if I were
 to post it to a joke haiku bulletin board, or scribble it on a napkin
@@ -259,15 +259,15 @@ shorn of its haiku form, its true banality emerges.
 
 Consider the example I posted above:
 
-    Milk after five months  
-    in my refrigerator  
-    tastes just horrible.
+> Milk after five months  
+> in my refrigerator  
+> tastes just horrible.
 
 This poem is easily the equal of any number of joke haiku posted or
 e-mailed anywhere on the Internet.  Yet look at what happens when I
 remove the line breaks:
 
-    Milk after five months in my refrigerator tastes just horrible.
+> Milk after five months in my refrigerator tastes just horrible.
 
 What once might have elicited satisfied chuckles from joke haiku
 aficionados becomes an excruciatingly average observation that
@@ -351,18 +351,18 @@ as a creative force.
 
 Consider this haiku about commuting:
 
-    Sitting in my car
-    I watch the time tick away
-    This traffic sure sucks.
+> Sitting in my car
+> I watch the time tick away
+> This traffic sure sucks.
 
 Pedestrian and boring, it took all of ten seconds to write.  To write
 a limerick on the same subject, one must work much harder:
 
-    Nothing's worse, there can be no dispute,
-    Than my everyday average commute.
-    In my car long I sit.
-    I just might throw a fit
-    If I can't find an alternate route.
+> Nothing's worse, there can be no dispute,
+> Than my everyday average commute.
+> In my car long I sit.
+> I just might throw a fit
+> If I can't find an alternate route.
 
 Okay, so it's not the best limerick that's ever been written, but in a
 way that's exactly my point.  This stuff's not easy to do.  Do it well

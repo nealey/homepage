@@ -26,8 +26,6 @@ body>h1:first-child, td.main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "URW Gothic L", sans-serif;
-  font-weight: normal;
   color: #fa6900;
 }
 
@@ -58,8 +56,14 @@ img.face {
 }
 
 pre {
-  background: #ccc;
+  background: #e0e4cc;
   overflow-x: auto;
+}
+
+blockquote {
+	background: #e0e4cc;
+	padding: 0.1em 1em;
+	border-radius: 0.4em;
 }
 
 #nav {
@@ -73,17 +77,3 @@ pre {
 #nav li + li:before {
   content: " | ";
 }
-
-address {
-  clear: both;
-  font-size: small;
-}
-
-address a {
-	margin: 0 2em;
-}
-
-address a:before {
-	padding: 0.5em;
-}
-

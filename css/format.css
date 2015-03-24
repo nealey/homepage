@@ -1,3 +1,7 @@
+body {
+  font-family: "URW Palladio L", serif;
+}
+
 p, li, dd {
   text-align: justify;
 }
@@ -12,6 +16,7 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "URW Gothic L", sans-serif;
+  font-weight: normal;
 }
 
 pre {
@@ -27,3 +32,17 @@ pre {
   font-size: small;
   border: solid black 1px;
 }
+
+address {
+  clear: both;
+  font-size: small;
+}
+
+address a {
+    margin: 0 2em;
+}
+
+address a:before {
+    padding: 0.5em;
+}
+
