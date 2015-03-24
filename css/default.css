@@ -1,12 +1,25 @@
+/* http://www.colourlovers.com/palette/92095/Giant_Goldfish */
 @import "format.css";
+
+html {
+	background-color: white;
+	background-image: url("/neale/images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}
 
 body {
   max-width: 35em;
-  background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  min-height: 100%;
+  padding: 1em;
 }
 
 body>h1:first-child, td.main {
-  background-color: #cc8;
+  background-color: #e0e4cc;
   border-radius: 0.5em;
   padding: 0em 1em;
   margin-top: 0;
@@ -15,18 +28,18 @@ body>h1:first-child, td.main {
 h1, h2, h3, h4, h5, h6 {
   font-family: "URW Gothic L", sans-serif;
   font-weight: normal;
-  color: #c17f6f;
+  color: #fa6900;
 }
 
 a {
-  color: #2A70E0;
+  color: #38d;
   text-decoration: none;
 }
 a:visited {
-  color: #469;
+  color: #2aa;
 }
 a:hover {
-  color: #bb3;
+  color: #f83;
 }
 
 img {
@@ -36,6 +49,12 @@ img {
 img.right {
     margin: 1em;
     float: right;
+}
+
+img.face {
+	margin: 1em;
+	width: 10em;
+	float: left;
 }
 
 pre {
