@@ -2,7 +2,7 @@ Title: Tartans
 Header: <script src="weave.js"></script>
 Header: <script src="presets.js"></script>
 
-<canvas id="loom" width="800" height="600" style="width: 100%; background: #444;">
+<canvas id="loom" width="800" height="800" style="width: 100%; background: #444;">
 	Sorry, you need HTML5 and JavaScript for this.
 	<img src="nmloe.png">
 </canvas>
@@ -11,7 +11,6 @@ Header: <script src="presets.js"></script>
 <select id="preset"><option>Presets:</option></select>
 <input id="sett" size="30">
 <span style="white-space: nowrap;">
-Zoom: <select id="thick"><option>0.8</option><option>1</option><option selected>2</option><option>3</option></select>
 </span>
 </div>
 

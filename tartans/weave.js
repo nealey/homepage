@@ -20,6 +20,7 @@
 //
 
 var maxSaturation = 200;
+var yarnWeight = 3;
 
 function Yarn(r, g, b) {
 	var rgb = [Math.round(r*maxSaturation), Math.round(g*maxSaturation), Math.round(b*maxSaturation)]
@@ -54,7 +55,7 @@ function Loom(ctx, warp, threadwidth) {
 	var width = ctx.canvas.width;
 	var height = ctx.canvas.height;
 
-	ctx.lineWidth = Number(threadwidth || 2);
+	ctx.lineWidth = Number(threadwidth || yarnWeight);
 
 	// Avoid infinite loop
 	if (warp.length == 0) {
@@ -62,7 +63,7 @@ function Loom(ctx, warp, threadwidth) {
 	}
 
 	// Draw the weft
-	for (var x = 0; x < width; ) {
+	for (var x = 0; x <= width; ) {
 		for (var i in warp) {
 			ctx.strokeStyle = warp[i];
 			ctx.beginPath();
@@ -173,18 +174,22 @@ function weave(pattern, width) {
 
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	var sett = settOfString(pattern);
+
+	var x = width * sett.length * 2;
+	canvas.width = x;
+	canvas.height = x;
+
 	var l = new Loom(ctx, sett, width);
 	l.plaid();
 }
 
 function update(reset) {
 	var settInput = document.getElementById("sett");
-	var thickInput = document.getElementById("thick");
-	weave(settInput.value, thick.value);
+	weave(settInput.value, yarnWeight);
 
 	if (reset) {
 		var s = encodeURIComponent(settInput.value).replace(/%20/g, "+");
-		window.location.hash = "s=" + s + "&w=" + thickInput.value;
+		window.location.hash = "s=" + s;
 
 		document.getElementById("preset").value = "Presets:";
 		document.getElementById("desc").innerText = "";
@@ -224,14 +229,10 @@ if (window.location.hash) {
 
 function init() {
 	document.getElementById("sett").addEventListener("input", update);
-	document.getElementById("thick").addEventListener("input", update);
 
 
 	if (qs["s"]) {
 		document.getElementById("sett").value = qs["s"];
-	}
-	if (qs["w"]) {
-		document.getElementById("thick").value = qs["w"];
 	}
 
 	var presetName = qs["p"];
