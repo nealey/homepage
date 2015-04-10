@@ -36,9 +36,10 @@ Download
 
 This software is no longer maintained (see above).
 
-* [nfqueue bindings](http://software.inl.fr/trac/wiki/nfqueue-bindings)
-* [Latest version](ipqueue.tar.gz)
+* [Latest version](/neale/g.cgi/attic/py-ipqueue/snapshot/py-ipqueue-master.tar.gz)
+* [Git repository](/neale/g.cgi/attic/py-ipqueue/)
 * [Netfilter QUEUE bindings](nfqueue-0.1.tar.bz2) by Mike Auty <mike.auty@gmail.com>
+* [nfqueue bindings](http://software.inl.fr/trac/wiki/nfqueue-bindings)
 
 License
 -------
