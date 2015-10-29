@@ -7,6 +7,13 @@ import (
 	"sync"
 )
 
+var hosts = []HostEntry{
+	{"h.woozle.org:30919", "Ginnie (tablet)"},
+	{"h.woozle.org:44321", "Ginnie"},
+	{"h.woozle.org:58000", "Amy"},
+	{"h.woozle.org:29837", "Neale"},
+}
+
 const MAGIC = "\x00\xff\xff\x00\xfe\xfe\xfe\xfe\xfd\xfd\xfd\xfd\x12\x34\x56\x78"
 
 func isAlive(host string) bool {
@@ -39,12 +46,6 @@ func waitClose(c chan<- string) {
 type HostEntry struct {
 	host string
 	owner string
-}
-
-var hosts = []HostEntry{
-	{"h.woozle.org:30919", "Ginnie"},
-	{"h.woozle.org:44321", "Neale"},
-	{"h.woozle.org:58000", "Amy"},
 }
 
 func ping(results chan<- string, e HostEntry) {

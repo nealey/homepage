@@ -35,7 +35,7 @@ cat <<EOD
     <h1>$title</h1>
 EOD
 cat $tmpl/head.tmpl
-markdown
+pandoc -f markdown -t html5
 cat $tmpl/foot.tmpl
 cat <<EOD
   </body>

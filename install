@@ -31,7 +31,7 @@ cc () {
 }
 
 gc () {
-	target=$DESTDIR/${1%.c}
+	target=$DESTDIR/${1%.go}
 	if older $target $1; then
 		echo "GO $1"
 		go build -o $target $1

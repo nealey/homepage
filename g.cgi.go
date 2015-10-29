@@ -11,7 +11,7 @@ import (
 
 const GitProjectRoot = "/home/neale/projects"
 const CgitConfig = "/home/neale/public_html/cgitrc"
-const Cgit = "/usr/lib/cgit/cgit.cgi"
+const Cgit = "/opt/cgit/cgit.cgi"
 
 // printf "USER:PASS" | base64 | while read a; do printf "%s" "$a" | md5sum; done
 var allowed = []string{

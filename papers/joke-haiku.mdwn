@@ -351,17 +351,17 @@ as a creative force.
 
 Consider this haiku about commuting:
 
-> Sitting in my car
-> I watch the time tick away
+> Sitting in my car  
+> I watch the time tick away  
 > This traffic sure sucks.
 
 Pedestrian and boring, it took all of ten seconds to write.  To write
 a limerick on the same subject, one must work much harder:
 
-> Nothing's worse, there can be no dispute,
-> Than my everyday average commute.
-> In my car long I sit.
-> I just might throw a fit
+> Nothing's worse, there can be no dispute,  
+> Than my everyday average commute.  
+> In my car long I sit.  
+> I just might throw a fit  
 > If I can't find an alternate route.
 
 Okay, so it's not the best limerick that's ever been written, but in a
