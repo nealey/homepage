@@ -4,6 +4,18 @@ DESTDIR=${1:-/home/neale/public_html}
 
 cd $(dirname $0)
 
+older () {
+    tgt=$1
+    [ -f "$tgt" ] || exit 0
+
+    for src in "$@"; do
+	[ "$src" -nt "$tgt" ] && return 0
+    done
+
+    return 1
+}
+
+
 html () {
 	target=$DESTDIR/${1%mdwn}html
 	if older $target $1 tmpl/*; then

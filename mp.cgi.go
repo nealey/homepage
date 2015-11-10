@@ -8,10 +8,9 @@ import (
 )
 
 var hosts = []HostEntry{
-	{"h.woozle.org:30919", "Ginnie (tablet)"},
-	{"h.woozle.org:44321", "Ginnie"},
-	{"h.woozle.org:58000", "Amy"},
-	{"h.woozle.org:29837", "Neale"},
+	{"h.woozle.org:26548", "Ginnie (tablet)"},
+	{"g.dirtbags.net:44321", "Ginnie"},
+	{"n.dirtbags.net:29837", "Neale"},
 }
 
 const MAGIC = "\x00\xff\xff\x00\xfe\xfe\xfe\xfe\xfd\xfd\xfd\xfd\x12\x34\x56\x78"
@@ -51,7 +50,7 @@ type HostEntry struct {
 func ping(results chan<- string, e HostEntry) {
 	defer wg.Done()
 	if isAlive(e.host) {
-		results <- fmt.Sprintf("%s is playing at %s", e.owner, e.host)
+		results <- e.owner
 	}
 }
 
@@ -73,7 +72,7 @@ func main() {
 	fmt.Println("<style type=\"text/css\">#a{font-size: 120%; background: silver;}</style>")
 	fmt.Println("<title>Minecraft PE ping</title></head>")
 	fmt.Println("<body>")
-	fmt.Println("<h1>Are The Picketts playing Minecraft PE?</h1>")
+	fmt.Println("<h1>Who is playing Minecraft PE?</h1>")
 	fmt.Println("<ul id=\"a\">")
 	count := 0
 	for msg := range results {
