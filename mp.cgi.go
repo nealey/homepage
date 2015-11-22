@@ -7,9 +7,9 @@ import (
 	"sync"
 )
 
+// Internal port: 19132
 var hosts = []HostEntry{
-	{"h.woozle.org:26548", "Ginnie (tablet)"},
-	{"g.dirtbags.net:44321", "Ginnie"},
+	{"h.woozle.org:26548", "Ginnie"},
 	{"n.dirtbags.net:29837", "Neale"},
 }
 

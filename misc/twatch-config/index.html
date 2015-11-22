@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+  <title></title>
+  <link rel="stylesheet" href="slate.min.css">
+  <script src="twatch.js"></script>
+  <script src="slate.min.js"></script>
+</head>
+<body>
+  <form id="main-form">
+    <div class="item-container">
+      <div class="item-container-header">Features</div>
+      <div class="item-container-content">
+        <label class="item">
+	  Display second hand
+          <input type="checkbox" class="item-toggle" name="seconds" checked>
+        </label>
+      </div>
+      <!--
+      <div class="item-container-content">
+        <label class="item">
+	  Monitor phone connection
+          <div class="item-subtitle">Vibrate when Pebble loses connection to phone</div>
+          <input type="checkbox" class="item-toggle" name="bluetooth" checked>
+        </label>
+      </div>
+      -->
+    </div>
+
+    <div class="item-container">
+      <div class="item-container-header">Appearance</div>
+      <div class="item-container-content">
+        <label class="item">
+          Face color
+          <input type="text" class="item-color item-color-normal" name="color-face" value="0x000000">
+        </label>
+        <label class="item">
+          Numeral color
+          <input type="text" class="item-color item-color-normal" name="color-num" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Date color
+          <input type="text" class="item-color item-color-normal" name="color-day" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Month color
+          <input type="text" class="item-color item-color-normal" name="color-mon" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Tic color
+          <div class="item-subtitle">5-Minute markers on the watch face</div>
+          <input type="text" class="item-color item-color-normal" name="color-tic" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Second hand color
+          <input type="text" class="item-color item-color-normal" name="color-sec" value="0xAA5500">
+        </label>
+        <label class="item">
+          Minute hand color
+          <input type="text" class="item-color item-color-normal" name="color-min" value="0xFFFFFF">
+        </label>
+        <label class="item">
+          Hour hand color
+          <input type="text" class="item-color item-color-normal" name="color-hr" value="0xFFFFFF">
+        </label>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="button-container">
+        <input type="button" class="item-button" id="submit" name="submit" value="SEND">
+      </div>
+    </div>
+  </form>
+</body>
+</html>
