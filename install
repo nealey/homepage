@@ -6,7 +6,7 @@ cd $(dirname $0)
 
 older () {
     tgt=$1
-    [ -f "$tgt" ] || exit 0
+    [ -f "$tgt" ] || return 0
 
     for src in "$@"; do
 	[ "$src" -nt "$tgt" ] && return 0

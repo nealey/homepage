@@ -3,13 +3,14 @@ Title: The Setup / Neale Pickett
 After reading [Russ Cox's setup](http://russ.cox.usesthis.com/)
 I thought it might be interesting to write up my own.
 
-September 18, 2014
+29 December, 2015
 
 
 Who are you, and what do you do?
 --------------------------------
 
-I write software.
+I am a system administrater at Canonical (the people who make Ubuntu).
+
 Mostly I hack around the periphery of free software projects,
 occasionally tossing patches to projects that capture my interest.
 A partial portfolio is on my [source code page](src/).
@@ -28,56 +29,50 @@ Hardware
 I've decided to be very energy conscious.
 This means my hardware is low-power and not high-performance.
 
-At home, I have a Thinkpad X200.
-My wife uses a Chromebook, and we have a FitPC that gets turned on
-when we need to print on our HP LaserJet CM2320.
-My pre-teen daughter has a Nexus 7 tablet,
-and my wife and I both use Nexus 4 phones.
+I use a Thinkpad X220.
+My wife uses a Chromebook from 2011, which she loves,
+and my daughter has an X220 that she doesn't turn on much.
+
+We have a brother printer that connects wirelessly and speakes Google Cloud Print.
+I can no longer print natively from Linux,
+which has mattered exactly once in the last two years.
+
+The family shares a Nexus 7 tablet,
+my wife and daughter have Nexus 5x phones,
+and I have a Nexus 6.
+
 We also have a Chromecast that's mostly used for Netflix,
 and a Wii.
-
-At work, I use an Intel NUC.
 
 
 Software
 --------
 
-I run Arch Linux, with a shell script PID 1 that I maintain because I enjoy tinkering with early userspace.
-It uses runit from busybox to manage starting and stopping daemons.
-Runit is a lot like systemd or upstart at core: daemons don't do the double-fork trick, and log to stdout.
+I run Ubuntu with the Gnome 3 desktop,
+which is the first Linux desktop environment I actually like.
+I think this is mostly because it doesn't try to do many tricks.
 
-On the desktop, I run Google Chrome, xterm, and acme from plan9port.
-My window manager varies a lot.
-Most times it's Openbox plus tint2, but sometimes I go back to 9wm (which I maintain).
-I'm starting to make overtures at Wayland.
+Inside Emacs I run Gnus for work email,
+and a comint-mode derivative I created for bouncing around work machines with SSH.
+I don't run any sort of terminal emulator:
+everything is `TERM=dumb` inside my emacs SSH sessions.
 
-Occasionally I kick up inkscape or gimp, and mixxx for my DJ work.
-Most of my non-work computer use is through Chrome, which ties me strongly
-to Linux, for better or worse.
+My other main program is Google Chrome.
 
-My non-development stuff is almost entirely in the cloud.
-It's very frustrating to have to go to work where people are still emailing
-Excel spreadsheets and hand-merging edits.
-
-My FitPC print server runs Ubuntu and some kind of Chromium Cloud Print server thing.
-All my home printing is through Google Cloud Print.
+Occasionally I will run Gimp and Inkscape, too.
 
 
 What would be your dream setup?
 -------------------------------
 
-I'm actually not too far away right now.
-I like working in the cloud, and for my development stuff,
-acme is pretty great.
+I'm pretty happy with what I have now,
+although I wish I had time to get Acme working for me as nicely as Emacs,
+since I am not an Emacs fan.
 
-I spend a lot of time fretting about window managers.
-Hopefully I can move to Wayland soon, and port 9wm to it.
-Or maybe I can get Chrome to expose its window manager.
+It bothers me that X11 is such a horrible mess,
+but now that I'm not maintaining my own window manager,
+it's less of an issue.
 
-I kind of wish I didn't need a gazillion packages in order to run my 3 main programs
-(chrome, acme, and xterm).
-But I don't know how I can fix that, and I'm not sure I really even want to.
-
-I would also like to do away with the FitPC print server.
-I'd love to be able to buy a little box that will hop on our wireless network
-and connect our printer to Google Cloud Print.
+I'd like to get my daughter off her X220 and onto a Chromebook,
+because I feel like desktop system administration is a skill she will never need as an adult.
+But it's not enough of a concern to make me actually do anything about it.

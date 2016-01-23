@@ -13,21 +13,25 @@
 function submit() {
     var form = document.getElementById("main-form");
     var inputs = form.getElementsByTagName("input");
+    var selects = form.getElementsByTagName("select");
     var return_to = getQueryParam('return_to', 'pebblejs://close#');
 
     var options = {};
 
     console.log("Submitting");
-    for (var i = 0; i < inputs.length; i += 1) {
-	var input = inputs[i];
+    for (var i = 0; i < (inputs.length + selects.length); i += 1) {
+	var input = inputs[i] || selects[i - inputs.length];
 	var k = input.name;
 	var t = input.type;
 	var v;
 
+	console.log(k, t, v);
 	if (t == "checkbox") {
 	    v = input.checked;
 	} else if (t == "text") {
 	    v = Number(input.value);
+	} else if (t == "select-one") {
+	    v = input.value;
 	} else {
 	    continue;
 	}
@@ -42,15 +46,18 @@ function submit() {
 function restore() {
     var form = document.getElementById("main-form");
     var inputs = form.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i += 1) {
-	var input = inputs[i];
+    var selects = form.getElementsByTagName("select");
+    for (var i = 0; i < (inputs.length + selects.length); i += 1) {
+	var input = inputs[i] || selects[i - inputs.length];
 	var k = input.name;
 	var t = input.type;
 	var v = localStorage[k];
-	console.log(k);
+	console.log(k, t, v);
 	if (v != undefined) {
 	    if (t == "checkbox") {
 		input.checked = (v=="true")?true:false;
+	    } else if (t == "select-one") {
+		input.value = v;
 	    } else if (k.slice(0, 6) == "color-") {
 		var val = ("000000" + Number(v).toString(16)).slice(-6);
 		var hex = "0x" + val;

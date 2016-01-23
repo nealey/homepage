@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+  <title></title>
+  <link rel="stylesheet" href="slate.min.css">
+  <script src="twatch.js"></script>
+  <script src="slate.min.js"></script>
+</head>
+<body>
+  <form id="main-form">
+    <div class="item-container">
+      <div class="item-container-header">Appearance</div>
+      <div class="item-container-content">
+	<div class="item-container-content">
+	  <label class="item">
+	    Color Scheme
+	    <select name="theme" dir="rtl" class="item-select">
+	      <option class="item-select-option" value="000000,ffffff,ffffff">Dark</option>
+	      <option class="item-select-option" value="ffffff,000000,000000">Light</option>
+	      <option class="item-select-option" value="000000,ffffff,aaaaaa">Gray</option>
+	      <option class="item-select-option" value="000000,ffffff,aa55ff">Dusk</option>
+	      <option class="item-select-option" value="000000,ffffff,ffff55">Spring</option>
+	    </select>
+	  </label>
+
+	  <label class="item">
+	    Font Family
+	    <select name="font" dir="rtl" class="item-select">
+	      <option class="item-select-option">Helvetica</option>
+	      <option class="item-select-option">Avería</option>
+	      <option class="item-select-option">Ubuntu</option>
+	    </select>
+	  </label>
+	    
+	</div>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="button-container">
+        <input type="button" class="item-button" id="submit" name="submit" value="SEND">
+      </div>
+    </div>
+  </form>
+</body>
+</html>

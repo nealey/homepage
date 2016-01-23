@@ -13,8 +13,8 @@ It does not allocate any colors,
 and only requires Xlib,
 both of which will be great news if you are in 1993.
 
-9wm is distributed under [an MIT License](https://woozle.org/neale/g.cgi/x11/9wm/about/LICENSE),
-at <https://woozle.org/neale/g.cgi/x11/9wm>.
+9wm is distributed under [an MIT License](https://github.com/nealey/9wm/blob/master/LICENSE.md),
+at <https://github.com/nealey/9wm>.
 
 
 How do I use it?
@@ -51,4 +51,4 @@ More Information
 ================
 
 More information can be found in the 
-[README](https://woozle.org/neale/g.cgi/x11/9wm/about/) file.
+[README](https://github.com/nealey/9wm/blob/master/README.md).
