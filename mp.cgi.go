@@ -10,7 +10,7 @@ import (
 // Internal port: 19132
 var hosts = []HostEntry{
 	{"h.woozle.org:26548", "Ginnie"},
-	{"n.dirtbags.net:29837", "Neale"},
+	{"h.dirtbags.net:29837", "Neale"},
 }
 
 const MAGIC = "\x00\xff\xff\x00\xfe\xfe\xfe\xfe\xfd\xfd\xfd\xfd\x12\x34\x56\x78"
