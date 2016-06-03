@@ -1,9 +1,9 @@
 Title: The Setup / Neale Pickett
+Time-stamp: <2016-06-03 10:47:45 neale>
 
 After reading [Russ Cox's setup](http://russ.cox.usesthis.com/)
 I thought it might be interesting to write up my own.
 
-29 December, 2015
 
 
 Who are you, and what do you do?

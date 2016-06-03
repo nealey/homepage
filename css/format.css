@@ -46,3 +46,7 @@ address a:before {
     padding: 0.5em;
 }
 
+#timestamp {
+    font-size: small;
+    text-indent: inherit;
+}
