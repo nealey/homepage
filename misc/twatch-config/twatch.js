@@ -25,16 +25,17 @@ function submit() {
 	var t = input.type;
 	var v;
 
-	console.log(k, t, v);
 	if (t == "checkbox") {
 	    v = input.checked;
 	} else if (t == "text") {
 	    v = Number(input.value);
 	} else if (t == "select-one") {
-	    v = input.value;
+	    v = Number(input.value);
 	} else {
+	    console.log("Unknown type: " + t);
 	    continue;
 	}
+	console.log(k, t, v);
 
 	localStorage[k] = v;
 	options[k] = v;

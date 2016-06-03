@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+  <title></title>
+  <link rel="stylesheet" href="slate.min.css">
+  <script src="twatch.js"></script>
+  <script src="slate.min.js"></script>
+</head>
+<body>
+  <form id="main-form">
+    <div class="item-container">
+      <div class="item-container-header">Appearance</div>
+
+      <div class="item-container-content">
+        <label class="item">
+          Face color
+          <input type="text" class="item-color item-color-normal" name="color-face" value="0x000000">
+        </label>
+      </div>
+
+      <div class="item-container-content">
+	<label class="item">
+	  Style
+	  <select name="int-style" dir="rtl" class="item-select">
+	    <option class="item-select-option" value="0">Bold</option>
+	    <option class="item-select-option" value="1">Thin</option>
+	  </select>
+	</label>
+    </div>
+
+    <div class="item-container">
+      <div class="button-container">
+        <input type="button" class="item-button" id="submit" name="submit" value="SEND">
+      </div>
+    </div>
+  </form>
+</body>
+</html>
