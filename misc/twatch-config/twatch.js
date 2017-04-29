@@ -30,7 +30,7 @@ function submit() {
 	} else if (t == "text") {
 	    v = Number(input.value);
 	} else if (t == "select-one") {
-	    v = Number(input.value);
+	    v = input.value;
 	} else {
 	    console.log("Unknown type: " + t);
 	    continue;

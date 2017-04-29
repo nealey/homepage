@@ -91,7 +91,7 @@ download a [tarball of the latest
 commit](http://woozle.org/neale/g.cgi/x11/xss/snapshot/xss-master.tar.gz), or clone the
 git repository:
 
-    git clone http://woozle.org/~neale/projects/xss
+    git clone http://woozle.org/~neale/projects/x11/xss
 
 
 History

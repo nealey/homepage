@@ -94,7 +94,7 @@ action send to the list and the list only, and provides a "reply to
 author" action that will always send to the message's author whether
 it's a list or not.  "Reply to author" honors the `Reply-To` field.
 This is exactly the convenient behavior Simon claims to want in his
-essay, and it can all be done using standard behavior.
+"considered useful" essay, and it can all be done using standard behavior.
 
 
 Getting two copies of the same email

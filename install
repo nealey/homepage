@@ -17,64 +17,75 @@ older () {
 
 
 html () {
-	target=$DESTDIR/${1%mdwn}html
-	if older $target $1 tmpl/*; then
-		echo "HTML $1"
-		mkdir -p $(dirname $target)
-		./tmpl/mdwntohtml < $1 > $target
-	fi
+    target=$DESTDIR/${1%mdwn}html
+    if older $target $1 tmpl/*; then
+	echo "HTML $1"
+	mkdir -p $(dirname $target)
+	./tmpl/mdwntohtml < $1 > $target
+    fi
 }
 
 copy () {
-	target=$DESTDIR/$1
-	if older $target $1; then
-		echo "COPY $1"
-		mkdir -p $(dirname $target)
-		cp $1 $target
-	fi
+    target=$DESTDIR/$1
+    if older $target $1; then
+	echo "COPY $1"
+	mkdir -p $(dirname $target)
+	cp $1 $target
+    fi
 }
 
 cc () {
-	target=$DESTDIR/${1%.c}
-	if older $target $1; then
-		echo "CC $1"
-		gcc -o $target $1
-	fi
+    target=$DESTDIR/${1%.c}
+    if older $target $1; then
+	echo "CC $1"
+	gcc -o $target $1
+    fi
 }
 
 gc () {
-	target=$DESTDIR/${1%.go}
-	if older $target $1; then
-		echo "GO $1"
-		go build -o $target $1
-	fi
+    target=$DESTDIR/${1%.go}
+    if older $target $1; then
+	echo "GO $1"
+	go build -o $target $1
+    fi
+}
+
+setuid () {
+    target=$DESTDIR/${1%.*}
+    echo "SETUID $target"
+    chmod u+s $target
 }
 
 install () {
-	fd=$(dirname $fn)
-	echo "SUBINSTALL $fd"
-	(cd $fd && ./install $DESTDIR/$fd)
+    fd=$(dirname $fn)
+    echo "SUBINSTALL $fd"
+    (cd $fd && ./install $DESTDIR/$fd)
 }
 
 
 git ls-files | while read fn; do
-	case "$fn" in
+    case "$fn" in
 	.*|*/.*|*~|install)
-		;;
+	    true # Skip
+	    ;;
 	*/install)
-		install $fn
-		;;
+	    install $fn
+	    ;;
+	car.cgi.go)
+	    gc $fn
+	    setuid $fn
+	    ;;
 	*.mdwn)
-		html $fn
-		;;
+	    html $fn
+	    ;;
 	*.cgi.c)
-		cc $fn
-		;;
+	    cc $fn
+	    ;;
 	*.cgi.go)
-		gc $fn
-		;;
+	    gc $fn
+	    ;;
 	*)
-		copy $fn
-		;;
-	esac
+	    copy $fn
+	    ;;
+    esac
 done
