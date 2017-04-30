@@ -1,6 +1,7 @@
 #! /bin/sh
 
 DESTDIR=${1:-/home/neale/public_html}
+GOPATH=$HOME/go export GOPATH
 
 cd $(dirname $0)
 
@@ -71,7 +72,7 @@ git ls-files | while read fn; do
 	*/install)
 	    install $fn
 	    ;;
-	car.cgi.go)
+	trigger.cgi.go)
 	    gc $fn
 	    setuid $fn
 	    ;;
