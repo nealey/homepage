@@ -53,8 +53,10 @@ gc () {
 
 setuid () {
     target=$DESTDIR/${1%.*}
-    echo "SETUID $target"
-    chmod u+s $target
+    if ! [ -u $target ]; then
+        echo "SETUID $target"
+        chmod u+s $target
+    fi
 }
 
 install () {
@@ -90,3 +92,4 @@ git ls-files | while read fn; do
 	    ;;
     esac
 done
+

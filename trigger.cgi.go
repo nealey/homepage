@@ -15,8 +15,10 @@ const authtok = "~!Jf5!uYFxhK"
 const clientId = "81527cff06843c8634fdc09e8ac0abefb46ac849f38fe1e431c2ef2106796384"
 const clientSec = "c7257eb71a564034f9419ee651c7d0e5f7aa6bfbd18bafb5c5c033b093bb2fa3"
 
-func Kersplode(w http.ResponseWriter, error string) {
-	http.Error(w, error, 500)
+func Kersplode(section string, error string, w http.ResponseWriter) {
+	errtxt := fmt.Sprintf("%s: %s", section, error)
+
+	http.Error(w, errtxt, 500)
 
 	// Send an email
 	c, _ := smtp.Dial("localhost:25")
@@ -33,7 +35,7 @@ func Kersplode(w http.ResponseWriter, error string) {
 	fmt.Fprintln(wc, "I'm sorry to say that something went wrong with a recent request.")
 	fmt.Fprintln(wc, "Here is the text of the error:")
 	fmt.Fprintln(wc, "")
-	fmt.Fprintln(wc, error)
+	fmt.Fprintln(wc, errtxt)
 }
 
 type Handler struct {
@@ -53,24 +55,29 @@ func (h Handler) TriggerHvac(w http.ResponseWriter, r *http.Request) {
 	}
 	cli, err := tesla.NewClient(&auth)
 	if err != nil {
-		Kersplode(w, err.Error());
+		Kersplode("tesla.NewClient", err.Error(), w);
 		return
 	}
 
 	vehicles, err := cli.Vehicles()
 	if err != nil {
-		Kersplode(w, err.Error());
+		Kersplode("cli.Vehicles", err.Error(), w);
 		return
 	}
 
 	vehicle := vehicles[0]
 	if _, err := vehicle.Wakeup(); err != nil {
-		Kersplode(w, err.Error());
+		Kersplode("vehicle.Wakeup", err.Error(), w);
 		return
 	}
-	if err := vehicle.StartAirConditioning(); err != nil {
-		Kersplode(w, err.Error());
-		return
+	for i := 0; i < 5; i += 1 {
+		err := vehicle.StartAirConditioning()
+		if err == nil {
+			break
+		} else if (i == 5) {
+			Kersplode("vehicle.StartAirConditioning", err.Error(), w);
+			return
+		}
 	}
 	http.Error(w, "OK", 200)
 }
