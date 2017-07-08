@@ -9,4 +9,4 @@ Maybe you'll just wonder why I spend so much time on this garbage.
   [smalltalk generator](smalltalk.cgi).
 * Maybe you'd rather see a [magic trick](omg-magic.html)?
 * How about some [Internet Reiki](reiki.html)?
-* [Crunt](crunt.cgi).
+* [Crunt](crunt.html).

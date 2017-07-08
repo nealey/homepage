@@ -18,7 +18,7 @@ older () {
 
 
 html () {
-    target=$DESTDIR/${1%mdwn}html
+    target=$DESTDIR/${1%md}html
     if older $target $1 tmpl/*; then
 	echo "HTML $1"
 	mkdir -p $(dirname $target)
@@ -78,7 +78,7 @@ git ls-files | while read fn; do
 	    gc $fn
 	    setuid $fn
 	    ;;
-	*.mdwn)
+	*.md)
 	    html $fn
 	    ;;
 	*.cgi.c)
