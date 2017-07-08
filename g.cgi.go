@@ -1,6 +1,7 @@
 package main
 
 import (
+  "bufio"
 	"crypto/md5"
 	"fmt"
 	"log"
@@ -9,12 +10,9 @@ import (
 	"strings"
 )
 
-const GitProjectRoot = "/home/neale/projects"
-
 // printf "USER:PASS" | base64 | while read a; do printf "%s" "$a" | md5sum; done
-var allowed = []string{
-	"2c64993e88c06e297d4f01cf3b5aebdf", // neale
-}
+const AuthFilename = "/home/neale/.config/g.cgi/authorization"
+const GitProjectRoot = "/home/neale/projects"
 
 func execv(name string, arg ...string) {
 	c := exec.Command(name, arg...)
@@ -32,6 +30,7 @@ func Authenticated() bool {
 		return false
 	}
 
+  // Build up a string to match
 	parts := strings.Split(auth, " ")
 	switch {
 	case len(parts) != 2:
@@ -43,13 +42,24 @@ func Authenticated() bool {
 	hash := md5.Sum([]byte(parts[1]))
 	hashhex := fmt.Sprintf("%x", hash)
 
-	for _, a := range allowed {
-		if a == hashhex {
+  authfile, err := os.Open(AuthFilename)
+  if err != nil {
+    log.Fatal(err)
+  }
+  defer authfile.Close()
+  
+  scanner := bufio.NewScanner(authfile)
+  for scanner.Scan() {
+    line := scanner.Text()
+    if line == "" || strings.HasPrefix(line, "#") {
+      continue;
+    }
+    if line == hashhex {
 			os.Setenv("AUTH_TYPE", parts[0])
 			os.Setenv("REMOTE_USER", "XXX-neale")
 			return true
-		}
-	}
+    }
+  }
 
 	return false
 }
@@ -79,12 +89,11 @@ func main() {
 	//log.SetOutput(os.Stdout)
 	//log.SetPrefix("Status: 500 CGI Go Boom\nContent-type: text/plain\n\nERROR: ")
 
-	os.Setenv("GIT_PROJECT_ROOT", GitProjectRoot)
-
 	uri := os.Getenv("REQUEST_URI")
 	switch {
-	case strings.HasSuffix(uri, "git-receive-pack"):
+  case strings.HasSuffix(uri, "git-upload-pack") || strings.HasSuffix(uri, "git-receive-pack"):
 		if Authenticated() {
+    	os.Setenv("GIT_PROJECT_ROOT", GitProjectRoot)
 			execv("git", "http-backend")
 		} else {
 			fmt.Println("Status: 401 Not Authorized")
@@ -93,8 +102,6 @@ func main() {
 			fmt.Println()
 			fmt.Println("Nope", os.Getenv("HTTP_AUTHORIZATION"))
 		}
-	case strings.HasSuffix(uri, "git-upload-pack"):
-		execv("git", "http-backend")
 	default:
 		notice()
 	}

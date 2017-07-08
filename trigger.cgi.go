@@ -11,7 +11,7 @@ import (
 	"os"
 )
 
-const authtok = "~!Jf5!uYFxhK"
+// These are not actually secrets, and get posted around various forums
 const clientId = "81527cff06843c8634fdc09e8ac0abefb46ac849f38fe1e431c2ef2106796384"
 const clientSec = "c7257eb71a564034f9419ee651c7d0e5f7aa6bfbd18bafb5c5c033b093bb2fa3"
 
@@ -42,16 +42,18 @@ type Handler struct {
 	cgi.Handler
 }
 
-func (h Handler) TriggerHvac(w http.ResponseWriter, r *http.Request) {
-	os.Setenv("HOME", "/home/neale")
+func getSecret(host string) netrc.Entry {
 	n, _ := netrc.Parse()
-	secrets := n["gitosis.com"] // Requiring a password here is such bullshit.
+	return n[host]
+}
 
+func (h Handler) TriggerHvac(w http.ResponseWriter, r *http.Request) {
+	secret := getSecret("teslamotors.com")
 	auth := tesla.Auth{
 		ClientID:     clientId,
 		ClientSecret: clientSec,
-		Email:        secrets.Login,
-		Password:     secrets.Password,
+		Email:        secret.Login,
+		Password:     secret.Password,
 	}
 	cli, err := tesla.NewClient(&auth)
 	if err != nil {
@@ -83,7 +85,8 @@ func (h Handler) TriggerHvac(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	if r.FormValue("auth") != authtok {
+	secret := getSecret("host:trigger.cgi")
+	if r.FormValue("auth") != secret.Password {
 		http.Error(w, "Invalid authtok", 401)
 		return
 	}
@@ -101,6 +104,7 @@ func main() {
 	log.SetOutput(os.Stdout)
 	log.SetFlags(0)
 	log.SetPrefix("Status: 500 CGI Go Boom\nContent-type: text/plain\n\nERROR: ")
+	os.Setenv("HOME", "/home/neale") // required by netrc library
 	h := Handler{}
 	if err := cgi.Serve(h); err != nil {
 		log.Fatal(err)
