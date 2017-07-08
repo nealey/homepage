@@ -10,8 +10,6 @@ import (
 )
 
 const GitProjectRoot = "/home/neale/projects"
-const CgitConfig = "/home/neale/public_html/cgitrc"
-const Cgit = "/opt/cgit/cgit.cgi"
 
 // printf "USER:PASS" | base64 | while read a; do printf "%s" "$a" | md5sum; done
 var allowed = []string{
@@ -56,13 +54,32 @@ func Authenticated() bool {
 	return false
 }
 
+func notice() {
+	fmt.Println("Content-type: text/html")
+	fmt.Println()
+	fmt.Println("<!DOCTYPE html>")
+	fmt.Println("<html><head>")
+	fmt.Println("<title>Neale's Projects have Moved</title>")
+	fmt.Println("<meta name=\"viewport\" content=\"width=device-width\">")
+	fmt.Println("</head><body>")
+	fmt.Println("<h1>Neale's Projects have Moved</h1>")
+	fmt.Println("I've moved most of my stuff to")
+	fmt.Println("<a href=\"https://github.com/nealey\">Github</a>.")
+	fmt.Println("<p>")
+	fmt.Println("X11 things may now be in the")
+	fmt.Println("<a href=\"https://github.com/9wm\">9wm team</a>.")
+	fmt.Println("<p>")
+	fmt.Println("Network security things may now be in the")
+	fmt.Println("<a href=\"https://github.com/dirtbags\">dirtbags team</a>.")
+	fmt.Println("</body></html>")
+}
+
 func main() {
 	log.SetFlags(0)
 	//log.SetOutput(os.Stdout)
 	//log.SetPrefix("Status: 500 CGI Go Boom\nContent-type: text/plain\n\nERROR: ")
 
 	os.Setenv("GIT_PROJECT_ROOT", GitProjectRoot)
-	os.Setenv("CGIT_CONFIG", CgitConfig)
 
 	uri := os.Getenv("REQUEST_URI")
 	switch {
@@ -79,6 +96,6 @@ func main() {
 	case strings.HasSuffix(uri, "git-upload-pack"):
 		execv("git", "http-backend")
 	default:
-		execv(Cgit)
+		notice()
 	}
 }
