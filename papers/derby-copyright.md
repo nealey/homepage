@@ -22,18 +22,15 @@ Some Background on Copyright
 In most parts of the world, when you create something—like a logo,
 some software, a blog post, or a web page—you get the right to decide
 who is allowed to copy it: the copyright.  In order to use someone
-else's work, be it on its own or as a part of your own work, 
+else's work, be it on its own or as a part of your own work,
 you need their permission.  Generally speaking, authors will pick one
 or both of the following two options:
 
 1. Grant permission if you pay money
-
-2. Grant permission if you agree to certain terms, usually some
-   combination of:
-
+2. Grant permission if you agree to certain terms, usually some combination of:
    * Give them credit for their work
    * Not make money from anything your work is in
-   * Don't prevent anyone from copying/sharing your work 
+   * Don't prevent anyone from copying/sharing your work
 
 This has resulted in an observable cultural split. On one hand,
 you have a [market ecomony](https://en.wikipedia.org/wiki/Market_economy),
@@ -76,7 +73,7 @@ And payment is a Pandora's box.  As a gift economy guy living in a
 market economy country, I can tell you that if my league decided to
 start paying one volunteer, I would probably adjust my view of
 the relationship, and get hacked off that I wasn't valued enough as an
-official, DJ, photographer, and software developer, to be paid too. 
+official, DJ, photographer, and software developer, to be paid too.
 Or, if I knew the full situation, I'd think that guy was
 being a jerk by extorting the poor league.  Butthurt!  Drama!
 
@@ -86,7 +83,7 @@ set of excuses.  [Experience and
 recognition](http://static.happyplace.com/assets/images/2011/10/4e935baa48979.png)
 are *not* payment, and weaseling work out of people this way is
 dishonest at best.  There are plenty of ways a photographer can get
-experience and recognition that don't directly benefit your league. 
+experience and recognition that don't directly benefit your league.
 If you sweet-talk a professional into doing unpaid work, you are
 sowing the seeds of butthurt and drama.
 
@@ -102,10 +99,10 @@ the love of the game and the gals who play it.
 
 Acknowledge that your league is a gift economy.  Embrace it!  You have
 nothing to give in return other than the community of your league, and
-you expect anyone entering that community not to start making demands. 
+you expect anyone entering that community not to start making demands.
 Have another look at [that craigslist ad](http://static.happyplace.com/assets/images/2011/10/4e935baa48979.png),
 I think it's on point because he points out "everyone will love you."
-Everyone should feel a profound debt to everyone else who helps out. 
+Everyone should feel a profound debt to everyone else who helps out.
 Beer should be bought.  Invitations to parties should be given.  But
 you need your dues—and ticket sales, if you have those—to pay for
 things you can't get from volunteers, like insurance, paint, photocopies, and
@@ -121,7 +118,7 @@ fans feel connected to the team.  You want skaters who are doing it
 for the love of the game, why not ask the same of your other
 volunteers?
 
-You might want create a "volunteer policy" that you share with everyone. 
+You might want create a "volunteer policy" that you share with everyone.
 Here's a start, feel free to use this or base something new off it:
 
 > Thank you for offering to help with our league!  Because we have
