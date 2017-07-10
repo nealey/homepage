@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic">
+    <!-- My stuff -->
+    <link rel="stylesheet" media="screen" href="{{ '/assets/css/default.css' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/face.png' | relative_url }}">
+{% if page.scripts %}{% for js_file in page.scripts %}
+    <script src="{{ js_file }}"></script>
+{% endfor %}{% endif %}
+  </head>
+
+  <body>
+    <h1 id="title">
+      <span>{{ page.title }}</span>
+    </h1>
+
+    <main id="content">
+      {{ content }}
+{% if page.Time-stamp %}
+      <p id="timestamp">Last modified: {{ Time-stamp }}</p>
+{% endif %}
+    </main>
+
+    <footer>
+      <nav class="left">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}" title="Homepage">Home</a></li>
+          <li><a href="{{ '/tartans/' | relative_url }}" title="AKA Plaids">Tartans</a></li>
+          <li><a href="{{ '/papers/' | relative_url }}" title="Various writings">Papers</a></li>
+        </ul>
+      </nav>
+      <nav class="right">
+        <ul>
+          <li><a href="https://github.com/nealey/">GitHub</a></li>
+          <li><a href="https://google.com/+NealePickett/">Google+</a></li>
+          <li><a href="mailto:neale@woozle.org">Email</a></li>
+      </nav>
+    </footer>
+
+  </body>
+</html>
+
