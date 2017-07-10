@@ -1,4 +1,6 @@
-Title: Why you shouldn't use Derby Software
+---
+title: Why you shouldn't use Derby Software
+---
 
 Introduction
 -----------

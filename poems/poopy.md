@@ -1,4 +1,6 @@
-Title: The Poopy Song
+---
+title: The Poopy Song
+---
 
 ![G|:ccGG cc2c|ddAA d3c|BBBB BB2A|GGAB c3G:|](poopy-music.png)
 

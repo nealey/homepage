@@ -1,4 +1,6 @@
-Title: Cherry Bombs Logo
+---
+title: Cherry Bombs Logo
+---
 
 I'm pretty excited about the new youth league starting up,
 but since I can't skate,

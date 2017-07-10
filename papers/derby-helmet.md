@@ -1,4 +1,6 @@
-Title: Choosing a Roller Derby Helmet
+---
+title: Choosing a Roller Derby Helmet
+---
 
 Last Update: 21 Jan 2014
 

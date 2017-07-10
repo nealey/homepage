@@ -1,4 +1,6 @@
-Title: Fun Game
+---
+title: Fun Game
+---
 
 <a name="part1"></a>
 

@@ -1,4 +1,6 @@
-Title: Chupacabras Logos
+---
+title: Chupacabras Logos
+---
 
 I would love it if someone could take these sketches
 and turn them into something the team will use,

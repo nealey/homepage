@@ -1,4 +1,6 @@
-Title: Shopping At Smith's
+---
+title: Shopping At Smith's
+---
 
 *This was published as a [letter to the Editor of the Daily Post](http://www.ladailypost.com/content/letter-editor-shopping-smiths)*
 

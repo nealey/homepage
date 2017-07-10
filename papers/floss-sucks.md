@@ -1,4 +1,6 @@
-Title: FLOSS Development Sucks
+---
+title: FLOSS Development Sucks
+---
 
 This Article Is A Work In Progress
 ====================

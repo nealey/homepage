@@ -1,4 +1,6 @@
-Title: Working with plan9port
+---
+title: Working with plan9port
+---
 
 Since I enjoy trying new things,
 I'm giving Plan 9 from Userspace a try in 2013.
@@ -177,7 +179,7 @@ Feb 20
 
 One of the things I missed about dwm was the little status bar.
 I'd written a clever little
-[status program](http://woozle.org/~neale/g.cgi/status)
+status program
 to monitor various things (time, battery, load average)
 and run a shell script periodically to do more expensive things like
 checking my IMAP boxes.

@@ -1,4 +1,6 @@
-Title: Converting docx to text with unzip and sed
+---
+title: Converting docx to text with unzip and sed
+---
 
 Periodically people email me Microsoft Word files which clearly contain
 only text.  Fortunately, Word is now creating OOXML `.docx` files which

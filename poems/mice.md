@@ -1,4 +1,6 @@
-Title: Ode to Mice
+---
+title: Ode to Mice
+---
 
 Leave them mice alone  
 Let them wander through your home  

@@ -1,3 +1,7 @@
+---
+title: Dear Ministers
+---
+
 Friday, December 9, 2011 at 12:39 pm 
 
 *This was published as a [letter to the Editor of the Los Alamos Monitor](http://www.lamonitor.com/content/calling-people-community-fast)*

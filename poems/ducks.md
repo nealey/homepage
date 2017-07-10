@@ -1,4 +1,6 @@
-Title: Ducks
+---
+title: Ducks
+---
 
 If ducks ran the country, I'm sure you'll agree  
 Things sure would be different for you and for me!  

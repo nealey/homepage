@@ -1,4 +1,6 @@
-Title: Long Bets
+---
+title: Long Bets
+---
 
 All bets are for $1.
 Neale's prediction is the one stated.

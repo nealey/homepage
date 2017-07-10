@@ -1,4 +1,6 @@
-Title: How DNS Works
+---
+title: How DNS Works
+---
 
 When you request a URL like `http://goob.woozle.org/~neale/foo.html`,
 the first thing your browser does is send out a DNS query on

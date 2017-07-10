@@ -1,4 +1,6 @@
-Title: Poems
+---
+title: Poems
+---
 
 If wishes were horses  
 And poets were kings  

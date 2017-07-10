@@ -1,6 +1,9 @@
-Title: Tartans
-Header: <script src="weave.js"></script>
-Header: <script src="presets.js"></script>
+---
+title: Tartans
+scripts:
+- weave.js
+- presets.js
+---
 
 <canvas id="loom" width="800" height="800" style="width: 100%; background: #444;">
 	Sorry, you need HTML5 and JavaScript for this.

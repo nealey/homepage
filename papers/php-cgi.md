@@ -1,4 +1,6 @@
-Title: Running PHP as a CGI
+---
+title: Running PHP as a CGI
+---
 
 I'm the author of the
 [eris HTTPd](http://woozle.org/~neale/src/eris.html),

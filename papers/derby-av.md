@@ -1,4 +1,6 @@
-Title: Running Audio/Visual for a Roller Derby Bout
+---
+title: Running Audio/Visual for a Roller Derby Bout
+---
 
 If you are a small team getting ready to bout, you are probably
 worried about the audio and video requirements. 

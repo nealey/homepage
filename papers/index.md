@@ -1,4 +1,6 @@
-Title: Papers
+---
+title: Papers
+---
 
 These are papers I have written. Most of them were written to explain a
 concept to someone on woozle.  Hopefully other people will find them
@@ -11,7 +13,6 @@ Computer Nerd Stuff
 
 * [Runit as Init](runit-as-init.html): My experience using runit as PID 1 for two years
 * [Plan9 GUI stuff in Unix](plan9.html): How to make your X11 stuff feel more like Plan9
-* [The Setup](setup.html): the hardware and software I use
 * [Writing formal letters with roff](roff-letters.html)
 * [Reply-To Munging Still Considered Harmful](reply-to-still-harmful.html)
 * [Runnning PHP as a CGI](php-cgi.html) in anything other than Apache
@@ -26,7 +27,6 @@ Roller Derby Stuff
 
 * [Choosing a Roller Derby Helmet](derby-helmet.html)
 * [Running Audio/Visual for a Roller Derby Bout](derby-av.html)
-* [Dirtbags DJ Setup](dj.html)
 * [Why you shouldn't use Derby Software](derby-software.html)
 * [Copyright Advice for Small Leagues](derby-copyright.html)
 

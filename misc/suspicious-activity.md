@@ -1,4 +1,6 @@
-Title: Concern Over Suspicious Activity
+---
+title: Concern Over Suspicious Activity
+---
 
 *This was published as a [letter to the Editor of the Daily Post](http://www.ladailypost.com/content/letter-editor-concern-over-suspicious-activity)*
 

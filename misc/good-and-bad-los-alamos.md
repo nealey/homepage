@@ -1,4 +1,6 @@
-Title: The good and bad of Los Alamos
+---
+title: The good and bad of Los Alamos
+---
 
 *This was published as a [letter to the Editor of the Los Alamos Monitor](http://www.lamonitor.com/content/good-and-bad-los-alamos)*
 

@@ -1,4 +1,6 @@
-Title: Snark Hair
+---
+title: Snark Hair
+---
 
 Has anyone ever turned into a snark?  
 In the sun?  In the rain? When it's light?  When it's dark?  

@@ -1,4 +1,6 @@
-Title: Goat on the Water
+---
+title: Goat on the Water
+---
 
 This is a poem I wrote.  
 This poem's about a goat.  

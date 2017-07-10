@@ -1,4 +1,6 @@
-Title: The 3-minute HTML tutorial
+---
+title: The 3-minute HTML tutorial
+---
 
 As computer formats go, HTML is easy and logical.  It's all just text
 that you can edit with any basic text editor, like gedit under Gnome, or
@@ -74,14 +76,14 @@ Now, for inline images:
 
     <p>
       This is an
-      <img src="http://woozle.org/neale/face.png"
+      <img src="https://woozle.org/neale/face.png"
            alt="face"></img> image, and
       <a href="http://woozle.org/">this</a> is a link.
     </p>
 
 Which will show up like this:
 
->  <p>This is an <img src="http://woozle.org/neale/face.png"
+>  <p>This is an <img src="https://woozle.org/neale/face.png"
 >  alt="face" /> image, and
 >  <a href="http://woozle.org/">this</a> is a link.
 

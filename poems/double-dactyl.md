@@ -1,4 +1,6 @@
-[[!meta title="Double Dactyls"]]
+---
+title: Double Dactyls
+---
 
 Hoobimus Goobimus,  
 Emad El-Haraty  

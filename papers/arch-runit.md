@@ -1,4 +1,6 @@
-Title: Runit on Arch Linux
+---
+title: Runit on Arch Linux
+---
 
 Last update: 26 August 2014
 
@@ -442,16 +444,15 @@ You just need to have the kernel run `mdev` as the hotplug userspace thingy.
 
 Recent precompiled kernels have removed support for `/proc/sys/kernel/hotplug`,
 so it's necessary to run a userspace program to get netlink events.
-You can [use the one I wrote](http://woozle.org/neale/g.cgi/aur/runit-init/tree/src/hurtplurg.c) if you like.
+Send me an email asking for `hurtplurg.c` if you'd like the one I wrote.
 
 You'll need to configure `mdev` to set up file permissions that work for you.
-A reasonable set of defaults is available
-[as another part of my AUR](http://woozle.org/neale/g.cgi/aur/runit-init/tree/mdev.conf).
 
 Since X11 wants `udevd` for something or other,
 you'll also need to tell it to use whatever the old method is.
 I don't quite understand what they do,
-but the files you need are [in my runit-desktop AUR](http://woozle.org/neale/g.cgi/aur/runit-desktop/tree/etc/X11/xorg.conf.d).
+and they've surely changed since I wrote mine.
+Have fun with man pages.
 
 
 Getting rid of `systemd`

@@ -1,4 +1,6 @@
-Title: &ldquo;Reply-To&rdquo; Munging Still Considered Harmful.  Really.
+---
+title: '"Reply-To" Munging Still Considered Harmful.  Really.'
+---
 
 An Earnest Plea to People Still Having This Debate
 --------------------------------------------------

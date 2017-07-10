@@ -1,9 +1,7 @@
 /* http://www.colourlovers.com/palette/92095/Giant_Goldfish */
-@import "format.css";
-
 html {
 	background-color: white;
-	background-image: url("/neale/images/bg.jpg");
+	background-image: url("../images/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -16,9 +14,10 @@ body {
   padding: 1em;
   border-radius: 1em;
   max-width: 35em;
+  font-family: "Roboto", sans-serif;
 }
 
-body>h1:first-child, td.main {
+#title, td.main {
   background-color: #e0e4cc;
   border-radius: 0.5em;
   padding: 0em 1em;
@@ -44,15 +43,9 @@ img {
   max-width: 60%;
 }
 
-img.right {
-    margin: 1em;
-    float: right;
-}
-
 img.face {
 	margin: 1em;
 	width: 10em;
-	float: left;
 }
 
 pre {
@@ -66,14 +59,60 @@ blockquote {
 	border-radius: 0.4em;
 }
 
-#nav {
-  padding: 0;
-  text-align: center;
+footer {
+  clear: both;
   border-top: solid black 1px;
 }
-#nav li {
-  display: inline;
+
+nav ul {
+  padding: 0;
+  margin: 0;
 }
-#nav li + li:before {
-  content: " | ";
+nav li {
+  display: inline;
+  padding-right: 1em;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+/* Formatting */
+
+p, li, dd {
+  text-align: left;
+}
+
+body > p {
+  text-indent: 1.5em;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ol + p, ul + p, pre + p, blockquote + p, img + p {
+  text-indent: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bolt;
+}
+
+pre {
+  margin: 1em 2em;
+  padding: 1em;
+  border: solid black 1px;
+}
+
+.figure {
+  float: right;
+  padding: 0.25em;
+  margin: 0.5em;
+  font-size: small;
+  border: solid black 1px;
+}
+
+#timestamp {
+    font-size: small;
+    text-indent: inherit;
 }

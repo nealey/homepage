@@ -1,4 +1,6 @@
-Title: Social Letter Generator
+---
+title: Social Letter Generator
+---
 
 <button onclick="init();" style="float: right;">Regenerate</button>
 

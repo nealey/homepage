@@ -1,4 +1,6 @@
-Title: Making "Monopoly" suck less
+---
+title: Making "Monopoly" suck less
+---
 
 These are simple alternative rules for Monopoly which make the game
 more balanced and, as a result, more exciting and less hurtful.  No

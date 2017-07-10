@@ -1,4 +1,6 @@
-Title: Copyright Advice for Small Leagues
+---
+title: Copyright Advice for Small Leagues
+---
 
 There's enough in common that hacking sometimes feels like roller derby's big
 brother, and watching derby struggle with copyright law makes me want

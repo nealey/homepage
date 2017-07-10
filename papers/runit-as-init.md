@@ -1,4 +1,6 @@
-Title: My experiences using runit in Arch Linux
+---
+title: My experiences using runit in Arch Linux
+---
 
 In around 2012,
 after using busybox runit instead of sysvinit in my

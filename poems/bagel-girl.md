@@ -1,4 +1,6 @@
-Title: Ode to the Bagel Girl
+---
+title: Ode to the Bagel Girl
+---
 
 We stand waiting for the 253 to Redmond  
 The fog sits lightly on our tongues  

@@ -1,4 +1,6 @@
-Title: The Uglification of Los Alamos
+---
+title: The Uglification of Los Alamos
+---
 
 *This was published as a [letter to the Editor of the Daily Post](http://www.ladailypost.com/content/letter-editor-uglification-los-alamos)*
 

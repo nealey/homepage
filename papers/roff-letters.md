@@ -1,4 +1,6 @@
-Title: Writing formal letters with roff's "mm" package
+---
+title: Writing formal letters with roff's "mm" package
+---
 
 I like using roff for quick things like letters and memos,
 because it's already on every system,

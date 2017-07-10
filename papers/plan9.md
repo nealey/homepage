@@ -1,4 +1,6 @@
-Title: Making Unix a little more Plan9-like
+---
+title: Making Unix a little more Plan9-like
+---
 
 I'm not really interested in defending anything.
 I tried out plan9port and liked it,
@@ -58,7 +60,7 @@ but Xaw is so ancient it will probably never be removed.
 I'm now maintaining the 9wm window manager.
 If you like rio you should give it a whirl,
 there are some differences you might prefer.
-http://woozle.org/neale/g.cgi/x11/9wm/
+https://github.com/9wm/9wm
 
 
 sshfs

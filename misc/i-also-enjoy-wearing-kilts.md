@@ -1,4 +1,6 @@
-Title: I Also Enjoy Wearing Kilts
+---
+title: I Also Enjoy Wearing Kilts
+---
 
 *This was published as a [letter to the Editor of the Daily Post](http://www.ladailypost.com/content/letter-editor-i-also-enjoy-wearing-kilts)*
 

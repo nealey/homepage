@@ -1,4 +1,6 @@
-Title: Futzing with PID 1
+---
+title: Futzing with PID 1
+---
 
 I've been working with somebody who,
 I think,

@@ -1,4 +1,6 @@
-Title: A Call for the Complete Elimination of Joke Haiku Production on the Internet
+---
+title: A Call for the Complete Elimination of Joke Haiku Production on the Internet
+---
 
 <p style="font-style: italic;">
   This was written by Paul H. Henry.  His web site is no longer on-line.
