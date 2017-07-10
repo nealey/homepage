@@ -32,10 +32,10 @@ or both of the following two options:
    * Not make money from anything your work is in
    * Don't prevent anyone from copying/sharing your work
 
-This has resulted in an observable cultural split. On one hand,
+This has resulted in an observable cultural split. On one side,
 you have a [market ecomony](https://en.wikipedia.org/wiki/Market_economy),
 in which using someone's work without paying them is bad,
-often called "piracy". On the other hand, you
+often called "piracy". On the other side, you
 have a [gift economy](https://en.wikipedia.org/wiki/Gift_economy),
 in which using someone's work is high praise, and creates a
 debt to humanity that can only be repayed by
