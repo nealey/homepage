@@ -65,6 +65,7 @@ if (document.readyState === "loading") {
 let deferredPrompt;
 let installButton = document.querySelector("#install");
 installButton.style.display = "none";
+console.log(installButton);
 window.addEventListener("beforeinstallprompt", e => {
   console.log(e);
   deferredPrompt = e;
