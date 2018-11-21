@@ -55,19 +55,22 @@ function init() {
   }
   
   // Let people add this app
+  let deferredPrompt;
   let installButton = document.querySelector("#install");
   installButton.style.display = "none";
   window.addEventListener("beforeinstallprompt", e => {
+    console.log(e);
     deferredPrompt = e;
     installButton.style.display = "block";
   });
   installButton.addEventListener("click", e => {
+    console.log(e);
     deferredPrompt.prompt();
     deferredPrompt.userChoice
     .then(result => {
       if (result.output == "accepted") {
-        installButton.style.display = "none"
-      };
+        installButton.style.display = "none";
+      }
     });
   });
 }
