@@ -7,6 +7,10 @@
   "description": "Generates brown noise similar to a futuristic starship engine (or a modern HVAC system)",
   "icons": [
     {
+      "src": "icon-512.png",
+      "sizes": "512x512"
+    },
+    {
       "src": "icon.svg",
       "sizes": "any"
     }
