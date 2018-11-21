@@ -10,6 +10,9 @@
 {% if page.scripts %}{% for js_file in page.scripts %}
     <script src="{{ js_file }}"></script>
 {% endfor %}{% endif %}
+{% if page.headers %}{% for header in page.headers %}
+    {{ header }}
+{% endfor %}{% endif %}
     <title>{{ page.title }}</title>
   </head>
 
@@ -37,6 +40,7 @@
         <ul>
           <li><a href="https://github.com/nealey/">GitHub</a></li>
           <li><a href="mailto:neale@woozle.org">Email</a></li>
+        </ul>
       </nav>
     </footer>
 

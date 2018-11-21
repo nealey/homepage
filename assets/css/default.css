@@ -14,18 +14,19 @@ body {
   padding: 1em;
   border-radius: 1em;
   max-width: 35em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", "Roboto", sans-serif;
 }
 
 #title, td.main {
   background-color: #e0e4cc;
-  border-radius: 0.5em;
-  padding: 0em 1em;
+  border-radius: 0.25em;
+  padding: 0.1em 0.5em;
   margin-top: 0;
+  box-shadow: 0.2em 0.2em 1em rgba(0,0,0,0.1);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fa6900;
+  color: #e64;
 }
 
 a {
@@ -116,4 +117,12 @@ pre {
 #timestamp {
     font-size: small;
     text-indent: inherit;
+}
+
+button.big {
+  padding: 0;
+  border: 0;
+  margin: 1em;
+  font-size: 2em;
+  background: inherit;
 }
