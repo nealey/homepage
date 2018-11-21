@@ -47,9 +47,7 @@ function init() {
       audioCtx.resume();
     }
   });
-  
-  console.log(navigator.serviceWorker);
-  console.log("moo");
+
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js");
   }
@@ -60,24 +58,3 @@ if (document.readyState === "loading") {
 } else {
   init();
 }
-
-// Let people add this app
-let deferredPrompt;
-let installButton = document.querySelector("#install");
-installButton.style.display = "none";
-console.log(installButton);
-window.addEventListener("beforeinstallprompt", e => {
-  console.log(e);
-  deferredPrompt = e;
-  installButton.style.display = "block";
-});
-installButton.addEventListener("click", e => {
-  console.log(e);
-  deferredPrompt.prompt();
-  deferredPrompt.userChoice
-  .then(result => {
-    if (result.output == "accepted") {
-      installButton.style.display = "none";
-    }
-  });
-});

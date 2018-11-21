@@ -29,5 +29,3 @@ You can leave it running forever, if you like.
 For those interested,
 it uses the new (in 2017), perfect for this application,
 [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
-
-<button id="install">Add to home screen</button>
