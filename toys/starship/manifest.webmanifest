@@ -1,0 +1,15 @@
+{
+  "name": "Starship Noise Generator",
+  "short_name": "Starship",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Generates brown noise similar to a futuristic starship engine (or a modern HVAC system)",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any"
+    }
+  ]
+}
+
