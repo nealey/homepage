@@ -16,7 +16,6 @@ headers:
   </span>
 </div>
 
-<button id="install">Add to home screen</button>
 
 I work in a building with no HVAC,
 which means we can hear <em>everything</em> people are saying,
@@ -30,3 +29,5 @@ You can leave it running forever, if you like.
 For those interested,
 it uses the new (in 2017), perfect for this application,
 [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+
+<button id="install">Add to home screen</button>
