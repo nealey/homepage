@@ -4,6 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
+  "theme_color": "#ECB",
   "description": "Generates brown noise similar to a futuristic starship engine (or a modern HVAC system)",
   "icons": [
     {
