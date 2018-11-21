@@ -8,7 +8,7 @@ headers:
 
 
 <div>
-  <button id="play" class="big">⏯️</button>
+  <button id="play" class="big">▶️</button>
   <span>
     🔉
     <input id="fader" type="range" min="0" max="10" step="0.01" />

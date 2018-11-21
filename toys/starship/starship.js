@@ -40,11 +40,14 @@ function init() {
   document.querySelector("#fader").addEventListener("input", setFade);
   setFade();
 
-  document.querySelector("#play").addEventListener("click", e => {
+  let play = document.querySelector("#play");
+  play.addEventListener("click", e => {
     if (audioCtx.state == "running") {
       audioCtx.suspend();
+      play.textContent = "▶️️";
     } else {
       audioCtx.resume();
+      play.textContent = "⏸️";
     }
   });
 
