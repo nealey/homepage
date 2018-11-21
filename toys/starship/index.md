@@ -16,6 +16,8 @@ headers:
   </span>
 </div>
 
+<button id="install">Add to home screen</button>
+
 I work in a building with no HVAC,
 which means we can hear <em>everything</em> people are saying,
 anywhere in the building.

@@ -53,6 +53,23 @@ function init() {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js");
   }
+  
+  // Let people add this app
+  let installButton = document.querySelector("#install");
+  installButton.style.display = "none";
+  window.addEventListener("beforeinstallprompt", e => {
+    deferredPrompt = e;
+    installButton.style.display = "block";
+  });
+  installButton.addEventListener("click", e => {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice
+    .then(result => {
+      if (result.output == "accepted") {
+        installButton.style.display = "none"
+      };
+    });
+  });
 }
 
 if (document.readyState === "loading") {
