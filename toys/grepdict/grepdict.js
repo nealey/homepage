@@ -1,0 +1,45 @@
+// jshint asi:true
+
+var words
+
+function addWords(wl) {
+  words = wl.split("\n")
+  let re = document.querySelector("#regexp")
+  re.value = ""
+  re.disabled = false
+  re.focus()
+}
+
+function regexInput(e) {
+  let re = new RegExp(e.target.value, "ui")
+  let matches = document.querySelector("#matches")
+  
+  while (matches.firstChild) {
+    matches.firstChild.remove()
+  }
+  
+  let nmatches = 0
+  for (let word of words) {
+    if (word.match(re)) {
+      let li = matches.appendChild(document.createElement("li"))
+      li.textContent = word
+
+      nmatches += 1
+      if (nmatches > 50) {
+        li.textContent = "…"
+        break
+      }
+
+    }
+  }
+}
+
+function init(e) {
+  fetch("words.txt")
+  .then(r => r.text())
+  .then(addWords)
+  
+  document.querySelector("#regexp").addEventListener("input", regexInput)
+}
+
+window.addEventListener("load", init)
