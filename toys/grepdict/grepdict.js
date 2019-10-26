@@ -34,12 +34,23 @@ function regexInput(e) {
   }
 }
 
+function anchorToggle(e) {
+  let re = document.querySelector("#regexp")
+  let val = re.value.replace(/^\^|\$$/g, "")
+  if (val == re.value) {
+    val = "^" + val + "$"
+  }
+  re.value = val
+  re.focus()
+}
+
 function init(e) {
   fetch("words.txt")
   .then(r => r.text())
   .then(addWords)
   
   document.querySelector("#regexp").addEventListener("input", regexInput)
+  document.querySelector("#anchor").addEventListener("click", anchorToggle)
 }
 
 window.addEventListener("load", init)

@@ -15,6 +15,16 @@ body {
   border-radius: 1em;
   max-width: 35em;
   font-family: "Lato", "Roboto", sans-serif;
+  font-size: 13pt;
+}
+
+input {
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: 13pt;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
 }
 
 #title, td.main {
@@ -97,7 +107,7 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ol + p, ul + p, pre + p, blockqu
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bolt;
+  font-weight: bold;
 }
 
 pre {
