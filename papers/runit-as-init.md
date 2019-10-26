@@ -64,7 +64,7 @@ Making X11 work
 X11 at the time wanted `udev`,
 so I just ran that from init.
 But, a few months later,
-X was able to start with `udev`,
+X was able to start without `udev`,
 so I took it out and figured out the keyboard and mouse problem.
 
 It had something to do with `evdev`;

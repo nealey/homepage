@@ -8,6 +8,7 @@ function addWords(wl) {
   re.value = ""
   re.disabled = false
   re.focus()
+  re.dispatchEvent(new Event("input"))
 }
 
 function regexInput(e) {
@@ -29,7 +30,6 @@ function regexInput(e) {
         li.textContent = "…"
         break
       }
-
     }
   }
 }
@@ -42,6 +42,7 @@ function anchorToggle(e) {
   }
   re.value = val
   re.focus()
+  re.dispatchEvent(new Event("input"))
 }
 
 function init(e) {
