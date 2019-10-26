@@ -11,7 +11,7 @@ function addWords(wl) {
 }
 
 function regexInput(e) {
-  let re = new RegExp(e.target.value, "ui")
+  let re = new RegExp(e.target.value, "u")
   let matches = document.querySelector("#matches")
   
   while (matches.firstChild) {
