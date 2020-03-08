@@ -1,0 +1,57 @@
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  font-family: sans-serif;
+}
+canvas {
+  width: 100vw;
+}
+
+.hidden {
+  display: none;
+}
+
+#download {
+  display: none;
+}
+#toasts {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: rgba(40, 40, 200, 0.3);
+  width: 100%;
+  text-align: center;
+}
+#controls {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  bottom: 0;
+}
+#rec, #save {
+  font: 12pt sans-serif;
+  padding: 1em 2em;
+  margin: 0.2em 1em;
+  background: #ccc;
+  border: none;
+  border-radius: 3px;
+}
+dt {
+  font-weight: bold;
+}
+#indicator {
+  position: fixed;
+  top: 0.3em;
+  right: 0.3em;
+  font: 18pt sans-serif;
+  color: red;
+  animation: blinker 0.5s cubic-bezier(0, 0.87, 0.58, 1) infinite alternate;
+}
+
+@keyframes blinker {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
