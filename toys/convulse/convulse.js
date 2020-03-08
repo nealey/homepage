@@ -76,12 +76,6 @@ class Convulse {
     vid.addEventListener("change", e => this.inputSelect(e))
     this.inputSelect()
     
-    navigator.mediaDevices.getUserMedia({video: true, audio: true})
-    .then(media => this.gotUserMedia(media))
-    .catch(err => {
-      toast("Couldn't open camera!")
-    })
-
     navigator.mediaDevices.getDisplayMedia({video: {cursor: "always"}})
     .then(media => {
       document.querySelector("#hello").classList.add("hidden")
@@ -122,7 +116,7 @@ class Convulse {
     this.webcamVideo.muted = true
     this.webcamVideo.srcObject = media
     this.webcamVideo.play()
-    
+
     // Set audio source
     for (let track of this.mediaStream.getAudioTracks()) {
       this.mediaStream.removeTrack(track)
