@@ -1,26 +1,51 @@
-var cacheName = "convulse-v1";
+// jshint asi:true
+
+var cacheName = "v2";
 var content = [
   "index.html",
   "convulse.css",
   "convulse.js",
   "convulse.png"
-];
+]
 
 
-self.addEventListener("install", e => {
-  e.waitUntil(caches.Open(cacheName).then(cache => cache.addAll(content)));
-});
+self.addEventListener("install", preCache)
+self.addEventListener("fetch", cachingFetch)
+self.addEventListener("activate", handleActivate)
 
-// Have mercy, this is a horror show
-self.addEventListener("fetch", e => {
-  e.respondWith(
-    caches.match(e.request).then(r => {
-      return r || fetch(e.request).then(response => {
-        return caches.open(cacheName).then(cache => {
-          cache.put(e.request, response.clone());
-          return response;
-        });
-      });
+function handleActivate(event){
+  event.waitUntil(
+    cleanup()
+  )
+}
+
+async function cleanup(event) {
+  let cacheNames = await caches.keys()
+  for (let name of cacheNames) {
+    if (name != cacheName) {
+      console.log("Deleting old cache", name)
+      caches.delete(name)
+    }
+  }
+}
+
+function preCache(event) {
+  event.waitUntil(
+    caches.open(cacheName)
+    .then(cache => cache.addAll(content))
+  )
+}
+
+// Go try to pull a newer version from the network,
+// but return what's in the cache for this request
+function cachingFetch(event) {
+  fetch(event.request)
+  .then(resp => {
+    caches.open(cacheName)
+    .then(cache => {
+      cache.put(event.request, resp.clone())
     })
-  );
-});
+  })
+  
+  event.respondWith(caches.match(event.request))
+}
