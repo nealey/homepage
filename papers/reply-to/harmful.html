@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- $Id: reply-to-harmful.html,v 1.20 2002/11/15 03:46:04 chip Exp $  -->
+<HTML>
+<HEAD>
+<TITLE>"Reply-To" Munging Considered Harmful</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#5500EE" ALINK="#FF0000" VLINK="#551A8B">
+
+<h1>This Page is a Mirror</h1>
+<p>This page has been mirrored for historical preservation</p>
+<hr>
+
+<H1>"Reply-To" Munging Considered Harmful</H1>
+<H2>An Earnest Plea to Mailing List Administrators</H2>
+<HR>
+
+<P>An email message requires some amount of processing when it is
+redistributed to a mailing list.  At the very least, the envelope must
+be rewritten to redirect bounces directly to the list administrator.
+While the message is being processed, the list administrator might
+take advantage of the opportunity to
+<A HREF="http://www.fwi.uva.nl/~mes/jargon/m/munge.html">munge</A> some
+of the message headers.
+
+<P>Some forms of header munging are helpful, such as special loop-detection
+headers.  Others are questionable.  Most are ill-advised or dangerous.
+Many list adminstrators want to add a <KBD>Reply-To</KBD> header that
+points back to the list.  This transformation also is one of the most
+ill-advised.
+
+<P>Some administrators claim that <KBD>Reply-To</KBD> munging makes
+it easier for users to respond to the entire list, and helps encourage
+list traffic.  These benefits are fallacious.  Moreover, <KBD>Reply-To</KBD>
+can have harmful -- even dangerous -- effects.  If you think
+<KBD>Reply-To</KBD> munging is a good idea, I hope I can change your
+mind.
+
+<H2>The Principle of Minimal Munging</H2>
+
+<P>Email processing is pretty tricky.  Read through
+<A HREF="ftp://ftp.isi.edu/in-notes/rfc822.txt">RFC-822</A>, the
+<CITE>Standard for the Format of ARPA Internet Text Messages</CITE>,
+sometime.  It is 47 pages of dense, dry detail.  A lot of engineering
+and consideration went into this work.  Even still, RFC-822 leaves
+many corner conditions and specialized circumstances poorly specified.
+<A HREF="ftp://ftp.isi.edu/in-notes/rfc1123.txt">RFC-1123</A>, the
+commonly-called <CITE>Internet Host Requirements</CITE> document, adds
+a couple dozen more pages, and remedies some of the defects.  Then
+there is MIME, X.400 mapping, and a handful of other standards and
+conventions -- some documented and some folklore.  Email handling is
+surprisingly complicated, and even an innocuous-sounding change might
+have grave, unintended consequences.<P>
+
+<P>The "Principle of Minimal Munging" is a good rule that will keep
+you out of trouble.  It says you should <EM>not</EM> make any changes
+to an email header unless you know precisely what you want to do,
+why you want to do it, and what it will affect.  Unless you can
+articulate a clear reason for munging and understand the full consequences
+of the action, you should not do it.
+
+<P>The "Principle of Minimal Munging" will help you avoid the sorts of
+problems we are about to discuss.  This principle <EM>is</EM> a rule
+designed to be broken, but you can avoid some significant heartache
+by thinking hard and long before you do so.
+
+<H2>It Adds Nothing</H2>
+
+<P><KBD>Reply-To</KBD> munging does not benefit the user with a reasonable
+mailer.  People want to munge <KBD>Reply-To</KBD> headers to make
+"reply back to the list" easy.  But it already is easy.  Reasonable
+mail programs have two separate "reply" commands:  one that replies
+directly to the author of a message, and another that replies to the
+author plus all of the list recipients.  Even the lowly
+<A HREF="http://www.bsdi.com/bsdi-man/?Mail%281%29">Berkeley
+<CITE>Mail</CITE></A> command has had this for about a decade.
+
+<P>Any reasonable, modern mailer provides this feature.  I prefer the
+<A HREF="http://www.myxa.com/myxa/elm.html"><CITE>Elm</CITE> mailer</A>.
+It has separate "r)eply" and "g)roup-reply" commands.  If I
+want to reply to the author of a message, I strike the "<KBD>r</KBD>"
+key.  If I want to send a reply to the entire list, I hit "<KBD>g</KBD>"
+instead.  Piece 'o cake.
+
+<P>I mention <CITE>Elm</CITE> here (and a lot later on) simply because
+that's the mailer I use everyday.  This sort of support is not unique
+to <CITE>Elm</CITE>  Any reasonable mailer provides it.  The
+<CITE>Pine</CITE> mailer, for instance, asks directly, "Reply to all
+recipients?" when you use the "<KBD>r</KBD>" command.  It doesn't
+get much easier than that!
+
+<P>Whichever mailer you choose, please <EM>read</EM> the fine manual
+that comes with it.  Unless you are stuck with some decrepit mail
+system, I bet you'll find it has a similar feature.  If so, you easily
+can choose to direct your responses either to the original author or
+the entire list.  Mauling the mail headers doesn't make it any easier.
+
+<H2>It Makes Things Break</H2>
+
+<P>If you use a reasonable mailer, <KBD>Reply-To</KBD> munging does not
+provide any new functionality.  It, in fact, <EM>decreases</EM>
+functionality.  <KBD>Reply-To</KBD> munging destroys the "reply-to-author"
+capability.  Munging makes this command act effectively the same as
+the "reply-to-group" function.  We haven't added anything new, we've
+only taken away.  <KBD>Reply-To</KBD> munging is not merely benign,
+it is harmful.  It renders a useful mail capability inoperative.
+
+<H2>Freedom of Choice</H2>
+
+<P>Some administrators justify <KBD>Reply-To</KBD> munging by saying,
+"All responses should go directly to the list anyway."  This is
+arrogant.  You should allow <EM>me</EM> to decide exactly how I wish
+to respond to a message.  If I feel a public response is justified,
+I'll hit the "<KBD>g</KBD>" key and tell <CITE>Elm</CITE> to do a
+group-reply.  If I believe a private response is more appropriate,
+I'll use "<KBD>r</KBD>" to send one.  Please allow me the freedom
+to decide how to handle a message.
+
+<H2>Can't Find My Way Back Home</H2>
+
+<P>It may be impossible to reply to the author of a message once the
+<KBD>Reply-To</KBD> header is munged.  The <KBD>Reply-To</KBD> header
+was not invented on a whim.  It is there for the sender of a mail
+message to use.  If you stomp on this header, you can lose important
+information.
+
+<P>There are good reasons why the sender might insert a <KBD>Reply-To</KBD>
+header.  The sender might <EM>not</EM> be the original author of the
+message (the name that appears in the <KBD>From</KBD> header).  If
+responses should return to the sender and not the original author,
+then the sender will insert a <KBD>Reply-To</KBD> header.  Or, maybe
+the sender added a <KBD>Reply-To</KBD> because he or she cannot receive
+email at the account from which the message was sent.  There are many
+good reasons to place a <KBD>Reply-To</KBD> header into a mailing list
+message.
+
+<P>If the <KBD>Reply-To</KBD> is munged by the mailing list, the value
+provided by the original sender is lost.  <KBD>Reply-To</KBD> munging
+can make it impossible to reach the sender of a message.
+
+<H2>Coddling the Brain-Dead, Penalizing the Conscientious</H2>
+
+<P>There are, unfortunately, poorly implemented mail programs that lack
+separate reply-to-author and reply-to-group functions.  A user saddled
+with such a brain-dead mailer can benefit from <KBD>Reply-To</KBD>
+munging.  It makes it easier for him or her to send responses directly
+to the list.
+
+<P>This change, however, penalizes the conscientious person that uses
+a reasonable mailer.  This is a poor trade-off.  As Internet list
+administrators, we should encourage people to run reasonable software.
+If a few people need to type in a full reply address so that everybody
+else can use all the features of their mailer, I say, "Fine!"  We
+should not penalize the conscientious to coddle those who run brain-dead
+software.
+
+<H2>Principle of Least Work</H2>
+
+<P>Compare and contrast:  the work required for me (or any other
+<CITE>Elm</CITE> user) to reply on lists that do and don't employ
+<KBD>Reply-To</KBD> munging.
+
+<BLOCKQUOTE>
+<PRE>
+		Case One:		Case Two:
+Action		Without Munging		With Munging
+=============	=====================	=====================
+
+Reply to	Hit the "g"		Probably hit the "r"
+everybody.	key.			key, but maybe the "g"
+					key if there were other
+					recipients of the message.
+
+Reply just	Hit the "r"		Look at the original
+to author.	key.			message header, write
+					down the sender's
+					email address, hit the
+					"r" key, call up the
+					header editing menu,
+					erase the current To:
+					value, and type in the
+					sender's full email
+					address.  And pray the
+					correct address wasn't
+					wiped out when the Reply-To
+					was munged.
+</PRE>
+</BLOCKQUOTE>
+
+<P>Again, your preferred mailer probably implements this feature in
+a different fashion.  Nonetheless, it should be easy.  I'll take box
+number one, Monte.
+
+<H2>Principle of Least Surprise</H2>
+
+<P>When I hit the "<KBD>r</KBD>" key in <CITE>Elm</CITE>, it sends a
+response to the author of a message.  When you munge the <KBD>Reply-To</KBD>
+header you change this action so that it does something entirely
+different from what I expect.  This creates specialized behavior for
+your mailing list, which increases the potential for surprise.  I'm
+not schooled in the science of human factors, but I suspect surprise
+is not an element of a robust user interface.
+
+<P>Private messages frequently are broadcast across lists that do
+<KBD>Reply-To</KBD> munging.  That's an empirical fact.  It's what
+happens when you violate the principle of least surprise.
+
+<H2>Principle of Least Damage</H2>
+
+<P>Consider the damage when things go awry.  If you do not munge the
+<CITE>Reply-To</CITE> header and a list subscriber accidentally sends a
+response via private email instead of to the list, he or she has to
+follow up with a message that says, "Ooops!  I meant to send that to
+the list.  Could you please forward a copy for me."  That's a hassle,
+and it happens from time to time.
+
+<P>What happens, however, when a person mistakenly broadcasts a private
+message to the entire list?  If the message is a complaint about the
+personal hygiene of sender's boss, or the sex life of his or her
+roommate, a simple "Ooops!" won't cut it.  About all you can do is
+send a followup with lots of retroactive smileys (weak).  Or say your
+cat was dancing on the keyboard (better).  Or start reading the
+classifieds for a new job/roommate/set of teeth (most likely).
+
+<P><KBD>Reply-To</KBD> munging encourages catastrophic failure modes.
+Sure, you don't need <KBD>Reply-To</KBD> munging to create this sort
+of damage.  A simple slip of the fingers will suffice.  When, however,
+you violate the "Principle of Least Surprise" you invite this sort
+of disaster.  A responsible list administrator will avoid creating
+avenues that lead to such extreme damage.
+
+<H2>And in the End...</H2>
+
+<P>If you are not convinced yet, then allow me one final plea.  I contribute
+to the <CITE>Elm</CITE> mailer development team.  I get to see a lot
+of the wants and requests from the user community.  Guess what feature
+more and more people are asking for?  A <EM>third</EM> reply command
+-- one that ignores any existing <KBD>Reply-To</KBD> header!  Want to
+guess why people are asking for it?  If you think you are doing your
+subscribers a service by munging <KBD>Reply-To</KBD> headers, you are
+kidding yourself.  You are making your subscribers miserable.
+
+<P>Some list administrators, even after reading all this, seem to say,
+"Oh, it's not that bad.  Besides, my subscribers like it!"  If they
+do, it's probably because they haven't bothered to learn to use the
+"reply-to-group" feature of their mailer.  Instead of going through
+all the trouble of making your list gateway scribble on email headers,
+how about making an effort to educate your subscribers?
+
+<H2>Summary</H2>
+
+<P>Many people want to munge <KBD>Reply-To</KBD> headers.  They believe
+it makes reply-to-list easier, and it encourages more list traffic.
+It really does neither, and is a very poor idea.  <KBD>Reply-To</KBD>
+munging suffers from the following problems:
+
+<UL>
+
+<LI>It violates the principle of minimal munging.
+
+<LI>It provides no benefit to the user of a reasonable mailer.
+
+<LI>It limits a subscriber's freedom to choose how he or she will direct
+	a response.
+
+<LI>It actually reduces functionality for the user of a reasonable mailer.
+
+<LI>It removes important information, which can make it impossible to
+	get back to the message sender.
+
+<LI>It penalizes the person with a reasonable mailer in order to coddle
+	those running brain-dead software.
+
+<LI>It violates the principle of least work because complicates the
+	procedure for replying to messages.
+
+<LI>It violates the principle of least surprise because it changes the
+	way a mailer works.
+
+<LI>It violates the principle of least damage, and it encourages a failure
+	mode that can be extremely embarrassing -- or worse.
+
+<LI>Your subscribers don't want you to do it.  Or, at least the ones who
+	have bothered to read the docs for their mailer don't want
+	you to do it.
+
+</UL>
+
+<H2>Addendum</H2>
+
+<P>In case you are wondering, yes, I once thought <KBD>Reply-To</KBD> munging
+was a nifty idea.  I got better though.
+
+<P>When I started running email lists, I munged 'em all.  One day I
+accidentally sent a private, personal reply out over one of my own
+damn lists.  If the list owner can't remember how to use the list
+properly, no way will the subscribers be able to sort it out.  I
+stopped munging the very next day.
+
+<P>On the whole, it has worked out quite well.  Yes, on occasion
+somebody mistakenly responds directly to the author of a message when
+they wanted to reply to the group.  Most folks, however, seem to catch
+on pretty fast to how it works, and seem to appreciate the flexibility.
+Moreover, private responses mistakenly sent to the entire list have
+become an almost unheard-of event.
+
+<P>
+<HR>
+<ADDRESS>
+<A HREF="../people/chip/index.html">Chip Rosenthal</A><BR>
+&lt;chip@unicom.com&gt;<BR>
+</ADDRESS>
+<P>
+<IMG SRC="../graphics/small-back.gif" ALIGN="top" ALT="" WIDTH="16" HEIGHT="16">
+<A HREF="index.html">Back</A> to the <CITE>Paperware Archive</CITE>.
+<BR>
+<IMG SRC="../graphics/small-up.gif" ALIGN="top" ALT="" WIDTH="16" HEIGHT="16">
+<A HREF="../people/chip/index.html">Up</A> to Unicom Systems home page.
+<BR>
+<IMG SRC="../graphics/small-comment.gif" ALIGN="top" ALT="" WIDTH="16" HEIGHT="16">
+<A HREF="/misc/cmntform.html">Let us know</A>
+your comments, corrections, additions, suggestions.
+<P><PRE>$Id: reply-to-harmful.html,v 1.20 2002/11/15 03:46:04 chip Exp $</PRE>
+</PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>MetaSystema.Net: Reply-To Munging Considered Useful</title>
+</head>
+
+
+<body  bgcolor="#FFFFFF" link="#336666" alink="#336600" vlink="#003333" text="#000000">
+
+<h1>This Page is a Mirror</h1>
+<p>This page has been mirrored for historical preservation</p>
+<hr>
+
+<H2 ALIGN=CENTER>Reply-To Munging Considered Useful</H2>
+<H3 ALIGN=CENTER>An Earnest Plea to Mailing List Administrators</H3>
+<H4 ALIGN=CENTER>Last revised: 3 January 2000</H4>
+<HR>
+
+<P>An email message requires some amount of processing when it is
+redistributed to a mailing list.  At the very least, the envelope must
+be rewritten to redirect bounces directly to the list administrator.
+
+<P>While the message is being processed, the list administrator might
+take advantage of the opportunity to
+<A HREF="http://www.fwi.uva.nl/~mes/jargon/m/munge.html">munge</A> some
+of the message headers. Many list administrators want to add a 
+<KBD>Reply-To</KBD> header that points back to the list.  This transformation
+is also one of the most useful.
+
+<P>Some administrators claim that <KBD>Reply-To</KBD> munging
+can have harmful -- even dangerous -- effects.  I assert the opposite,
+that <EM>not</EM> adding a <KBD>Reply-To</KBD> header has even more
+harmful effects. If you think
+<KBD>Reply-To</KBD> munging is a <EM>bad</EM> idea, I hope I can change your
+mind.
+
+<H3>RFC 822 and "Text Message Teleconferencing"</H3>
+
+<P>The first thing to consider is that
+<a href="http://www.faqs.org/rfcs/rfc822.html">RFC 822</a>, the document which
+defines the standards and usages for email, specifically mentions this usage in
+section 4.4.3:
+
+<pre>
+        A somewhat different use may be of some help to "text message
+        teleconferencing" groups equipped with automatic distribution
+        services: include the address of that service in the "Reply-To"
+        field of all messages submitted to the teleconference; then 
+        participants can "reply" to conference submissions to guarantee
+        the correct distribution of any submission of their own.
+</pre>
+
+<P>Aside from this official sanction, there are a number of reasons for munging
+the <KBD>Reply-To</KBD> header. The arguments which follow are my own.
+They may not be comprehensive, but I think they are compelling.
+
+<H3>The Principle of Minimal Bandwidth</H3>
+
+<P>The ``Principle of Minimal Bandwidth'' is a good rule that will keep
+you out of trouble.  It says that you <EM>should</EM> make any changes
+which will reduce the amount of email traffic on the Internet.
+The ``Principle of Minimal Bandwidth'' will help you avoid the sorts of
+problems we are about to discuss.  This principle <EM>is</EM> a rule
+designed to be broken, but you can avoid some significant heartache
+by thinking hard and long before you do so.
+
+<H3>Reply-To Munging Adds Something</H3>
+
+<P><KDB>Reply-To</KDB> gives the respondant an option which would not
+otherwise exist: namely the ability to <EM>reply only to the list</EM>.
+Despite the fact that many (though not all) email clients have the
+ability to "reply to sender" or "reply to all recipients", many list
+subscribers want to <EM>reply only to the list</EM>, which is not the
+result of selecting either of these options. So, to ensure that the
+reply goes to the list, they select "reply to all recipients", which
+generally results in the sending of <EM>at least two</EM> email messages, one
+to the list, and one to the original sender.
+
+<P>This is frequently quite annoying to the original sender, who now
+receives two copies of the reply. Furthermore, in many cases the original
+sender has added additional recipients. Not only does "reply to all
+recipients" send the reply to each of these additional recipients
+(who are frequently also members of the list), it also propagates this
+list of recipients onto the reply to the list.
+
+<P>The effects of this snowball, as each additional person replies to the
+messages using "reply to all recipients", they become the sender, and thus
+get added to the list of recipients with the next reply. Thus the list of 
+recipients grows and grows. Frequently, as the subject matter changes,
+members of the list find themselves receiving multiple copies of messages
+which have strayed from the topic in which they were originally interested,
+<i>even after they have unsubscribed from the list</i>.
+
+<P>Many people have pointed out that it is relatively easy to implement a
+<KBD>procmail</KBD> filter to remove duplicates. This attitude merely reveals
+a Unix-centric and US-centric viewpoint. Many users of inferior operating
+systems <i>do not</i> have a tool powerful enough to ensure the removal of
+duplicate messages. Furthermore, in many European countries, connect time is
+charged by the <i>minute</i>. Even with <KBD>procmail</KBD>, the duplicates
+have to be <i>downloaded</i> before they can be filtered, resulting in
+unnecessary additional expenses for some of our European list mates.
+
+<P>This last fact reveals that the issue is really related to bandwidth.
+By applying the ``Principle of Minimal Bandwidth'', we conclude that it
+is necessary to add a <KBD>Reply-To</KBD> header that points back to the list.
+
+<H3>It Doesn't Break Reasonable Mailers</H3>
+
+<P>If you use a reasonable mailer, <KBD>Reply-To</KBD> munging <EM>does</EM>
+provide new functionality, namely the ability to <EM>reply only to the
+list</EM>.  Furthermore, it does <EM>not decrease</EM> functionality. In Pine,
+for example, when there is a <KBD>Reply-To</KBD> header, Pine will ask,
+``Use "Reply-To:" address instead of "From:" address?'', easily allowing
+one to reply only to the original author. In KMail, it is even easier. One
+merely right-clicks on the hyperlinked <KBD>From</KBD> address.
+
+<P>If your mailer doesn't have this option, you should request it from its
+development team.  Any mailer, whose development team refuses this simple
+request due to some ideological position, cannot be said to be reasonable.
+
+<H3>Freedom of Choice</H3>
+
+<P>Since <KDB>Reply-To</KDB> munging adds additional functionality, it actually
+<EM>increases</EM> freedom of choice. Not only can you now <EM>reply only to
+the list</EM>, you still have the option to reply to the original
+author, or to all recipients, easily and conveniently.
+
+<H3>Some Mailers are Broken</H3>
+
+<P>There are, unfortunately, some poorly implemented mail programs that lack
+separate "reply-to-author" and "reply-to-group" functions.  A user saddled
+with such a mailer can benefit from <KBD>Reply-To</KBD> munging.  It makes
+it easier for him or her to send responses directly to the list.
+
+<P>Furthermore, this change <EM>does not</EM> penalize the conscientious
+person that uses a reasonable mailer. Reasonable mailers give one the
+ability to reply to the <KBD>From</KBD> address. Therefore, it would be
+unkind to further penalize those with poorly implemented mail programs, since
+munging the <KBD>Reply-To</KBD> header causes no harm to those with reasonable
+mailers.
+
+<H3>Principle of Least Total Work</H3>
+
+<P>For discussion type lists, I would estimate that ninety percent of the time,
+people want to reply to the list. Without munging, they either have to break
+the ``Principle of Least Bandwidth'', or type in the list address. Many people,
+being lazy, will choose the former, sending unnecessary copies of emails to
+people who will either have to delete them, or take the time to set up a
+filter (if they are lucky enough to be running an operating system which
+facilitates this).
+
+<P>On the other hand, about ten percent of the time, replying to the sender
+might be more appropriate. Even if the respondant has an unreasonable
+mailer (a decision for which they are probably responsible), the worst case
+scenario is that they have to type in an address ten percent of the time.
+Of course, if they took the time to add this recipient to their address book,
+they could reduce the amount of typing to a minimum.
+
+<P>So, which produces least total work: typing in the list address ninety
+percent of the time (plus possibly taking the time to set up a filter), or
+typing in an individual's address ten percent of the time?
+
+<P>I'll take munged <KBD>Reply-To</KBD> headers every time, thanks.
+
+<H3>People are Responsible for Their Own Mistakes</H3>
+
+<P>Some administrators claim that munging <KBD>Reply-To</KBD> headers is
+harmful because it surprises people, and can cause damage when things go
+awry. They assert that administrators should prevent the possibility of a
+private message being mistakenly broadcast to the entire list.
+
+<P>This is simply not the responsibility of the administrator. People are 
+responsible for their own mistakes. If someone is sending a private email
+which is derogatory, or otherwise embarrassing were it to be made public,
+they should probably be sending it directly, rather than as a reply to a
+public message. They should also pause and think about whether they should
+be sending it at all.  This pause should be quite sufficient for a
+conscientious person using a reasonable mailer to catch any mistake that
+they might be about to make.
+
+<P>In any case, it is an entirely trivial matter for the list administrator
+to provide an obvious clue in the subject line of every message that the
+message was received from a mailing list. If your Mailing List Manager doesn't
+provide an option to prepend "[listname]" to the subject, then switch to one
+that does (&nbsp;e.g. <a href="http://www.list.org/">GNU&nbsp;MailMan</a>
+or <a href="http://www.greatcircle.com/majordomo/">Majordomo</a>&nbsp;). 
+
+<H3>And in the End...</H3>
+
+<P>If you are not convinced yet, then allow me one final plea.  Most mailing
+lists are intended to facilitate discussion on a given topic.  If this is
+indeed the primary purpose of your list, then you <EM>really should</EM> add a
+<KBD>Reply-To</KBD> header which directs replies to the list. This helps to
+ensure that the entire thread of the conversation is available to all who
+might be interested. 
+
+<P>I can't count the number of times I have searched the archives
+of a list for a solution to a problem, only to find the question asked, but
+no solution. Yet, when I subsequently post the question to the list, the
+long-time members insist that it has already been discussed, and that I should
+search the archives. If I'm lucky, a newer member forwards to me the private
+reply which answered the question.
+
+<P>Thus, munging the <KBD>Reply-To</KBD> header benefits those lists which are
+intended for serious discussion.  If your list is intended primarily for
+announcements or other one-way mailings, you may safely ignore these arguments.
+
+<H3>It's What People Want</H3>
+
+<P>I have been and am subscribed to both munging and non-munging mailing lists.
+On the non-munging lists, there are regular requests to change the list so
+that <KBD>Reply-To</KBD> replies to the list. On the munging lists which
+already do this, there are hardly any requests for change.
+
+<H3>Summary</H3>
+
+<P>Many people want to munge <KBD>Reply-To</KBD> headers.  They believe
+it makes reply-to-list easier, and it encourages more list traffic.
+It really does both of these things, and is a very good idea. To reiterate:
+
+<UL>
+
+<LI>It adheres to the principle of minimal bandwidth.
+
+<LI>It provides additional functionality to the user.
+
+<LI>It increases a subscriber's freedom to choose how to direct a response.
+
+<LI>It does not reduce functionality for the user of a reasonable mailer.
+
+<LI>It aids and assists the user with a deficient mailer.
+
+<LI>It adheres to the principle of least total work.
+
+<LI>It helps to ensure that questions are answered on the list.
+
+<LI>Your subscribers want you to do it.
+
+</UL>
+
+<P>&nbsp;
+<H3>Addendum</H3>
+
+<P>There are, of course, a few details that need to be addressed to make
+<KBD>Reply-To</KBD> munging more pleasant and productive for everyone.  One 
+potentially serious problem with <KBD>Reply-To</KBD> munging is the possibility
+of mail loops. It should be possible for the list server to detect and prevent
+this. If anyone has any patches to implement this feature, I would be happy
+to provide a link to the patch on your ftp server, or to make it available on
+my own ftp server.
+
+<P>Also, patches are needed for any mailers that do not implement the ability
+to reply to the <KBD>From</KBD> address. Please send links or patches to me
+at <i>sdhill&nbsp;at&nbsp;metasystema.net</i>. Thanks.
+
+<H3>Patches</H3>
+
+<P>
+A patch for Emacs rmail is available at: <a href="http://www.metasystema.net/pub/patches/emacs/rmail-query-reply-to.el">http://www.metasystema.net/pub/patches/emacs/rmail-query-reply-to.el</a>.
+
+<H3>Dissenting Opinion</H3>
+
+<P>I originally wrote this essay as a response to Chip Rosenthal's
+<a href="harmful.html">
+Reply-To Munging Considered Harmful</a>.
+
+<p>
+<address>Simon Hill</address>
+<address>sdhill&nbsp;at&nbsp;metasystema.net</address>
+
+</body>
+</html>
