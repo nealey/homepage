@@ -21,7 +21,7 @@ out that:
 
 In 2000 (or maybe earlier), Simon Hill wrote a response called [Reply-To
 Munging Considered
-Useful](http://www.metasystema.net/essays/reply-to.mhtml), which is
+Useful](reply-to/useful.html), which is
 frequently offered as a rebuttal to Chip's document in online debates.
 Simon's response boils down to the following:
 
@@ -163,8 +163,8 @@ References
   Harmful](http://www.unicom.com/pw/reply-to-harmful.html)
   ([mirror](reply-to/harmful.html))
 * [Reply-To Munging Considered
-  Useful](http://www.metasystema.net/essays/reply-to.mhtml)
-  ([mirror](reply-to/useful.html))
+  Useful](reply-to/useful.html)
+  ([original URL, which is offline in June 2020](http://www.metasystema.net/essays/reply-to.mhtml))
 * [RFC 822](http://www.ietf.org/rfc/rfc822.txt): _STANDARD FOR THE FORMAT
   OF ARPA INTERNET TEXT MESSAGES_
 * [RFC 2822](http://www.ietf.org/rfc/rfc2822.txt): _Internet Message
