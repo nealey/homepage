@@ -161,10 +161,10 @@ References
 
 * ['Reply-To' Munging Considered
   Harmful](http://www.unicom.com/pw/reply-to-harmful.html)
-  [mirror](reply-to/harmful.html)
+  ([mirror](reply-to/harmful.html))
 * [Reply-To Munging Considered
   Useful](http://www.metasystema.net/essays/reply-to.mhtml)
-  [mirror](reply-to/useful.html)
+  ([mirror](reply-to/useful.html))
 * [RFC 822](http://www.ietf.org/rfc/rfc822.txt): _STANDARD FOR THE FORMAT
   OF ARPA INTERNET TEXT MESSAGES_
 * [RFC 2822](http://www.ietf.org/rfc/rfc2822.txt): _Internet Message
