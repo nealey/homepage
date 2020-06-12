@@ -22,7 +22,7 @@ there are many online venues available for you to do so.
 What's the advantage?
 ---------------------
 
-Runit letsâ€”no, forcesâ€”you to write your own startup scripts.
+Runit allows€”no, forcesâ€”you to write your own startup scripts.
 You can write them in any language you want,
 but Bourne shell is pretty convenient.
 I think this is the biggest selling point for me.
