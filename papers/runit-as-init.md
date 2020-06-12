@@ -142,11 +142,14 @@ having everything in Bourne shell is an attractive proposition.
 It required high wizardry
 -------------------------
 
-The head guy from the Archbang distribution tried to duplicate my work once,
+The head hacker from the Archbang distribution tried to duplicate my work once,
 and failed to make everything work.
-We never did sort out what he needed to change.
-This was not something I'd recommend trying if you're not an expert
-and/or unwilling to debug a massively broken system for weeks.
+
+As of 2020--five years after I wrote this paper--Archbang works with runit!
+But according to the "head hacker", X11 still doesn't work quite right without systemd.
+
+This is not something I'd recommend trying if you're not an expert
+and/or unwilling to debug a massively broken system for weeks or months.
 
 
 Stuff that never quite worked
