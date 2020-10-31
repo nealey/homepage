@@ -1,4 +1,6 @@
-Title: Neale's Internet Reiki Page
+---
+title: Neale's Internet Reiki Page
+---
 
 What is Reiki?
 --------------
