@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tektronix Terminal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            background: black;
+            color: white;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        #credit {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: goldenrod;
+            font-family: VT323, monospace;
+            font-size: 22px;
+        }
+    </style>
+    <script>
+        lastPoint = [0, 0]
+        points = [[0, 0], [0, 0], [0, 0]]
+        interval = null
+
+        function choose(arr) {
+            return arr[Math.floor(Math.random() * arr.length)]
+        }
+
+        function midpoint(a, b) {
+            return [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]
+        }
+
+        function drawPoint() {
+            lastPoint = midpoint(choose(points), lastPoint)
+            ctx.fillRect(lastPoint[0], lastPoint[1], 2, 2)
+        }
+        
+        function go() {
+            canvas = document.querySelector("canvas")
+            ctx = canvas.getContext("2d")
+            canvas.width = innerWidth
+            canvas.height = innerHeight
+            ctx.fillStyle = "goldenrod"
+
+            lastPoint = [
+                Math.random() * canvas.width,
+                Math.random() * canvas.height,
+            ]
+            points = [
+                [canvas.width / 2, 0],
+                [canvas.width, canvas.height],
+                [0, canvas.height],
+            ]
+            if (!interval) {
+                interval = setInterval(drawPoint, 40)
+            }
+        }
+        addEventListener("load", go)
+        addEventListener("resize", go)
+    </script>
+</head>
+
+<body>
+    <canvas></canvas>
+    <div id="credit">The Serpenski Gasket<br>1991 by Neale Pickett</div>
+</body>
+
+</html>

@@ -11,3 +11,4 @@ Maybe you'll just wonder why I spend so much time on this garbage.
 * If you need to write someone a letter but really don't want to, try my
   [social letter generator](letter.html)
 * [Crunt](crunt.html)
+* [Serpenski Gasket on Tektronix Terminal](serpenski.html) which amazed 4 whole people at my high school in 1991.
