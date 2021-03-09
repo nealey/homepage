@@ -16,3 +16,4 @@ I guess I'd still have my day job.
 * [The Poopy Song](poopy.html)
 * [Sap](sap.html)
 * [Snark Hair](snark.html)
+* [🐘 🐢](🐘🐢.html), a rhyming poem in emoji
