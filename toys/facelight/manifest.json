@@ -1,0 +1,15 @@
+{
+  "name": "Face Light",
+  "short_name": "Face Light",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#ffd6aa",
+  "description": "Lights up your face.",
+  "icons": [
+    {
+      "src": "app.svg",
+      "sizes": "196x196"
+    }
+  ]
+}
