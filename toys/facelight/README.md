@@ -1,7 +1,7 @@
-This is a HTML5 doodad that lets you screencast with your face on top.
+This is a HTML5 doodad that makes a window with a solid color.
 
-It saves videos locally as `.webm` files.
+The intent here is to light up your face for video calls or photo shoots or whatever
+else you need your face lit up for.
 
-You can move your face around, zoom in to a region of the screen,
-I guess this is enough for my needs.
-Maybe it'll be enough for yours.
+I wrote it after spending an embarassingly long amount of time trying to figure out
+how to position a light over my webcam such that my chin would we well-lit too.
