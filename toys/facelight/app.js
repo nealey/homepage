@@ -59,6 +59,9 @@ function changeTemp(e) {
 function init() {
 	document.querySelector("#temp").addEventListener("input", changeTemp)
   changeTemp()
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register("sw.js")
+  }  
 }
 
 if (document.readyState === "loading") {
