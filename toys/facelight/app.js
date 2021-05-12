@@ -1,3 +1,5 @@
+const defaultTemp = 5500
+
 function colorTemperatureToRGB(kelvin) {
 	// https://gist.github.com/paulkaplan/5184275
 	
@@ -42,7 +44,7 @@ function changeTemp(e) {
   let tempOut = document.querySelector("#tempOut")
   let temp
   if (!e) {
-    temp = localStorage.temp || 5500
+    temp = localStorage.temp || defaultTemp
   } else if (e.target) {
     temp = Number(e.target.value)
   } else {
@@ -56,8 +58,26 @@ function changeTemp(e) {
   localStorage.temp = temp
 }
 
+function keydownEvent(event) {
+  let temp = Number(localStorage.temp || defaultTemp)
+  switch (event.key) {
+    case "ArrowLeft":
+    case "ArrowDown":
+      event.preventDefault()
+      changeTemp(temp - 100)
+      break
+    case "ArrowRight":
+    case "ArrowUp":
+      event.preventDefault()
+      changeTemp(temp + 100)
+      break
+  }
+  console.log("new temp is", temp)
+}
+
 function init() {
-	document.querySelector("#temp").addEventListener("input", changeTemp)
+  document.querySelector("#temp").addEventListener("input", changeTemp)
+  document.addEventListener("keydown", keydownEvent)
   changeTemp()
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register("sw.js")
