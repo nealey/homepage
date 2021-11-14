@@ -1,0 +1,109 @@
+%!PS-Adobe-3.0
+%%Title: Pocket Mastermind
+%%Creator: Neale Pickett <neale@woozle.org>
+%%Orientation: Landscape
+%%DocumentMedia: US-Letter 612 792 80 ( ) ( )
+%%EndComments
+
+/pagewidth  currentpagedevice /PageSize get 0 get def
+/pageheight currentpagedevice /PageSize get 1 get def
+/r 10 def
+
+/pie {
+    1 dict begin
+        /r exch def
+
+        gsave
+            currentpoint translate
+
+            0 60 360 {
+                gsave
+                    dup rotate
+                    120 mod 60 div
+                    0.4 mul 0.0 add setgray
+
+                    0 0 moveto
+                    0 r lineto stroke
+                grestore
+            } for
+
+            r 0 moveto
+            0 0 r 0 360 arc
+            closepath stroke
+
+        grestore
+    end
+} def
+
+/grid {
+    1 dict begin
+        /r exch def
+
+        % Big plus
+        r 2 mul 0 rlineto
+        r -1 mul r -1 mul rmoveto
+        0 r 2 mul rlineto
+
+        r -1 mul r -2 mul rmoveto
+        0 r 2 mul rlineto
+        r 2 mul 0 rlineto
+        0 r -2 mul rlineto
+        r -2 mul 0 rlineto
+        stroke
+    end
+} def
+
+/pierow {
+    2 dict begin
+        /gridp exch def
+        /r exch def
+        gsave
+            currentpoint translate
+            0 1 3 {
+                r 2.5 mul mul
+                0 moveto
+                r pie
+            } for
+
+            gridp {
+                4 r 2.6 mul mul
+                0 moveto
+                r 0.7 mul grid
+            } if
+        grestore
+    end
+} def
+
+/board {
+    10 dict begin
+        /r exch def
+        gsave
+            r false pierow
+            0 r 2.0 mul rmoveto
+            0 1 9 {
+                pop
+                0 r 2.2 mul rmoveto
+                r true pierow
+            } for
+        grestore
+    end
+} def
+
+0 1 1 {
+    pop
+    1 2 3 {
+        10 dict begin
+            gsave
+                pagewidth 2 div pageheight 2 div translate
+                90 mul rotate
+                pageheight -2 div pagewidth -2 div translate
+                50 30 translate
+                0 1 3 {
+                    pageheight 4 div mul 0 moveto
+                    r board
+                } for
+            grestore
+        end
+    } for
+    showpage
+} for
