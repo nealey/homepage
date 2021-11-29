@@ -12,9 +12,10 @@ I collect 'em.
   preserved forever.
 * [Dear Ministers](dear-ministers.html)
 * [Suspicious Activity](suspicious-activity.html)
-* [Uglification](uglification.html)
+* [Uglification (2014)](uglification.html), in which it is opined that the new downtown lamps are ugly
 * [I Also Enjoy Wearing Kilts](i-also-enjoy-wearing-kilts.html)
 * [Shopping At Smith's](shopping-at-smiths.html)
+* [Uglification (2021)](uglification-2.html), in which it is opined that the new lamps are ugly, unlike the old downtown lamps installed in 2014
 
 
 Logos
