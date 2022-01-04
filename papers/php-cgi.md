@@ -3,11 +3,11 @@ title: Running PHP as a CGI
 ---
 
 I'm the author of the
-[eris HTTPd](http://woozle.org/~neale/src/eris.html),
+[eris HTTPd](https://github.com/nealey/eris),
 a small web server intended for use on embedded Linux devices with low RAM and low storage.
 I've used other web servers (boa, mathopd, thttpd, etc.) for years,
 and this problem has been present for as long as I can remember.
-A [recent gripe post about PHP](http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/)
+A [recent gripe post about PHP](https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/)
 inspired me to document it.
 
 The Situation
@@ -111,8 +111,8 @@ What actually fixed it
 After nearly a full day trying to chase this cryptic message down in web searches,
 I landed on a PHP bug open since 2004:
 [PHP CGI depends on non-standard SCRIPT_FILENAME](https://bugs.php.net/bug.php?id=28227).
-Included in the comments on this ancient but still unresolved bug is a link to
-[a wrapper](http://pastebin.ca/1296199)
+Included in the comments on this ancient but still unresolved bug is a now-broken link to
+a wrapper
 which proports to fix the problem.
 
 So the ultimate fix to make `php-cgi` actually run like a CGI is to wrap it
@@ -132,7 +132,7 @@ the path taken by most system administrators who haven't written their own web s
 Why does PHP do this?
 ---------------------
 
-I have skimmed [the URL that they asked me to](http://us3.php.net/manual/en/security.cgi-bin.attacks.php).
+I have skimmed [the URL that they asked me to](https://php.net/manual/en/security.cgi-bin.attacks.php).
 They list two points:
 
 1. "Interpreters open and execute the file specified as the first argument on the command line." This is true, it's how shebangs work (a file `script.sh` beginning with `#!/bin/sh` is magically transformed to `["/bin/sh", "script.sh"]`). It's how Python and Perl launch. I don't get the exploit path here, unless there's some horrible way to misconfigure Apache to do the wrong thing with scripts.
