@@ -26,7 +26,7 @@ function regexInput(e) {
       li.textContent = word
 
       nmatches += 1
-      if (nmatches > 50) {
+      if (nmatches > 600) {
         li.textContent = "…"
         break
       }
