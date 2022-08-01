@@ -27,12 +27,16 @@ input {
   border-bottom: 1px solid black;
 }
 
-#title, td.main {
+.title, td.main {
   background-color: #e0e4cc;
   border-radius: 0.25em;
   padding: 0.1em 0.5em;
   margin-top: 0;
   box-shadow: 0.2em 0.2em 1em rgba(0,0,0,0.1);
+}
+
+.subtitle {
+  font-size: 60%;
 }
 
 h1, h2, h3, h4, h5, h6 {

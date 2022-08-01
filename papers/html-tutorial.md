@@ -3,7 +3,7 @@ title: The 3-minute HTML tutorial
 ---
 
 As computer formats go, HTML is easy and logical.  It's all just text
-that you can edit with any basic text editor, like gedit under Gnome, or
+that you can edit with any basic text editor, like `gedit` under Gnome, or
 notepad in Windows.  Let's start out with an example.  Say you have a
 sentence, and you want one word in it to be bold.  That sentence would
 look like this:
@@ -76,14 +76,14 @@ Now, for inline images:
 
     <p>
       This is an
-      <img src="https://woozle.org/neale/face.png"
+      <img src="https://woozle.org/assets/images/yurt.png"
            alt="face"></img> image, and
       <a href="http://woozle.org/">this</a> is a link.
     </p>
 
 Which will show up like this:
 
->  <p>This is an <img src="https://woozle.org/neale/face.png"
+>  <p>This is an <img src="https://woozle.org/assets/images/yurt.png"
 >  alt="face" /> image, and
 >  <a href="http://woozle.org/">this</a> is a link.
 
@@ -91,7 +91,7 @@ The example above has an image tag, with two "attributes", "src" and
 "alt".  The "src" attribute in an `<img>` tag gives the URL to a
 picture, and the "alt" attribute is the text that's displayed to people
 who can't see images (blind users, folks without graphics capabilities,
-or if there's a problem on your web server).  The "alt" attribue is
+or if there's a problem on your web server).  The "alt" attribute is
 required, but you can set it to `""` if there's nothing appropriate for
 alternate text.
 

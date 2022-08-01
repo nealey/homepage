@@ -17,8 +17,14 @@
   </head>
 
   <body>
-    <h1 id="title">
+    <h1 class="title">
       <span>{{ page.title }}</span>
+      {% if page.collection == "posts" %}
+      <br>
+      <span class="subtitle">
+        {{page.date | date: "%Y %B %-d"}}
+      </span>
+      {% endif %}
     </h1>
 
     <main id="content">
@@ -34,6 +40,7 @@
           <li><a href="{{ '/tartans/' | relative_url }}" title="AKA Plaids">Tartans</a></li>
           <li><a href="{{ '/poems/' | relative_url }}" title="I won't quit my day job">Poems</a></li>
           <li><a href="{{ '/papers/' | relative_url }}" title="Various writings">Papers</a></li>
+          <li><a href="{{ '/blog.html' | relative_url }}" title="Public Journal">Blog</a></li>
           <li><a href="{{ '/toys/' | relative_url }}" title="Dumb apps">Toys</a></li>
         </ul>
       </nav>
