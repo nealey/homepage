@@ -1,10 +1,15 @@
+plugins:
+  - jekyll-feed
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
-plugins:
-  - jekyll-feed
+  - scope:
+      path: "blog"
+    values:
+      title: "Neale Blog"
+title: Neale Pickett
 author:
   name: Neale Pickett
   uri: https://woozle.org/
