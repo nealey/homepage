@@ -140,3 +140,7 @@ button.big {
   font-size: 2em;
   background: inherit;
 }
+
+.tags {
+	font-size: small;
+}

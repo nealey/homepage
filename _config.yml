@@ -6,8 +6,9 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "blog"
+      path: "blog/*/*"
     values:
+      layout: "blog"
       title: "Neale Blog"
 title: Neale Pickett
 author:
