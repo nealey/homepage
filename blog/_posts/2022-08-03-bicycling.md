@@ -13,11 +13,13 @@ A few recent events have conspired to push me back into cycling to work and back
 
 So now I'm riding the bicycle instead of walking to work.
 
-It takes about 20 minutes each way, as opposed to 40 minutes walking. I imagine,
-after sitting in traffic, finding parking, and then walking from the parking lot
-to my building, driving the car would be 20-30 minutes. In fact, the other day,
-my daughter drove in to her job downtown a few minutes before I left on my bike,
-and I passed her on the way in. The bike lane is never stop-and-go traffic.
+I ride pretty slowly, about a jogging pace. I'm in no hurry. 
+It takes about 20 minutes each way, as
+opposed to 40 minutes walking. I imagine, after sitting in traffic, finding
+parking, and then walking from the parking lot to my building, driving the car
+would be 20-30 minutes. In fact, the other day, my daughter drove in to her job
+downtown a few minutes before I left on my bike, and I passed her on the way in.
+The bike lane is never stop-and-go traffic.
 
 I'm riding my IKEA Sladda, which was recalled years ago due to the drive belt
 breaking. I kept it, because I've had chains break before and I'm pretty sure I
