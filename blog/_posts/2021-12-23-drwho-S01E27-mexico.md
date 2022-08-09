@@ -41,8 +41,8 @@ married or engaged or something. Susan finally expresses an emotion other
 than terror:
 
 <video autoplay loop>
-    <source src=/assets/blog/susan-well-hello-there.mp4>
-    "Well, hello there."
+<source src=/assets/blog/susan-well-hello-there.mp4>
+"Well, hello there."
 </video>
 
 I'm back to being uncomfortable with the cultural framing here. I mean,
