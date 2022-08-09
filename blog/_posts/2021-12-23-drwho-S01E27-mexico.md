@@ -40,7 +40,10 @@ Barbara abusing her god status to outlaw human sacrifice. The Doctor gets
 married or engaged or something. Susan finally expresses an emotion other
 than terror:
 
-![well hello there](/assets/blog/susan-well-hello-there.mp4)
+<video autoplay loop>
+    <source src=/assets/blog/susan-well-hello-there.mp4>
+    "Well, hello there."
+</video>
 
 I'm back to being uncomfortable with the cultural framing here. I mean,
 maybe this is useful for viewing 1960s British culture, but that's still
