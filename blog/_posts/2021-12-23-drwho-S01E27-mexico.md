@@ -40,8 +40,8 @@ Barbara abusing her god status to outlaw human sacrifice. The Doctor gets
 married or engaged or something. Susan finally expresses an emotion other
 than terror:
 
-<video autoplay loop>
-<source src=/assets/blog/susan-well-hello-there.mp4>
+<video autoplay muted loop>
+<source src="/assets/blog/susan-well-hello-there.mp4">
 "Well, hello there."
 </video>
 
