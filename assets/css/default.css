@@ -76,13 +76,21 @@ footer {
 }
 
 nav ul {
+  display: flex;
   padding: 0;
   margin-top: 0;
   margin-bottom: 1em;
+  flex-wrap: wrap;
 }
-nav li {
+
+nav ul li {
   display: inline;
-  padding-right: 1em;
+  padding: 0 0.5em;
+  flex-grow: 1;
+}
+
+nav ul .fill {
+  flex-grow: 20;
 }
 
 .left {
