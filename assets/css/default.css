@@ -85,7 +85,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  padding: 0 0.5em;
+  margin: 0 0.5em;
   flex-grow: 1;
 }
 
