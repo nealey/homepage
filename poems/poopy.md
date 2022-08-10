@@ -2,7 +2,9 @@
 title: The Poopy Song
 ---
 
-![G|:ccGG cc2c|ddAA d3c|BBBB BB2A|GGAB c3G:|](poopy-music.png)
+![Music Score](poopy-music.png)
+
+    G|:ccGG cc2c|ddAA d3c|BBBB BB2A|GGAB c3G:|
 
 I had a little baby  
 She liked to poop a lot  
