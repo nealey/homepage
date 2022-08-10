@@ -1,5 +1,6 @@
 ---
 title: My (online) Generation
+published: false
 ---
 
 I've been on this IRC channel (Signal now) for maybe 20 years now, maybe more.
