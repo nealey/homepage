@@ -54,10 +54,6 @@ a:hover {
   color: #f83;
 }
 
-img {
-  max-width: 60%;
-}
-
 img.face {
 	margin: 1em;
 	width: 10em;
@@ -144,3 +140,15 @@ button.big {
 .tags {
 	font-size: small;
 }
+
+@media (max-width: 768px) {
+  img, video {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  img, video {
+    max-width: 60%;
+  }
+}
+
