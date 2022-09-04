@@ -1,0 +1,28 @@
+{{define "main"}}
+  {{.Content}}
+  {{range .Pages.GroupByParam "section" }}
+    <h2>
+      {{if eq .Key "computing"}}
+        Computer Nerdery
+      {{else if eq .Key "derby"}}
+        Roller Derby
+      {{else if eq .Key "other"}}
+        Other
+      {{else}}
+        Things which don't have a known section parameter
+      {{end}}
+    </h2>
+    <ul>
+      {{range .Pages}}
+        <li>
+          <a href="{{.Permalink}}">
+            {{.Title}}
+          </a>
+          {{with .Description}}
+            - {{.}}
+          {{end}}
+        </li>
+      {{end}}
+    </ul>
+  {{end}}
+{{end}}

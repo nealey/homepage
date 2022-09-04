@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic">
+    <!-- My stuff -->
+    <link rel="stylesheet" media="screen" href="{{"/assets/css/default.css" | relURL}}">
+    <link rel="icon" type="image/png" href="{{"/assets/images/face.png" | relURL}}">
+    {{range .AlternativeOutputFormats}}
+    <link rel="{{.Rel}}" type="{{.MediaType.Type}}" title="{{$.Site.Title}}" href="{{.Permalink}}">
+    {{end}}
+    {{range .Params.scripts}}
+    <script src="{{.}}"></script>
+    {{end}}
+    {{range .Params.headers}}
+    {{.}}
+    {{end}}
+    <title>{{ .Title }}</title>
+  </head>
+
+  <body>
+    <h1 class="title">{{.Title}}</h1>
+
+    <main id="content">
+      {{ block "main" . }}{{end}}
+      <p id="timestamp">Last modified: {{.Lastmod | time.Format "2006-Jan-02"}}</p>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="{{ "/tartans/" | relURL }}" title="AKA Plaids">Tartans</a></li>
+          <li><a href="{{ "/poems/" | relURL }}" title="I won't quit my day job">Poems</a></li>
+          <li><a href="{{ "/papers/" | relURL }}" title="Various writings">Papers</a></li>
+          <li><a href="{{ "/blog/" | relURL }}" title="Public Journal">Blog</a></li>
+          <li><a href="{{ "/toys/" | relURL }}" title="Dumb apps">Toys</a></li>
+          <li class="fill"></li>
+          <li><a href="https://git.woozle.org/neale/">Git</a></li>
+          <li><a href="mailto:neale@woozle.org">Email</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </body>
+</html>
+
