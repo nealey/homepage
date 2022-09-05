@@ -1,5 +1,6 @@
 #! /bin/sh
 
+rm -rf $(dirname $0)/public
 docker run \
   --rm -i \
   -v $(realpath $(dirname $0)):/src \

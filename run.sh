@@ -13,5 +13,6 @@ docker run \
   --rm -i \
   -v $(realpath $(dirname $0)):/src \
   -u $(id -u):$(id -g) \
+  -p 1313:1313 \
   klakegg/hugo:ext server \
     --baseURL "$baseURL"

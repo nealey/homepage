@@ -159,4 +159,13 @@ button.big {
     max-width: 60%;
   }
 }
+@media (prefers-color-scheme: dark) {
+  html {
+    background-image: url("../images/bg-dark.jpg");
+    filter: invert(1);
+  }
+  img {
+    filter: invert(1);
+  }
+}
 

@@ -24,7 +24,6 @@
 
     <main id="content">
       {{ block "main" . }}{{end}}
-      <p id="timestamp">Last modified: {{.Lastmod | time.Format "2006-Jan-02"}}</p>
     </main>
 
     <footer>
@@ -40,6 +39,7 @@
           <li><a href="mailto:neale@woozle.org">Email</a></li>
         </ul>
       </nav>
+      <p id="timestamp">Last modified: {{.Lastmod | time.Format "2006-Jan-02"}}</p>
     </footer>
 
   </body>
