@@ -164,7 +164,7 @@ button.big {
     background-image: url("../images/bg-dark.jpg");
     filter: invert(1);
   }
-  img,video {
+  img,video,canvas {
     filter: invert(1);
   }
 }

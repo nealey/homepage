@@ -1,6 +1,7 @@
 ---
 date: "2022-09-04T00:00:00Z"
 title: Lights! ...
+url: blog/2022-09-04-lights/
 ---
 
 The kid has been gearing up to record an audition video for a dance company,
