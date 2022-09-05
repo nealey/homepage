@@ -85,8 +85,9 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 0.5em;
+  margin: 0.5em 0.5em;
   flex-grow: 1;
+  text-align: center;
 }
 
 nav ul .fill {
