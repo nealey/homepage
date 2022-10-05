@@ -192,7 +192,8 @@ Don't forget that you need a lot of certified adjudicators for things to run at
 their current scale. They can't just fire everybody and start over: they need
 their current instructors to train up new ones. And if this document is
 representative, half of their current instructor pool is already compromised.
-There's no way to ensure this scheme won't be a part of the training.
+There's no way to ensure this scheme won't be a part of the new adjudicator
+training.
 
 Somebody is going to have to deliver a candid presentation to the board, or
 whatever they have, about the reality here. The corruption is probably so deep
