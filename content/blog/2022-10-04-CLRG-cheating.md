@@ -82,7 +82,7 @@ better.
 In what is probably the most memorable part of the document,
 one school owner and Sam exchange messages outlining an extramarital affair.
 It's not clear whether the school owner's spouse is aware of this.
-But it is clear that the school owner likes Sam to have his "ass in the air".
+But it is clear that the school owner likes Sam to have his "ass up".
 
 ### Sam didn't intend for this to become widespread
 
