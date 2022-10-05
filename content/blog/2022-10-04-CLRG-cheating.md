@@ -41,7 +41,7 @@ the volume down button at the same time. It's common for people to hit the
 volume button before power, which results in the phone turning the volume down
 just before the screen shot is taken. You can see evidence of this: the volume
 control appears in some of the screen shots. Someone more familiar with mobile
-phones could probably tell you the Android version and phone manufacturer.
+phones could tell you the Android version and phone manufacturer.
 
 The screen shots are of text messages with WhatsApp and Instagram (thanks to my
 daughter for figuring this one out). In both apps, Sam is writing the text on
@@ -79,7 +79,7 @@ better.
 
 ### Sam is involved in an affair
 
-In what is probably the most memorable part of the document,
+In the most memorable part of the document,
 one school owner and Sam exchange messages outlining an extramarital affair.
 It's not clear whether the school owner's spouse is aware of this.
 But it is clear that the school owner likes Sam to have his "ass up".
@@ -89,7 +89,7 @@ But it is clear that the school owner likes Sam to have his "ass up".
 While I don't know what his motivation was for taking and sending these screen
 shots, I feel sorry for this person. Nothing in this document makes it look like
 Sam was trying to publicize what was going on. And there are a few things that
-Sam is probably seriously regretting sending, such as the affair.
+Sam surely regrets sending, such as the affair.
 
 In fact, there are enough clues in these messages that my team is confident they
 know Sam's real name. If we're right, Sam definitely would not want any of this
@@ -121,23 +121,24 @@ compromised belies severe problems, no matter how you slice it.
 
 Most of these messages are just lists of numbers.
 One smart cheater sent a photograph,
-which is probably easier to remember.
+which would be easier to remember.
 The reality is likely that they don't remember all the numbers with 100% accuracy.
 This would result either in fair judging,
 or throwing points at the wrong number.
 
-The younger dancers probably suffer the most from inaccuracy in cheating.
-For the older competitors, the accuracy of cheating is probably higher,
+The younger dancers would have the most inaccuracy in cheating.
+For the older competitors, the accuracy of cheating goes up,
 as the adjudicators grow to recognize dancers.
 
-Also working in favor of fairness is the number of adjudicators. At smaller
+Another thing that helps fairness is the number of adjudicators. At smaller
 events, there are 3 on a panel, so about a 5% chance that everybody is
 compromised, if half the judges are bad.
+This is why there are more adjudicators at the higher-placing events.
 
-### This could probably be detected
+### This could be detected
 
 If anybody ever bothered to do analysis of the scores handed out, it would
-probably be pretty easy to detect the type of cheating that this document seems
+be pretty easy to detect the type of cheating that this document seems
 to illustrate. That wouldn't stop the cheating, but it would make it harder.
 
 Unfortunately, I don't believe any of the software in use does anything like
@@ -147,8 +148,7 @@ independent audits feasible.
 The data exists to be analyzed and audited, but until there's a lot of pressure
 to do this, I don't see it happening. And as angry as everyone is about things,
 I doubt the result will be auditable data. Doing audits is expensive, and the
-people with lots of money are probably more inclined to use it  to bribe
-adjudicators.
+people with lots of money have more incentives to use that money to bribe adjudicators.
 
 ### These messages are just the tip of the iceberg
 
@@ -159,7 +159,7 @@ there are 14 people implicated by this document.
 
 We are just reading Sam's messages: presumably everyone involved is messaging
 everyone else as well. Mathematicians call this a "complete graph". That means
-there are (14*13)/2 = 91 conversations. Put another way, we are only seeing 15%
+there are `(14*13)/2 = 91` conversations. Put another way, we are only seeing 15%
 of the racket within this group of 14 people
 
 But these appear to mostly be UK people.
@@ -171,43 +171,6 @@ with an organization as international as CLRG.
 
 This doesn't mean your school is involved.
 But it probably does mean your school has been affected.
-
-
-Closing Thoughts
--------------------
-
-Trees grow up *and* down. The part of the tree you can see is only half of the
-organism: for every meter of Siberian Elm tree I can cut down, there's a meter
-of Siberian Elm tree I need to dig out, and digging is way more work than
-cutting.
-
-I suspect that this racket is deep-rooted and widespread. I imagine the most
-likely outcome will be a lot of social media posts, some funny T shirts, a few
-resignations, maybe some people getting banned from events, and that's about it.
-The only adjudicator this document proves is corrupt is the whisleblower who
-sent in the screen shots. Even people named in these messages stand a decent
-chance of escaping consequences, if they play their cards right.
-
-Don't forget that you need a lot of certified adjudicators for things to run at
-their current scale. They can't just fire everybody and start over: they need
-their current instructors to train up new ones. And if this document is
-representative, half of their current instructor pool is already compromised.
-There's no way to ensure this scheme won't be a part of the new adjudicator
-training.
-
-Somebody is going to have to deliver a candid presentation to the board, or
-whatever they have, about the reality here. The corruption is probably so deep
-that they won't be able to take any significant action without destroying the
-whole organization. And this is just going to embolden the bad actors.
-
-After time passes, the presure from some of these intense and monied parents
-I've met will resume, and everything will be back to the way it was before.
-Sure, there will be some casting changes, but the system that's been built up
-for years--possibly decades--is going to persist long after the furore dies
-down.
-
-We may, however, see a renewed interest in some of the smaller Irish Dance
-organizations like CRN, who already seems to be making some moves.
 
 
 Background
