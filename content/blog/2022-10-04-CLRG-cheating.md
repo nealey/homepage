@@ -3,7 +3,7 @@ title: CLRG's Cheating Scandal
 date: 2022-10-04
 ---
 
-Amy just stumbled across a PowerPoint file with a bunch of text messages,
+$SPOUSE just stumbled across a PowerPoint file with a bunch of text messages,
 pretty clearly illustrating a massive cheating scandal.
 
 I won't post a link to the file,

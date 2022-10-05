@@ -11,7 +11,7 @@ I think I did pretty well,
 for about $140 worth of parts.
 It's primarily clamp lights,
 and some el cheapo colored acrylic from Amazon
-that I cut with Amy's CNC cutting machine.
+that I cut with $SPOUSE's CNC cutting machine.
 Also some aluminum foil.
 
 ![Lights!](lights.jpg)
