@@ -109,7 +109,7 @@ of the racket, or are at least not bribeable by the person who refers to them as
 "the panel from hell". Let's be optimistic and assume that all 5 of these
 adjudicators are not bribeable.
 
-Naking both of these together, we can guess that 6 to 9 of the adjudicators at
+Taking both of these together, we can guess that 6 to 9 of the adjudicators at
 All Irelands 2019 were in on this racket.
 
 There's a lot of math to get into here: accounting for how the overall
@@ -168,8 +168,6 @@ you can expect much, much more has been going on that we have yet to learn about
 And you can bet that it's larger than the UK:
 it is difficult to envsion how something like this could stay that regional,
 with an organization as international as CLRG.
-
-All-Irelands 2019, mentioned in Sam's email, had 14 judges. If we 
 
 This doesn't mean your school is involved.
 But it probably does mean your school has been affected.
