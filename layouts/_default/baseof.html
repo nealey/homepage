@@ -11,14 +11,18 @@
     <link rel="{{.Rel}}" type="{{.MediaType.Type}}" title="{{$.Site.Title}}" href="{{.Permalink}}">
     {{end}}
     {{range .Params.stylesheets}}
-    <link rel="stylesheet" media="screen" href="{{($.Page.Resources.GetMatch .).RelPermalink}}">
+      {{$url := .}}
+      {{with $.Page.Resources.GetMatch .}}
+        {{$url = .RelPermalink}}
+      {{end}}
+      <link rel="stylesheet" media="screen" href="{{$url}}">
     {{end}}
     {{range .Params.scripts}}
     {{end}}
     {{range .Params.scripts}}
       {{$url := .}}
       {{with $.Page.Resources.GetMatch .}}
-        {{$url = .RelPermaLink}}
+        {{$url = .RelPermalink}}
       {{end}}
       <script src="{{$url}}"
       {{- if strings.HasSuffix . ".mjs"}}type="module"{{end -}}

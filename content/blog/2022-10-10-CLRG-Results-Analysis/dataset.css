@@ -1,0 +1,7 @@
+.clrg-dataset tbody *:nth-child(3n) {
+    border-right: thin solid black;
+}
+
+.clrg-dataset tbody .new-round {
+    border-left: thick solid black;
+}
