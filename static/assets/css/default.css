@@ -19,12 +19,12 @@ body {
 }
 
 input {
-  font-family: "Lato", "Roboto", sans-serif;
-  font-size: 13pt;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid black;
+  font-family: inherit;
+  font-size: inherit;
+  border: thin solid #ccc;
+}
+input:read-only {
+  background-color: #eee;
 }
 
 .title, td.main {
@@ -144,6 +144,36 @@ button.big {
   margin: 1em;
   font-size: 2em;
   background: inherit;
+}
+
+legend {
+  background-color: #e0e4cc;
+}
+
+table {
+  margin: 1em;
+  border-collapse: collapse;
+}
+thead, tfoot {
+  color: #e64;
+  background-color: rgba(224, 228, 204, 0.8);
+}
+tbody tr:nth-of-type(even) {
+  background-color: rgba(238, 102, 68, 0.05);
+}
+
+td, th {
+  padding: 0.2em 0.5em;
+}
+caption {
+  caption-side: bottom;
+  font-size: small;
+}
+.justify-right, input[type="number"] {
+  text-align: right;
+}
+.justify-left {
+  text-align: left;
 }
 
 .tags {

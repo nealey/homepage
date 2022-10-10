@@ -4,6 +4,9 @@ case "$(hostname)" in
   sweetums)
     baseURL=http://sweetums.lan:1313/
     ;;
+  penguin)
+    baseURL=http://penguin.linux.test:1313/
+    ;;
   *)
     baseURL=http://$(hostname --fqdn):1313/
     ;;
