@@ -1,0 +1,33 @@
+.warning {
+    color: #e64;
+    display: none;
+}
+.warning.visible {
+    display: initial;
+}
+
+.scrolly {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.awardPoints {
+    display: inline-block;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin: 1em;
+}
+.awardPoints table {
+    margin: initial;
+}
+.awardPoints thead {
+    position: sticky;
+    top: 0;
+}
+.awardPoints tbody {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.awardPoints td {
+    text-align: right;
+}
