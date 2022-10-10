@@ -29,9 +29,10 @@ function scorecardUpdate(scorecard) {
     }
 
     {
+        let rankedPoints = [...points].sort((a, b) => b - a)
         let i = 0
         for (let out of scorecard.querySelectorAll("tfoot output[name='ranking']")) {
-            out.value = scores[i]
+            out.value = rankedPoints.indexOf(points[i]) + 1
             i += 1
         }
     }

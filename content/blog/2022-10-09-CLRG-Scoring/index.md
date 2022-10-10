@@ -125,11 +125,7 @@ of the exponential growth in the top 11 places.
 
 ### 1st place is super important
 
-1st place is weighted so heavily that it's almost impossible to overcome without
-your own 1st.
-
-Take for example this scenario,
-in which Adjudicator 1 has promised to give 1st place to Alice:
+1st place is weighted so heavily that one judge could move a 5th place dancer into 2nd.
 
 <table class="scorecard">
     <thead>
@@ -137,23 +133,27 @@ in which Adjudicator 1 has promised to give 1st place to Alice:
             <td></td>
             <th>Alice</th>
             <th>Bob</th>
+            <th>Carol</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <th class="justify-left">Adj. 1</th>
-            <td><input type="number" min=1 max=11 value=1 readonly></td>
-            <td><input type="number" min=1 max=11 value=3></td>
+            <td><input type="number" min=1 max=99 value=1 readonly></td>
+            <td><input type="number" min=1 max=99 value=3></td>
+            <td><input type="number" min=1 max=99 value=2></td>
         </tr>
         <tr>
             <th class="justify-left">Adj. 2</th>
-            <td><input type="number" min=1 max=11 value=1></td>
-            <td><input type="number" min=1 max=11 value=3></td>
+            <td><input type="number" min=1 max=99 value=5></td>
+            <td><input type="number" min=1 max=99 value=3></td>
+            <td><input type="number" min=1 max=99 value=2></td>
         </tr>
         <tr>
             <th class="justify-left">Adj. 3</th>
-            <td><input type="number" min=1 max=11 value=1></td>
-            <td><input type="number" min=1 max=11 value=3></td>
+            <td><input type="number" min=1 max=99 value=5></td>
+            <td><input type="number" min=1 max=99 value=3></td>
+            <td><input type="number" min=1 max=99 value=2></td>
         </tr>
     </tbody>
     <tfoot>
@@ -161,15 +161,66 @@ in which Adjudicator 1 has promised to give 1st place to Alice:
             <th class="justify-left">Award Points</th>
             <td class="justify-right"><output name="points"></td>
             <td class="justify-right"><output name="points"></td>
+            <td class="justify-right"><output name="points"></td>
         </tr>
         <tr>
             <th class="justify-left">Ranking</th>
+            <td class="justify-right"><output name="ranking"></td>
             <td class="justify-right"><output name="ranking"></td>
             <td class="justify-right"><output name="ranking"></td>
         </tr>
     </tfoot>
 </table>
 
+You can adjust these values to get a better feel for how scoring works.
 
 
+### Tanking a high-ranked dancer is another way to cheat
 
+Because of that exponential curve,
+a low ranking from a single judge can carry a lot of weight.
+
+<table class="scorecard">
+    <thead>
+        <tr>
+            <td></td>
+            <th>Alice</th>
+            <th>Bob</th>
+            <th>Carol</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="justify-left">Adj. 1</th>
+            <td><input type="number" min=1 max=99 value=3></td>
+            <td><input type="number" min=1 max=99 value=11></td>
+            <td><input type="number" min=1 max=99 value=2></td>
+        </tr>
+        <tr>
+            <th class="justify-left">Adj. 2</th>
+            <td><input type="number" min=1 max=99 value=3></td>
+            <td><input type="number" min=1 max=99 value=1></td>
+            <td><input type="number" min=1 max=99 value=2></td>
+        </tr>
+        <tr>
+            <th class="justify-left">Adj. 3</th>
+            <td><input type="number" min=1 max=99 value=3></td>
+            <td><input type="number" min=1 max=99 value=2></td>
+            <td><input type="number" min=1 max=99 value=2></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th class="justify-left">Award Points</th>
+            <td class="justify-right"><output name="points"></td>
+            <td class="justify-right"><output name="points"></td>
+            <td class="justify-right"><output name="points"></td>
+        </tr>
+        <tr>
+            <th class="justify-left">Ranking</th>
+            <td class="justify-right"><output name="ranking"></td>
+            <td class="justify-right"><output name="ranking"></td>
+            <td class="justify-right"><output name="ranking"></td>
+        </tr>
+    </tfoot>
+</table>
