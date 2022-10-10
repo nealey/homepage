@@ -108,7 +108,7 @@ There are a few points to note here:
 * 1st place is a *huge deal*. Disproportionately huge.
 * Places 2-10 are similarly big deals compared to places 3-11.
 * Places 12-50 operate the way most people probably assume ranking works: linearly.
-* Places 51-60 are a second degree polynomial, but it doesn't matter much for so few points.
+* Places 51-60 fit best to a second degree polynomial, but it doesn't matter much for differences of hundreths of a point. This section is *really weird*, mathematically.
 * Places 61-100 are all less than 1 point. If you're a judge trying to tank a top dancer, anywhere in this range is equivalent to anywhere else.
 
 
