@@ -11,10 +11,6 @@ scripts:
 Let's take a look how how CLRG does its scoring!
 *With math!*
 
-I'm going to only view this mathematically.
-I know there's a lot of other stuff that goes on, like line-ups.
-I'm only going to look at this with numbers.
-
 
 ## How CLRG Scoring Works
 
