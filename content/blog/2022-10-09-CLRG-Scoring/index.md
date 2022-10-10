@@ -202,7 +202,7 @@ a low ranking from a single judge can carry a lot of weight.
             <th class="justify-left">Adj. 3</th>
             <td><input type="number" min=1 max=99 value=3></td>
             <td><input type="number" min=1 max=99 value=2></td>
-            <td><input type="number" min=1 max=99 value=2></td>
+            <td><input type="number" min=1 max=99 value=1></td>
         </tr>
     </tbody>
     <tfoot>
