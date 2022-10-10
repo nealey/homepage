@@ -16,9 +16,13 @@
     {{range .Params.scripts}}
     {{end}}
     {{range .Params.scripts}}
-    <script src="{{($.Page.Resources.GetMatch .).RelPermalink}}"
+      {{$url := .}}
+      {{with $.Page.Resources.GetMatch .}}
+        {{$url = .RelPermaLink}}
+      {{end}}
+      <script src="{{$url}}"
       {{- if strings.HasSuffix . ".mjs"}}type="module"{{end -}}
-    ></script>
+      ></script>
     {{end}}
     {{range .Params.headers}}
     {{. | safeHTML}}

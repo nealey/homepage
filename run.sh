@@ -18,4 +18,6 @@ docker run \
   -u $(id -u):$(id -g) \
   -p 1313:1313 \
   klakegg/hugo:ext server \
+    --buildFuture \
+    --buildDrafts \
     --baseURL "$baseURL"
