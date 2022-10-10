@@ -143,7 +143,7 @@ of the exponential growth in the top 11 places.
             <th class="justify-left">Adj. 2</th>
             <td><input type="number" min=1 max=99 value=5></td>
             <td><input type="number" min=1 max=99 value=3></td>
-            <td><input type="number" min=1 max=99 value=2></td>
+            <td><input type="number" min=1 max=99 value=1></td>
         </tr>
         <tr>
             <th class="justify-left">Adj. 3</th>
@@ -258,11 +258,11 @@ She has to get ranked a lot lower before her overall ranking starts going down.
             </tr>
             <tr>
                 <th class="justify-left">Adj. 3</th>
-                <td><input type="number" min=1 max=99 value=4></td>
+                <td><input type="number" min=1 max=99 value=5></td>
                 <td><input type="number" min=1 max=99 value=2></td>
                 <td><input type="number" min=1 max=99 value=1></td>
                 <td><input type="number" min=1 max=99 value=3></td>
-                <td><input type="number" min=1 max=99 value=5></td>
+                <td><input type="number" min=1 max=99 value=4></td>
             </tr>
         </tbody>
         <tfoot>
