@@ -6,6 +6,11 @@
     display: initial;
 }
 
+.scrolly {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
 .awardPoints {
     display: inline-block;
     max-height: 60vh;

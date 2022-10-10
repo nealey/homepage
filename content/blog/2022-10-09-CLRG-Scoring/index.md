@@ -220,3 +220,68 @@ a low ranking from a single judge can carry a lot of weight.
         </tr>
     </tfoot>
 </table>
+
+
+### Being in 1st provides a nice buffer
+
+Try playing around with Alice's rankings with Adjudicators 2 and 3 here.
+She has to get ranked a lot lower before her overall ranking starts going down.
+
+<div class="scrolly">
+    <table class="scorecard">
+        <thead>
+            <tr>
+                <td></td>
+                <th>Alice</th>
+                <th>Bob</th>
+                <th>Carol</th>
+                <th>Dave</th>
+                <th>Erin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="justify-left">Adj. 1</th>
+                <td><input type="number" min=1 max=99 value=1></td>
+                <td><input type="number" min=1 max=99 value=3></td>
+                <td><input type="number" min=1 max=99 value=2></td>
+                <td><input type="number" min=1 max=99 value=4></td>
+                <td><input type="number" min=1 max=99 value=5></td>
+            </tr>
+            <tr>
+                <th class="justify-left">Adj. 2</th>
+                <td><input type="number" min=1 max=99 value=7></td>
+                <td><input type="number" min=1 max=99 value=1></td>
+                <td><input type="number" min=1 max=99 value=2></td>
+                <td><input type="number" min=1 max=99 value=3></td>
+                <td><input type="number" min=1 max=99 value=4></td>
+            </tr>
+            <tr>
+                <th class="justify-left">Adj. 3</th>
+                <td><input type="number" min=1 max=99 value=4></td>
+                <td><input type="number" min=1 max=99 value=2></td>
+                <td><input type="number" min=1 max=99 value=1></td>
+                <td><input type="number" min=1 max=99 value=3></td>
+                <td><input type="number" min=1 max=99 value=5></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="justify-left">Award Points</th>
+                <td class="justify-right"><output name="points"></td>
+                <td class="justify-right"><output name="points"></td>
+                <td class="justify-right"><output name="points"></td>
+                <td class="justify-right"><output name="points"></td>
+                <td class="justify-right"><output name="points"></td>
+            </tr>
+            <tr>
+                <th class="justify-left">Ranking</th>
+                <td class="justify-right"><output name="ranking"></td>
+                <td class="justify-right"><output name="ranking"></td>
+                <td class="justify-right"><output name="ranking"></td>
+                <td class="justify-right"><output name="ranking"></td>
+                <td class="justify-right"><output name="ranking"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

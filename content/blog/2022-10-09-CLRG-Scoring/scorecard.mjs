@@ -3,6 +3,7 @@ import {awardPoints} from "./awardPoints.mjs"
 function scorecardUpdate(scorecard) {
     let scores = []
     let points = []
+    let highestRank = []
 
     let firstRow = scorecard.querySelector("tbody tr")
     for (let input of firstRow.querySelectorAll("input")) {
@@ -16,6 +17,7 @@ function scorecardUpdate(scorecard) {
             let ranking = Number(input.value)
             scores[i] += ranking
             points[i] += awardPoints[ranking]
+            highestRank[i] = Math.min(highestRank[i] || 100, ranking)
             i += 1
         }
     }
@@ -29,10 +31,19 @@ function scorecardUpdate(scorecard) {
     }
 
     {
+        let rankOffset = 0
+        let overallRanking = []
         let rankedPoints = [...points].sort((a, b) => b - a)
+        for (let i = 0; i < points.length; i++) {
+            overallRanking[i] = rankedPoints.indexOf(points[i]) + 1
+            if (overallRanking[i] == 1) {
+                rankOffset = highestRank[i]
+            }
+        }
+
         let i = 0
         for (let out of scorecard.querySelectorAll("tfoot output[name='ranking']")) {
-            out.value = rankedPoints.indexOf(points[i]) + 1
+            out.value = rankedPoints.indexOf(points[i]) + rankOffset
             i += 1
         }
     }
