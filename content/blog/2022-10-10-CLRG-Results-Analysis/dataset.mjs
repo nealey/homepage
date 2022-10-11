@@ -3,7 +3,7 @@
  */
 
 import * as FeisWorx from "./feisworx.mjs"
-import * as Guidebook from "./guidebook.mjs"
+import * as FeisResults from "./feisresults.mjs"
 
 /** 
  * @typedef {import("./types.mjs").Results} Results
@@ -90,7 +90,7 @@ function parseRawData(rawData) {
         return FeisWorx.parse(rawData)
     } 
     if (firstRow[firstRow.length-1].trim().toLowerCase() == "total ip *") {
-        return Guidebook.parse(rawData)
+        return FeisResults.parse(rawData)
     }
     console.error("First row doesn't resemble anything I can cope with", firstRow)
 }
@@ -163,7 +163,6 @@ async function init() {
         
         let table = newElement(div, "table")
         fillTable(table, results)
-        console.log(results)
     }
 }
 

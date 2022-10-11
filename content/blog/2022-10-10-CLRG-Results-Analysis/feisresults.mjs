@@ -1,10 +1,6 @@
 /**
- * Guidebook parser
+ * Feisresults.com parser
  * 
- * We're not actually sure what generated these PDFs.
- * But we got them from Guidebook, so there you go.
- * 
- * This is the output of Adobe Reader saving the PDF as XML.
  */
 
 import {awardPoints, guessPlacing} from "./awardPoints.mjs"
@@ -18,7 +14,7 @@ import {awardPoints, guessPlacing} from "./awardPoints.mjs"
 
 
 /**
- * Parse Guidebook data
+ * Parse feisresults data
  * 
  * @param {Array.<Array.<String>>} rawData Raw data
  * @returns {Results}
@@ -107,7 +103,34 @@ import {awardPoints, guessPlacing} from "./awardPoints.mjs"
       }
       results.push(row)
    }
+
+   disambiguatePlacings(results, numRounds, adjudicatorsPerRound)
    return results
+}
+
+function disambiguatePlacings(results, numRounds, adjudicatorsPerRound) {
+   for (let roundNumber = 0; roundNumber < numRounds; roundNumber++) {
+      /**
+       * A list of raw score, award points, and placing
+       * 
+       * @type {Array.<Adjudication>}
+       */
+      for (let judgeNumber = 0; judgeNumber < adjudicatorsPerRound; judgeNumber++) {
+         let scores = []
+         for (let result of results) {
+            scores.push(result.rounds[roundNumber][judgeNumber])
+         }
+         scores.sort((a,b) => b.raw - a.raw)
+
+         let greatestPlacing = 0
+         for (let adjudication of scores) {
+            let possibilities = guessPlacing(adjudication.points)
+            possibilities.sort((a,b) => b-a)
+            // XXX: eliminate possibilities less than greatestPlacing, then pick the largest
+         }
+         console.log(scores)
+      }
+   }
  }
 
  export {
