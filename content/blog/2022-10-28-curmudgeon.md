@@ -28,10 +28,11 @@ At some point, some related technology will come along and sweep me up with it.
 It will be awkward for me, and young people will recognize that I'm just no good
 at it. They'll wonder how any human being could be so inept at something so
 obvious. It will become a mental shortcut for the elderly that they are awkward
-or near-inept at this technology, and people who can't get it will band together
-and discuss how pointless it is and how they just can't understand why anyone
-needs it. We'll watch with some degree of sadness as our way of life dies with
-us.
+with this technology, and the elderly will discuss how pointless it is and how
+they just can't understand why anyone needs it. We'll watch with some degree of
+sadness as our way of life dies with us.
 
 When you hear writers and philosophers talking about how limited lifespans are a
 gift to humanity, they're talking about this sort of thing.
+
+I hope y'all have a nice time :)
