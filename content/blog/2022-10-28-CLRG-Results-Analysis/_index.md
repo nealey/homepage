@@ -13,19 +13,51 @@ It's more than 12 people.
 It's more than 24 people.
 It's probably more than 48 people.
 Every data set we found had some pretty clear weirdness,
-and that was before we looked at the judges we were finding weirdness with.
-Once we tied names back in,
-we were like, "oh, yeah, that's what we thought all along."
+and that was just looking at numbers.
+Once we tied names back in to weirdness,
+we were like, "oh, yeah, we had a feeling this person was up to something."
 
-So unless there are some *major* changes made,
+Unless there are some *major* changes made,
 we're still going to have corruption in CLRG.
-That's just the world you're in.
-I hope any new families getting involved understand this.
+(Spoiler alert: there will not me major changes made.)
+That's just the world you're in with CLRG,
+and most other subjectively-judged competitive events.
+
+I hope any new families getting involved understand this:
 In order to get into the upper tiers,
 the way you compete becomes more about politics than dancing.
-And by "politics" I mean Machiavellian politics.
+And by "politics" I mean corruption.
 
-# Why I'm Not Publishing Any More Tools
+That's not to say the dancers at the upper levels aren't excellent dancers: to
+recall at a national event, you have to be an excellent dancer. But you might
+also be an excellent dancer and not recall, because your parents/coach/teacher
+aren't playing the corruption game as well as somebody else's
+parents/coach/teacher.
+
+## The top 11 places are bizarre
+
+We knew this from [previous analysis](/blog/2022-10-09-CLRG-Scoring.html):
+the top 11 places are scored totally differently than places 12-50.
+And places 51-100 are placed separately.
+
+Any large event is actually three separate competitions,
+and it's very very difficult to break out if any judge places you in one of these categories:
+
+| Placing | Comment |
+| ---- | ---- |
+| 1st - 11th | Strange exponential points category |
+| 12th - 50th | Scoring here works the way you assumed it would |
+| 51st - 100th | Everybody's fighting for a fraction of one point |
+
+Please note that this is just my hot take!
+You should play with the
+[scoring tool](/blog/2022-10-09-CLRG-Scoring.html) I made
+to get a feel for how this all works. It's weird!
+And it's difficult enough to explain accurately by someone trying to.
+I'm not trying to in this section.
+
+
+# I won't publish any more tools
 
 I started writing a thing to highlight weirdness in CLRG rankings.
 You'd give it a ranking sheet,
@@ -72,6 +104,34 @@ process is corrupt), what then? I guess I just go on with my life.
 
 I can already just go on with my life, I don't have to put in a bunch of work first.
 
+# Parting thoughts
+
+My kid is a high school senior.
+She has a lot of things to look forward to in her immediate future that aren't Irish Dance,
+and is winding down her involvement,
+so our family is sort of meh about this whole thing.
+If she were in elementary or middle school,
+I would probably be howling right now and pressing hard to pull her out.
+
+But maybe there's some value to still doing all this,
+even though it's corrupt and she's never going to get a top ranking.
+She still wants to compete for some reason,
+and practicing has helped her develop a work ethic that will help her later.
+In addition,
+she's made friends through this;
+she's learned how to care for others and talk to new people;
+she's learned how to teach;
+and she's gained a strong sense of self.
+Those are all good things that didn't depend on fair judging.
+
+The other day I was talking with a woman who runs an after-school program for
+black kids who are interested in science and technology. I mentioned that the
+winning papers at the statewide computer science contest never seem to integrate
+the social justice aspects she's asking her kids to focus on. We kicked that
+idea around a while, and wound up convincing each other that the work is worth
+doing even if the judging is biased against it. I think the same thing might be
+true here.
+
 # Do you care?
 
 Are you a regular reader of my blog? (HA HA HA) Do you care about mathematical
@@ -90,8 +150,8 @@ I'd be glad to help you with that.
 
 Here are the files:
 
-* [feisworx.mjs](Feisworx report scraping code)
-* [feisresults.mjs](Feis Results report scraping code)
-* [awardpoints.mjs](Code to guess placing given award points, used by feisresults.mjs)
-* [types.mjs](JSDoc documentation of some global data structures)
-* [dataset.mjs](Some stub code to populate an HTML page with data)
+* [Feisworx report scraping code](feisworx.mjs)
+* [Feis Results report scraping code](feisresults.mjs)
+* [Code to guess placing given award points, used by feisresults.mjs](awardpoints.mjs)
+* [JSDoc documentation of some global data structures](types.mjs)
+* [Some stub code to populate an HTML page with data](dataset.mjs)
