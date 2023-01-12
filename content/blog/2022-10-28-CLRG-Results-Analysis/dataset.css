@@ -1,0 +1,12 @@
+.clrg-dataset {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.clrg-dataset tbody td.new-adjudication {
+    border-left: thin solid black;
+}
+
+.clrg-dataset tbody td.new-round {
+    border-left: thick solid black;
+}

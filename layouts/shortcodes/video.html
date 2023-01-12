@@ -1,4 +1,4 @@
 <video autoplay muted loop>
-<source src="{{.Get 0}}">
-{{.Get 1}}
+<source src="{{($.Page.Resources.GetMatch (.Get "src")).RelPermalink}}">
+{{.Get "text"}}
 </video>

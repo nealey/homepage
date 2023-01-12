@@ -19,12 +19,13 @@ body {
 }
 
 input {
-  font-family: "Lato", "Roboto", sans-serif;
-  font-size: 13pt;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid black;
+  font-family: inherit;
+  font-size: inherit;
+  border: thin solid #ccc;
+}
+input:read-only {
+  color: #444;
+  background-color: #eee;
 }
 
 .title, td.main {
@@ -146,6 +147,36 @@ button.big {
   background: inherit;
 }
 
+legend {
+  background-color: #e0e4cc;
+}
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+thead, tfoot {
+  color: #e64;
+  background-color: rgba(224, 228, 204, 0.8);
+}
+tbody tr:nth-of-type(even) {
+  background-color: rgba(238, 102, 68, 0.05);
+}
+
+td, th {
+  padding: 0.2em 0.5em;
+}
+caption {
+  caption-side: bottom;
+  font-size: small;
+}
+.justify-right, input[type="number"] {
+  text-align: right;
+}
+.justify-left {
+  text-align: left;
+}
+
 .tags {
 	font-size: small;
 }
@@ -158,6 +189,10 @@ button.big {
 @media (min-width: 768px) {
   img, video {
     max-width: 60%;
+  }
+
+  figure img {
+    max-width: 100%;
   }
 }
 @media (prefers-color-scheme: dark) {

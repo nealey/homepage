@@ -1,7 +1,6 @@
 ---
-date: "2022-09-06T12:11:00-0600"
 title: Truck bling
-url: blog/2022-09-06-truck-bling/
+date: "2022-09-06T12:11:00-0600"
 ---
 
 Yesterday,
@@ -18,7 +17,7 @@ the friend soldered a bunch of stuff together,
 and we plugged it in.
 It friggin' worked!
 
-{{< video "truck-bling.m4v" "Pickup truck with color-changing ground effects">}}
+{{< video src="truck-bling.m4v" text="Pickup truck with color-changing ground effects">}}
 
 The really cool part, at least for me,
 is that now she can hang out with her laptop in the cabin,

@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic">
     <!-- My stuff -->
-    <link rel="stylesheet" media="screen" href="{{"/assets/css/default.css" | relURL}}">
     <link rel="icon" type="image/png" href="{{"/assets/images/face.png" | relURL}}">
+    <link rel="stylesheet" media="screen" href="{{"/assets/css/default.css" | relURL}}">
     {{range .AlternativeOutputFormats}}
     <link rel="{{.Rel}}" type="{{.MediaType.Type}}" title="{{$.Site.Title}}" href="{{.Permalink}}">
     {{end}}
+    {{range .Params.stylesheets}}
+      {{$url := .}}
+      {{with $.Page.Resources.GetMatch .}}
+        {{$url = .RelPermalink}}
+      {{end}}
+      <link rel="stylesheet" media="screen" href="{{$url}}">
+    {{end}}
     {{range .Params.scripts}}
-    <script src="{{.}}"></script>
+    {{end}}
+    {{range .Params.scripts}}
+      {{$url := .}}
+      {{with $.Page.Resources.GetMatch .}}
+        {{$url = .RelPermalink}}
+      {{end}}
+      <script src="{{$url}}"
+      {{- if strings.HasSuffix . ".mjs"}}type="module"{{end -}}
+      ></script>
     {{end}}
     {{range .Params.headers}}
     {{. | safeHTML}}

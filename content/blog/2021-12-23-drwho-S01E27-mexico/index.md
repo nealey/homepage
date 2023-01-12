@@ -1,9 +1,6 @@
 ---
-date: "2021-12-23T00:00:00Z"
-tags:
-- drwho
-title: 'Doctor Who S01E27-30: Doctor Who goes to Mexico'
-url: blog/2021-12-23-drwho-S01E27-mexico/
+title: "Doctor Who S01E27-30: Doctor Who goes to Mexico"
+date: 2021-12-23
 ---
 
 A bunch of white people pretend to be Aztecs, and explore their moral
@@ -42,7 +39,7 @@ Barbara abusing her god status to outlaw human sacrifice. The Doctor gets
 married or engaged or something. Susan finally expresses an emotion other
 than terror:
 
-{{< video "susan-well-hello-there.mp4" "Well, hello there." >}}
+{{< video src="susan-well-hello-there.mp4" text="Well, hello there." >}}
 
 I'm back to being uncomfortable with the cultural framing here. I mean,
 maybe this is useful for viewing 1960s British culture, but that's still
