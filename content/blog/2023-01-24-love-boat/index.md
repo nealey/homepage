@@ -67,7 +67,7 @@ The captain's uncle shows up and starts aggressively sexually harassing Julie (t
 
 ## Where Is It Written?
 
-An author and his editor board the ship, with the editor's wife. The editor won't stop working, so the wife hangs out with the author instead. He keeps putting the moves on her, which she rejects. Eventually the editor notices, and they have a ridiculous fistfight which results in them all getting dumped into the pool. This convinces her that she actually still likes her limp-dicked husband, and he agrees to stop working while on vacation, just as the vacation ends.
+An author and his editor board the ship, with the editor's wife. The editor won't stop working, so the wife hangs out with the author instead. He keeps putting the moves on her, which she rejects. Eventually the editor notices, and they have a ridiculous fistfight which results in them all getting dumped into the pool. This convinces her that she actually still likes her wet blanket of a husband, and he agrees to stop working while on vacation, just as the vacation ends.
 
 ## The Big Deal
 
