@@ -77,7 +77,7 @@ There's a multi-year gap before that,
 and there are holes after October 2000,
 because I accidentally deleted the wrong directory.
 Photos I took before around 1998 are downstairs in one of those boxes of prints.
-*I have already permanently lost digital records!*
+*I already have a dark age from losing digital records!*
 
 ## Getting this under control
 
