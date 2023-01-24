@@ -5,7 +5,6 @@ scripts:
 - starship.js
 headers:
 - <link rel="manifest" href="manifest.json">
-url: toys/starship/
 ---
 
 

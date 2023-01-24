@@ -3,7 +3,6 @@ title: Grep Dict
 description: runs grep on a list of English words; perfect for cheating on crossword puzzles
 scripts:
 - grepdict.js
-url: toys/grepdict/
 ---
 
 Ever wanted to run `grep` on `/usr/share/dict/words`,

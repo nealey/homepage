@@ -35,6 +35,14 @@ input:read-only {
   margin-top: 0;
   box-shadow: 0.2em 0.2em 1em rgba(0,0,0,0.1);
 }
+.title.draft {
+  background-color: black;
+  color: orange;
+}
+.title.draft:after {
+  content: " (draft)";
+  font-style: italic;
+}
 
 .subtitle {
   font-size: 60%;

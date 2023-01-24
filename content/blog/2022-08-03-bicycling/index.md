@@ -32,4 +32,4 @@ drivetrain. But the rest of the bike is solid. Hopefully it helps that I use the
 front brake when I want to slow down in a hurry, no slamming back on the coaster
 brake for me.
 
-![My Sladda](/assets/blog/Sladda.jpg)
+![My Sladda](Sladda.jpg)

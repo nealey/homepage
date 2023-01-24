@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width">
+    <link rel="me" href="https://teh.entar.net/@neale">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic">
     <!-- My stuff -->
     <link rel="icon" type="image/png" href="{{"/assets/images/face.png" | relURL}}">
@@ -35,8 +36,7 @@
   </head>
 
   <body>
-    <h1 class="title">{{.Title}}</h1>
-
+    <h1 class="title {{if .Draft}}draft{{end}}">{{.Title}}</h1>
     <main id="content">
       {{ block "main" . }}{{end}}
     </main>

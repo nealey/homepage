@@ -5,9 +5,13 @@ baseURL: https://woozle.org/
 disablePathToLower: true
 languageCode: en-us
 title: Neale Pickett
-uglyurls: true
+
 enableGitInfo: true
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# This breaks inline images
+#uglyurls: true
+

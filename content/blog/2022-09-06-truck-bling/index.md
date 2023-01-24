@@ -17,7 +17,7 @@ the friend soldered a bunch of stuff together,
 and we plugged it in.
 It friggin' worked!
 
-{{< video src="truck-bling.m4v" text="Pickup truck with color-changing ground effects">}}
+{{<video src="truck-bling.m4v" text="Pickup truck with color-changing ground effects">}}
 
 The really cool part, at least for me,
 is that now she can hang out with her laptop in the cabin,

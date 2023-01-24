@@ -1,7 +1,6 @@
 ---
 title: Printable Mastermind game
 description: A pocket-sized game you can play anywhere
-url: toys/mastermind/
 ---
 
 This is a printable, pocket-sized Mastermind game.
