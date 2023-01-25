@@ -1,13 +1,15 @@
 ---
 date: 2023-01-24
-title: "The Love Boat s02e01-e08"
+title: "The Love Boat s02e01-e09"
 ---
 
 My sister-in-law gave me a bunch of episodes of The Love Boat for some reason, so I'm watching them.
 
 # Season 02, Episodes 01-02
 
-The crew takes a trip to a deserted island only to discover it's inhabited by crazy Gomez Addams, who takes them hostage at gunpoint and forces them to plan a surprise birthday party. They make plans to escape, but are thwarted by the arrival of a hurricane. An old lady inexplicably grows affection for the captor, and by the end of the double-episode plans the surprise party, then decides to stay behind and keep him company as she lives out the last few months of her terminal illness.
+The crew takes a trip to a deserted island only to discover it's inhabited by crazy 
+Gomez Addams (The Addams Family),
+who takes them hostage at gunpoint and forces them to plan a surprise birthday party. They make plans to escape, but are thwarted by the arrival of a hurricane. An old lady inexplicably grows affection for the captor, and by the end of the double-episode plans the surprise party, then decides to stay behind and keep him company as she lives out the last few months of her terminal illness.
 
 Meanwhile, Isaac the bartender manages to pull the wool over the eyes of a sexy model by having the crew talk him up like he's some rich successful dude. When she finds out he's the ship's bartender, she's angry, but, because she's a woman and therefore flighty, comes around to forgiving him after he takes responsibility for the safety of the passengers when the idiot acting captain doesn't. A love connection happens.
 
@@ -71,22 +73,26 @@ An author and his editor board the ship, with the editor's wife. The editor won'
 
 ## The Big Deal
 
-Some woman shows up with her dad and her dad's business partner. The dad's business partner lecherously eyes her and decides somehow that she's part of the business deal. She goes along with it because she wants her dad to succeed, but then she meets Ponch from C.H.I.P.S. and realizes she still holds a candle for him from high school. Lecherous guy gets all jealous and I don't know what happens next because I stopped caring.
+Some woman shows up with her dad and her dad's business partner. The dad's business partner lecherously eyes her and decides somehow that she's part of the business deal. She goes along with it because she wants her dad to succeed, but then she meets 
+Ponch (C.H.I.P.S.)
+and realizes she still holds a candle for him from high school. Lecherous guy gets all jealous and I don't know what happens next because I stopped caring.
 
 
 # Season 02, Episode 06
 
 ## The Witness
 
-Mike Brady was a witness to some heinous crime. He falls in love with some lady who also knows about the crime, and the crime weighs on him so much that their relationship is tortured and boring. Oh, snap the murder victim was her brother. What are the odds?
+Mike Brady (The Brady Bunch)
+was a witness to some heinous crime. He falls in love with some lady who also knows about the crime, and the crime weighs on him so much that their relationship is tortured and boring. Oh, snap! The murder victim was her brother! What are the odds?
 
 ## Mike and Ike
 
-Isaac the Bartender recognizes a family (they're also black, of course). Turns out the three adults were in a doo-wop band together. The dad nows owns a bunch of car dealerships and can't stay off the phone long enough to hang out with his son. Isaac tries to convince the dad to spend time with his son. I actually like how Isaac was portrayed here, he starts to show some real depth of character.
+Isaac the Bartender recognizes a family (they're also black, of course). Turns out the three adults were in a doo-wop band together. The dad nows owns a bunch of car dealerships and can't stay off the phone long enough to hang out with his son. Isaac tries to convince the dad to spend time with his son. I actually like how Isaac was portrayed here, his character starts to show some depth.
 
 ## The Kissing Bandit
 
-Miracle Max dresses up every night with a mask, cape, and fedora, and runs around the ship grabbing women and kissing them. Meanwhile there's a woman actually interested in him during the day, and he's skipping out on her to do his kissing rounds at night. This one actually made me laugh, a Love Boat first. Right until the crew decides to use Julie as "bait" to catch the kissing bandit. In hindsight, maybe sexual assault isn't all that funny.
+Miracle Max (The Princess Bride)
+dresses up every night with a mask, cape, and fedora, and runs around the ship grabbing women and kissing them. Meanwhile there's a woman actually interested in him during the day, and he's skipping out on her to do his kissing rounds at night. This one actually made me laugh, a Love Boat first. Right until the crew decides to use Julie as "bait" to catch the kissing bandit. In hindsight, maybe sexual assault isn't all that funny.
 
 The actress who played Julie wound up addicted to cocaine, and was one of the very first Hollywood people to openly admit they had a drug problem. They dropped her from the show, but she did make a full recovery right around the time The Love Boat ended its run.
 
@@ -106,7 +112,7 @@ The owner of The House on Haunted Hill is an illusionist whose wife is upset tha
 Some kid is worried that his dad might leave for a whole year again, which makes him a pathological liar.
 
 Two stories intersect when the white lady is so upset about her scar that she decides to jump overboard.
-The lying kid can't convince anybody he found her on the rail,
+The lying kid who cried wolf can't convince anybody he found her on the rail,
 so he talks her down himself with a lie about how his mom committed suicide.
 
 
@@ -116,7 +122,8 @@ Julie's sporting a new hair style in this episode.
 
 ## Anoushka
 
-Hot Lips Houlihan boards the ship as a godless commie cruise director,
+Hot Lips Houlihan (M.A.S.H.)
+boards the ship as a godless commie cruise director,
 in some sort of east/west cruise staff exchange program.
 She talks to Julie about the glass ceiling,
 making this perhaps the first episode that passes the Bechdel test.
@@ -162,10 +169,11 @@ Could just be Love Boat Fatigue though.
 ## A Time for Everything
 
 Within 30 seconds it becomes clear the captain is a father to an orphaned love child.
-The rest of the story proceeds to slowly reveals additional clues,
+The rest of the story proceeds to slowly reveal additional clues,
 in case the viewer is an idiot.
 The captain spends a lot of time staring off-screen as the camera zooms in.
-Sometimes this triggers a flashback.
+Sometimes this triggers a flashback scene,
+other times we just watch him staring.
 
 Then the little girl leaves,
 and the captain reads through a bunch of love letters he's kept from her mom.
@@ -173,4 +181,96 @@ and the captain reads through a bunch of love letters he's kept from her mom.
 Between this attempt at a tear-jerking ending,
 and Hot Lips crying about having to go back to Russia,
 this probably qualifies as "A Very Special Love Boat"
+
+
+# Season 02, Episode 09
+
+## Till Death Do Us Part
+
+JJ (Good Times)
+and
+Vy (The Fresh Prince of Bel-Air)
+board,
+but it turns out she killed him by putting lighter fluid on his cole slaw,
+and he's a ghost now.
+
+JJ is pretty funny,
+and Julie puts in some good supporting acting,
+preteding JJ is invisible:
+
+![Julie looking confused](who-you-talking-to.jpg)
+
+JJ Tries to hook her up with
+Barney Collier (Mission: Impossible)
+and a bunch of other (black) guys.
+But because she's having a conversation with a ghost,
+she winds up saying all sorts of off-putting things to the (black) people
+who keep coming up to her.
+
+It's just that same joke,
+repeated for 30 minutes,
+and interspersed with JJ tossing out one-liners
+that sidle right up next to being funny.
+
+JJ gets all butthurt when she winds up actually liking Barney,
+and tells her 2 years of mourning isn't enough.
+But he has a change of heart
+and pushes her down the stairs,
+which causes Barney to propose.
+
+
+## Chubs
+
+Gopher's sister is on this cruise.
+Seems she was fat when she was younger,
+giving the crew an opportunity to make a bunch of fat jokes.
+Ha ha! Fat jokes!
+Anyway, she finally shows up,
+and what do you know,
+Gopher's sister is
+Hot Mary Ingalls (Little House on the Prairie)!
+Boy, is she hot!
+And she's looking for some action!
+
+She keeps trying to hook up with doc,
+but he's put off because,
+"you're 18 and you're Gopher's sister".
+So the recurring character estableshed as
+"mister casual hook-up" gives Hot Mary Ingalls a
+lecture about holding out for true love.
+
+## Maybe
+
+Laurie Strode (Halloween)
+and
+her husband, "Sir Not Appearing In The Credits",
+are annoyed when Laurie's parents show up.
+
+Husband tries repeatedly to engage her,
+but she's too busy being a jerk,
+having decided that because her parents divorced,
+she will too.
+
+On seeing that her parents have made up,
+Laurie decides not to divorce Husband after all.
+
+## Locked Away
+
+Mister Drummond (Diff'rent Strokes)
+and 
+Marion Crane (Psycho),
+Laurie's divorced parents,
+get locked in a room together.
+They *hate* each other.
+
+Being locked in the same room forces them to finally work through their issues,
+and they leave a happy couple again.
+
+In earlier days,
+I would have thought that
+"doorknob came off, now you're locked in"
+was pretty flimsy.
+But recently I got to witness three teenagers
+spend four days failing to open a vacation home's front door from the inside.
+So maybe this isn't as ridiculous as I thought.
 
