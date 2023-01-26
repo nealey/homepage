@@ -20,7 +20,9 @@ Finally, a woman who is a total jackass to her husband, during the hurricane on 
 
 ## Julie's Dilemma
 
-Julie, the cruise director, is expecting her parents on board. Turns out her father is Mister Roper. He and the Mrs let Julie know they're getting a divorce. Julie is pissed, but starts trying to hook them up with sexy singles on board. They don't like it and decide to get back together. Julie gets a compliment from her boss for hooking up two more people.
+Julie, the cruise director, is expecting her parents on board. Turns out her father is 
+Mister Roper (Three's Company).
+He and the Mrs let Julie know they're getting a divorce. Julie is pissed, but starts trying to hook them up with sexy singles on board. They don't like it and decide to get back together. Julie gets a compliment from her boss for hooking up two more people.
 
 ## Who's Who?
 
@@ -28,7 +30,7 @@ A TV censor winds up falling for a prude who passes out pamphlets about moral vi
 
 ## Rocky
 
-A girl who wears baseball caps and sports jerseys befriends Danny Zuko's sister's son. She tries dressing up all girly for the boy, but he hates it. She decides to go back to presenting the way she's comfortable. Then they find out she's moving to his school district, and he asks her to a dance.
+A girl who wears baseball caps and sports jerseys befriends Danny Zuko's (Grease) nephew. She tries dressing up all girly for the boy, but he hates it. She decides to go back to presenting the way she's comfortable. Then they find out she's moving to his school district, and he asks her to a dance.
 
 
 # Season 02, Episode 04
