@@ -85,9 +85,9 @@ who weren't getting a lot of work due to their age.
 They got some pretty impressive performances this way.
 The "blind" lady was played by June Allyson:
 a headliner, judging by posters from the films she starred in.
-Her husband was played by someone without as many stage credits,
-whose IMDB entry lists almost exclusively voice acting for cartoons.
-Here he is expressing... grief? asphyxiation? 
+Her husband was played by Van Johnson, her frequent co-star.
+(A previous release of this confused Van Johnson with Alan Young.)
+Here's Van expressing... grief? asphyxiation? 
 I've decided to call it "the eyeroll of despair".
 
 {{<video src="eyeroll-of-despair.mp4" text="A man has a distraught woman in his arms, in a comforting hold. His brow is furrowed, he is rolling his eyes, and his mouth is hanging open.">}}
