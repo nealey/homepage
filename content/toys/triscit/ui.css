@@ -1,0 +1,32 @@
+
+#instructions th.addr {
+    text-align: right;
+    color: brown;
+}
+
+td.name {
+    font-weight: bold;
+}
+
+td.args {
+    color: green;
+}
+
+td.hex {
+    color: #777;
+}
+
+.ablaze {
+    background: url(fire.gif) bottom repeat-x;
+}
+
+@media screen and (min-width: 768px) {
+    #cpu-box {
+        max-height: 95vh;
+    }
+    
+    .table-container {
+        max-height: calc(100% - 4em);
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,95 @@
+---
+title: Triscit
+description: A CPU simulator for cybersecurity education
+type: bare
+---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Triscit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+        <script src="ui.mjs" type="module"></script>
+        <link rel="stylesheet" href="ui.css">
+    </head>
+    <body>
+        <section class="container">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child notification" id="cpu-box">
+                        <div class="block is-flex is-justify-content-space-between is-align-items-end">
+                            <div class="block">
+                                <span class="tag is-info">PC=<b data-value="pc"></b></span>
+                                <span class="tag" data-flag="negative"><i class="mdi mdi-not-equal-variant"></i></span>
+                                <span class="tag" data-flag="halt"><i class="mdi mdi-stop"></i></span>
+                                <span class="tag" data-flag="fire"><i class="mdi mdi-fire"></i></span>
+                            </div>
+                            <div class="controls">
+                                <button class="button is-primary" data-control="reset"><i class="mdi mdi-undo"></i></button>
+                                <button class="button is-primary" data-control="back"><i class="mdi mdi-skip-previous"></i></button>
+                                <button class="button is-primary" data-control="step"><i class="mdi mdi-skip-next"></i></button>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table class="table is-striped is-hoverable" id="instructions"></table>
+                        </div>
+                    </div>
+
+                    <div class="tile is-vertical is-parent">
+                        <div class="tile is-child notification" id="io-box">
+                            <div class="field">
+                                <label class="label">Input</label>
+                                <div class="control">
+                                    <input class="input" data-control="input" placeholder="\x00 style escapes accepted" value="hello">
+                                </div>
+                            </div>            
+                            <div class="field">
+                                <label class="label">Output</label>
+                                <div class="control">
+                                    <output class="input" data-value="output"></output>
+                                </div>
+                            </div>            
+                            <div class="field">
+                                <label class="label">Program</label>
+                                <textarea class="textarea" data-control="program"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="tile is-child notification" id="instructions-box">
+                            <h2 class="title">Instructions</h2>
+                            <div class="table-container">
+                                <table class="table is-striped is-hoverable" id="instructions-help"></table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <template id="instruction">
+            <tr>
+                <th class="addr has-text-right"><span data-fill="addr"></span></th>
+                <td class="name"><span data-fill="name"></span></td>
+                <td class="args"><span data-fill="args"></span></td>
+                <td class="hex"><span data-fill="hex"></span></td>
+            </tr>
+        </template>
+        <template id="instruction-help">
+            <tr>
+                <td class="name" data-fill="name"></td>
+                <td class="args" data-fill="args"></td>
+                <td class="hex">
+                    <span data-fill="num"></span>
+                    <span data-fill="args"></span>
+                </td>
+                <td class="description" data-fill="description"></td>
+            </tr>
+        </template>
+
+    </body>
+</html>
