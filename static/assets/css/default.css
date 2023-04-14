@@ -178,6 +178,9 @@ caption {
   caption-side: bottom;
   font-size: small;
 }
+.jistify-center {
+  text-align: center;
+}
 .justify-right, input[type="number"] {
   text-align: right;
 }
@@ -203,6 +206,16 @@ caption {
     max-width: 100%;
   }
 }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     background-image: url("../images/bg-dark.jpg");
