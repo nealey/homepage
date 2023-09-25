@@ -1,7 +1,8 @@
 ---
 date: 2023-01-12
 tags:
-- drwho
+  - dr-who
+  - tv
 title: 'Doctor Who S04E15: Dr Who goes to Scotland'
 ---
 

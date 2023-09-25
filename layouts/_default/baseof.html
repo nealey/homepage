@@ -50,12 +50,11 @@
     </main>
 
       {{ with .Params.tags }}
-        <nav class="tags">
-          Tags:
+        <ul class="tags compact">
           {{ range . }}
-            <a href="/tags/{{ . | urlize }}">{{ humanize . }}</a>
+            <li><a href="/tags/{{ . | urlize }}">{{ humanize . }}</a></li>
           {{ end }}
-        </nav>
+        </ul>
       {{ end }}
 
     <footer>

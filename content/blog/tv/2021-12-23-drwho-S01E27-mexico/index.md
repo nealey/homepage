@@ -1,6 +1,9 @@
 ---
 title: "Doctor Who S01E27-30: Doctor Who goes to Mexico"
 date: 2021-12-23
+tags:
+  - dr-who
+  - tv
 ---
 
 A bunch of white people pretend to be Aztecs, and explore their moral

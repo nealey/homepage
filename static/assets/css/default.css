@@ -35,11 +35,12 @@ input:read-only {
   margin-top: 0;
   box-shadow: 0.2em 0.2em 1em rgba(0,0,0,0.1);
 }
-.title.draft {
+.draft,
+.draft a:any-link {
   background-color: black;
   color: orange;
 }
-.title.draft:after {
+.draft:after {
   content: " (draft)";
   font-style: italic;
 }
@@ -84,7 +85,8 @@ footer {
   border-top: solid black 1px;
 }
 
-nav ul {
+nav ul,
+ul.compact {
   display: flex;
   padding: 0;
   margin-top: 0;
@@ -92,11 +94,14 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav ul li {
+nav ul li,
+ul.compact li {
   display: inline;
   margin: 0.5em 0.5em;
-  flex-grow: 1;
   text-align: center;
+}
+nav ul li {
+  flex-grow: 1;
 }
 
 nav ul .fill {
@@ -190,6 +195,13 @@ caption {
 
 .tags {
 	font-size: small;
+}
+.tags li::before {
+  content: "➤";
+  padding-right: 0.2em;
+}
+.branch::after {
+  content: "✢";
 }
 
 @media (max-width: 768px) {

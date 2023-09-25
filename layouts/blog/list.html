@@ -1,8 +1,14 @@
 {{define "main"}}
   {{.Content}}
+  <ul class="tags compact">
+    {{range $tag, $pages := .Site.Taxonomies.tags}}
+      <li><a href="/tags/{{$tag}}/">{{humanize $tag}}</a></li>
+    {{end}}
+  </ul>
+
   <ul>
     {{range .Pages}}
-      <li>
+      <li class="{{if .IsNode}}branch{{end}} {{if .Draft}}draft{{end}}">
         <a href="{{.Permalink}}">
           {{time.Format "2006-Jan-02" .Date}}: {{.Title}}
         </a>

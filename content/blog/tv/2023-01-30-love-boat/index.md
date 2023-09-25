@@ -1,6 +1,9 @@
 ---
 title: The Love Boat s2e11
 date: 2023-01-30
+tags:
+  - love-boat
+  - tv
 ---
 
 Season 2, Episode 11

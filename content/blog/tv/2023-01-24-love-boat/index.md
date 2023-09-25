@@ -1,6 +1,9 @@
 ---
 date: 2023-01-24
 title: "The Love Boat s02e01-e09"
+tags:
+  - love-boat
+  - tv
 ---
 
 My sister-in-law gave me a bunch of episodes of The Love Boat for some reason, so I'm watching them.

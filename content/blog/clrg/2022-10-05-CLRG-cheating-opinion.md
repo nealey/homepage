@@ -1,6 +1,8 @@
 ---
 title: My Take on CLRG's Cheating Scandal
 date: 2022-10-05
+tags:
+  - clrg
 ---
 
 This was originally part of my 

@@ -1,6 +1,9 @@
 ---
 date: 2023-01-25
 title: "The Love Boat s02e10"
+tags:
+  - love-boat
+  - tv
 ---
 
 I'm still watching The Love Boat.

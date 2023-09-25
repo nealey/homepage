@@ -1,7 +1,8 @@
 ---
 title: CLRG's Cheating Scandal
 date: 2022-10-04
-tags: clrg
+tags: 
+  - clrg
 ---
 
 $SPOUSE just stumbled across a PowerPoint file with a bunch of text messages,

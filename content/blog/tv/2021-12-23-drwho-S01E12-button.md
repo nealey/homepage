@@ -1,7 +1,8 @@
 ---
 date: "2021-12-23T00:00:00Z"
 tags:
-- drwho
+  - dr-who
+  - tv
 title: 'Doctor Who S01E12-E13: A Tardis Button Gets Stuck'
 ---
 

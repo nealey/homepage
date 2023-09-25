@@ -1,6 +1,8 @@
 ---
 title: CLRG Results Analysis
 date: 2022-10-28T10:45:00-0600
+tags:
+  - clrg
 ---
 
 # Our Findings
