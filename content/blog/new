@@ -16,17 +16,19 @@ esac
 
 SLUG="$1"
 TITLE="${2:-$SLUG}"
-DATE="$(date +%Y-%m-%d)"
+YYYY="$(date +%Y)"
+MM="$(date +%m)"
+DD="$(date +%d)"
 
 slug=$(echo "$SLUG" | tr 'A-Z ' 'a-z-')
-dir="$DATE-$slug"
-index=$dir/index.md
+dir="$YYYY/$MM-$DD-$slug"
+index="$dir/index.md"
 
-mkdir $dir
-cat <<EOD >$index
+mkdir -p "$dir"
+cat <<EOD >"$index"
 ---
 title: $TITLE
-date: $DATE
+date: $YYYY-$MM-$DD
 tags:
   - untagged
 ---
