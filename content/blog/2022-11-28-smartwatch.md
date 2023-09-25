@@ -38,3 +38,15 @@ and I'm finishing it in January.
 I've been wearing that watch for a couple months now and it's no big deal.
 It feels kind of silly writing about it.
 But this is something a lot of people spend time and money thinking about in 2022!
+
+---
+
+Update: 2023-09-25
+
+Since switch jobs, I've been wearing a Casio F-91W. I got it for $7 about 10 years ago.
+It tells me the time, date, and weekday. It has an alarm, a stopwatch, and a barely-usable
+light. It's been running on the battery it came with since I got it.
+
+Every 4 years you have to tell it about leap year.
+
+Apparently, my favorite watch is one I only have to think about every 4 years.

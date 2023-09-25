@@ -3,6 +3,7 @@ title: Business Travel on Amtrak
 date: 2023-09-25
 tags:
   - climate
+  - trains
 ---
 
 My new year's resolution for 2023 was to avoid airplanes whenever possible. Let's see how I'm doing!
@@ -80,19 +81,62 @@ What to take
 
 Here are some essentials for a train trip that air travelers might not have considered:
 
-* A long extension cord provides power to the aisle seat without needing to drape USB cables over the window
-  seat's lap.
-* A travel washcloth and towel can help you clean up in the restroom on long trips.
-* A blanket is pretty handy. I like being under a blanked when I sleep.
-* An eye mask is also nice. I made one out of some left-over Batman print fabric. It's cool.
-* Earplugs are pretty important for me, a light sleeper. I just got some fancypants bluetooth sleep buds that
-  can play music/audiobooks and generate white noise to mask outside noise. I've slept with wired earbuds, too.
-  These bluetooth things are even smaller, which so far has been nice for sleeping on my side.
-* You absolutely, positively, must download all your TV shows and movies before you go to the train station.
-  You're going to lose Internet almost right away on the Southwest Chief, so you can forget about downloading
-  new episodes en route.
-* I use my phone for watching movies and whatnot. I printed a 
-  [flat phone stand](https://www.printables.com/model/175598-phone-stand) to hold it up on the tray.
-  The seat in front of you is about 5 feet away, so attaching your phone to the seat back doesn't really work.
-* Book / work / video game. You are going to get bored. Bring something to do.
+### Extension cord
+A long extension cord provides power to the aisle seat without needing to drape USB cables over the window
+seat's lap.
 
+### Washcloth and Towel
+A travel washcloth and towel can help you clean up in the restroom on long trips.
+
+### Blanket
+I like being under a blanket when I sleep.
+I bring a fleece blanket that rolls up to about the size of my towel.
+I wonder if I could find a towel that doubles as a blanket? Hmm.
+
+### Eye mask
+I made an eye mask out of some left-over Batman print fabric. It's cool.
+It also blocks light well enough that I can stay asleep.
+
+### Earplugs
+If you hadn't guessed yet, I'm a light sleeper.
+The train is pretty quiet, which means little noises stand out.
+Earplugs are essential for me.
+
+I've slept with wired earbuds, which is okay, especially when they're making a little (quiet) noise.
+
+I just got some fancypants bluetooth sleep buds that can 
+play music/audiobooks and generate white noise to mask outside noise.
+These bluetooth things are even smaller than the wired earbuds,
+which so far has been nice for sleeping on my side.
+
+### Food
+Unless you're made of money,
+you're going to get tired of the dining car.
+I bring some fruit and other perishables that can stay edible for a few days,
+thinks like hummus or guacamole.
+Crackers and nuts are great for a meal or for snackin'.
+I don't mind eating Tasty Bites cold, so those are nice meals.
+
+### Entertainment
+
+You are going to get bored. Bring something to do!
+
+I bring my work laptop, and crank on code or reports.
+Remember to download everything before you leave:
+there's no WiFi,
+and tethering to my phone has been spotty at best.
+
+You absolutely, positively, must download all your TV shows and movies before you go to the train station.
+Cell service is spotty at best, so you can forget about downloading
+new episodes en route.
+
+I use my phone for watching movies and whatnot. I printed a 
+[flat phone stand](https://www.printables.com/model/175598-phone-stand) to hold it up on the tray.
+The seat in front of you is about 5 feet away, so attaching your phone to the seat back doesn't really work.
+
+I'll probably bring my Nintendo Switch again, but I don't think I used it much on the last trip.
+I'm not much of a gamer.
+
+I do tend to read a lot of books, though.
+For me, it's important to be already in a book I'm interested in.
+I have trouble starting a new book on the train.

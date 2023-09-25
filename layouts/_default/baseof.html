@@ -25,21 +25,38 @@
       {{with $.Page.Resources.GetMatch .}}
         {{$url = .RelPermalink}}
       {{end}}
-      <script src="{{$url}}"
-      {{- if strings.HasSuffix . ".mjs"}}type="module"{{end -}}
-      ></script>
+      {{- if strings.HasSuffix . ".mjs" }}
+        <script src="{{$url}}" type="module"></script>
+      {{- else }}
+        <script src="{{$url}}"></script>
+      {{- end }}
     {{end}}
     {{range .Params.headers}}
-    {{. | safeHTML}}
+      {{. | safeHTML}}
     {{end}}
-    <title>{{ .Title }}</title>
+    <title>{{.Title}}</title>
   </head>
 
   <body>
-    <h1 class="title {{if .Draft}}draft{{end}}">{{.Title}}</h1>
+    <h1 class="title {{if .Draft}}draft{{end}}">
+      {{ if eq .Kind "term" }}
+        {{ humanize .Type }}: {{ humanize .Title }}
+      {{ else }}
+        {{ .Title }}
+      {{ end }}
+    </h1>
     <main id="content">
       {{ block "main" . }}{{end}}
     </main>
+
+      {{ with .Params.tags }}
+        <nav class="tags">
+          Tags:
+          {{ range . }}
+            <a href="/tags/{{ . | urlize }}">{{ humanize . }}</a>
+          {{ end }}
+        </nav>
+      {{ end }}
 
     <footer>
       <nav>
