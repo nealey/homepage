@@ -1,0 +1,37 @@
+#! /bin/sh
+
+cd $(dirname $0)
+
+case "$1" in
+  ""|-*)
+    cat <<EOD 1>&2; exit 1
+Usage: $0 SLUG [TITLE]
+
+Makes a new blog page with the slug SLUG.
+Also uses SLUG for the page title,
+unless you provide TITLE.
+You can, of course, change this later.
+EOD
+esac
+
+SLUG="$1"
+TITLE="${2:-$SLUG}"
+DATE="$(date +%Y-%m-%d)"
+
+slug=$(echo "$SLUG" | tr 'A-Z ' 'a-z-')
+dir="$DATE-$slug"
+index=$dir/index.md
+
+mkdir $dir
+cat <<EOD >$index
+---
+title: $TITLE
+date: $DATE
+tags:
+  - untagged
+---
+
+EOD
+
+echo $index
+vim + $index

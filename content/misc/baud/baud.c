@@ -55,7 +55,7 @@ main(int argc, char *argv[]) {
         noiselen = atoi(argv[3]);
     }
 
-    int cps = baud / 8;
+    int cps = baud / 10; // 8N1 has 10 bits per octet: 8 data, 1 start, 1 parity
     int delay = SECOND / cps;
     int noisybits = 0;
     int c;
@@ -68,11 +68,7 @@ main(int argc, char *argv[]) {
             }
 
             if (noisybits) {
-                if (rand() < RAND_MAX/2) {
-                    c &= ~(1<<bit);
-                } else {
-                    c |= 1<<bit;
-                }
+                c ^= (rand() & 1) << bit;
                 noisybits -= 1;
             }
         }
