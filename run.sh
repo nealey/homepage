@@ -1,6 +1,9 @@
 #! /bin/sh
 
 case "$(hostname)" in
+	WE47763)
+		baseURL=http://localhost:1313/
+		;;
   sweetums)
     baseURL=http://sweetums.lan:1313/
     ;;
@@ -20,4 +23,6 @@ docker run \
   klakegg/hugo:ext server \
     --buildFuture \
     --buildDrafts \
-    --baseURL "$baseURL"
+    --baseURL "$baseURL" \
+    "$@"
+
