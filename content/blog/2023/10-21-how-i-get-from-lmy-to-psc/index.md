@@ -103,8 +103,11 @@ which can be pretty.
 I don't even know where I am when I have supper,
 I think it's before the bay area.
 
-When I wake up, I'm in southern Oregon.
-A few hours later,
+When I wake up, I'm in Northern California, right near Mount Shasta.
+I think.
+{{<figure src="PXL_20231022_141420597.MP.jpg" alt="Mount Shasta just after sunrise.">}}
+
+Around lunchtime, 
 the train goes up into some mountains,
 and the Engineer's side is the one you want to be on to look out over the valleys.
 
