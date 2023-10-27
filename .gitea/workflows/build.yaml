@@ -2,7 +2,7 @@ name: Homepage
 on: [push]
 jobs:
   publish:
-    runs-on: docker
+    runs-on: ubuntu:docker
     container: klakegg/hugo:ext
     steps:
       - name: Check out source
