@@ -2,7 +2,6 @@ name: Homepage
 on: [push]
 jobs:
   publish:
-    runs-on: ubuntu-latest:docker
     container: klakegg/hugo:ext
     steps:
       - name: Check out source
