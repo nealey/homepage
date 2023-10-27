@@ -10,6 +10,7 @@ jobs:
         run: hugo build
   publish:
     container: rsync/rsync
+    steps:
       - run: find
       - name: Publish
         run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
