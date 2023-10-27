@@ -1,0 +1,13 @@
+name: Homepage
+on: [push]
+jobs:
+  publish:
+    runs-on: docker
+    container: klakegg/hugo:ext
+    steps:
+      - name: Check out source
+        run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
+      - name: Build
+        run: hugo build
+      - name: Publish
+        run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
