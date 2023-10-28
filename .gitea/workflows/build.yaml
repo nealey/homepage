@@ -7,7 +7,11 @@ jobs:
     steps:
       - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - run: hugo
-      - run: mkdir -p $HOME/.ssh 
-      - run: cp .gitea/workflows/known_hosts $HOME/.ssh
-      - run: umask 077; echo ${{ secrets.SSH_PUBLISH_PRIVATE_KEY_BASE64 }} | base64 -d > $HOME/id_rsa
-      - run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+      - name: set up SSH
+        run: |
+          mkdir -p $HOME/.ssh 
+          cp .gitea/workflows/known_hosts $HOME/.ssh
+          umask 077; echo ${{ secrets.SSH_PUBLISH_PRIVATE_KEY_BASE64 }} | base64 -d > $HOME/id_rsa
+      - name: rsync
+        run: |
+          ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
