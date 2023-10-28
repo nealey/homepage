@@ -11,7 +11,9 @@ jobs:
       - name: Set up SSH
         run: |
           mkdir -p $HOME/.ssh 
-          cp .gitea/workflows/known_hosts $HOME/.ssh
+          cat > $HOME/.ssh/known_hosts <<EOD
+          ${{ secrets.SSH_KNOWNS_HOSTS }}
+          EOD
           umask 077; cat > $HOME/.ssh/id_rsa <<EOD
           ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }}
           EOD
