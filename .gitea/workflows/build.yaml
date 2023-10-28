@@ -6,8 +6,6 @@ jobs:
       - hugo
     timeout-minutes: 1
     steps:
-      - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
-      - run: hugo
       - name: Set up SSH
         run: |
           mkdir -p $HOME/.ssh 
@@ -19,6 +17,9 @@ jobs:
           EOD
           ls -l $HOME/.ssh
           md5sum $HOME/.ssh/*
+      - name: Clone git repository
+        run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
+      - run: hugo
       - name: Install built site
         run: |
           eval $(ssh-agent)
