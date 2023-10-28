@@ -11,7 +11,10 @@ jobs:
         run: |
           mkdir -p $HOME/.ssh 
           cp .gitea/workflows/known_hosts $HOME/.ssh
-          umask 077; echo ${{ secrets.SSH_PUBLISH_PRIVATE_KEY_BASE64 }} | base64 -d > $HOME/id_rsa
+          umask 077; cat > $HOME/.ssh/id_rsa <<EOD
+          ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }}
+          EOD
+          md5sum $HOME/.ssh/id_rsa
       - name: rsync
         run: |
           ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
