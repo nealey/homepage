@@ -18,4 +18,6 @@ jobs:
           ls -l $HOME/.ssh
           md5sum $HOME/.ssh/id_rsa
       - run: |
+          eval $(ssh-agent)
+          ssh-add -l
           echo ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
