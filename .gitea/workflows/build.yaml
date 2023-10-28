@@ -8,6 +8,6 @@ jobs:
       - name: Check out source
         run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - name: Build
-        run: hugo build
+        run: hugo
       - name: Publish
         run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
