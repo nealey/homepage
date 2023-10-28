@@ -9,5 +9,5 @@ jobs:
       - run: hugo
       - run: mkdir -p $HOME/.ssh 
       - run: cp .gitea/workflows/known_hosts $HOME/.ssh
-      - run: umask 077; echo ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }} > $HOME/id_rsa
+      - run: umask 077; echo ${{ secrets.SSH_PUBLISH_PRIVATE_KEY_BASE64 }} | base64 -d > $HOME/id_rsa
       - run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
