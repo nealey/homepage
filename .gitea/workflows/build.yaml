@@ -1,7 +1,7 @@
 name: Homepage
 on: [push]
 jobs:
-  build:
+  publish:
     runs-on:
       - hugo
     timeout-minutes: 1
@@ -15,10 +15,8 @@ jobs:
           umask 077; cat > $HOME/.ssh/id_rsa <<EOD
           ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }}
           EOD
-          ls -l $HOME/.ssh
           md5sum $HOME/.ssh/*
-      - name: Clone git repository
-        run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
+      - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - run: hugo
       - name: Install built site
         run: |
