@@ -2,6 +2,8 @@ name: Homepage
 on: [push]
 jobs:
   build:
+    runs-on:
+      - host
     steps:
       - name: Check out source
         run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
