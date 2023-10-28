@@ -18,8 +18,9 @@ jobs:
           ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }}
           EOD
           ls -l $HOME/.ssh
-          md5sum $HOME/.ssh/id_rsa
-      - run: |
+          md5sum $HOME/.ssh/*
+      - name: Install built site
+        run: |
           eval $(ssh-agent)
-          ssh-add -l
+          ssh-add
           echo ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
