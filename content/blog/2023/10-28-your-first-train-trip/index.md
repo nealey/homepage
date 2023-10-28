@@ -5,9 +5,11 @@ tags:
   - trains
 ---
 
-People at work are more interested than I thought in my taking the train.
+To my surprise,
+people at work are considering taking the train places.
 One of them might eventually decide to try it.
 Here's my advice to you!
+
 
 Start Small
 -----------
@@ -43,11 +45,18 @@ and when you get home.
 That way, if you have a big delay,
 you're just using your buffer.
 
+If you're delayed overnight,
+Amtrak will put you up in a hotel.
+But you're not required to rush to the hotel immediately and watch TV!
+You can get there whenever you like,
+and do some touring.
+This is an awesome perk of train travel!
+
 
 Pack Food
 --------
 
-You can buy food on the train,
+You can buy meals on the train,
 but it's not cheap.
 It's meant to be an upscale dining experience,
 and the prices reflect it:
@@ -70,12 +79,6 @@ new opportunities open up for unplanned exploration.
 I particularly relish getting stuck in Portland or Chicago:
 both have big ol' downtown areas full of interesting things.
 
-If you're delayed overnight,
-Amtrak will put you up in a hotel.
-But you're not required to rush to the hotel immediately and watch TV!
-You can get there whenever you like,
-and do some touring.
-
 If you have a big suitcase to drag around,
 exploration before you get to the hotel is not a viable option.
 And you may find the hotel isn't anywhere interesting.
@@ -91,13 +94,5 @@ Chill Out
 -------
 
 Trains in the US are slow.
-You're going to have to just chill out and accept this.
-Worrying about whether you'll make it somewhere on time is a good indication that you should be on an airplane.
-
-I mean, airplanes get delayed a lot, too.
-But at least you won't be upset that they move too slowly?
-I'm not sure. I'm a pretty chill traveler when I go by air, too.
-
-But the train is going to force you to chill out.
 If you can accept this,
 you'll have a nice time!
