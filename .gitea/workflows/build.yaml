@@ -5,11 +5,9 @@ jobs:
     runs-on:
       - hugo
     steps:
-      - name: Check out source
-        run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
-      - name: Build
-        run: hugo
-      - name: Set up SSH
-        run: mkdir -p $HOME/.ssh && cp .gitea/workflows/known_hosts $HOME/.ssh
-      - name: Publish
-        run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+      - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
+      - run: hugo
+      - run: mkdir -p $HOME/.ssh 
+      - run: cp .gitea/workflows/known_hosts $HOME/.ssh
+      - run: umask 077; echo ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }} > $HOME/id_rsa
+      - run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
