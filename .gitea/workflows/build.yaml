@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - run: hugo
-      - name: set up SSH
+      - name: Set up SSH
         run: |
           mkdir -p $HOME/.ssh 
           cp .gitea/workflows/known_hosts $HOME/.ssh
@@ -15,6 +15,10 @@ jobs:
           ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }}
           EOD
           md5sum $HOME/.ssh/id_rsa
+  nevermind:
+    runs-on:
+      - hugo
+    steps:
       - name: rsync
         run: |
-          ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+          echo ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
