@@ -23,4 +23,4 @@ jobs:
         run: |
           eval $(ssh-agent)
           ssh-add
-          echo ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+          rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
