@@ -4,6 +4,7 @@ jobs:
   build:
     runs-on:
       - hugo
+    timeout-minutes: 1
     steps:
       - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - run: hugo
@@ -16,10 +17,5 @@ jobs:
           EOD
           ls -l $HOME/.ssh
           md5sum $HOME/.ssh/id_rsa
-  nevermind:
-    runs-on:
-      - hugo
-    steps:
-      - name: rsync
-        run: |
+      - run: |
           echo ssh-agent rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
