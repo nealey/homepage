@@ -10,6 +10,6 @@ jobs:
       - name: Build
         run: hugo
       - name: Set up SSH
-        run: mkdir $HOME/.ssh && cp .gitea/workflows/known_hosts $HOME/.ssh
+        run: mkdir -p $HOME/.ssh && cp .gitea/workflows/known_hosts $HOME/.ssh
       - name: Publish
         run: rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
