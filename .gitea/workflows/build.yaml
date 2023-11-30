@@ -1,0 +1,25 @@
+name: Homepage
+on: [push]
+jobs:
+  publish:
+    runs-on:
+      - hugo
+    timeout-minutes: 1
+    steps:
+      - name: Set up SSH
+        run: |
+          mkdir -p $HOME/.ssh 
+          cat > $HOME/.ssh/known_hosts <<EOD
+          ${{ secrets.SSH_KNOWN_HOSTS }}
+          EOD
+          umask 077; cat > $HOME/.ssh/id_rsa <<EOD
+          ${{ secrets.SSH_PUBLISH_PRIVATE_KEY }}
+          EOD
+          md5sum $HOME/.ssh/*
+      - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
+      - run: hugo
+      - name: Install built site
+        run: |
+          eval $(ssh-agent)
+          ssh-add
+          rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
