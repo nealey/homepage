@@ -2,6 +2,7 @@
 title: Self-Hosted Email
 date: 2023-11-29
 tags:
+  - computers
 ---
 
 I am having trouble delivering mail to work from woozle.org,
