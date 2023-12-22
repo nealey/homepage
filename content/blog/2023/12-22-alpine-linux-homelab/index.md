@@ -25,7 +25,8 @@ So I dove in on that.
 2 hours later, I had a whole working system,
 running my containerized services just like before.
 This is an absolutely bonkers fast redeployment,
-and I owe a lot of that to how dead simple Alpine is.
+and I owe a lot of that to some clever design decisions
+made by the Alpine developers.
 
 Setup
 -----
