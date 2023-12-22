@@ -69,8 +69,8 @@ takes up 108MB of the 8GB on this system.
 That's just 1.35%!
 
 I haven't checked,
-but I have a sneaking suspicion that base Ubuntu uses more RAM than that,
-with all the services it kicks up.
+but I suspect that base Ubuntu uses at least 108MB more RAM than base Alpine,
+due to the myriad daemons and services it launches.
 
 
 Podman
