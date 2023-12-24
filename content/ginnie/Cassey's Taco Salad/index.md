@@ -7,8 +7,7 @@ date: 2022-03-17
 ![Lettuce with salsa and tomatoes and almonds](image.jpg)
 ![Same salad but with tofu](image-1.jpg)
 
-Credit:
-blogilates.com/blog/are-you-ready-for-your-hot-girl-summer-sculpt/
+Credit: [blogilates](https://blogilates.com/blog/are-you-ready-for-your-hot-girl-summer-sculpt/)
 
 Steps:
 1. Big bowl
