@@ -1,7 +1,8 @@
 ---
 title: College Cafeteria
+subtitle: Raw Vegetables
+date: 2023-08-24
 ---
-Raw Vegetables
 
 ![Rice and combo of raw veggies](image.png)
 ![Combo of raw veggies next to slice of pizza](image-2.png)

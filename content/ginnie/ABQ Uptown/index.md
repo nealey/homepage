@@ -1,7 +1,8 @@
 ---
 title: ABQ Uptown
+subtitle: Something From California Pizza Kitchen
+date: 2021-04-02
 ---
-Something From California Pizza Kitchen
 
 ![Salad with some sun dried tomatoes on it](image-1.png)
 

@@ -1,7 +1,8 @@
 ---
 title: Fruit
+subtitle:  Breaking The Rating Scale
+date: 2023-05-05
 ---
-Breaking The Rating Scale
 
 ![Bananas, blueberries, raspberries galore!](image.png)
 

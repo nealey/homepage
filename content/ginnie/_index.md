@@ -1,6 +1,6 @@
 ---
-title: Ginnie's Salads
+title: Ginnie Eats Salads
+kind: blog
 ---
 
-Ginnie makes some kick-butt salads.
-Here are a few of them.
+Here are a few of the salads Ginnie has eaten.

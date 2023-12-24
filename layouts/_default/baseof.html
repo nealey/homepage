@@ -38,13 +38,27 @@
   </head>
 
   <body>
-    <h1 class="title {{if .Draft}}draft{{end}}">
-      {{ if eq .Kind "term" }}
-        {{ humanize .Type }}: {{ humanize .Title }}
+    <header class="{{if .Draft}}draft{{end}}">
+      <h1>
+        {{ if eq .Kind "term" }}
+          {{ humanize .Type }}: {{ humanize .Title }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </h1>
+      {{ with .Params.subtitle }}
+        <div class="tagline">
+          {{ . }}
+          {{ with $.Date }}
+            ({{. | time.Format "2006-Jan-02"}})
+          {{ end }}
+        </div>
       {{ else }}
-        {{ .Title }}
+        {{ with $.Date }}
+          <div class="tagline">{{. | time.Format "2006-Jan-02"}}</div>
+        {{ end }}
       {{ end }}
-    </h1>
+    </header>
     <main id="content">
       {{ block "main" . }}{{end}}
     </main>

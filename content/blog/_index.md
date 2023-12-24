@@ -1,6 +1,5 @@
 ---
-title: Blog
-url: blog/
+title: Neale's Blog
 ---
 
 Blog is short for "web log".

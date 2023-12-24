@@ -1,7 +1,8 @@
 ---
 title: Apparently in Grapevine, TX
+subtitle: It Stinks!
+date: 2022-07-05
 ---
-It Stinks!
 
 ![Shredded lettuce and some corn](image.png)
 ![Joel from Rifftrax saying it stinks](image-2.png)

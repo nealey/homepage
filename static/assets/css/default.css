@@ -28,13 +28,21 @@ input:read-only {
   background-color: #eee;
 }
 
-.title, td.main {
+header {
   background-color: #e0e4cc;
   border-radius: 0.25em;
   padding: 0.1em 0.5em;
   margin-top: 0;
   box-shadow: 0.2em 0.2em 1em rgba(0,0,0,0.1);
 }
+header * {
+  margin: 0.2em;
+}
+.tagline {
+  font-style: italic;
+  margin-left: 1.5em;
+}
+
 .draft,
 .draft a:any-link {
   background-color: black;

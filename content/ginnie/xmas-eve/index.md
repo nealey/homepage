@@ -1,7 +1,8 @@
 ---
 title: Xmas Eve
+subtitle: Inspired by a "Greek" Salad I Kind of Liked
+date: 2023-12-25
 ---
-Inspired by a "Greek" Salad I Read About
 
 ![Spinach, tomatoes, artichokes, and olives in a bowl](image.png)
 

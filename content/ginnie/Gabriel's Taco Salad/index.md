@@ -1,7 +1,8 @@
 ---
 title: Gabriel's
+subtitle: My Go-To
+date: 2021-08-11
 ---
-My Go-To
 
 ![Lettuce, avocado, corn, veggies, sour cream](image-2.png)
 

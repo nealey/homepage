@@ -1,7 +1,8 @@
 ---
 title: Cassey's Taco Salad
+subtitle: How is This a Taco?
+date: 2022-03-17
 ---
-How is This a Taco?
 
 ![Lettuce with salsa and tomatoes and almonds](image.png)
 ![Same salad but with tofu](image-1.png)
