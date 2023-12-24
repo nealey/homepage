@@ -249,18 +249,18 @@ caption {
   }
  
   header, pre, blockquote {
-    background-color: #134;
+    background-color: #442;
   }
  
   h1, h2, h3, h4, h5, h6 {
-    color: #e98;
+    color: #c94;
   }
 
   a {
     color:#9be;
   }
   a:visited {
-    color: #48b;
+    color: #abc;
   }
   a:hover {
     color: #f83;
