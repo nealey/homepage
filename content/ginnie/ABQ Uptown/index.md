@@ -4,7 +4,7 @@ subtitle: Something From California Pizza Kitchen
 date: 2021-04-02
 ---
 
-![Salad with some sun dried tomatoes on it](image-1.png)
+![Salad with some sun dried tomatoes on it](image-1.jpg)
 
 Steps:
 1. Go to CPK

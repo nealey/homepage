@@ -4,8 +4,8 @@ subtitle: It Stinks!
 date: 2022-07-05
 ---
 
-![Shredded lettuce and some corn](image.png)
-![Joel from Rifftrax saying it stinks](image-2.png)
+![Shredded lettuce and some corn](image.jpg)
+![Joel from Rifftrax saying it stinks](image-2.jpg)
 
 Steps:
 1. Just eat it

@@ -4,8 +4,8 @@ subtitle: How is This a Taco?
 date: 2022-03-17
 ---
 
-![Lettuce with salsa and tomatoes and almonds](image.png)
-![Same salad but with tofu](image-1.png)
+![Lettuce with salsa and tomatoes and almonds](image.jpg)
+![Same salad but with tofu](image-1.jpg)
 
 Credit:
 blogilates.com/blog/are-you-ready-for-your-hot-girl-summer-sculpt/

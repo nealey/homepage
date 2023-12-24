@@ -4,7 +4,7 @@ subtitle:  Breaking The Rating Scale
 date: 2023-05-05
 ---
 
-![Bananas, blueberries, raspberries galore!](image.png)
+![Bananas, blueberries, raspberries galore!](image.jpg)
 
 Steps:
 1. Little bowl

@@ -4,7 +4,7 @@ subtitle: Radishes Give You Points
 date: 2022-07-28
 ---
 
-![Salad with falafel, cheese, radishes, tomatoes](image.png)
+![Salad with falafel, cheese, radishes, tomatoes](image.jpg)
 
 Steps:
 1. Go to Co-Op

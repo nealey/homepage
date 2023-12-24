@@ -4,8 +4,8 @@ subtitle: Raw Vegetables
 date: 2023-08-24
 ---
 
-![Rice and combo of raw veggies](image.png)
-![Combo of raw veggies next to slice of pizza](image-2.png)
+![Rice and combo of raw veggies](image.jpg)
+![Combo of raw veggies next to slice of pizza](image-2.jpg)
 
 Steps:
 1. Go to cafeteria
