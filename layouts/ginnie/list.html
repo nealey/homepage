@@ -1,0 +1,15 @@
+{{define "main"}}
+  {{.Content}}
+  <ul>
+    {{range .Pages}}
+      <li class="{{if .IsNode}}branch{{end}} {{if .Draft}}draft{{end}}">
+        <a href="{{.Permalink}}">
+          {{time.Format "2006-Jan-02" .Date}}: {{.Title}}
+        </a>
+        {{with .Description}}
+          - {{.}}
+        {{end}}
+      </li>
+    {{end}}
+  </ul>
+{{end}}
