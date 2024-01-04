@@ -1,7 +1,8 @@
 ---
 title: Rock Band / Clone Hero instruments
 date: 2023-13-27
-draft: true
+tags:
+  - rockband
 ---
 
 My project this winter break is to get our Wii copy of LEGO Rock Band some controllers again. We sold the original ones years ago because they were gigantic, so any replacements need to be small and easily stored.
