@@ -7,7 +7,7 @@ tags:
 
 There are currently at least four efforts to get a working Rock Band drum kit:
 
-## Mad Catz (mature)
+## Mad Catz Rock Band 3 MIDI PRO-Adapter (mature)
 
 Based on the vendor ID sent by the USB devices,
 I think Mad Catz is the company that made most of the
