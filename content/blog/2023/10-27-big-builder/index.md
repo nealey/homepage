@@ -3,6 +3,7 @@ title: Big Builder
 date: 2023-10-27
 tags:
   - computers
+  - ci/cd
 ---
 
 I finally set up CI/CD with Forgejo/Gitea.
