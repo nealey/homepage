@@ -50,8 +50,16 @@ When it's closer to finished,
 it will probably use the santroller firmware
 (see below).
 
+I'm trying to help these developers
+with what I've learned from Mockband.
+When it's finished,
+you can expect a nice detailed instruction manual
+and lots of community support,
+just like the polybar.
+There may even be kits you can buy from etsy.
+
 As far as I know,
-all development on this is happening on Discord,
+all development on this project is happening on Discord,
 so there's no URL to add here.
 
 
