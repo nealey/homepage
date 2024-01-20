@@ -1,6 +1,6 @@
 ---
 title: Rock Band / Clone Hero instruments
-date: 2023-13-27
+date: 2023-12-27
 tags:
   - rockband
 ---

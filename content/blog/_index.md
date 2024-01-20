@@ -13,3 +13,5 @@ or someone in the future who wants to know what life was like during my time.
 I don't have a lot of personal anecdotes,
 or commentary on current events.
 Mostly this is just hobbies and idle thoughts.
+
+{{< tags >}}

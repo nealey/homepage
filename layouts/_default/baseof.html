@@ -50,7 +50,7 @@
         <div class="tagline">
           {{ . }}
           {{ with $.Date }}
-            ({{. | time.Format "2006-Jan-02"}})
+            ({{ time.Format "2006-Jan-02" . }})
           {{ end }}
         </div>
       {{ else }}

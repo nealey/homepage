@@ -3,9 +3,12 @@
 
   <ul>
     {{range .Pages}}
-      <li>
+      <li class="{{if .IsNode}}branch{{end}} {{if .Draft}}draft{{end}}">
         <a href="{{.Permalink}}">
           {{.Title}}
+          {{ with .Date }}
+            ({{time.Format "2006-Jan-02" .}})
+          {{ end }}
         </a>
         {{with .Description}}
           - {{.}}

@@ -1,6 +1,8 @@
 ---
 title: My Dumb Dumbphone Experiment
 date: 2024-01-17
+resources:
+  - src: apps.md
 tags:
   - pocket computing
 ---
@@ -45,7 +47,7 @@ The ones that seem the most painful are:
 * Google Calendar: Getting reminders has caused an improvement in me being to things on time.
 * Signal: This is where all my friends are.
 
-I made [a full list](apps.html),
+I made [a full list](apps/),
 if you're interested.
 
 
