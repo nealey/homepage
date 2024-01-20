@@ -122,9 +122,12 @@ There's little chance I'll get wrapped up in any of these.
 
 Calculator is basic and fine.
 
-Honestly, I'm excited about the browser being so capable.
 I tried sideloading an app in debug mode and ran into trouble,
 but I'm realizing that I'm thinking about the phone wrong here.
 It is a telephone with an okay camera.
 I should only turn to it when I have no better options:
 it's not there to try and replace a real computer.
+
+Except the music player.
+It's reasonable to want this to be good at playing music,
+and it is.
