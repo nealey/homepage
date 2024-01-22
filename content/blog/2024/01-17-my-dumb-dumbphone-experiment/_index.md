@@ -4,7 +4,7 @@ date: 2024-01-17
 resources:
   - src: apps.md
 tags:
-  - pocket computing
+  - featurephone
 ---
 
 Last year,
