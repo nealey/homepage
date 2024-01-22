@@ -12,6 +12,7 @@ Here are my notes about it.
 
 * Smaller than my smartphone in most dimensions (but thicker) - easily fits into pockets
 * Battery lasts multiple days
+* Drastically lower latency on voice calls than the smartphone
 * Plays music
 * Group SMS support
 * Calendar with reminders
@@ -48,3 +49,4 @@ Here are my notes about it.
 * No way to automatically mute sounds during "quiet hours" (like, when you are asleep)
 * Predictive text input guesses one 4 means "g", not "I"
 * Will not play FLAC files
+* "Battery Full" notification can't be disabled
