@@ -135,18 +135,28 @@ it will be much cheaper.
 
 More interesting to me is that
 *I still need a smartphone*.
-I'm leaving it powered off,
-but I need to turn it on for:
+Or at least,
+I still need something that can run Android apps.
+Specifically, for:
 
 * Depositing checks
-* Obtaining SMS codes (I still haven't ported my phone number over)
-* Video calls with my family
 * Authention app for work (!)
 
-I *think* I can do business travel without the smartphone.
-I've got the work authentication app installed on my personal Chromebook,
-and while I was at it,
-I set up a Plex app,
+That's actually all:
+everything else I need, I can run in a web browser.
+But they won't let me deposit checks with a browser.
+
+I can run Android apps on a Chromebook,
+so that's what I'm doing.
+I'm switching over to my kid's Chromebook,
+which has a better camera than the 8-year-old one I've been using:
+this will help with video calls.
+It's also smaller, lighter, and has a newer battery,
+so it's a bit of an upgrade.
+It can still run Linux, too.
+
+While I was messing around,
+I set up the Plex app,
 so I have some stuff to watch on my next train trip.
 
 Will this stick?
