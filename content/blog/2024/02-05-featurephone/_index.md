@@ -49,7 +49,6 @@ Other neat features:
 * Displays photos sent over SMS
 * Email client, synced to Google Mail
 * Possible to write JavaScript apps for things like playing ebooks
-* Battery lasts a full day
 * Alarm clock
 
 
@@ -100,6 +99,7 @@ Other neat features:
 * Lots of the setup you do is actually on a web page you access with your computer
 * Alarm clock
 * Podcasts built into the core OS
+* Allows typing some Latin diacriticals like ñ and ç
 * Gets regular updates: seems like about 2 updates per month!
 
 
@@ -130,6 +130,11 @@ but if I can keep it for 2 years,
 I'll be spending the same amount per year as I did on smartphones.
 If I can keep it for 5 years,
 it will be much cheaper.
+
+I've also started tossing an old digital point-and-shoot camera in my bag
+if I think I might want to take photos.
+It turns out I don't take many photos these days,
+now that Jr is off at college.
 
 ---
 
