@@ -1,10 +1,7 @@
 #! /bin/sh
 
 case "$(hostname)" in
-  WE47763)
-    baseURL=http://localhost:1313/
-    ;;
-  sweetums)
+  oscar|sweetums)
     baseURL=http://sweetums.lan:1313/
     ;;
   penguin)
