@@ -3,7 +3,6 @@
 
   <ul>
     {{range .Pages}}
-      {{.}}
       <li class="{{if .IsNode}}branch{{end}} {{if .Draft}}draft{{end}}">
         <a href="{{.Permalink}}">
           {{.Title}}
