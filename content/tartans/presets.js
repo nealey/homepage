@@ -45,7 +45,7 @@ var tartans = {
 	},
 	"New Mexico Land Of Enchantment": {
 		"sett": "LG8 LV32 R4 G32 LG32 Y4 LG4",
-		"description": "This isn't official but I think it's pretty.  I just guessed at the sett pattern but I think I got pretty close. I believe this was designed and exclusively sold by Kathy Lare, a kiltmaker formerly in Albuquerque."
+		"description": "This isn't official but I think it's pretty.  I just guessed at the sett pattern but I think I got pretty close. I believe this was designed and is exclusively sold by Kathy Lare, a kiltmaker formerly in Albuquerque."
 	},
 	"Nevada": {
 		"sett": "W4 LGR16 B4 LGR8 B8 Y4 B4 R4 B20",
