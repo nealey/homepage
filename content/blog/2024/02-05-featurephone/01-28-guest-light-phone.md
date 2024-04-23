@@ -11,7 +11,7 @@ Anyway, somebody else wrote this :)
 
 -----
 
-My daughter begged me to do a blog post on switching from a smartphone to a dumb phone, so this one is going out to you, Ginnie:
+My daughter begged me to do a blog post on switching from a smartphone to a dumb phone, so this one is going out to you:
 
 The Background: I've been using an Android phone probably for about 11-12 years. I currently have a Pixel 6. Here are the apps I use most consistently now: Email (proton mail and Outlook for UNM), Chrome browser, Google Calendar, Maps, Messages, Authenticator, Instagram. Also, I have hated the size of my phone for years. The last small phone wasn't even that small, and I still miss it (a Pixel 3a). My last favorite dumb phone was a Nokia 5310 credit-card sized phone - I still miss that too.
 

@@ -14,4 +14,4 @@ You can find more about the teaching at
 
 ---
 
-Ginnie now has a [salad blog](/ginnie/)!
+Jr now has a [salad blog](/salads/)!
