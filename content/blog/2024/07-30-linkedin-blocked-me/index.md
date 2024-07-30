@@ -7,13 +7,16 @@ tags:
 
 LinkedIn has blocked me.
 
-> We first need to verify your identity to ensure your account safety. 
-> To regain access to your account, please submit a government-issued ID.
+![LinkedIn page:
+"We first need to verify your identity to ensure your account safety. 
+To regain access to your account, please submit a government-issued ID."
+](cancelamento.png)
+
 
 I hope I don't sound too much like a crackpot by stating that I'm not
 comfortable "submitting a government-issued ID" to Microsoft.
 I presume they really mean "submit a photograph of a government-issued ID",
-but still.
+but that's still a "no thank you" from me.
 
 LinkedIn was the only social media network I ever joined,
 and days after doing so,
@@ -42,4 +45,3 @@ and I can't log in until I let the drop my driver license or passport in whateve
 I 5-10 years everybody will hate LinkedIn anyway,
 so I guess I'm just ahead of my time :)
 
-![screen shot of LinkedIn telling me I'm blocked](cancelamento.png)
