@@ -2,7 +2,6 @@
 title: LinkedIn Blocked Me
 date: 2024-07-30
 tags:
-  - untagged
 ---
 
 LinkedIn has blocked me.
