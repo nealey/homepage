@@ -22,7 +22,7 @@ LinkedIn was the only social media network I ever joined,
 and days after doing so,
 I regretted it.
 Other people have good write-ups of why it's problematic.
-For me, the short version of the story is that
+For me,
 it was a lot of dumb stuff I wasn't interested in.
 
 I remember trying to get a certification in the Go language.
