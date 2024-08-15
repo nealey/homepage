@@ -1,5 +1,5 @@
 ---
-title: Featurephone: still going
+title: "Featurephone: still going"
 date: 2024-07-30
 tags:
   - featurephone
