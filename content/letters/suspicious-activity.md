@@ -3,7 +3,7 @@ title: Concern Over Suspicious Activity
 date: 2013-09-01
 ---
 
-*This was published as a [letter to the Editor of the Daily Post](http://www.ladailypost.com/content/letter-editor-concern-over-suspicious-activity)*
+*This was published as a [letter to the Editor of the Daily Post](https://ladailypost.com/letter-to-the-editor-concern-over-suspicious-activity/)*
 
 September 1, 2013
 
