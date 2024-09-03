@@ -20,4 +20,15 @@ description="An audiobook I like"
 url="https://example.com/ebooks/mine"
 ```
 
-The script: [build.sh](build.sh)
+The script:
+[build.sh](build.sh).
+It will create `rss.xml` in that directory.
+
+It uses `ffprobe` from ffmpeg to figure out each track's title.
+All my tracks have ID3 tags,
+so it may fail if yours don't.
+
+It can deal with spaces in filenames,
+but not double-quotes.
+`&` and `<` might cause problems too.
+Anyway, it's good enough for me.
