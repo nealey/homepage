@@ -51,9 +51,6 @@ class UI {
             case "input":
                 e.addEventListener("input", () => this.SetInput())
                 break
-            case "0xinput":
-                e.addEventListener("input", () => this.SetInput(true))
-                break
             case "program":
                 e.addEventListener("input", () => this.SetProgram())
             }
@@ -189,18 +186,9 @@ class UI {
         this.Reset()
     }
 
-    Set0xInput() {
-        let e = document.querySelector('[data-control="0xinput"]')
-        let x = e.value || ""
-        let v = Binutils.Unhexlify(x)
-        // XXX: escape v and fill into the input
-        this.input = Binutils.Unhexlify(v)
-        this.Reset()
-    }
     SetInput() {
         let e = document.querySelector('[data-control="input"]')
         let v = e.value || ""
-        let x = Binutils.Hexlify(v)
         this.input = Binutils.Unescape(v)
         this.Reset()
     }
