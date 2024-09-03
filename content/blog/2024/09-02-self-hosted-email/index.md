@@ -5,11 +5,11 @@ tags:
   - computers
 ---
 
-I'm paying a company (Proton) to host woozle.org email now.
+I'm now paying a company (Proton) to host woozle.org email.
 I had to learn enough about DKIM and SPF to set it up,
-but I've forgotten now.
+but I've forgotten what I did.
 
-It's fine.
+Proton is fine.
 
 I like not having email delivery tied into the same quota
 as photo storage.
