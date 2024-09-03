@@ -11,8 +11,8 @@ so I made a bourne shell script to generate an RSS feed.
 I was surprised that I couldn't find any prior work to do this.
 
 Put all your .mp3 files in a directory,
-put this script in it,
-and make a `config.sh`:
+then add [build.sh](build.sh)
+and `config.sh` with your settings:
 
 ```sh
 title="My Audiobook"
@@ -32,7 +32,10 @@ but not double-quotes.
 `&` and `<` might cause problems too.
 Anyway, it's good enough for me.
 
-`build.sh`:
+---
+
+Here's the script inline:
+
 ```sh
 #! /bin/sh
 
