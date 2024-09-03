@@ -21,7 +21,7 @@ url="https://example.com/ebooks/mine"
 ```
 
 The script
-will create `rss.xml` in the directory where you dropped it.
+will create `rss.xml` in the same directory.
 
 It uses `ffprobe` from ffmpeg to figure out each track's title.
 All my tracks have ID3 tags,
