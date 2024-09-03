@@ -1,26 +1,25 @@
 ---
 title: Legality of Feeding Deer in Los Alamos
-description: Area man asked to stop feeding deer, writes 2000-word tirade to Editor.
+description: Area man asked to stop feeding deer, writes 2000-word tirade calling for defunding Game and Fish.
 ---
 
 Sunday, December 2, 2024 at 10:39 am
 
 *This was published as a [letter to the Editor of the Los Alamos Daily Post](https://ladailypost.com/werley-legality-of-feeding-deer-in-los-alamos/)*
 
-By Dr. Ken Werley
-Los Alamos
+By Dr. Ken Werley  
+Los Alamos  
 
-To: State Representative Christine Chandler, Los Alamos Daily Post, and NM Department of Game and Fish (NMDGF),
+To: State Representative Christine Chandler, Los Alamos Daily Post, and NM Department of Game and Fish (NMDGF),  
+Re: feeding deer in Los Alamos:  
 
-Re: feeding deer in Los Alamos:
-
-BACKGROUND:
+# BACKGROUND:
 
 I have lived at my residence for 40 years.  For 25 years, when I notice an interested deer, I have fed it a small cup of birdseed that takes a deer 2-3 minutes of their day to consume. My house backs onto the golf course and it has the only unfenced yard on the east side of 35th St on my block. Some deer daily pass though my yard on the way between the golf course and the many fruit trees across the street (and to get to the canyon beyond). Nightly, I take my hummingbird and suet feeders inside to not attract bear.   I only place a thin layer of birdseed into the bottom my 40-year-old bird feeder (for birds) because a big deer could empty the whole feeder. I try to not put birdseed into the feeder if a deer is in sight. In 40 years, I have never seen a deer/car accident on my block. This spring/summer, I have had seen deer, rabbit, skunk, raccoon, fox, coyote, and bear pass through my yard.  
 
 LAW: It is legal to feed deer in New Mexico.
 
-PROBLEM:
+# PROBLEM:
 
 On May 31, 2024, NM Department of Game and Fish (NMDGF) Officer Carter showed up at my residence, issued me a warning citation, and told me I had to stop feeding deer. When asked why, Officer Carter stated: (1) “The deer in town (Los Alamos), … are all nuisance animals.” [Carter 6/1/2024 email]  and thus: (2) He will issue citations for all feeding of deer in Los Alamos. (This is equivalent to claiming feeding is illegal in Los Alamos.)
 
@@ -54,7 +53,7 @@ Officer Carter’s manager, DGF Sergeant Benjamin Otero, has tried to defend Car
 
 DGF Sergeant Benjamin Otero’s manager, DGF Captain Darrell Cole [email 7/19/2024] states that “The Department does not have a policy on what constitutes deer feeding” and it is okay to feed deer unless there is an intent to “entice game animals to an area”. I have no such intent. For 40 years at this residence, deer routinely pass through my yard going between the golf course and the fruit trees across the street and the canyon beyond. It seems silly to base feeding restrictions on intent rather than on feed amounts per deer and feed that determines deer movement patterns. Carter does not supply any numerical statistics about car/deer accidents, number, location, rate/year, or whether speeding, driver inattention, or poor visibility at deer crossing locations (Diamond Dr.) are to blame. How can DGF managers argue local conditions when Officer Carter claims all deer in Los Alamos are nuisance animals?
 
-SUMMARY:
+# SUMMARY:
 
 Officer Carter’s shortfalls:
 * He claims all deer in Los Alamos are nuisance animals.
@@ -77,7 +76,7 @@ fruit trees and small private gardens do not contribute”. [Carter 6/1/2024 ema
 
 The DGF employees are supposed to be professionals and deer experts, but it sure doesn’t seem so.
 
-DGF shortfalls: 
+# DGF shortfalls: 
 
 * DGF personnel appear to try to avoid explaining their policies.
 * When asked directly, DGF management refuse to answer whether Carter’s claim #(1) is official DGF policy?
