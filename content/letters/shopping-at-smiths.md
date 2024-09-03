@@ -1,5 +1,6 @@
 ---
 title: Shopping At Smith's
+date: 2017-05-11
 ---
 
 *This was published as a [letter to the Editor of the Daily Post](http://www.ladailypost.com/content/letter-editor-shopping-smiths)*

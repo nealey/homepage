@@ -1,6 +1,7 @@
 ---
 title: The Uglification of Los Alamos (2014)
 description: in which it is opined that the new street lamps are ugly
+date: 2014-11-20
 ---
 
 *This was published as a [letter to the Editor of the Daily Post](http://www.ladailypost.com/content/letter-editor-uglification-los-alamos)*

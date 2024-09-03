@@ -1,6 +1,7 @@
 ---
 title: The Uglification of Los Alamos (2021)
 description: in which it is opined that the new street lamps are ugly, unlike the old ones from 2014
+date: 2021-01-30
 ---
 
 *This was published as a [letter to the Editor of the Los Alamos Reporter](https://losalamosreporter.com/2021/01/30/the-uglification-of-los-alamos/)*

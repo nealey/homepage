@@ -1,6 +1,7 @@
 ---
 title: The good and bad of Los Alamos
 description: The first letter I collected. I felt it needed to be preserved forever.
+date: 2008-11-05
 ---
 
 *This was published as a [letter to the Editor of the Los Alamos Monitor](http://www.lamonitor.com/content/good-and-bad-los-alamos)*
