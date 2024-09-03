@@ -1,6 +1,6 @@
 ---
 title: Legality of Feeding Deer in Los Alamos
-description: Area man asked to stop feeding deer, writes 2000-word tirade calling for defunding Game and Fish.
+description: Area man asked to stop feeding deer, calls for defunding Game and Fish.
 date: 2024-09-02
 ---
 
