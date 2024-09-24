@@ -33,9 +33,10 @@ There's a nearly-direct shuttle for $80.
 I could take a series of two busses for maybe $60 and around 2 hours:
 I haven't looked into this one too closely because 2 hours is a lot.
 Or I can drive or have someone else drive me for 40 minutes.
-So for I always drive.
+I always drive.
 
-If I take the Nissan LEAF, I have to charge it in Santa Fe before I get to Lamy,
+If I take the Nissan LEAF (80 miles on a charge), 
+I have to charge it in Santa Fe before I get to Lamy,
 so that I have enough of a charge to make it back to Santa Fe when I return.
 
 
@@ -50,7 +51,7 @@ so I'll typically buy a beer and chat with the owner if the train is late.
 
 About an hour after I board, the train stops in Albuquerque for a 40-minute service inspection.
 I could use that time to walk to a nearby grocery store and pick up food,
-but so for I've always brought my own food in a little cloth bag.
+but I've always brought my own food in a little cloth bag.
 I like bringing Tasty-Bites: Indian food in plastic pouches.
 They're okay cold, and they don't need to be refrigerated.
 
