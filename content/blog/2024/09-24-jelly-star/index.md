@@ -23,6 +23,30 @@ in case I ever have to factory reset this phone.
 Maybe it will help other people, too.
 
 
+Install No-Icons Launcher
+=========================
+
+I like OLauncher.
+
+![OLauncher screenshot](Screenshot_20240924-113320.png)
+
+My two home screen apps are a calculator (I use RealCalc,
+because I like Reverse Polish Notation), and
+YouTube Music (for podcasts, mostly).
+
+I have the launcher configured to swipe right for the phone app,
+swipe left for the messages app.
+I had to reassign the phone app to the swipe right action
+to prevent it from bringing up the dialer each time.
+
+I also had to briefly switch back to the factory launcher
+to get the right bottom face button (recent apps) to work.
+I don't understand why this worked to fix it, but it did.
+
+Setting the font to the largest size was also helpful.
+
+
+
 Remove/Disable Apps
 ===================
 
@@ -46,26 +70,6 @@ This included:
 * Keep Notes
 * YouTube
 
-
-Install No-Icons Launcher
-=========================
-
-I like OLauncher.
-
-My two home screen apps are a calculator (I use RealCalc,
-because I like Reverse Polish Notation), and
-YouTube Music (for podcasts, mostly).
-
-I have the launcher configured to swipe right for the phone app,
-swipe left for the messages app.
-I had to reassign the phone app to the swipe right action
-to prevent it from bringing up the dialer each time.
-
-I also had to briefly switch back to the factory launcher
-to get the right bottom face button (recent apps) to work.
-I don't understand why this worked to fix it, but it did.
-
-Setting the font to the largest size was also helpful.
 
 
 Install Better Camera
