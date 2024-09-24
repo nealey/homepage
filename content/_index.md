@@ -21,4 +21,4 @@ Jr now has a [salad blog](/salads/)!
 > mostly building weird stuff no one uses, 
 > but occasionally getting it right.
 
--- Rob Pike
+-- Rob Pike (on Rob Pike, but it describes me, too)
