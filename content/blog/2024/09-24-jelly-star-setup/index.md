@@ -2,7 +2,8 @@
 title: Jelly Star Setup
 date: 2024-09-24T10:00:00
 tags:
-- dumbphone
+  - dumbphone
+  - featurephone
 ---
 
 This is mostly a note to myself,
