@@ -15,3 +15,10 @@ You can find more about the teaching at
 ---
 
 Jr now has a [salad blog](/salads/)!
+
+---
+
+> mostly building weird stuff no one uses, 
+> but occasionally getting it right.
+
+-- Rob Pike
