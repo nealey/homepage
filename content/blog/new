@@ -20,14 +20,14 @@ YYYY="$(date +%Y)"
 MM="$(date +%m)"
 DD="$(date +%d)"
 
-slug=$(echo "$SLUG" | tr 'A-Z ' 'a-z-')
+slug=$(echo "$SLUG" | tr 'A-Z ' 'a-z-' | tr -d ':')
 dir="$YYYY/$MM-$DD-$slug"
 index="$dir/index.md"
 
 mkdir -p "$dir"
 cat <<EOD >"$index"
 ---
-title: $TITLE
+title: "$TITLE"
 date: $YYYY-$MM-$DD
 tags:
   - untagged

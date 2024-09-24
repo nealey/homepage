@@ -1,5 +1,6 @@
 ---
 title: Dear Ministers
+date: 2011-12-09
 ---
 
 Friday, December 9, 2011 at 12:39 pm 

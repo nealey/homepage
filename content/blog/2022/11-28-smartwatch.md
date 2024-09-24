@@ -50,3 +50,11 @@ light. It's been running on the battery it came with since I got it.
 Every 4 years you have to tell it about leap year.
 
 Apparently, my favorite watch is one I only have to think about every 4 years.
+
+
+Update: 2024-Sep-02
+---------------
+
+The F-91W's alarm wouldn't sound until I replaced the battery.
+Seems like I got about 10 years out of it.
+I'll plan to replace it again around 2034.
