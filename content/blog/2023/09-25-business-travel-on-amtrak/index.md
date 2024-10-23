@@ -45,7 +45,7 @@ Maybe if I do this enough, I can convince a couple other people to do this.
 And eventually we'll have more ridership, and maybe Amtrak will get better.
 
 I wish I were capable of Great Feats in order to help deal with climate change.
-It allows me to continue to be employed, while pretty drastically reducing the carbon emissions I am
+Taking the train allows me to continue to be employed, while pretty drastically reducing the carbon emissions I am
 personally responsible for.
 Maybe undergoing this pain in the rear,
 and documenting it, will pave the way for others.

@@ -67,6 +67,9 @@ There is a café car,
 but the food there is mostly things that can go in a microwave.
 It does have beer and wine, which is nice:
 you're not allowed to bring your own on the train.
+I've seen people get kicked off at the next station for violating this *federal law*
+or for smoking marijuana (another no-no at the federal level):
+don't risk it!
 But you can bring your own food.
 Plan it like a picnic for your first short trip!
 

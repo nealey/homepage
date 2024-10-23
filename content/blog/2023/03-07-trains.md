@@ -10,8 +10,8 @@ This year I am trying to spend less time on airplanes,
 as part of a global movement motivated by carbon emissions concerns.
 
 Amtrak, the US national passenger rail company
-(the *only* national passenge rail company in the US),
-is in a really sad state right now.
+(the *only* national passenger rail company in the US),
+is in a sad state right now.
 They keep getting their budget cut,
 and freight companies have found several innovative ways
 to save money at the expense of safety and passenger rail quality.
@@ -74,6 +74,6 @@ I've started trying to see what I can do to make that happen.
 It may take a few years, and depends on senior management caring,
 but I think it has a higher chance of happening.
 
-If enough places figure out how to stope penalizing people for taking the cheaper option,
+If enough places figure out how to stop penalizing people for taking the cheaper option,
 maybe there will be sufficient public interest in point 1 for something to happen there.
 
