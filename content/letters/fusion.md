@@ -29,8 +29,12 @@ for a short (less than 1 second) period of time, I believe. But in order to get 
 30 years of research, and massive amounts of electricity to set up the electromagnetic containment.
 
 For LANL to create a similar research fusion reactor, 
-they would need equally massive amounts of electricity.
+which would take additional decades of research and billions of taxpayer dollars,
+they would need massive amounts of electricity.
 This would require some mechanism to deliver the electricity,
 meaning even larger transmission lines than the proposed lines this writer objects to.
-And even then, we're decades (at least) away from a fusion reactor
-that can provide usable electricity.
+
+In addition,
+constructing a massive unproven nuclear reactor that is best described as
+"it works the same way as the sun"
+might trigger a certain amount of backlash in the surrounding community.
