@@ -18,7 +18,7 @@ We do not need to invest taxpayer dollars in constructing unsightly, outdated po
 
 I urge Los Alamos National Laboratory to embrace this challenge and build a lasting legacy — one that is not associated with nuclear weapons, but rather with pioneering the clean energy solutions our planet requires.
 
-<i>Mark Steven Shepherd is a writer/producer/director who has live in Santa Fe for 10 years.</i>
+<i>Mark Steven Shepherd is a writer/producer/director who has lived in Santa Fe for 10 years.</i>
 
 ---
 
