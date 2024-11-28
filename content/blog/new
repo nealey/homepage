@@ -36,4 +36,4 @@ tags:
 EOD
 
 echo $index
-vim + $index
+emacs $index
