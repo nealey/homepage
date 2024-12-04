@@ -7,7 +7,7 @@ tags:
 
 I 3D printed a flute!
 
-![blue plastic flute with white accents](flute.jpg)
+![blue plastic flute with white accents](flute.jpeg)
 
 This is an "Irish" flute, which apparently means it's based on a pre-Boehm flute from
 around the 1600s. 
