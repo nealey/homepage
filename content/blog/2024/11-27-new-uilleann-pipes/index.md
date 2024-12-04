@@ -3,6 +3,7 @@ title: "New Uilleann Pipes"
 date: 2024-11-27
 tags:
   - bagpipes
+  - music
 ---
 
 A few weeks ago, my Uilleann pipes arrived.
