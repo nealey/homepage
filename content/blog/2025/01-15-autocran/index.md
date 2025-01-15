@@ -38,7 +38,7 @@ when I found
 suggesting opening the *bridle* to prevent it from pressing against the center of the reed.
 The poster suggested slipping a fingernail under the bridle and gently bending it out a bit.
 Then someone else makes the inevitable no-content "you are an idiot" post,
-as fanboys everywhere tend to do these days.
+like fanboys everywhere.
 
 Opening the bridle has made a tremendous difference for me!
 I haven't completely eliminated the gurgle,
