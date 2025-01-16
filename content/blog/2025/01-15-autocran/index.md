@@ -41,12 +41,8 @@ Then someone else makes the inevitable no-content "you are an idiot" post,
 like fanboys everywhere.
 
 Opening the bridle has made a tremendous difference for me!
-I haven't completely eliminated the gurgle,
-but I've toned it down to the point where I can probably live with it.
-I imagine a bit more work on the bridle can eliminate it completely.
-
-I'm also back to having trouble hitting the low D on my flute.
-Something about low D is really challenging.
-A flute player in the Los Alamos session joked to me last month,
-"at least that's not an important note".
-The joke is that it's probably the single most important note in Irish traditional music!
+After just two such adjustments,
+and the removal of the U-shaped thing in the bell,
+the gurgle is completely gone.
+I realized the thing was supposed to help with the gurgle,
+but I suppose it just goes to show that this instrument is complex!
