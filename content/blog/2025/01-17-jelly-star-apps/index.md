@@ -3,6 +3,7 @@ title: "Jelly Star apps"
 date: 2025-01-17
 tags:
   - dumbphone
+  - jellystar
 ---
 
 Someone emailed me asking for my take on specific apps on their Jelly Star phone,

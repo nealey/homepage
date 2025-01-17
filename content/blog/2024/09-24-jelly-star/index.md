@@ -4,6 +4,7 @@ date: 2024-09-24T10:00:00
 tags:
   - dumbphone
   - featurephone
+  - jellystar
 ---
 
 I've been using a "Jelly Star" Android phone for the last week.
