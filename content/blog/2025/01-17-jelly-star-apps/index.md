@@ -5,11 +5,6 @@ tags:
   - dumbphone
 ---
 
-I love getting emails about blog posts or articles I post on this web site!
-Writing these things is like throwing a bottle in the ocean
-and hoping someone picks it up and finds it useful,
-so getting a bottle back is an exciting and welcome event.
-
 Someone emailed me asking for my take on specific apps on their Jelly Star phone,
 which never gets OS updates.
 It can be bewildering to understand what the attack avenues are,
