@@ -2,7 +2,6 @@
 title: "Jelly Star apps"
 date: 2025-01-17
 tags:
-  - dumbphone
   - jellystar
 ---
 

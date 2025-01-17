@@ -2,7 +2,7 @@
 title: "Jelly Star: 1 month review"
 date: 2024-10-23
 tags:
-  - dumbphone
+  - jellystar
 ---
 
 For the last 4 weeks, I've been using a Jelly Star phone. This is an Android phone with a 3-inch diagonal screen and a chonky body. You can read reviews of it on other sites: here, I'm going to explain why I replaced my Light Phone 2 with this, and what I've had to adjust.
