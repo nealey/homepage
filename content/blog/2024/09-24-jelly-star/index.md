@@ -193,7 +193,7 @@ I need a few other apps:
 
 * Car charging networks (PlugShare, EVGo, ChargePoint, and so on)
 * PhotoSync, to back up photos. It *only* has access to photos on our NAS.
-* PlayBook will play audiobooks. I like it.
+* Simple AudioBook Player will play audiobooks. I like it.
 * Plexamp for music.
 * Travel apps: TripIt, Uber, Amtrak, Catima (stores barcodes)
 
@@ -202,7 +202,8 @@ Accelerometer
 =======
 
 The "Toolbox" app that comes built in is actually pretty nice.
-It has a Pedometer that you can't seem to disable but are free to ignore.
+It has a Pedometer that you can't seem to disable but are free to ignore:
+there's an option to show your steps on the lock screen, and I enabled that.
 It also has a "bubble level" that lets you see if the accelerometer is calibrated.
 Mine wasn't.
 
