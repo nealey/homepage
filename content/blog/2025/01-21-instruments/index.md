@@ -1,5 +1,5 @@
 ---
-title: "Musical instruments"
+title: "Cheap Musical Instruments"
 date: 2025-01-19
 tags:
   - music
@@ -26,8 +26,39 @@ and the Uillean pipe bag with the air hose on top.
 Here's the Irish Concertina.
 I think it's gorgeous.
 It sounds lovely, too.
+It was made by the Irish Concertina Company,
+but she bought it very lightly used.
+The former owner bought it,
+couldn't wrap his head around how to play it,
+and sold it back so he could buy a piano accordion.
+This seems to be a pretty well-trod path with this infernal instrument.
+
+My wife learned on a cheaper concertina,
+and bought this when she felt like the cheap one was holding her back.
+She was right: the improvement in her playing was immediate.
+
+I can't really play this thing,
+the button layout doesn't make any sense to me.
+I would have been one of those concertina owners
+who sells it back so I can buy a piano accordion.
+But my wife is getting pretty adept at it!
+
 
 # Uilleann Pipes
+
+After years of playing the Fagerstrom Uilleann Technopipes,
+I ordered a half set from David Daye.
+He calls his pipes the "penny chanter" and "budget drones",
+making extensive use of commercially-produced plumbing equipment,
+which I find appealing.
+They are about half the price of a comparable set,
+and people seem to appreciate the tone of them.
+
+My pipes came as a kit,
+and took me about 3 months to get into a state I consider "finished".
+This instrument takes a lot of maintenance,
+and I agree with David that assembling the kit teaches you a lot of maintenance tasks
+you'll need to keep them in good working order.
 
 ![Everything packed up](P1070464.JPG)
 
