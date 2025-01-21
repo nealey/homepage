@@ -47,6 +47,47 @@ But my wife is getting adept at it!
 
 # Uilleann Pipes
 
+I've been playing Uilleann pipes for 4 or 5 years now.
+I was afraid of having double reeds in such a dry place,
+so before I bought real bagpipes,
+I started with the Fagerstrom Uilleann Technopipes.
+
+## Electronic Pipe
+
+![Fagerstrom Technopipes](P1070466.JPG)
+
+This runs on a single AA battery, and outputs to a 3.5mm stereo earphone jack.
+There's a way to wire up a MIDI controller as well,
+but I've never tried it.
+
+The bag is nothing more than a switch.
+You have to squish the bag to close the switch,
+simulating the extra pressure required to make real pipes jump into the second octave.
+
+The electronic bagpipes aren't as expressive as real pipes,
+and they're also not as finnicky.
+I was able to learn scales and a number of tunes with this setup,
+and this lasted me for 3-4 years,
+until I was sure I wanted real pipes.
+
+
+![Travel Technopipes Bag](P1070467.JPG)
+
+I made a tiny bag for the technopipes,
+for travel.
+It's just a momentary switch with some foam around it to make it thick enough to trigger under my arm.
+
+Since the electronic pipe is the only instrument I have that can play through earphones,
+it's what I usually bring with me on travel.
+I do a fair amount of travel for work,
+so this is handy.
+Maybe one day I'll get confident enough on the whistle
+to bring one on a trip and
+drop by a local session while I'm away!
+
+
+## David Daye Half Set
+
 After years of playing the Fagerstrom Uilleann Technopipes,
 I ordered a half set from David Daye.
 He calls his pipes the "penny chanter" and "budget drones",
@@ -87,57 +128,19 @@ the bag,
 a set of drones attached into the bag,
 and the chanter coming out the narrow part of the bag.
 
-# Flutes, whistles, and an electronic pipe
-
-![Flute, whistles, and electronic bagpipe, in a roll-up sleeve](P1070465.JPG)
-
-The flute, the whistles, and the electronic bagpipe,
-all fit into this roll-up sleeve.
-
 Because the bagpipe's double reed is made of natural cane (bamboo),
 I have to be careful about the humidity I expose it to.
 If I ever want to take it someplace humid,
 I'm going to have to leave the reed at home,
 and make a new one for the high humidity environment.
 
+# Aerophones
 
-## Electronic Pipe
+![Flute, whistles, and electronic bagpipe, in a roll-up sleeve](P1070465.JPG)
 
-![Fagerstrom Technopipes](P1070466.JPG)
+The flute, the whistles, and the electronic bagpipe,
+all fit into this roll-up sleeve.
 
-I was afraid of having double reeds in such a dry place,
-so before I bought real bagpipes, I got the Fagerstrom Uilleann Technopipes.
-This runs on a single AA battery, and outputs to a 3.5mm stereo earphone jack.
-There's a way to wire up a MIDI controller as well,
-but I've never tried it.
-
-The bag is nothing more than a switch.
-You have to squish the bag to close the switch,
-simulating the extra pressure required to make real pipes jump into the second octave.
-
-The electronic bagpipes aren't as expressive as real pipes,
-and they're also not as finnicky.
-I was able to learn scales and a number of tunes with this setup,
-and this lasted me for 3-4 years,
-until I was sure I wanted real pipes.
-
-
-![Travel Technopipes Bag](P1070467.JPG)
-
-I made a tiny bag for the technopipes,
-for travel.
-It's just a momentary switch with some foam around it to make it thick enough to trigger under my arm.
-
-Since the electronic pipe is the only instrument I have that can play through earphones,
-it's what I usually bring with me on travel.
-I do a fair amount of travel for work,
-so this is handy.
-Maybe one day I'll get confident enough on the whistle
-to bring one on a trip and
-drop by a local session while I'm away!
-
-
-## Aerophones
 
 ![A black plastic Irish flute, and three tin whistles](P1070468.JPG)
 
