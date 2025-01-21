@@ -23,7 +23,7 @@ and the Uillean pipe bag with the air hose on top.
 
 ![Irish Concertina with highly ornamented light wood face and metal buttons](P1070461.JPG)
 
-Here's the Irish Concertina.
+Here's my wife's Irish Concertina.
 I think it's gorgeous.
 It sounds lovely, too.
 It was made by the Irish Concertina Company,
