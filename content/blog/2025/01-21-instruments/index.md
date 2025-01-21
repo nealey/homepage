@@ -68,8 +68,6 @@ If I ever want to take it someplace humid,
 I'm going to have to leave the reed at home,
 and make a new one for the high humidity environment.
 
-I'm not yet ready to start making reeds,
-so the flutes and electronic pipe are my travel kit.
 
 ## Electronic Pipe
 
