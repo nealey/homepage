@@ -118,7 +118,7 @@ The flute is the cheapest instrument I own,
 costing maybe $7 in PLA filament.
 I have nothing to compare it to,
 but I think it makes a nice enough tone for $7 that I wouldn't be ashamed to play it in public.
-You can print your own using [the 3D files)(https://www.printables.com/model/1097180-irish-flute).
+You can print your own using [the 3D files](https://www.printables.com/model/1097180-irish-flute).
 
 I find the flute to be more challenging than the bagpipe,
 which probably isn't what people would expect to hear.
@@ -134,22 +134,31 @@ so I'm able to play it longer and faster than the flute.
 
 The topmost whistle is a black Clarke original,
 which my wife bought on a lark maybe 10 years ago.
-It didn't cost much,
-and we didn't play it much,
+I think it cost about twice as much as the flute.
+We didn't play it much,
 until I printed the flute.
 The original has a breathy sound,
 and requires about twice as much air volume as the other whistles.
 That means you have to stop to breathe more frequently.
 
-Below that is a green Clarke Sweetone.
-This is another pretty cheap whistle,
-but it sounds just fine to my ears.
+Below that is a green Clarke Sweetone,
+probably about the same cost as the other Clarke.
+It sounds lovely to me.
 I can play about twice as long as the original with one breath.
+In my opinion,
+the essential nature of a tin whistle is that it's
+inexpensive and easy to play.
+The Sweetone checks both boxes:
+if you're looking to get started on a whistle,
+this is the one to start with.
 
 At the bottom is a McNeela Wild Irish whistle.
-I this costs about as much as four Clarke whistles.
+It was given to me as a thoughtful gift, but
+I think these cost about as much as four Clarke whistles.
 It's a nice whistle with a very pure tone (not very breathy),
 but I don't think it's four times better than the Sweetone.
+
+
 
 # Not Pictured
 
