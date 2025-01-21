@@ -71,6 +71,8 @@ and make a new one for the high humidity environment.
 I'm not yet ready to start making reeds,
 so the flutes and electronic pipe are my travel kit.
 
+## Electronic Pipe
+
 ![Fagerstrom Technopipes](P1070466.JPG)
 
 I was afraid of having double reeds in such a dry place,
@@ -105,7 +107,7 @@ to bring one on a trip and
 drop by a local session while I'm away!
 
 
-# Aerophones
+## Aerophones
 
 ![A black plastic Irish flute, and three tin whistles](P1070468.JPG)
 
