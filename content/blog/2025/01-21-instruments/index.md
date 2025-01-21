@@ -19,7 +19,7 @@ some electronic bagpipe stuff,
 the Uilleann pipe bellows,
 and the Uillean pipe bag with the air hose on top.
 
-## Electronic Pipes
+# Electronic Pipes
 
 Since they can play drones,
 I guess this instrument counts as "pipes" and not "a pipe".
@@ -56,7 +56,7 @@ to bring one on a trip and
 drop by a local session while I'm away!
 
 
-## David Daye Half Set
+# David Daye Half Set
 
 After years of playing the Fagerstrom Uilleann Technopipes,
 I ordered a half set from David Daye.
