@@ -116,9 +116,12 @@ so I'm learning all of them at about the same pace.
 
 The flute is the cheapest instrument I own,
 costing maybe $7 in PLA filament.
-I have nothing to compare it to,
-but I think it makes a nice enough tone for $7 that I wouldn't be ashamed to play it in public.
-You can print your own using [the 3D files](https://www.printables.com/model/1097180-irish-flute).
+I have no other flute to compare it to,
+but it makes a nice enough tone 
+that I wouldn't hesitate to play it in public.
+You can make your own using
+[the 3D files](https://www.printables.com/model/1097180-irish-flute)
+and a little waxed thread for the joints.
 
 I find the flute to be more challenging than the bagpipe,
 which probably isn't what people would expect to hear.
