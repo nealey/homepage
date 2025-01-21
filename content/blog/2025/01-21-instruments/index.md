@@ -26,22 +26,23 @@ and the Uillean pipe bag with the air hose on top.
 Here's my wife's Irish Concertina.
 I think it's gorgeous.
 It sounds lovely, too.
-It was made by the Irish Concertina Company,
-but she bought it very lightly used.
-The former owner bought it,
+It was made by the Irish Concertina Company.
+
+She bought it very lightly used.
+The former owner
 couldn't wrap his head around how to play it,
 and sold it back so he could buy a piano accordion.
-This seems to be a pretty well-trod path with this infernal instrument.
+This seems to be a well-trod path with this bonkers instrument.
 
-My wife learned on a cheaper concertina,
+My wife learned on a cheaper Rochelle concertina,
 and bought this when she felt like the cheap one was holding her back.
 She was right: the improvement in her playing was immediate.
 
-I can't really play this thing,
+I can't play this thing,
 the button layout doesn't make any sense to me.
 I would have been one of those concertina owners
 who sells it back so I can buy a piano accordion.
-But my wife is getting pretty adept at it!
+But my wife is getting adept at it!
 
 
 # Uilleann Pipes
@@ -130,7 +131,7 @@ It's just a momentary switch with some foam around it to make it thick enough to
 Since the electronic pipe is the only instrument I have that can play through earphones,
 it's what I usually bring with me on travel.
 I do a fair amount of travel for work,
-so this is pretty handy.
+so this is handy.
 Maybe one day I'll get confident enough on the whistle
 to bring one on a trip and
 drop by a local session while I'm away!
@@ -141,7 +142,7 @@ drop by a local session while I'm away!
 ![A black plastic Irish flute, and three tin whistles](P1070468.JPG)
 
 Everything has essentially the same fingering as the bagpipe,
-and everything is pretty inexpensive,
+and everything is inexpensive,
 so I'm learning all of them at about the same pace.
 
 
