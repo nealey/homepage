@@ -50,7 +50,7 @@ we have another hour of the harder or faster tunes.
 
 Experienced musicians 
 might enjoy the opportunity to work on
-harmonies and variations,
+ornaments, harmonies, and variations;
 or even to get to know familiar tunes played slowly.
 We'll play each tune three to five times,
 and the first time through a tune we stick to the basic tune,
