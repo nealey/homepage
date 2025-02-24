@@ -59,5 +59,5 @@ so people have a chance to pick it up by ear.
 Set Of The Month
 ==============
 
-2025 March
+2025 March (if I can find a space in time)
 : Kid on the Mountain / Morrison's / Leitrim Jig (book 1,  page 27)
