@@ -40,6 +40,8 @@ including a new design for 3D printed regulators.
 I provide technical support for the
 [Axianoff 3d printed Irish Flute](https://www.printables.com/model/1097180-axianov-irish-flute),
 and occasionally I'll make one for a friend.
+I'm also creating a MIDI 
+[Irish concertina](https://www.irishconcertinacompany.com/2018/03/goodbye-to-the-term-anglo-concertina).
 
 I run the
 [Vail Internet Morse Code Relay](https://vail.woozle.org/),
