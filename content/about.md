@@ -21,6 +21,7 @@ which has some free tools I've created to help do the kind of work I do.
 
 I am proud to be employed by
 [Pacific Northwest National Laboratory](https://pnnl.gov/).
+For 20 years prior, I worked at [Los Alamos National Laboratory](https://lanl.gov/).
 
 
 What I Do For Fun
