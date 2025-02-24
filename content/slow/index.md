@@ -48,9 +48,10 @@ Generally we try to play the easier tunes in the first hour and start slow,
 and then after a short break, 
 we have another hour of the harder or faster tunes.
 
-If you are an experienced musician, 
-you are welcome to join us and work on ornaments, 
-harmonies and variations.
+Experienced musicians 
+might enjoy the opportunity to work on
+harmonies and variations,
+or even to get to know familiar tunes played slowly.
 We'll play each tune three to five times,
 and the first time through a tune we stick to the basic tune,
 so people have a chance to pick it up by ear.
