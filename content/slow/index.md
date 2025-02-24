@@ -22,6 +22,7 @@ we start as slowly as necessary so that everyone can join in,
 and maybe we gradually get faster.
 
 We will nominate a set of the month so we know what to practice.
+You can learn all three songs in the set, or just focus on one, if you like.
 Strive to learn the tunes by ear, 
 but it's okay if you need to use "the dots" in the book or PDF!
 We use sets of tunes from Comhaltas Foinn Seisiún. 
@@ -53,6 +54,7 @@ harmonies and variations.
 We'll play each tune three to five times,
 and the first time through a tune we stick to the basic tune,
 so people have a chance to pick it up by ear.
+
 
 Set Of The Month
 ==============
