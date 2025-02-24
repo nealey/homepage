@@ -12,10 +12,10 @@ sets:
 ---
 
 When
-: To Be Determined
+: To Be Determined: [email me](mailto:neale@woozle.org)!
 
 Where
-: To Be Determined
+: To Be Determined: [email me](mailto:neale@woozle.org)!
 
 The idea of this session is to start slow… 
 we start as slowly as necessary so that everyone can join in, 
