@@ -11,8 +11,8 @@ title: Neale Pickett
 
 ---
 
-> mostly building weird stuff no one uses, 
-> but occasionally getting it right.
+> "mostly building weird stuff no one uses, 
+> but occasionally getting it right."
 
 -- Rob Pike (on Rob Pike, but it describes me, too)
 
