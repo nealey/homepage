@@ -1,0 +1,148 @@
+---
+title: Travel Sleep Clock
+description: A digital clock that plays a podcast to get you to sleep
+type: bare
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sleep</title>
+    <style>
+      html {
+          background-color: black;
+          color: #444;
+          font-family: Roboto, Helvetica, sans-serif;
+      }
+
+      #time {
+          font-size: 20vh;
+      }
+      #time div {
+          position: fixed;
+          opacity: 0;
+          transition: visibility 0s 2s, opacity 2s linear;
+          cursor: default;
+          user-select: none;
+      }
+
+      #time div.visible {
+          opacity: 1;
+          transition: opacity 2s linear;
+      }
+    </style>
+    <script type="module">
+      const Millisecond = 1
+      const Second = 1000 * Millisecond
+      const Feed = new URL("https://feeds.buzzsprout.com/1915447.rss")
+      const TimeFormatter = new Intl.DateTimeFormat(
+          undefined,
+          {
+              timeStyle: "short",
+              hour12: false,
+          }
+      )
+
+      function update() {
+          let now = new Date()
+          let time = TimeFormatter.format(now)
+
+          let timediv = document.querySelector("#time")
+          for (let e of timediv.children) {
+              e.classList.remove("visible")
+          }
+
+          let newTime = timediv.appendChild(document.createElement("div"))
+          newTime.textContent = time
+
+          let w = Math.random() * 100
+          if (w > 50) {
+              newTime.style.right = `${100-w}vw`
+          } else {
+              newTime.style.left = `${w}vw`
+          }
+          let h = Math.random() * 100
+          if (h > 50) {
+              newTime.style.bottom = `${100-h}vh`
+          } else {
+              newTime.style.bottom = `${h}vh`
+          }
+
+          setTimeout(() => newTime.remove(), 90 * Second)
+          setTimeout(
+              () => newTime.classList.add("visible"),
+              1 * Second,
+          )
+      }
+
+      async function handleClick(e, audio) {
+          await document.body.requestFullscreen()
+
+          if (audio.ended) {
+              audio.currentTime = 0
+          }
+          audio.play()
+      }
+
+      async function caffeinate() {
+          let wl = await navigator.wakeLock.request("screen")
+          console.debug("acquired wake-lock")
+          wl.addEventListener("release", () => console.debug("wake-lock released"))
+      }
+
+      async function pullEpisodes() {
+          let storage = await caches.open("sleep")
+          let resp = await fetch("https://feeds.buzzsprout.com/1915447.rss")
+          let text = await resp.text()
+          let parser = new DOMParser()
+          let doc = parser.parseFromString(text, "application/xml")
+          let enclosures = doc.getElementsByTagName("enclosure")
+          for (let i = 0; i < 20; i += 1) {
+              let enclosure = enclosures[i]
+              if (!enclosure) {
+                  continue
+              }
+              let url = enclosure.getAttribute("url")
+              storage.add(url)
+          }
+      }
+
+      function volumeAdjust(audio, amount) {
+          let vol = audio.volume + amount
+          vol = Math.min(1, vol)
+          vol = Math.max(0, vol)
+          audio.volume = vol
+      }
+        
+
+      var touchY = 0
+      function init() {
+          setInterval(update, 60 * Second)
+          update()
+          
+          let audio = document.querySelector("audio")
+          document.addEventListener("click", e => handleClick(e, audio))
+
+          document.addEventListener("visibilitychange", caffeinate)
+          caffeinate()
+
+          document.addEventListener("wheel", e => {
+              volumeAdjust(audio, e.deltaY/200)
+          })
+          document.addEventListener("touchstart", e => {
+              touchY = e.touches[0].clientY
+          })
+          document.addEventListener("touchmove", e => {
+              let adj = (touchY - e.touches[0].clientY) / window.innerHeight
+              volumeAdjust(audio, adj)
+              touchY = e.touches[0].clientY
+          })
+      }
+
+      init()
+    </script>
+  </head>
+  <body>
+    <div id="time"></div>
+    <audio src="https://www.buzzsprout.com/1915447/episodes/16692401-episode-035-south-haven-ravens-vs-tomah-tigers.mp3"></audio>
+  </body>
+</html>
