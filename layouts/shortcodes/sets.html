@@ -1,0 +1,12 @@
+<dl>
+{{range $.Page.Params.sets}}
+<dt>{{time.Format "2006 Jan 2" .date}}</dt>
+<dd>
+  b{{.book}} p{{.page}}:
+  {{range $i, $v := .set}}
+    {{if gt $i 0}}/{{end}}
+    {{.}}
+  {{end}}
+</dd>
+{{end}}
+</dl>
