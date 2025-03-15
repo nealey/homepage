@@ -9,7 +9,7 @@ params:
         - Haste to the Wedding
         - Maid on the Green
       book: 1
-      page: 26
+      page: 24
 ---
 
 When
