@@ -45,4 +45,5 @@ We use sets of tunes from Comhaltas Foinn Seisiún.
 Set Of The Month
 ==============
 
-{{< sets >}}
+April 9
+: b1 p24: Lilting Banshee / Haste to the Wedding / Maid on the Green
