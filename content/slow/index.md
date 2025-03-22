@@ -46,7 +46,7 @@ Set Of The Month
 ==============
 
 April 9
-: b1 p24: Lilting Banshee / Haste to the Wedding / Maid on the Green
+: [b1 p24](Foinn-Seisiún-Book1.pdf#page=26): Lilting Banshee / Haste to the Wedding / Maid on the Green
 
 
 Other Sites of Interest
