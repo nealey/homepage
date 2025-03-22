@@ -13,7 +13,7 @@ params:
 ---
 
 When
-: Second Wednesdays
+: Second Wednesdays at 6:30PM
 
 Where
 : My house: [email me](mailto:neale@woozle.org) for the address :)
@@ -47,3 +47,24 @@ Set Of The Month
 
 April 9
 : b1 p24: Lilting Banshee / Haste to the Wedding / Maid on the Green
+
+
+Other Sites of Interest
+===================
+
+Folk Session
+----------
+
+every 4th Sunday, 3:30PM, at Bathtub Row Brewing
+https://lanmfolksession.neocities.org/
+
+Everybody is very friendly,
+and if you have show up and only know two songs,
+we will play those two songs with you!
+But it's not typically slow :)
+
+
+Musicians Social Hour 
+-------------------
+
+Last Saturday of the month, 4:00PM, at Bathtub Row Brewing
