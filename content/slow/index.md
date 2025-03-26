@@ -53,18 +53,8 @@ Other Sites of Interest
 ===================
 
 Folk Session
-----------
-
-every 4th Sunday, 3:30PM, at Bathtub Row Brewing
-https://lanmfolksession.neocities.org/
-
-Everybody is very friendly,
-and if you have show up and only know two songs,
-we will play those two songs with you!
-But it's not typically slow :)
-
+: every 4th Sunday, 3:30PM, at Bathtub Row Brewing
+: https://lanmfolksession.neocities.org/
 
 Musicians Social Hour 
--------------------
-
-Last Saturday of the month, 4:00PM, at Bathtub Row Brewing
+: Last Saturday of the month, 4:00PM, at Bathtub Row Brewing
