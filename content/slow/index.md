@@ -52,9 +52,8 @@ April 9
 Other Sites of Interest
 ===================
 
-Folk Session
+[Folk Session](https://lanmfolksession.neocities.org/)
 : every 4th Sunday, 3:30PM, at Bathtub Row Brewing
-: https://lanmfolksession.neocities.org/
 
 Musicians Social Hour 
 : Last Saturday of the month, 4:00PM, at Bathtub Row Brewing
