@@ -10,6 +10,14 @@ params:
         - Maid on the Green
       book: 1
       page: 24
+    - date: 2025-05-14
+      set:
+        - Jim Ward's Jig
+        - Blarney Pilgrim
+        - The Cook in the Kitchen
+      book: 1
+      page: 23
+    
 ---
 
 When
@@ -24,7 +32,9 @@ as slowly as necessary so that everyone can join in.
 Maybe we gradually get faster.
 You can learn all three songs in the set, or just focus on one.
 The idea is to play tunes in a group
-without worrying about keeping up.
+without having to worry about keeping up.
+
+{{< sets >}}
 
 We use sets of tunes from Comhaltas Foinn Seisiún. 
 
@@ -42,18 +52,12 @@ We use sets of tunes from Comhaltas Foinn Seisiún.
   [PDF](Foinn-Seisiún-Book3.pdf)
 
 
-Set Of The Month
-==============
-
-April 9
-: [b1 p24](Foinn-Seisiún-Book1.pdf#page=26): Lilting Banshee / Haste to the Wedding / Maid on the Green
-
-
 Other Sites of Interest
 ===================
 
 [Folk Session](https://lanmfolksession.neocities.org/)
-: every 4th Sunday, 3:30PM, at Bathtub Row Brewing
+: Every 4th Sunday, 3:30PM, at Bathtub Row Brewing.
+  This is faster and more public, but has some of the same people.
 
 Musicians Social Hour 
 : Last Saturday of the month, 4:00PM, at Bathtub Row Brewing

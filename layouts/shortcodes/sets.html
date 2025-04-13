@@ -1,12 +1,14 @@
 <dl>
-{{range $.Page.Params.sets}}
+{{range ($.Page.Params.sets | collections.Reverse)}}
 <dt>{{time.Format "2006 Jan 2" .date}}</dt>
 <dd>
-  b{{.book}} p{{.page}}:
-  {{range $i, $v := .set}}
-    {{if gt $i 0}}/{{end}}
-    {{.}}
-  {{end}}
+  <a href="Foinn-Seisiún-Book{{.book}}.pdf#page={{math.Add .page 2}}">
+    {{range $i, $v := .set}}
+      {{if gt $i 0}}/{{end}}
+      {{.}}
+    {{end}}
+    (b{{.book}} p{{.page}})
+  </a>
 </dd>
 {{end}}
 </dl>
