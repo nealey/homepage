@@ -13,7 +13,7 @@ This is exactly what I need for my Uilleann drones.
 After a couple hours of work, I've got a working clone of their reed in OpenSCAD.
 It looks like this:
 
-![CAD rendering of my reed design](reed.jpg)
+![CAD rendering of my reed design](reed.png)
 
 It looks a lot like a clarinet or saxaphone reed, but smaller.
 I've only modeled the Bulgarian chanter reed so far,

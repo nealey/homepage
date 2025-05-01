@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tilbury Woodwinds Company - calculator</title>
+<meta name="description" content="Makers of fine hand crafted musical instruments." />
+</head>
+<body>
+
+
+<div id="outer">
+<div id="content">
+<div id="primarycontainer">
+			<div id="primarycontent">
+				<!-- Content Block 1 - Main Content -->
+				<a class="section_anchor" id="wb_8" name="wb_8"></a><script type="text/javascript" src="calc.js"></script>
+<div>
+<h1>Calculator</h1>
+<p><em>By Chuck Tilbury<br />
+Based on the famous <a href="https://people.adams.edu/~rjastalos/Flutes/6-holeFlutomat.html" target="_blank">&quot;flutomat&quot;</a> by Pete Kosel</em></p>
+<p>&nbsp;</p>
+</div>
+<!--
+    This actually fills in the form and displays it.  The entire form must be placed into 
+    the page before any values can be inserted.
+ -->     <script type="text/javascript">
+    show_form();
+    keyChange(selected);
+</script> <hr />
+<p><br />
+<strong>Instructions</strong></p>
+<ol>
+    <li>Select metric measurements, if you want to use it.&nbsp; For metric, all measurements are in millimeters.&nbsp; Otherwise they are in inches.&nbsp; Inches is the default.</li>
+    <li>Set the number of holes for your design.</li>
+    <li>Enter inside diameter and wall thickness of your pipe.</li>
+    <li>Select the bell note from the pull-down box.</li>
+    <li>Enter the hole sizes you want to use.&nbsp; You can use the increment and decrement buttons beside the hole size to change them.&nbsp; Note that for metric measurements, the increment is 0.5mm and for inch measurements it is 1/64&quot;.&nbsp;</li>
+    <li>The results should automatically update when you make a change, but you can also use the &quot;refresh&quot; button.</li>
+    <li>Use the &quot;print&quot; button to create a printable &quot;cut sheet&quot; for your design.</li>
+    <li>Use the &quot;save&quot; button to save the design on your computer.&nbsp; Be advised that this option uses a bunch of cookies.</li>
+    <li>Use the &quot;load&quot; button to restore the design that you most recently saved.&nbsp; You can only keep one design using the save and load buttons.</li>
+</ol>
+<p><strong>Tips</strong></p>
+<ol>
+    <li>Use big holes, especially for high notes.&nbsp; The cutoff frequency should be well above the higher octave note for the hole.</li>
+    <li>For flutes, drill the embouchure hole so blown edge meets pipe surface at about 45 degree angle.&nbsp;</li>
+    <li>For whistles or flutes oval embouchure holes, use the area of the opening in calculations.&nbsp;</li>
+    <li>Use smaller pipe for high pitched flutes and picollos, larger pipe for instruments that play lower.&nbsp;</li>
+    <li>The ideal ratio of length to inside diameter is around 21/1.</li>
+    <li>If you would like some help there are links on the links page or you can contact me using the contact page.&nbsp; Always happy to help if I can.</li>
+</ol>
+<p>&nbsp;</p>
+<hr />
+<p><strong>Dimensions of Some Common Types of Plastic Pipe in the U.S.</strong></p>
+<table cellpadding="5" border="1">
+    <tbody>
+        <tr>
+            <td colspan="4">Schedule 40 PVC and Steel Pipe</td>
+            <td colspan="4">Schedule 80 PVC and Steel Pipe</td>
+            <td colspan="4">&quot;Copper Tube&quot; Series CPVC Pipe</td>
+        </tr>
+        <tr>
+            <td>Nominal</td>
+            <td>Outside</td>
+            <td>Inside</td>
+            <td>Wall</td>
+            <td>Nominal</td>
+            <td>Outside</td>
+            <td>Inside</td>
+            <td>Wall</td>
+            <td>Nominal</td>
+            <td>Outside</td>
+            <td>Inside</td>
+            <td>Wall</td>
+        </tr>
+        <tr>
+            <td>1/2&quot;</td>
+            <td>0.840&quot;</td>
+            <td>0.622&quot;</td>
+            <td>0.109&quot;</td>
+            <td>1/2&quot;</td>
+            <td>0.840&quot;</td>
+            <td>0.546&quot;</td>
+            <td>0.147&quot;</td>
+            <td>1/2&quot;</td>
+            <td>0.625&quot;</td>
+            <td>0.469&quot;</td>
+            <td>0.078&quot;</td>
+        </tr>
+        <tr>
+            <td>3/4&quot;</td>
+            <td>1.050&quot;</td>
+            <td>0.824&quot;</td>
+            <td>0.113&quot;</td>
+            <td>3/4&quot;</td>
+            <td>1.050&quot;</td>
+            <td>0.742&quot;</td>
+            <td>0.154&quot;</td>
+            <td>3/4&quot;</td>
+            <td>0.875&quot;</td>
+            <td>0.695&quot;</td>
+            <td>0.090&quot;</td>
+        </tr>
+    </tbody>
+</table>
+<!--
+<hr />
+<p><strong>Decimal Equivalents of Some Fractional Drill Sizes</strong></p>
+<table cellpadding="5" border="1">
+    <tbody>
+        <script type="text/javascript">
+
+val = 9.0 / 64.0;
+do {
+    document.write("<tr>");
+    var w;
+    var f;
+    for(var i = 0; i < 6; i++, val += 1.0 / 64.0) {
+        w = Math.round(val/(1.0/64.0));
+        f = 64;
+        while((w % 2) == 0) {
+            w = w / 2;
+            f = f / 2;
+            if(w <= 0 || f < 0 )
+                break;
+        }
+        document.write("<td>"+w+"/"+f+" = "+(Math.round(10000*val)/10000)+"</td>");
+    }
+    document.write("</tr>");
+} while(val < 32.0 / 64.0);
+
+
+    </script>
+    </tbody>
+-->			</div>
+		</div>
+</div></div>
+
+</body>
+</html>
