@@ -37,7 +37,7 @@ The chief negotiator in some sector is deaf and relies on telepathy and his chor
 
 The new doctor doesn't have a corner on that market anymore - now there's this guy, who's sick and honestly I don't remember much other than he really wasn't satisfied with how android development has gone. Apparently he ends up transferring his mind into Data by the end, must not have minded androids too much.
 
-## S02E07: Unnatural Selection
+# S02E07: Unnatural Selection
 
 ## Questionable medical decisions and Potatoes O'Brien enters
 
