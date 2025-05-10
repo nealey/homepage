@@ -2,27 +2,9 @@
 title: ST:TNG Season 2
 ---
 
-# Top-Level Heading
+# S02E08: A Matter of Honor
 
-## Level 2 Heading
+## Riker and the Klingons
 
-### Level 3 Heading
-
-* List
-* Of
-* Things
-
-1. Numbered
-1. List
-1. Of
-1. Things
-
-This is a paragraph.
-It has text in *boldface* and _italics_, and
-maybe ~strikethrough~?
-
----
-
-Ruby the dog once said:
-
-> Here is a quotation
+Riker gets sent to a Klingon ship to temp as first mate, but first he eats a bunch of disgusting things to prep for Klingon life.
+Apparently Riker is really interested in the idea of his duty to kill the captain if needed. I don't remember much else.
