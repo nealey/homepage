@@ -1,6 +1,7 @@
 ---
-title: Star Track: The Next Generation Season 2
+title: "Star Track: The Next Generation Season 2"
 ---
+
 # s02e01: Why is Wesley Driving the Ship
 
 "The Child"
