@@ -1,51 +1,53 @@
 ---
-title: ST:TNG Season 2
+title: Star Track: The Next Generation Season 2
 ---
-# S02E01: The Child
+# s02e01: Why is Wesley Driving the Ship
 
-## Why is Wesley Driving the Ship
+"The Child"
 
 Deanna experiences some kind of immaculate conception via shiny light, and the previous doctor got a promotion so she's gone, but she left her kid to drive the ship apparently. Starfleet Academy is not required to become a pilot. Someone should tell that to Tom Paris.
 
-# S02E02: Where Silence Has Lease
+# s02e02: Welcome to Digital Art of the late 80s
 
-## Welcome to Digital Art of the late 80s
+"Where Silence Has Lease"
+
+![A terrible-looking composite of a green face in a star field](Nagilum.jpg)
 
 I really thought this was going to be a Q episode, but instead it's just an ugly giant face floating in space that controls everything. I don't remember anything other than that, fell asleep.
 
-# S02E03: Elementary, Dear Data
+# s02e03: Writers got bored again, back to the Holodeck
 
-## Writers got bored again, back to the Holodeck
+"Elementary, Dear Data"
 
 Data tries out solving mysteries like Sherlock, but nobody is impressed because he doesn't actually solve them the way humans are used to. I think Jordy gets upset with him? I'm usually Team Jordy so he probably had good reason to get annoyed. The new doctor shows up to play dress-up with Moriarty, who evolves somehow into a good guy. Okie dokie.
 
-# S02E04: The Outrageous Okona
+# s02e04: Why not just do an episode about Betazoids
 
-## Why not just do an episode about Betazoids
+"The Outrageous Okona"
 
 Dude shows up dressed like a pirate and wants to have affairs with the ladies. He likes Deanna I think? Some plot about space-based Romeo and Juliet and everything ends up fine without any need for mutual suicide. And pirate dude goes back to being a pirate. Pretty sure they were hoping he reminded everyone of Han Solo.
 
-# S02E05: Loud as a Whisper
+# s02e05: The 1980s realizes that deaf people exist
 
-## The 1980s realizes that deaf people exist
+"Loud as a Whisper"
 
 The chief negotiator in some sector is deaf and relies on telepathy and his chorus to communicate, also he knows ASL by the end of the episode? Data sucks at ASL, and I don't even know ASL. This guy is gonna tough out negotiations when his chorus gets killed off through hope and perseverance. 
 
-# S02E06: The Schitzoid Man
+# s02e06: More people hating on Data
 
-## More people hating on Data
+"The Schitzoid Man"
 
 The new doctor doesn't have a corner on that market anymore - now there's this guy, who's sick and honestly I don't remember much other than he really wasn't satisfied with how android development has gone. Apparently he ends up transferring his mind into Data by the end, must not have minded androids too much.
 
-# S02E07: Unnatural Selection
+# s02e07: Questionable medical decisions and Potatoes O'Brien enters
 
-## Questionable medical decisions and Potatoes O'Brien enters
+"Unnatural Selection"
 
 The doctor is just hell-bent on starting an epidemic in this episode. Thankfully, she's gonna be a sample of one in exposing herself to whatever is causing fast aging. I fell asleep before I saw the end, but apparently O'Brien does something with the transporter and reverses aging. I wonder if we get to see that trick again.
 
-# S02E08: A Matter of Honor
+# s02e08: Riker and the Klingons
 
-## Riker and the Klingons
+"A Matter of Honor"
 
 Riker gets sent to a Klingon ship to temp as first mate, but first he eats a bunch of disgusting things to prep for Klingon life.
 Apparently Riker is really interested in the idea of his duty to kill the captain if needed. I don't remember much else.
