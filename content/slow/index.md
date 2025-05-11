@@ -12,7 +12,17 @@ params:
       page: 24
     - date: 2025-05-14
       set:
-        - Jim Ward's Jig
+        - |
+          X: 1
+          T: Jim Ward's Jig
+          R: jig
+          M: 6/8
+          L: 1/8
+          K: Gmaj
+          |:G3 GAB|AGE GED|GGG AGE|GED DEF|
+          G3 GAB|AGE GAB|cBA BGE|1 DED DEF:|2 DED D2B||
+          |:cBA BAG|ABA AGB|cBA BGE|DED GAB|
+          cBA BAG|ABA ABc|dcB AGE|1 GED D2B:|2 GED DEF||G6||            
         - Blarney Pilgrim
         - The Cook in the Kitchen
       book: 1
@@ -61,3 +71,5 @@ Other Sites of Interest
 
 Musicians Social Hour 
 : Last Saturday of the month, 4:00PM, at Bathtub Row Brewing
+
+{{< player >}}

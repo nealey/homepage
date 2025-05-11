@@ -4,6 +4,7 @@ jobs:
   publish:
     runs-on:
       - hugo
+    if: github.ref == "refs/heads/main"
     timeout-minutes: 1
     steps:
       - name: Set up SSH
