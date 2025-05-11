@@ -19,8 +19,9 @@ jobs:
       - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - run: hugo
       - name: Install built site
-        if: ${{ env.GITHUB_REF_NAME }} == "main"
         run: |
-          eval $(ssh-agent)
-          ssh-add
-          rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+          if [ "$GITHUB_REF_NAME" = "main" ]; then
+            eval $(ssh-agent)
+            ssh-add
+            rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+          fi
