@@ -24,4 +24,6 @@ jobs:
             eval $(ssh-agent)
             ssh-add
             rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+          else
+            echo "Skipping branch: $GITHUB_REF_NAME"
           fi
