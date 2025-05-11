@@ -4,7 +4,6 @@ jobs:
   publish:
     runs-on:
       - hugo
-    if: github.ref == "refs/heads/main"
     timeout-minutes: 1
     steps:
       - name: Set up SSH
@@ -20,6 +19,7 @@ jobs:
       - run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - run: hugo
       - name: Install built site
+        if: ${{ env.GITHUB_REF_NAME }} == "main"
         run: |
           eval $(ssh-agent)
           ssh-add
