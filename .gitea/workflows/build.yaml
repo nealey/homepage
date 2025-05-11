@@ -20,6 +20,10 @@ jobs:
       - run: hugo
       - name: Install built site
         run: |
-          eval $(ssh-agent)
-          ssh-add
-          rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+          if [ "$GITHUB_REF_NAME" = "main" ]; then
+            eval $(ssh-agent)
+            ssh-add
+            rsync --delete -vax ./public/ neale@melville.woozle.org:/srv/www/woozle.org/
+          else
+            echo "Skipping branch: $GITHUB_REF_NAME"
+          fi
