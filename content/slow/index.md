@@ -17,6 +17,13 @@ params:
         - The Cook in the Kitchen
       book: 1
       page: 23
+    - date: 2025-06-11
+      set:
+        - Concertina Reel
+        - Come West Along the Road
+        - Anderson's
+      book: 1
+      page: 5
     
 ---
 
@@ -40,14 +47,17 @@ We use sets of tunes from Comhaltas Foinn Seisiún.
 
 * Foinn Seisiún 1
   [CD](https://comhaltas.ie/product/foinn-seisiun-cd-1/),
+  [YouTube](https://music.youtube.com/playlist?list=OLAK5uy_l0Bffsoz3MCM4YJvyNzMEb-idyovS-j2Y),
   [Book](https://comhaltas.ie/product/foinn-seisiun-book-1/),
   [PDF](Foinn-Seisiún-Book1.pdf)
 * Foinn Seisiún 2
   [CD](https://comhaltas.ie/product/foinn-seisiun-cd-2/),
+  [YouTube](https://music.youtube.com/playlist?list=OLAK5uy_ntNf-YpM11W_9XJDdISjyoZwDHjLUxkHU),
   [Book](https://comhaltas.ie/product/foinn-seisiun-book-2/),
   [PDF](Foinn-Seisiún-Book2.pdf)
 * Foinn Seisiún 3
   [CD](https://comhaltas.ie/product/foinn-seisiun-cd-3/),
+  [YouTube](https://music.youtube.com/playlist?list=OLAK5uy_knvXW8L5Cz1kDS6foz-WSWosPeP0YBPfY),
   [Book](https://comhaltas.ie/product/foinn-seisiun-book-3/),
   [PDF](Foinn-Seisiún-Book3.pdf)
 
