@@ -52,3 +52,15 @@ The doctor is just hell-bent on starting an epidemic in this episode. Thankfully
 
 Riker gets sent to a Klingon ship to temp as first mate, but first he eats a bunch of disgusting things to prep for Klingon life.
 Apparently Riker is really interested in the idea of his duty to kill the captain if needed. I don't remember much else.
+
+# s02e09: Data gets his arm pulled off by Riker
+
+"The Measure of a Man"
+
+This episode is either meant to show how wiley Capt Picard is in legal arguments, or we're supposed to get weirded out by Data getting pulled apart during a legal proceeding. Also Data apparently had "intimate relations" with that short-haired blond chick who was head of security last season but met her fate with the best villain in Star Trek, Armus. I'm going to try to talk a lot about Armus because everyone's already forgotten about him. I guess Data is actually a real man after all, thanks blond chick. 
+
+# s02e10: Jordy has had about enough of Wesley
+
+"The Dauphin"
+
+More terrible computer graphics, which we get to see as Wesley's new love interest is actually a maroon Sasquatch type thing. It took us three tries to get through this episode, but we saw it through! Wesley was back to driving this ship again at the beginning. I guess whoever sits in that chair is how they tell us which character is important. Jordy tells Wesley to get the hell out of his engineering area because he's a serious pain in everyone's rear ends.
