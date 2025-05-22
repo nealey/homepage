@@ -63,4 +63,6 @@ This episode is either meant to show how wiley Capt Picard is in legal arguments
 
 "The Dauphin"
 
+![A person in a brown alien suit with huge eyes](dauphin.jpg)
+
 More terrible computer graphics, which we get to see as Wesley's new love interest is actually a maroon Sasquatch type thing. It took us three tries to get through this episode, but we saw it through! Wesley was back to driving this ship again at the beginning. I guess whoever sits in that chair is how they tell us which character is important. Jordy tells Wesley to get the hell out of his engineering area because he's a serious pain in everyone's rear ends.
