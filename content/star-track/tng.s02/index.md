@@ -89,7 +89,10 @@ I gotta be honest. I was on a real run of falling asleep real early in the last 
 
 "The Icarus Factor"
 
-Riker's dad visits, and it turns out he and the new doctor have a thing for each other. Riker does not appreciate his dad at all and makes that very clear when they play some kind of fighting game with giant q-tips and flimsy helmets. Riker decides to stay on the Enterprise instead of heading up his own ship, what a shock. In the meantime, This was a very soapy episode.
+![A man in a red suit fights a man in a gray suit with giant q-tips](qtip-knights.jpg)
+
+
+Riker's dad visits, and it turns out he and the new doctor have a thing for each other. Riker does not appreciate his dad at all and makes that very clear when they play some kind of fighting game with giant q-tips and flimsy helmets. Riker decides to stay on the Enterprise instead of heading up his own ship, what a shock. In the meantime, Worf pouts because everyone forgot it was the anniversary of his coming of age or something and they throw a Klingon-style "celebration" in the holodeck for him. This was a very soapy episode.
 
 # s02e15: Picard hates kids on the bridge. We get it.
 
