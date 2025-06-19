@@ -14,3 +14,6 @@ That release means I can publish it here,
 so I am doing that.
 
 I hope this is useful to somebody!
+
+- [414 Intrusion](414 Intrusion LANL June 1983.pdf)
+- [Cyber History in the DOE: the 414s](Cyber History in the DOE --The 414s.pdf)
