@@ -15,5 +15,5 @@ so I am doing that.
 
 I hope this is useful to somebody!
 
-- [414 Intrusion](414 Intrusion LANL June 1983.pdf)
-- [Cyber History in the DOE: the 414s](Cyber History in the DOE --The 414s.pdf)
+- [414 Intrusion](414%20Intrusion%20LANL%20June%201983.pdf)
+- [Cyber History in the DOE: the 414s](Cyber%20History%20in%20the%20DOE%20--The%20414s.pdf)
