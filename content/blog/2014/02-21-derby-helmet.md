@@ -1,9 +1,10 @@
 ---
 title: Choosing a Roller Derby Helmet
+date: 2014-02-21
 section: derby
+aliases:
+  - /papers/derby-helmet
 ---
-
-Last Update: 21 Jan 2014
 
 There is so much conflicting advice about helmets, it's no wonder people are confused about what is actually any good.
 

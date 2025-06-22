@@ -1,6 +1,9 @@
 ---
 title: Copyright Advice for Small Leagues
+date: 2012-09-18
 section: derby
+aliases:
+  - /papers/derby-copyright
 ---
 
 There's enough in common that hacking sometimes feels like roller derby's big

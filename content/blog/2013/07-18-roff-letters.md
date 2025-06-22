@@ -1,6 +1,9 @@
 ---
 title: Writing formal letters with roff's "mm" package
+date: 2013-07-18
 section: computing
+aliases:
+  - /papers/roff-letters
 ---
 
 I like using roff for quick things like letters and memos,

@@ -1,6 +1,9 @@
 ---
 title: Running Audio/Visual for a Roller Derby Bout
+date: 2012-03-18
 section: derby
+aliases:
+  - /papers/derby-av
 ---
 
 If you are a small team getting ready to bout, you are probably

@@ -1,5 +1,8 @@
 ---
 title: Runit on Arch Linux
+date: 2012-12-05
+aliases:
+  - /papers/arch-runit
 ---
 
 Last update: 26 August 2014

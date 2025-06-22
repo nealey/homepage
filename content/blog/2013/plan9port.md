@@ -1,6 +1,9 @@
 ---
 title: Working with plan9port
+date: 2013-02-18
 section: computing
+aliases:
+  - /papers/plan9port
 ---
 
 Since I enjoy trying new things,

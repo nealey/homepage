@@ -1,7 +1,10 @@
 ---
 title: Runit as init
+date: 2015-04-08
 description: My experience using runit as PID 1 for two years
 section: computing
+aliases:
+  - /papers/runit-as-init
 ---
 
 In around 2012,

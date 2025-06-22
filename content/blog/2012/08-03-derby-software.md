@@ -1,6 +1,9 @@
 ---
 title: Why you shouldn't use Derby Software
+date: 2012-08-03
 section: derby
+aliases:
+  - /papers/derby-software
 ---
 
 Introduction
