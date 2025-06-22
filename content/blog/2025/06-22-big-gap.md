@@ -1,11 +1,10 @@
 ---
 title: Why there's a big gap in my blog
-date: 2021-01-01
+date: 2025-06-22
 ---
 
-(I'm actually writing this on 22 Jun, 2025.)
-
-The reason there's a big gap between 2015 and 2021 is because of the rise of social media.
+The reason there's a big gap in my blog between 2015 and 2021
+is because of the rise of social media.
 All these neat new things popped up that lured me away from writing my clunky old blog:
 I think Google+ was a big part of this.
 It was so easy to make quick posts,
@@ -20,11 +19,10 @@ I've lost everything I ever wrote there.
 I don't know if Google has it or not;
 I'm sure I couldn't get to it if they did.
 
-Now it's 2025,
-and I'm updating my blog again.
-We now, as a species, are beginning to realize that
+I'm updating my blog again now, in 2025.
+Humanity is beginning to realize that
 looking into a screen when there are living people right next to you
-is actually the social isolation problem,
+is causing social isolation,
 and people are beginning to move away from social media.
 
 My blog entries are longer, and less frequent, than social media posts.
