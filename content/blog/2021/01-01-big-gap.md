@@ -27,7 +27,7 @@ looking into a screen when there are living people right next to you
 is actually the social isolation problem,
 and people are beginning to move away from social media.
 
-My blog entries are spaced much further apart that social media posts,
+My blog entries are longer, and less frequent, than social media posts.
 Because the system is a little more clunky,
 I have to stop and consider whether there's something I want to take the time to write multiple
 paragraphs about.
