@@ -2,12 +2,16 @@
 title: "On travel again"
 date: 2025-03-30
 tags:
-  - untagged
+  - trains
 ---
 
 I'm on travel again, this time by airplane. 
 I've decided that actually air travel sucks. 
-You get the absolute minimum amount of space required to store a human without too much complaining, and you just... sit there, waiting for the plane to land. At some point you get a plastic cup of juice and 24 tiny pretzels.
+You get the absolute minimum amount of space required
+to store a human without too much complaining,
+and you just... sit there,
+waiting for the plane to land.
+At some point you get a plastic cup of juice and 24 tiny pretzels.
 
 I'm concerned that this may be the end of train travel for me.
 The current presedential administration just forced out the CEO of Amtrak,
