@@ -3,13 +3,6 @@ title: Los Alamos Slow Session
 subtitle: Play music together... slowly.
 params:
   sets:
-    - date: 2025-07-09
-      set:
-        - Drowsie Maggie
-        - Glass of Beer
-        - Toss the Feathers (Dmaj)
-      book: 1
-      page: 13
     - date: 2025-04-09
       set:
         - Lilting Banshee
@@ -31,6 +24,13 @@ params:
         - Anderson's
       book: 1
       page: 5
+    - date: 2025-07-09
+      set:
+        - Drowsie Maggie
+        - Glass of Beer
+        - Toss the Feathers (Dmaj)
+      book: 1
+      page: 13
     
 ---
 
