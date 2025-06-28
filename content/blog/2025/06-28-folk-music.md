@@ -1,6 +1,8 @@
 ---
 title: Folk Music Transcription
 date: 2025-06-28
+tags:
+  - music
 ---
 
 Our local folk music session recently had an email list discussion
