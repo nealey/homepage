@@ -1,8 +1,8 @@
 ---
 title: Los Alamos Slow Session
 subtitle: Play music together... slowly.
-params:
-  sets:
+params: 
+ sets:
     - date: 2025-04-09
       set:
         - Lilting Banshee
@@ -31,6 +31,13 @@ params:
         - Toss the Feathers (Dmaj)
       book: 1
       page: 13
+    - date: 2025-08-13
+      set:
+        - Off to California
+        - Liverpool Hornpipe
+        - Murphy's Hornpipe
+      book: 2
+      page: 31
     
 ---
 
