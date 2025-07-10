@@ -51,7 +51,7 @@ We play a "set of the month"
 as slowly as necessary so that everyone can join in.
 Maybe we gradually get faster.
 
-You can learn all three songs in the set, or just focus on one.
+You can learn all the songs in the set, or just focus on one.
 The idea is to play tunes in a group
 without having to worry about keeping up.
 
