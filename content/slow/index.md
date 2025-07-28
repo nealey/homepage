@@ -1,8 +1,8 @@
 ---
 title: Los Alamos Slow Session
 subtitle: Play music together... slowly.
-params:
-  sets:
+params: 
+ sets:
     - date: 2025-04-09
       set:
         - Lilting Banshee
@@ -31,6 +31,13 @@ params:
         - Toss the Feathers (Dmaj)
       book: 1
       page: 13
+    - date: 2025-08-13
+      set:
+        - Off to California
+        - Liverpool Hornpipe
+        - Murphy's Hornpipe
+      book: 2
+      page: 31
     
 ---
 
@@ -44,7 +51,7 @@ We play a "set of the month"
 as slowly as necessary so that everyone can join in.
 Maybe we gradually get faster.
 
-You can learn all three songs in the set, or just focus on one.
+You can learn all the songs in the set, or just focus on one.
 The idea is to play tunes in a group
 without having to worry about keeping up.
 

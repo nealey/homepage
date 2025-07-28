@@ -2,13 +2,14 @@
 title: Neale's Blog
 ---
 
-Blog is short for "web log".
-It's a sort of online journal,
-that anyone who finds it can read.
+Blog is short for "web log":
+a public online journal.
 
-Mostly when I write here,
-I'm thinking the reader will either be someone looking me up online who wants to know more about me,
-or someone in the future who wants to know what life was like during my time.
+The audience I have in mind is usually:
+
+1. People living in the future (my descendants)
+2. People alive right now who need help with something I know a lot about
+3. Friends and family
 
 I don't have a lot of personal anecdotes,
 or commentary on current events.
