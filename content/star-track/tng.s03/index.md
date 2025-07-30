@@ -18,7 +18,7 @@ Sorry, pretty sure I fell asleep instantly.
 
 "The Survivors"
 
-I slept through most of this episode, but I remember wondering why they were focusing on only two characters if the Next Gen crew was trying to save thousands of people on this planet. My husband filled me in though- one of the two characters was some kind of immortal dude and his wife was actually dead and he had created some kind of illusion. I am loding an official protest about this episode I didn't actually watch- Star Trek does best if it creates stories that *could* feasibly happen if we stumble across a *lot* of alien civilizations at some point (and if Wesley is actually qualified to fly that ship of course). I'm kinda tired of the demigod subplots. Seems like a copout.
+I slept through most of this episode, but I remember wondering why they were focusing on only two characters if the Next Gen crew was trying to save thousands of people on this planet. My husband filled me in though- one of the two characters was some kind of immortal dude and his wife was actually dead and he had created some kind of illusion. I am lodging an official protest about this episode I didn't actually watch- Star Trek does best if it creates stories that *could* feasibly happen if we stumble across a *lot* of alien civilizations at some point (and if Wesley is actually qualified to fly that ship of course). I'm kinda tired of the demigod subplots. Seems like a copout.
 
 # s03e04: Swiss Vulcans and another review of the Prime Directive
 
