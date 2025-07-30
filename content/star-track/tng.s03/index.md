@@ -1,5 +1,5 @@
 ---
-title: "Star Track: The Next Generation Season 2"
+title: "Star Track: The Next Generation Season 3"
 ---
 
 # s03e01: Wesley's got a new 'do
