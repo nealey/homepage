@@ -5,45 +5,45 @@ tags:
   - investigation
 ---
 
-I'm taking this new asthma medication.
-It's life-changing: I haven't needed my resue inhaler once in months,
+A new asthma medication has changed my life.
+I haven't needed my resue inhaler in months,
 and I didn't realize how much easier it could be to play the flute.
 
 # Background
 
 I take one inhalation per day, 
 and there are 30 doses in an inhaler.
-So I essentially need one per month.
+This means I need one inhaler per month.
 I wish I could get a refill, 
 and not have to throw away the plastic case,
 but this is the world I live in.
-It's taken a bit under two months but under my doctor's advice,
-I've discovered that taking it in the evening mostly avoids the hoarseness
-associated with the drug.
-We also decided I should try taking it once every other day,
-to see if that help on weeks when I'm teaching and need to talk a lot.
-I'm at a steady state now, and I'm enjoying 
+
+After around six weeks, I've adjusted to the drug.
+I take it in the evening to avoid hoarseness during the day.
+At my provider's suggestion, I've played with taking it once every other day,
+since I don't need as high a dose.
+I'm at a steady state now, and I adore
 all this low-effort breathing.
 
 {{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption="the first inhaler cost $10." >}}
 {{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption="the second inhaler cost $80. It had the same lot number as the first one." >}}
 
-The pharmacy couldn't tell me why the price had gone up 800%.
+When me second inhaler cost 800% as much as the first,
+the pharmacy couldn't explain why.
 I called the insurance company, 
 and they said the first inhaler had been a generic,
 so I should switch my prescription to their mail-order service
 and they'd be able to get me the cheaper generic every time.
 
+{{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="This is a generic inhaler. I never recieved one of these, and didn't realize it had a different sticker until I found the photo for this post." >}}
 
-{{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="A generic inhaler. I never recieved one of these, and didn't realize it had a different sticker until I looked up a photo for this blog entry." >}}
-
-
-I looked it up, and something called an "authorized generic"[^1] does exist.
-My understanding was that the "authorized generic" is the same drug
-by the same manufacturer,
-so I had no reason to doubt this story initially.
+I did some research. Something called an "authorized generic"[^1] does exist:
+it's apparently the same drug,
+in the same packaging,
+by the same manufacturer.
+I had no reason to doubt this story about being given a generic.
 I asked my provider to resubmit the prescription to their mail-order service,
-and please request a generic.
+and to specifically request a generic.
 
 [^1]: The "authorized generic" in this case appears to be related to
     the delivery device (inhaler) still being under patent. By selling
@@ -64,16 +64,12 @@ it's not the $10 inhaler they promised.
 The company web site also claims I could get an authorized generic
 "Fluticasone Furoate/Vilanterol Ellipta" at $20 for a 90-day supply (3
 inhalers), but that I'm not eligible because I already have a 90-day
-supply on the way.
-
-The site also claims I can get one at my local pharmacy for $10, which the
-pharmacy told me wasn't true. Or maybe it was true, and I just had to
-use the magic word "generic". Or maybe some other explanation about
-how I got it for $10 once.
+supply on the way. In addition, the site said I can get this drug at
+my local pharmacy for $10.
 
 # Tech Support
 
-I needed to see if I could get out of this unexpected $160
+I wanted to see if I could get out of this unexpected $160
 fee. Ideally, I could get this $20 generic instead; after all, I
 specifically asked my provider to request the generic in the
 prescription. It was time to interact with somebody, so I opened the
@@ -88,15 +84,15 @@ and understanding for 2½ hours, as I was passed between five people.
 
 ## First Person
 
+The first person told me 
 I can get a drug called "Wexela" at $10 for a 30-day inhaler,
 or $20 for three of them. 
 This is a slightly different drug: Fluticasone / Salmeterol, 
 the generic version of the branded drug "Advair".
 It's is supposed to be taken twice a day instead of the once a day I have currently.
 This would be the low-effort way to get the drug I need at a low cost,
-but taking it twice a day means I would more or less lose my voice.
-I know because I've tried Advair twice in the past,
-and both times I lost my voice.
+but I would probably lose my voice,
+like I have both times I used Advair in the past.
 
 Since this is a different drug with different dosage,
 I would need a different prescription before I could get it.
@@ -108,12 +104,11 @@ and they transfered me to a pharmacist.
 
 ## The Pharmacist
 
-The pharmacist was able to tell their system "pretend it's November,
-how much with the authorized generic cost?" The answer was "this isn't
-covered by this insurance plan". They apologized for the incorrect price
-I was seeing on the web site: the price *did* have a little disclaimer
-saying it was an estimate. They must have access to more accurate
-information.
+The pharmacist was able to check how much the drug would cost me in November, when my 90-day supply runs out.
+The answer: "this isn't covered by this insurance plan". 
+They apologized for the incorrect estimate
+I was seeing on the web site. 
+They must have access to more accurate information.
 
 They also mentioned that he had no idea how I'd gotten the drug for $10 initially.
 It seemed to them that the $10 price was a mistake.
@@ -168,12 +163,13 @@ I could have been done in just under 2 hours that way.
 I am not expecting to actually hear back from them before I run out of medicine.
 While this company has not yet acted in a way to make me distrust them,
 other interactions with support at large companies has.
-It's not difficult to imagine the supervisors hove a number of cases that must be resolved per week:
-the first one invented the credit to end the interaction quickly,
-and the second one invented the review for the same purpose.
+It's not difficult to imagine the supervisors have quotas:
+a number of cases that must be resolved per week.
+The first one could have invented the credit to end the interaction quickly,
+and the second one could have invented the review for the same purpose.
 The people doing these jobs have metrics they must meet,
 and it would be typical of these types of jobs if the number of cases closed per week
-is a more important metric than helping customers.
+is more important to them getting paid than helping customers.
 
 Because I got no notification that any review had been opened,
 I sent a follow-up message regarding this review,
@@ -193,19 +189,16 @@ This is an awful situation for someone who can't afford this kind of rigamarole.
 $20 every 3 months works out to $80 a year;
 $160 every 3 months works out to $640 a year.
 That's eight times the price.
-And people with low-paying jobs typically don't have 2½ to spend
+And people with low-paying jobs typically don't have 2½ hours to spend
 with an insurance company trying to figure out how to get $160 
 back down to the $20 that was offered.
 
-# The Facts
+# My narrative
 
-Part of a good investigation is sifting what's real out of the
-narrative you've constructed. 
+Based on what I know, 
+there were a number of failures here.
 
-## Real 
-
-These claims appear be real, based on what
-I've verified from at least two sources:
+Here's what I've confirmed is **real**:
 
 * I paid $10 for a Breo Ellipta inhaler in June.
 * The Breo Ellipta inhaler now costs me $80 for a 30-day supply (one
@@ -217,24 +210,16 @@ I've verified from at least two sources:
 * I have a 90-day supply coming in the mail.
 * I was billed $160 on the same day the 90-day supply began processing.
 
-## Fiction
-
-Here are claims that multiple sources indicate are untrue:
+Here's what appears to be **fiction**:
 
 * My insurance allows me to buy an authorized generic inhaler for $10.
 * My local pharmacy will sell me a branded inhaler for $10.
-
-# My narrative
-
-Based on what I know to be true and what I know to be untrue,
-I think there were a number of failures here:
 
 ## The initial failures
 
 This happened when I went to get my prescription refilled at the local pharmacy.
 
-* My local pharmacy, for some reason, charged me $10 when they should
-  have charged me $80
+* My local pharmacy is confused about whether this drug is $10 or $80
 * Whatever caused the $10 price didn't happen when I went to fill the
   second time
 * The person at my local pharmacy has no idea how prices are set at
@@ -251,8 +236,8 @@ These happened when I called the insurance company.
   generic drug being filled the first time
 * I imagined a story where a generic would be filled at $10 where
   the brand name was $80
-* When I asked Alice if the generic situation would be handled better
-  if I switched the prescription to their in-house mail-order service,
+* I shouldn't have suggested to Alice that the generic situation would be handled better
+  if I switched the prescription to their in-house mail-order service:
   she agreed with me, without knowing if it was actually true
 * My healthcare provider believed my constructed story about the generic
 
@@ -267,7 +252,7 @@ These all happened today.
   them inventing solutions (refund, review process) they thought would
   placate me
 
-# Analysis
+## Summary
 
 In computing we would call this a "federated" system, where everything
 is its own island and there's a complex patchwork to try and get it
