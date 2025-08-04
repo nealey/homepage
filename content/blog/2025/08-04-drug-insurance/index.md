@@ -55,10 +55,13 @@ and to specifically request a generic.
 # The Price is Revealed
 
 This morning, I logged into the insurance company's mail-order
-prescription site. I'd been billed $160 for three inhalers. The doctor
-had mentioned they like to send you 3 for the price of 2, so I assume
-they're still billing me $80 per inhaler. That's an improvement, but
-it's not the $10 inhaler they promised.
+prescription site. I'd been billed $160 for three inhalers. This is
+the second time that I've been billed eight times what I was
+expecting.
+
+The doctor had mentioned they like to send you 3 for the price of 2,
+so I assume they're still billing me $80 per inhaler. That's an
+improvement, but it's not the $10 inhaler they promised.
 
 The company web site also claims I could get an authorized generic
 "Fluticasone Furoate/Vilanterol Ellipta" at $20 for a 90-day supply (3
@@ -109,21 +112,20 @@ They apologized for the incorrect estimate
 I was seeing on the web site. 
 They must have access to more accurate information.
 
-They also mentioned that he had no idea how I'd gotten the drug for $10 initially.
+They had no idea how I'd gotten the drug for $10 initially.
 It seemed to them that the $10 price was a mistake.
 
 I said I'd like to cancel the $160 order,
 and was told it was too late,
 it had already shipped.
-I was transferred to a supervisor to see if I could send it back.
+I was transferred to a supervisor to see if I could send it back for a refund.
 
-It's important to note that nobody ever asked if they should fill
-this.  We may waived away the right to authorize filling prescriptions
+I need to stop here and note that nobody ever asked if they should
+fill this.  We may have authorized automatically filling prescriptions
 when we signed up for the mail-order service, or there may be some
-other complicating factor I'm unaware of that explains why this
-prescription was filled automatically.  But it was beginning to feel
-like a big oppressive system working its hardest to charge me $160 for
-$20 worth of medicine.
+other reason this prescription was filled automatically.  But it was
+beginning to feel like a big oppressive system working its hardest to
+charge me $160 for $20 worth of medicine.
 
 ## Third person
 
