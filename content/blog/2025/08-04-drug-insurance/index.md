@@ -8,6 +8,8 @@ tags:
 A new asthma medication has changed my life.
 I haven't needed my resue inhaler in months,
 and I didn't realize how much easier it could be to play the flute.
+But navigating the insurance rules for what's covered and what isn't
+has me reeling.
 
 # Background
 
