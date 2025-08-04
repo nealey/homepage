@@ -198,9 +198,6 @@ back down to the $20 that was offered.
 
 # My narrative
 
-Based on what I know, 
-there were a number of failures here.
-
 Here's what I've confirmed is **real**:
 
 * I paid $10 for a Breo Ellipta inhaler in June.
@@ -217,6 +214,9 @@ Here's what appears to be **fiction**:
 
 * My insurance allows me to buy an authorized generic inhaler for $10.
 * My local pharmacy will sell me a branded inhaler for $10.
+
+Based on what I know, 
+there were a number of failures here.
 
 ## The initial failures
 
