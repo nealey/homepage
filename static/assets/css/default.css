@@ -148,12 +148,15 @@ pre {
   border: solid black 1px;
 }
 
-.figure {
-  float: right;
+figure {
   padding: 0.25em;
   margin: 0.5em;
   font-size: small;
   border: solid black 1px;
+}
+
+figure.thumbnail {
+    max-width: 40%;
 }
 
 #timestamp {

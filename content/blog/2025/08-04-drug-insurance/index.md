@@ -33,26 +33,19 @@ and they'd be able to get me the cheaper generic every time.
 
 {{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="A generic inhaler" >}}
 
-{{% aside %}}
 
-The "authorized generic" in this case appears to be related to the
-delivery device (inhaler) still being under patent. By selling an
-"authorized generic" through a third party, the drug manufacturer is
-hoping to lower the cost of the drug just enough to discourage other
-companies developing a competing generic.
-
-It's a weird outcome that results from a complex system of negotiated
-prices, rebates, discounts, and more, related to the original drug's
-branding. The end result is higher prices for consumers, and it would
-be easy to blame drug companies for this, but it's a result of the
-entire extant system.
-
-{{% /aside %}}
-
-Something called an "authorized generic" does exist.
+Something called an "authorized generic"[^1] does exist.
 I had no reason to doubt any of this.
 I asked my provider to resubmit the prespcription to their mail-order service,
 and please request a generic.
+
+[^1]: The "authorized generic" in this case appears to be related to
+    the delivery device (inhaler) still being under patent. By selling
+    an "authorized generic" through a third party, the drug
+    manufacturer is hoping to lower the cost of the drug just enough
+    to discourage other companies developing a competing generic. The
+    end result is higher prices for consumers, and it doesn't help
+    that drug companies have a strong economic incentive to do this.
 
 I just logged into their prescription service and saw I'd been billed
 $160 for three inhalers. The doctor had mentioned they like to send
