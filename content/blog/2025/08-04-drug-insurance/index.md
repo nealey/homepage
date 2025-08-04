@@ -21,8 +21,8 @@ to see if that help on weeks when I'm teaching and need to talk a lot.
 I'm at a steady state now, and I'm enjoying 
 all this low-effort breathing.
 
-{{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption=""the first inhaler cost $10.">}}
-{{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption=""the second inhaler cost $80. It had the same lot number as the first one.">}}
+{{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption="the first inhaler cost $10.">}}
+{{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption="the second inhaler cost $80. It had the same lot number as the first one.">}}
 
 The pharmacy couldn't tell me why the price had gone up 800%.
 I called the insurance company, 
