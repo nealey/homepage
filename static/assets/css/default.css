@@ -160,7 +160,7 @@ figure.thumbnail {
 }
 
 #timestamp {
-    font-size: small;
+    font-size: smaller;
     text-indent: inherit;
 }
 

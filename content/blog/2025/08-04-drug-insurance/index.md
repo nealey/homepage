@@ -31,7 +31,7 @@ so I should switch my prescription to their mail-order service
 and they'd be able to get me the cheaper generic every time.
 
 
-{{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="A generic inhaler" >}}
+{{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="A generic inhaler. I never recieved one of these." >}}
 
 
 Something called an "authorized generic"[^1] does exist.
