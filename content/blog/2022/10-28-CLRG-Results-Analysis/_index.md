@@ -3,6 +3,7 @@ title: CLRG Results Analysis
 date: 2022-10-28T10:45:00-0600
 tags:
   - clrg
+  - investigation
 ---
 
 # Our Findings
@@ -21,7 +22,7 @@ we were like, "oh, yeah, we had a feeling this person was up to something."
 
 Unless there are some *major* changes made,
 we're still going to have corruption in CLRG.
-(Spoiler alert: there will not me major changes made.)
+(Spoiler alert: there will not be major changes made.)
 That's just the world you're in with CLRG,
 and most other subjectively-judged competitive events.
 

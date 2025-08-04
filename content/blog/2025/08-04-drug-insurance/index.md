@@ -1,11 +1,15 @@
 ---
 title: Drug Insurance
 date: 2025-08-04
+tags:
+  - investigation
 ---
 
 I'm taking this new asthma medication.
 It's life-changing: I haven't needed my resue inhaler once in months,
 and I didn't realize how much easier it could be to play the flute.
+
+# Background
 
 I take one inhalation per day, 
 and there are 30 doses in an inhaler.
@@ -31,12 +35,14 @@ so I should switch my prescription to their mail-order service
 and they'd be able to get me the cheaper generic every time.
 
 
-{{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="A generic inhaler. I never recieved one of these." >}}
+{{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="A generic inhaler. I never recieved one of these, and didn't realize it had a different sticker until I looked up a photo for this blog entry." >}}
 
 
-Something called an "authorized generic"[^1] does exist.
-I had no reason to doubt any of this.
-I asked my provider to resubmit the prespcription to their mail-order service,
+I looked it up, and something called an "authorized generic"[^1] does exist.
+My understanding was that the "authorized generic" is the same drug
+by the same manufacturer,
+so I had no reason to doubt this story initially.
+I asked my provider to resubmit the prescription to their mail-order service,
 and please request a generic.
 
 [^1]: The "authorized generic" in this case appears to be related to
@@ -47,42 +53,55 @@ and please request a generic.
     end result is higher prices for consumers, and it doesn't help
     that drug companies have a strong economic incentive to do this.
 
-I just logged into their prescription service and saw I'd been billed
-$160 for three inhalers. The doctor had mentioned they like to send
-you 3 for the price of 2, so I assume they're still billing me $80 per
-inhaler. That's an improvement, but the $10 inhaler they promised
-would have been nice, so I opened a chat window.
+# The Price is Revealed
 
-I like to be cordial and friendly when I'm talking to support people.
-Typically they're just doing their best with a big unwieldy system,
-and may not completely understand what's happening, even though
-they're representing the whole company.  So I did my best to be
-friendly and understanding for 2 hours as I was passed between three
-people. Here's what I learned along the way:
+This morning, I logged into the insurance company's mail-order
+prescription site. I'd been billed $160 for three inhalers. The doctor
+had mentioned they like to send you 3 for the price of 2, so I assume
+they're still billing me $80 per inhaler. That's an improvement, but
+it's not the $10 inhaler they promised.
 
-## Web Site
-
-The insurance company web site says I can get an authorized generic
+The company web site also claims I could get an authorized generic
 "Fluticasone Furoate/Vilanterol Ellipta" at $20 for a 90-day supply (3
-inhalers).
+inhalers), but that I'm not eligible because I already have a 90-day
+supply on the way.
 
-It also claims I can get one at my local pharmacy for $10, which the
+The site also claims I can get one at my local pharmacy for $10, which the
 pharmacy told me wasn't true. Or maybe it was true, and I just had to
 use the magic word "generic". Or maybe some other explanation about
 how I got it for $10 once.
+
+# Tech Support
+
+I needed to see if I could get out of this unexpected $160
+fee. Ideally, I could get this $20 generic instead; after all, I
+specifically asked my provider to request the generic in the
+prescription. It was time to interact with somebody, so I opened the
+web site's chat window.
+
+I try to be cordial and friendly when I'm talking to support people.
+Typically they're just doing their best with a big unwieldy system,
+and may not completely understand what's happening, even though
+they're representing the whole company.  So I did my best to be clear
+and understanding for 2½ hours, as I was passed between five people.
+
 
 ## First Person
 
 I can get a drug called "Wexela" at $10 for a 30-day inhaler,
 or $20 for three of them. 
-This is a slightly different drug: Fluticasone / Salmeterol.
+This is a slightly different drug: Fluticasone / Salmeterol, 
+the generic version of the branded drug "Advair".
 It's is supposed to be taken twice a day instead of the once a day I have currently.
 This would be the low-effort way to get the drug I need at a low cost,
 but taking it twice a day means I would more or less lose my voice.
-I know because I've tried it in the past.
+I know because I've tried Advair twice in the past,
+and both times I lost my voice.
 
+Since this is a different drug with different dosage,
+I would need a different prescription before I could get it.
 It sounded like I needed to cancel the $160 90-day shipment going out
-the door and ask for another prescription for Wexela. 
+the door and talk to my provider.
 Before I authorized stopping the shipment, 
 I asked why I couldn't get the authorized generic the web site said I could get,
 and they transfered me to a pharmacist.
@@ -91,17 +110,20 @@ and they transfered me to a pharmacist.
 
 The pharmacist was able to tell their system "pretend it's November,
 how much with the authorized generic cost?" The answer was "this isn't
-covered by this insurance plan".
+covered by this insurance plan". They apologized for the incorrect price
+I was seeing on the web site: the price *did* have a little disclaimer
+saying it was an estimate. They must have access to more accurate
+information.
 
-He also mentioned that he had no idea how I'd gotten the drug for $10 initially.
-It seemed to him that the $10 price was a mistake.
+They also mentioned that he had no idea how I'd gotten the drug for $10 initially.
+It seemed to them that the $10 price was a mistake.
 
 I said I'd like to cancel the $160 order,
 and was told it was too late,
 it had already shipped.
 I was transferred to a supervisor to see if I could send it back.
 
-It's important to note that nobody ever asked if they could fill this.
+It's important to note that nobody ever asked if they should fill this.
 I suppose we waived away the right to authorize filling prescriptions
 when we signed up for the mail-order service.
 But it was beginning to feel like a big oppressive system working its hardest
@@ -115,10 +137,11 @@ and said they'd found someplace I could get the drug for $10 a month.
 
 As I usually do, I repeated my understanding of what they were saying.
 They confirmed that I understood correctly. So I said yes,
-I would be willing to pay $30 for the three-month supply already in the mail,
+I would appreciate the $130 credit for the three-month supply already in the mail,
 and I would love to know where I could get it for $10 a month.
 
-The web site then decided I needed to be logged out, and killed the chat.
+The web site then killed the chat, logged me out, and told me I could
+close the tab now.
 
 ## Fourth person
 
@@ -135,7 +158,7 @@ I shouldn't open the package when it arrived.
 They confirmed that if I didn't hear back before I ran out of medicine,
 I should call them again.
 
-# Where Thing Stand
+# Where Things Stand
 
 This took about 2½ hours,
 and I feel like my polite approach actually sped things up quite a bit.
@@ -153,7 +176,10 @@ and it would be typical of these types of jobs if the number of cases closed per
 is a more important metric than helping customers.
 
 Because I got no notification that any review had been opened,
-I sent a follow-up message regarding this review.
+I sent a follow-up message regarding this review,
+explaining (as I usually do) my understanding of the situation,
+and asking if, in the future, there's any reference number I could provide
+to this in-progress review.
 I'm hoping a different person will read my message and let me know there is no such thing,
 so I can start this 2½ hour process again before I run out of medicine.
 
@@ -168,10 +194,39 @@ $20 every 3 months works out to $80 a year;
 $160 every 3 months works out to $640 a year.
 That's eight times the price.
 And people with low-paying jobs typically don't have 2½ to spend
-with an insurance company trying to figure out how to get the $20 that was offered.
+with an insurance company trying to figure out how to get $160 
+back down to the $20 that was offered.
 
-# The Failures
+# The Facts
 
+Part of a good investigation is sifting what's real out of the
+narrative you've constructed. 
+
+## Real 
+
+These claims appear be real, based on what
+I've verified from at least two sources:
+
+* I paid $10 for a Breo Ellipta inhaler in June.
+* The Breo Ellipta inhaler now costs me $80 for a 30-day supply (one
+  inhaler).
+* The mail-order drug company will give me 3 inhalers for the price
+  of 2.
+* A 90-day supply (three inhalers) of "Wexela" (generic Fluticasone /
+  Salmeterol) would cost me $20.
+* I have a 90-day supply coming in the mail.
+* I was billed $160 on the same day the 90-day supply began processing.
+
+## Fiction
+
+Here are claims that multiple sources indicate are untrue:
+
+* My insurance allows me to buy an authorized generic inhaler for $10.
+* My local pharmacy will sell me a branded inhaler for $10.
+
+# My narrative
+
+Based on what I know to be true and what I know to be untrue,
 I think there were a number of failures here:
 
 ## The initial failures
@@ -187,28 +242,26 @@ This happened when I went to get my prescription refilled at the local pharmacy.
 
 ## Round 2 of failures
 
-This happened when I called the insurance company.
+These happened when I called the insurance company.
 
-* The insurance company also has no idea how prices are set
+* The insurance company also has no idea how prices are set at my
+  local pharmacy
 * Alice, the teir 1 support person at the insurance company, had to guess what
   was going on, and guessed the initial price difference was due to a
   generic drug being filled the first time
-* I constructed a story where a generic would be filled at $10 where
+* I imagined a story where a generic would be filled at $10 where
   the brand name was $80
 * When I asked Alice if the generic situation would be handled better
   if I switched the prescription to their in-house mail-order service,
   she agreed with me, without knowing if it was actually true
-* My healthcare provider bought my constructed story about the generic
+* My healthcare provider believed my constructed story about the generic
 
 ## Round 3 of failures
 
 These all happened today.
 
-* The insurance company isn't actually involved in the pricing quoted
-  by my local pharmacy, and has no insight into how the local pharmacy
-  sets prices
 * The local pharmacy is telling the insurance company the drug is $10,
-  which the insurance company web site is relaying to me
+  which the insurance company web site is relaying to me.
 * The various support people I talked to this morning may have been
   under pressure to move on to the next support case, resulting in
   them inventing solutions (refund, review process) they thought would
@@ -223,15 +276,27 @@ all talking back and forth.  It falls down a lot.
 In this situation, a reasonable patient might think there's some
 golden ring ($10 medicine) that somebody somewhere is keeping away
 from them. Really it's just that the system failed in a way that
-presents the illusion of the ring. Having actually obtained it once is
-absolutely not conducive in anybody buying any explanation other than
-"this is possible and you just need to figure out how to repeat it".
+presents the illusion of the ring. Having actually obtained it once
+would work against anybody buying any explanation other than "this is
+possible and you just need to figure out how to repeat it".
 
-Since we can afford it, I'll probably just eat the cost whether I get
-this credit or not. But, man, I can really feel for people scraping to
-make ends meet. I didn't authorize this $160 charge, it just showed up,
+Since we can afford it, I'll probably just eat the cost when the drug
+arrives, even if I don't get the credit or opportunity to send it back
+for a refund. But, man, I can really feel for people scraping to make
+ends meet. I didn't authorize this $160 charge, it just showed up,
 after I was promised it would be $20.
 
+I could forgive someone for mistaking the multiple
+layers of failures for a grand conspiracy.
 You shouldn't need 30 years experience with complex systems to
-understand this.
+make sense of this.
+The insurance company appears to be trying to make this easier to understand,
+by showing me what prices are available,
+but they're getting bad information from the local pharmacy.
 
+Lastly,
+I'm not even sure any of what I just wrote is true.
+I've formulated a narrative around the few clues I have,
+and it makes sense to me,
+but I could be completely wrong.
+I'll never know.

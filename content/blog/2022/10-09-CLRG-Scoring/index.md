@@ -3,6 +3,7 @@ title: CLRG Scoring Analyzed
 date: 2022-10-09
 tags:
     - clrg
+    - investigation
 stylesheets:
     - toys.css
 scripts:

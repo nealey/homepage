@@ -3,6 +3,7 @@ title: CLRG Award Points Artifacts
 date: 2022-10-10T08:00:00-06:00
 tags:
     - clrg
+    - investigation
 stylesheets:
     - toys.css
 scripts:
