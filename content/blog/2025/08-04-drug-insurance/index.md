@@ -20,16 +20,13 @@ but this is the world I live in.
 
 After around six weeks, I've adjusted to the drug.
 I take it in the evening to avoid hoarseness during the day.
-At my provider's suggestion, I've played with taking it once every other day,
-since I don't need as high a dose.
 I'm at a steady state now, and I adore
 all this low-effort breathing.
 
 {{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption="the first inhaler cost $10." >}}
 {{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption="the second inhaler cost $80. It had the same lot number as the first one." >}}
 
-When me second inhaler cost 800% as much as the first,
-the pharmacy couldn't explain why.
+The pharmacy couldn't explain why the second inhaler cost 800% as much as the first.
 I called the insurance company, 
 and they said the first inhaler had been a generic,
 so I should switch my prescription to their mail-order service
@@ -46,12 +43,12 @@ I asked my provider to resubmit the prescription to their mail-order service,
 and to specifically request a generic.
 
 [^1]: The "authorized generic" in this case appears to be related to
-    the delivery device (inhaler) still being under patent. By selling
-    an "authorized generic" through a third party, the drug
+    the delivery device (inhaler) still being under patent. How this
+    works is a whole separate blog post, but the short version is that
+    by selling an "authorized generic" through a third party, the drug
     manufacturer is hoping to lower the cost of the drug just enough
-    to discourage other companies developing a competing generic. The
-    end result is higher prices for consumers, and it doesn't help
-    that drug companies have a strong economic incentive to do this.
+    to discourage other companies developing a competing generic with
+    an unpatented delivery mechanism.
 
 # The Price is Revealed
 
@@ -118,11 +115,13 @@ and was told it was too late,
 it had already shipped.
 I was transferred to a supervisor to see if I could send it back.
 
-It's important to note that nobody ever asked if they should fill this.
-I suppose we waived away the right to authorize filling prescriptions
-when we signed up for the mail-order service.
-But it was beginning to feel like a big oppressive system working its hardest
-to charge me $160 for $20 worth of medicine.
+It's important to note that nobody ever asked if they should fill
+this.  We may waived away the right to authorize filling prescriptions
+when we signed up for the mail-order service, or there may be some
+other complicating factor I'm unaware of that explains why this
+prescription was filled automatically.  But it was beginning to feel
+like a big oppressive system working its hardest to charge me $160 for
+$20 worth of medicine.
 
 ## Third person
 
@@ -219,11 +218,10 @@ Here's what appears to be **fiction**:
 
 This happened when I went to get my prescription refilled at the local pharmacy.
 
-* My local pharmacy is confused about whether this drug is $10 or $80
 * Whatever caused the $10 price didn't happen when I went to fill the
   second time
-* The person at my local pharmacy has no idea how prices are set at
-  the pharmacy, and suggested I call the insurance company
+* The person at my local pharmacy had no idea how the $10 price
+  happened, and thought the insurance company would know
 
 ## Round 2 of failures
 
@@ -231,9 +229,8 @@ These happened when I called the insurance company.
 
 * The insurance company also has no idea how prices are set at my
   local pharmacy
-* Alice, the teir 1 support person at the insurance company, had to guess what
-  was going on, and guessed the initial price difference was due to a
-  generic drug being filled the first time
+* Alice, the teir 1 support person at the insurance company,
+  misrepresented a guess as fact, telling me the first fill was a generic
 * I imagined a story where a generic would be filled at $10 where
   the brand name was $80
 * I shouldn't have suggested to Alice that the generic situation would be handled better
@@ -245,8 +242,10 @@ These happened when I called the insurance company.
 
 These all happened today.
 
-* The local pharmacy is telling the insurance company the drug is $10,
-  which the insurance company web site is relaying to me.
+* For some reason, the insurance company still says the local pharmacy
+  will sell the drug for $10, even though the pharmacy has informed me
+  this is false, and everywhere else (including the local pharmacy)
+  sells it for $80
 * The various support people I talked to this morning may have been
   under pressure to move on to the next support case, resulting in
   them inventing solutions (refund, review process) they thought would
