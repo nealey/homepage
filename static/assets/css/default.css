@@ -151,7 +151,7 @@ pre {
 figure {
   padding: 0.25em;
   margin: 0.5em;
-  font-size: small;
+  font-size: smaller;
   border: solid black 1px;
 }
 
@@ -160,7 +160,7 @@ figure.thumbnail {
 }
 
 #timestamp {
-    font-size: smaller;
+    font-size: small;
     text-indent: inherit;
 }
 
