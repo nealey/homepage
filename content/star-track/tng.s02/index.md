@@ -105,3 +105,39 @@ Remember when Picard got all pissy because Wesley, who has got to be the world's
 "Q Who?"
 
 The Borg finally show up in their lego Big Blocks spaceship and give the Enterprise crew a little bit of a wake up call. I really thought that the Borg Babies were a Voyager creation, but it turns out, they've been taping plastic sensors and probes onto sweet little babies' heads from the very beginning! And, who knew that Whoopi was the one to get to name the Borg? Well, thankfully we have Q to play demi-god or something and we can kick the Borg can down the road a little more. Also, Riker didn't push that Borg Baby incubator back into the wall like he should have. Poor borg baby.
+
+# s02e17: Omg, the Pakleds!
+
+"Samaritan Snare"
+
+Quite honestly, I don't remember much of this episode except for Jordi/Geordi sneaking around a Pakled ship, and Picard being a huge weirdo about getting surgery. I think he dropped Wesley off at the same star base so that Wesley could take the test to get into the Academy again? Apparently a real snooze of an episode.
+
+# s02e18: Space Irish!
+
+"Up the Long Ladder"
+
+How many episodes about the Space Irish are there anyway? Didn't we already encounter these people? Or maybe I'm thinking of Janeway's Space Irish adventures on the holodeck. I'm not sure - but a society of clones ends up getting to take in the roaming Space Irish and one lady is really excited about getting to have multiple husbands in order to have enough genetic diversity eventually. Pretty sure that won't save them since there are only about 13 Space Irish that I can see. 
+
+# s02e19: The Love Boat: Mommy Issues
+
+"Manhunt"
+
+You guys, you don't have to use the same storylines from the Love Boat, honestly. But anyway, Deanna's mom is back creating drama - until we realize she's actually saving their rear ends for real! Good thing she's on their side huh. Well bye until next time, Q. I mean, Deanna's mom.
+
+# s02e20: The Love Boat: Klingon Edition
+
+"The Emissary"
+
+Do I need to spell out more about this episode?
+
+# s02e21: Data gets to play a game
+
+"Peak Performance"
+
+Data is having confidence issues until we find out that, if I remember correctly, the alien dude is actually cheating. Alien dude is supposed to be great at training crews in battle simulations, but while the Next Gen crew is doing their simulation the really scary Ferengi show up and almost blow them out of space. I thought that the Ferengi were basically into money, so I'm not sure why they're suddenly fearsome warlords. Or maybe they are. Anyway, they're kinda boring - I think the Klingons have a corner on that market already, guys.
+
+# s02e22: Riker is kind of a whore
+
+"Shades of Gray"
+
+A flashback episode! Wow, the network probably bought 22 episodes but they didn't want to have to pay the cast for more than 21, so here we are with flashbacks of Riker wooing the ladies and a lot of season one all over again. Every time you think that the doctor has figured out how to "cure" Riker's brain, she needs him to do one more flashback! Well, that's it for that doctor cause she's gone after this episode and Wesley's mommy comes back.
