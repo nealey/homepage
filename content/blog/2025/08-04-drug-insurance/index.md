@@ -21,10 +21,10 @@ to see if that help on weeks when I'm teaching and need to talk a lot.
 I'm at a steady state now, and I'm enjoying 
 all this low-effort breathing.
 
-![The first inhaler](breo.jpg)
+![The first inhaler](breo.jpg "thumbnail")
 The first inhaler cost me $10.
 
-![The first inhaler](breo.jpg)
+![The first inhaler](breo.jpg "thumbnail")
 The second inhaler cost me $80.
 It had the same lot number as the first one.
 
@@ -50,7 +50,7 @@ entire extant system.
 
 {{% /aside %}}
 
-![Authorized generic](generic.jpg)
+![Authorized generic](generic.jpg "thumbnail")
 Something called an "authorized generic" does exist.
 I had no reason to doubt any of this.
 I asked my provider to resubmit the prespcription to their mail-order service,
