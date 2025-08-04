@@ -21,12 +21,8 @@ to see if that help on weeks when I'm teaching and need to talk a lot.
 I'm at a steady state now, and I'm enjoying 
 all this low-effort breathing.
 
-![The first inhaler](breo.jpg "thumbnail")
-The first inhaler cost me $10.
-
-![The first inhaler](breo.jpg "thumbnail")
-The second inhaler cost me $80.
-It had the same lot number as the first one.
+{{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption=""the first inhaler cost $10.">}}
+{{< figure src="breo.jpg" alt="A Breo Ellipta Inhaler" class="thumbnail" caption=""the second inhaler cost $80. It had the same lot number as the first one.">}}
 
 The pharmacy couldn't tell me why the price had gone up 800%.
 I called the insurance company, 
@@ -50,7 +46,7 @@ entire extant system.
 
 {{% /aside %}}
 
-![Authorized generic](generic.jpg "thumbnail")
+{{< figure src="generic.jpg" alt="A Prasco Fluticason Furorate/Vilanterol ELLPTA inhaler. It looks just like a Breo inhaler, with a slightly different sticker on the face." class="thumbnail" caption="A generic inhaler")
 Something called an "authorized generic" does exist.
 I had no reason to doubt any of this.
 I asked my provider to resubmit the prespcription to their mail-order service,
