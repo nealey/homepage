@@ -203,11 +203,11 @@ Here's what I've confirmed is **real**:
 * I paid $10 for a Breo Ellipta inhaler in June.
 * The Breo Ellipta inhaler now costs me $80 for a 30-day supply (one
   inhaler).
-* The mail-order drug company will give me 3 inhalers for the price
-  of 2.
-* A 90-day supply (three inhalers) of "Wexela" (generic Fluticasone /
-  Salmeterol) would cost me $20.
-* I have a 90-day supply coming in the mail.
+* The mail-order drug company will give me 90-day supply of Breo
+  Ellipta (3 inhalers) for the price of 2 inhalers.
+* A 90-day supply (three inhalers) of "Wexela" would cost me $20.
+* "Wexela" is a different drug that has caused me to lose my voice in the past.
+* I have a 90-day supply of something coming in the mail.
 * I was billed $160 on the same day the 90-day supply began processing.
 
 Here's what appears to be **fiction**:
