@@ -15,7 +15,8 @@ Main topics I write about include:
 
 Technology and Computing
 : hands-on projects, software development, in-depth discussions on operating systems,
-  network configurations, cybersecurity, and the societal impact of technology.
+  network configurations, cybersecurity, and the 
+  [societal impact of technology](/tags/technohumanism/).
 
 Music & Musical Instruments
 : learning music, musical instrument design and construction, and
