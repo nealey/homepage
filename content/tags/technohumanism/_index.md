@@ -1,5 +1,6 @@
 ---
 title: Techno-Humanism
+description: The societal impacts of technology
 ---
 
 I came up with the term "Techno-Humanism" as a tag to describe how
