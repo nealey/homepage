@@ -3,6 +3,7 @@ title: "Self-Hosted Email"
 date: 2024-09-02
 tags:
   - computers
+  - technohumanism
 ---
 
 I'm now paying a company (Proton) to host woozle.org email.

@@ -1,6 +1,8 @@
 ---
 date: "2022-08-01T00:00:00Z"
 title: Return of the blog
+tags:
+  - technohumanism
 ---
 
 It was fun for a while, 

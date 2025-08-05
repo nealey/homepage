@@ -1,6 +1,8 @@
 ---
 title: My technological flag in the sand
 date: 2022-10-28T14:59:00-0600
+tags:
+  - technohumanism
 ---
 
 Elon Musk just bought Twitter. It got me thinking about Twitter, something that

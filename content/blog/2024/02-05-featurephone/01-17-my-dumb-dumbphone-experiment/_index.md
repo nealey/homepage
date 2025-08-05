@@ -5,6 +5,7 @@ resources:
   - src: apps.md
 tags:
   - featurephone
+  - technohumanism
 ---
 
 Last year,

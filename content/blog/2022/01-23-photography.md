@@ -1,6 +1,8 @@
 ---
 title: Photography
 date: 2023-01-23
+tags:
+  - technohumanism
 ---
 
 Downstairs, in our basement,

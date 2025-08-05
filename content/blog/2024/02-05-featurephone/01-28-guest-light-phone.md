@@ -3,6 +3,7 @@ title: Light Phone 2 (Guest Post!)
 date: 2024-01-28
 tags:
     - featurephone
+    - technohumanism
 ---
 
 This is a guest blog post from my wife,

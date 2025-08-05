@@ -3,6 +3,7 @@ title: The Featurephone Experiment
 date: 2024-02-05
 tags:
   - featurephone
+  - technohumanism
 ---
 
 Jr and I have spent the last year paring down our smartphone usage.

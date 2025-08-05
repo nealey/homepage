@@ -3,8 +3,10 @@ title: Thoughts about AI coding
 date: 2025-07-10
 draft: true
 tags:
-- computers
-- ai
+  - computers
+  - ai
+  - technohumanism
+  - gratitude
 ---
 
 I've been using an AI coding assistant this week. Here are some things I've noticed.

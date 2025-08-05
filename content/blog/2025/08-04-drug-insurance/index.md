@@ -3,6 +3,7 @@ title: Drug Insurance
 date: 2025-08-04
 tags:
   - investigation
+  - computers
 ---
 
 A new asthma medication has changed my life.
