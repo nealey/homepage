@@ -1,0 +1,23 @@
+{{ $count := 0 }}
+{{ $total := 0.0 }}
+
+<div class="ratings">
+{{ range $key, $value := .Page.Param (.Get 0) }}
+{{   $count = add $count 1 }}
+{{   $total = add $total $value }}
+<label>
+  {{ block "progress" $value }}<progress max="5" value="{{ . }}" title="{{ . }}">{{ . }}</progress>{{ end }}
+  {{ $key | humanize }}
+</label>
+{{end }}
+
+{{ if gt $count 0 }}
+{{   $mean := math.Div $total $count }}
+<!--
+<label class="mean">
+  {{ template "progress" $mean }}
+  Mean
+</label>
+-->
+{{ end }}
+</div>
