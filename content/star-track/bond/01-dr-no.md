@@ -16,6 +16,8 @@ neale:
     gadgets: 1
     bond-girl: 3
     car: 3
+amy:
+ginnie:
 ---
 
 # Neale
@@ -39,3 +41,13 @@ They probably explained it, but we must have missed it.
 I'm giving the opener for this high marks because it set the stage
 for every subsequent film,
 and because this was actually a believable spy-like scenario.
+
+
+# Amy
+
+{{< ratings "amy" >}}
+
+
+# Ginnie
+
+{{< ratings "ginnie" >}}
