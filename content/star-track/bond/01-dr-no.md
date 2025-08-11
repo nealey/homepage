@@ -51,6 +51,15 @@ They probably explained it, but we must have missed it.
 I'm giving the opener for this high marks because it set the stage
 for every subsequent film,
 and because this was actually a believable spy-like scenario.
+The "Three Blind Mice" was,
+I expect,
+both cute and thought-provoking to 1960s audiences.
+
+Something else I noticed about this movie is that James Bond
+prefers small objects: 
+small guns, small cars.
+Me too.
+
 
 # Amy
 
