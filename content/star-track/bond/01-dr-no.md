@@ -1,7 +1,5 @@
 ---
 title: Dr. No
-subtitle: oh please no
-description: The movie that started it all
 date: 2025-08-10
 neale:
     opening-stunt-sequence: 4
