@@ -25,3 +25,9 @@ I slept through most of this episode, but I remember wondering why they were foc
 "Who Watches the Watchers"
 
 I actually liked this episode although Riker just looked...weird. Riker and Deanna dress up like Vulcans to fit into a culture that doesn't have any advanced technology yet, and the crew spends a lot more time arguing about the prime directive. The argument for breaking that rule is always that it's already been broken. Maybe they could come up with a different reason to break that rule, but hey - the guy from Twin Peaks is in the episode and there's a character called Palmer! That was a great, weird show. But anyway, the ancient Vulcans forgive the crew for messing with their culture and graciously agree that they should be left alone to evolve. Ok byeee!
+
+# s03e05: Wesley gets bored while calling out Picard, and I'm bored too
+
+"The Bonding"
+
+This entire episode was setting up the scene for Wesley to call out Picard for being involved in his father's death. In the leadup, Worf feels responsible for causing some kid to lose his mother and commits to being involved in this kid's life - pretty decent guy right? 
