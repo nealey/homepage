@@ -1,5 +1,10 @@
 {{ define "entry" }}
-<dt>{{time.Format "2006 Jan 2" .date}}</dt>
+<dt>
+  {{time.Format "2006 Jan 2" .date}}
+  {{ with .note }}
+  <em>({{.}})</em>
+  {{ end }}
+</dt>
 <dd>
   <a href="Foinn-Seisiún-Book{{.book}}.pdf#page={{ math.Add (or .page 0) 2 }}">
     {{range $i, $v := .set}}
@@ -8,9 +13,6 @@
     {{end}}
     (b{{.book}} p{{.page}})
   </a>
-  {{ with .note }}
-  <p> {{ . }} </p>
-  {{ end }}
 </dd>
 {{ end }}
 

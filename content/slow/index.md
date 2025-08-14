@@ -4,7 +4,7 @@ subtitle: Play music together... slowly.
 params: 
  sets:
     - date: 2025-09-03
-      note: Different week, due to a conflicting obligation.
+      note: first Wednesday
       set:
         - Star above the Garter
         - Johnny Mickey's Slide
