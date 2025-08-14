@@ -1,158 +1,165 @@
 /* http://www.colourlovers.com/palette/92095/Giant_Goldfish */
 html {
-	background-color: white;
-	background-image: url("../images/bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
+    color-scheme: light dark;
+    color: light-dark(black, white);
+    background-color: light-dark(white, black);
+    background-image: url("../images/bg.jpg");
+    @media (prefers-color-scheme: dark) {
+        background-image: url("../images/bg-dark.jpg");
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 body {
-  background-color: #fffa;
-  margin: auto;
-  padding: 1em;
-  border-radius: 1em;
-  max-width: 35em;
-  font-family: "Lato", "Roboto", "Noto Color Emoji", sans-serif;
-  font-size: 13pt;
+    background-color: light-dark(#fffa, #444d);
+    margin: auto;
+    padding: 1em;
+    border-radius: 1em;
+    max-width: 35em;
+    font-family: "Lato", "Roboto", "Noto Color Emoji", sans-serif;
+    font-size: 13pt;
 }
 
 input {
-  font-family: inherit;
-  font-size: inherit;
-  border: thin solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    border: thin solid #ccc;
 }
 input:read-only {
-  color: #444;
-  background-color: #eee;
+    color: #444;
+    background-color: #eee;
 }
 
 header {
-  background: #e0e4cc;
+    background-color: light-dark(#e0e4cc, #442);
 }
 
 header {
-  border-radius: 0.25em;
-  padding: 0.1em 0.5em;
-  margin-top: 0;
-  box-shadow: 0.2em 0.2em 1em #8885;
+    border-radius: 0.25em;
+    padding: 0.1em 0.5em;
+    margin-top: 0;
+    box-shadow: 0.2em 0.2em 1em #8885;
 }
 header * {
-  margin: 0.2em;
+    margin: 0.2em;
 }
 .tagline {
-  font-style: italic;
-  margin-left: 1.5em;
+    font-style: italic;
+    margin-left: 1.5em;
 }
 
 .draft,
 .draft a:any-link {
-  background-color: black;
-  color: orange;
+    background-color: black;
+    color: orange;
 }
 .draft:after {
-  content: " (draft)";
-  font-style: italic;
+    content: " (draft)";
+    font-style: italic;
 }
 
 .subtitle {
-  font-size: 60%;
+    font-size: 60%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #e64;
+    color: light-dark(#e64, #c94);
 }
 
 a {
-  color: #24f;
-  text-decoration: none;
+    color: light-dark(#24f, #9be);
+    text-decoration: none;
 }
 a:visited {
-  color: #46c;
+    color: light-dark(#46c, #abc);
 }
 a:hover {
-  color: #a52;
+    color: light-dark(#f83, #a52);
 }
 
 img.face {
-	margin: 1em;
-	width: 10em;
+    margin: 1em;
+    width: 10em;
 }
 
 pre {
-  overflow-x: auto;
+    overflow-x: auto;
 }
 
 blockquote {
-	padding: 0.1em 1em;
-	border-radius: 0.4em;
+    padding: 0.1em 1em;
+    border-radius: 0.4em;
+    background-color: light-dark(inherit, #442);
 }
 
 footer {
-  clear: both;
-  border-top: solid black 1px;
+    clear: both;
+    border-top: solid black 1px;
 }
 
 nav ul,
 ul.compact {
-  display: flex;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 1em;
-  flex-wrap: wrap;
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
 }
 
 nav ul li,
 ul.compact li {
-  display: inline;
-  margin: 0.5em 0.5em;
-  text-align: center;
+    display: inline;
+    margin: 0.5em 0.5em;
+    text-align: center;
 }
 nav ul li {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 nav ul .fill {
-  flex-grow: 20;
+    flex-grow: 20;
 }
 
 .left {
-  float: left;
+    float: left;
 }
 .right {
-  float: right;
+    float: right;
 }
 
 /* Formatting */
 
 p, li, dd {
-  text-align: left;
+    text-align: left;
 }
 
 body > p {
-  text-indent: 1.5em;
+    text-indent: 1.5em;
 }
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, ol + p, ul + p, pre + p, blockquote + p, img + p {
-  text-indent: 0;
+    text-indent: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 pre {
-  margin: 1em 2em;
-  padding: 1em;
-  border: solid black 1px;
+    margin: 1em 2em;
+    padding: 1em;
+    border: solid black 1px;
+    background-color: light-dark(inherit, #442);
 }
 
 figure {
-  padding: 0.25em;
-  margin: 0.5em;
-  font-size: smaller;
-  border: solid black 1px;
+    padding: 0.25em;
+    margin: 0.5em;
+    font-size: smaller;
+    border: solid black 1px;
 }
 
 figure.thumbnail {
@@ -165,55 +172,55 @@ figure.thumbnail {
 }
 
 button.big {
-  padding: 0;
-  border: 0;
-  margin: 1em;
-  font-size: 2em;
-  background: inherit;
+    padding: 0;
+    border: 0;
+    margin: 1em;
+    font-size: 2em;
+    background: inherit;
 }
 
 legend {
-  background-color: #e0e4cc;
+    background-color: #e0e4cc;
 }
 
 table {
-  margin: 1em 0;
-  border-collapse: collapse;
+    margin: 1em 0;
+    border-collapse: collapse;
 }
 thead, tfoot {
-  color: #e64;
-  background-color: rgba(224, 228, 204, 0.8);
+    color: #e64;
+    background-color: rgba(224, 228, 204, 0.8);
 }
 tbody tr:nth-of-type(even) {
-  background-color: rgba(238, 102, 68, 0.05);
+    background-color: rgba(238, 102, 68, 0.05);
 }
 
 td, th {
-  padding: 0.2em 0.5em;
+    padding: 0.2em 0.5em;
 }
 caption {
-  caption-side: bottom;
-  font-size: small;
+    caption-side: bottom;
+    font-size: small;
 }
 .jistify-center {
-  text-align: center;
+    text-align: center;
 }
 .justify-right, input[type="number"] {
-  text-align: right;
+    text-align: right;
 }
 .justify-left {
-  text-align: left;
+    text-align: left;
 }
 
 .tags {
-	font-size: small;
+    font-size: small;
 }
 .tags li::before {
-  content: "➤";
-  padding-right: 0.2em;
+    content: "➤";
+    padding-right: 0.2em;
 }
 .branch::after {
-  content: "✢";
+    content: "✢";
 }
 
 .ratings {
@@ -227,56 +234,33 @@ caption {
 }
 
 @media (max-width: 768px) {
-  img, video {
-    max-width: 100%;
-  }
+    img, video {
+        max-width: 100%;
+    }
 }
 @media (min-width: 768px) {
-  img, video {
-    max-width: 60%;
-  }
+    img, video {
+        max-width: 60%;
+    }
 
-  figure img {
-    max-width: 100%;
-  }
+    figure img {
+        max-width: 100%;
+    }
 }
 
 .flex {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .flex.wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color: white;
-    background-color: black;
-    background-image: url("../images/bg-dark.jpg");
-  }
- 
-  body {
-    background-color: #444d;
-  }
- 
-  header, pre, blockquote {
-    background-color: #442;
-  }
- 
-  h1, h2, h3, h4, h5, h6 {
-    color: #c94;
-  }
-
-  a {
-    color:#9be;
-  }
-  a:visited {
-    color: #abc;
-  }
-  a:hover {
-    color: #f83;
-  }
+details {
+    border: solid light-dark(#ca8, #667) 5px;
+    padding: 0.5em;
 }
-
+details summary {
+    cursor: pointer;
+}

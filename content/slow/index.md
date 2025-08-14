@@ -3,34 +3,14 @@ title: Los Alamos Slow Session
 subtitle: Play music together... slowly.
 params: 
  sets:
-    - date: 2025-04-09
+    - date: 2025-09-03
+      note: Different week, due to a conflicting obligation.
       set:
-        - Lilting Banshee
-        - Haste to the Wedding
-        - Maid on the Green
-      book: 1
-      page: 24
-    - date: 2025-05-14
-      set:
-        - Jim Ward's Jig
-        - Blarney Pilgrim
-        - The Cook in the Kitchen
-      book: 1
-      page: 23
-    - date: 2025-06-11
-      set:
-        - Concertina Reel
-        - Come West Along the Road
-        - Anderson's
-      book: 1
-      page: 5
-    - date: 2025-07-09
-      set:
-        - Drowsie Maggie
-        - Glass of Beer
-        - Toss the Feathers (Dmaj)
-      book: 1
-      page: 13
+        - Star above the Garter
+        - Johnny Mickey's Slide
+        - Dingle Regatta
+      book: 2
+      page: 33
     - date: 2025-08-13
       set:
         - Off to California
@@ -38,42 +18,88 @@ params:
         - Murphy's Hornpipe
       book: 2
       page: 31
-    
+    - date: 2025-07-09
+      set:
+        - Drowsie Maggie
+        - Glass of Beer
+        - Toss the Feathers (Dmaj)
+      book: 1
+      page: 13
+    - date: 2025-06-11
+      set:
+        - Concertina Reel
+        - Come West Along the Road
+        - Anderson's
+      book: 1
+      page: 5
+    - date: 2025-05-14
+      set:
+        - Jim Ward's Jig
+        - Blarney Pilgrim
+        - The Cook in the Kitchen
+      book: 1
+      page: 23
+    - date: 2025-04-09
+      set:
+        - Lilting Banshee
+        - Haste to the Wedding
+        - Maid on the Green
+      book: 1
+      page: 24
 ---
+
+Where
+: my house ([email me](mailto:neale@woozle.org) for directions).
 
 When
 : Second Wednesdays at 6:30PM
 
-Where
-: My house: [email me](mailto:neale@woozle.org) for the address :)
+What
+: We play a "set of the month"
+  as slowly as necessary so that everyone can join in.
+  Maybe we gradually get faster.
+  You can learn all the songs in the set, or just focus on one:
+  the idea is to play tunes in a group
+  without having to worry about keeping up.
 
-We play a "set of the month"
-as slowly as necessary so that everyone can join in.
-Maybe we gradually get faster.
+Next Up
+=======
 
-You can learn all the songs in the set, or just focus on one.
-The idea is to play tunes in a group
-without having to worry about keeping up.
+{{< sets upcoming=1 >}}
 
-{{< sets >}}
+
+
+
+Recordings & Sheet Music
+===============
 
 We use sets of tunes from Comhaltas Foinn Seisiún. 
 
-* Foinn Seisiún 1
-  [CD](https://comhaltas.ie/product/foinn-seisiun-cd-1/),
+Foinn Seisiún 1
+:  [CD](https://comhaltas.ie/product/foinn-seisiun-cd-1/),
   [YouTube](https://music.youtube.com/playlist?list=OLAK5uy_l0Bffsoz3MCM4YJvyNzMEb-idyovS-j2Y),
   [Book](https://comhaltas.ie/product/foinn-seisiun-book-1/),
   [PDF](Foinn-Seisiún-Book1.pdf)
-* Foinn Seisiún 2
-  [CD](https://comhaltas.ie/product/foinn-seisiun-cd-2/),
+
+Foinn Seisiún 2
+:  [CD](https://comhaltas.ie/product/foinn-seisiun-cd-2/),
   [YouTube](https://music.youtube.com/playlist?list=OLAK5uy_ntNf-YpM11W_9XJDdISjyoZwDHjLUxkHU),
   [Book](https://comhaltas.ie/product/foinn-seisiun-book-2/),
   [PDF](Foinn-Seisiún-Book2.pdf)
-* Foinn Seisiún 3
-  [CD](https://comhaltas.ie/product/foinn-seisiun-cd-3/),
+
+Foinn Seisiún 3
+:  [CD](https://comhaltas.ie/product/foinn-seisiun-cd-3/),
   [YouTube](https://music.youtube.com/playlist?list=OLAK5uy_knvXW8L5Cz1kDS6foz-WSWosPeP0YBPfY),
   [Book](https://comhaltas.ie/product/foinn-seisiun-book-3/),
   [PDF](Foinn-Seisiún-Book3.pdf)
+
+</details>
+
+
+Prior sets
+=======
+{{< sets >}}
+
 
 
 Other Sites of Interest

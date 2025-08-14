@@ -1,14 +1,31 @@
-<dl>
-{{range ($.Page.Params.sets | collections.Reverse)}}
+{{ define "entry" }}
 <dt>{{time.Format "2006 Jan 2" .date}}</dt>
 <dd>
-  <a href="Foinn-Seisiún-Book{{.book}}.pdf#page={{math.Add .page 2}}">
+  <a href="Foinn-Seisiún-Book{{.book}}.pdf#page={{ math.Add (or .page 0) 2 }}">
     {{range $i, $v := .set}}
       {{if gt $i 0}}/{{end}}
       {{.}}
     {{end}}
     (b{{.book}} p{{.page}})
   </a>
+  {{ with .note }}
+  <p> {{ . }} </p>
+  {{ end }}
 </dd>
-{{end}}
+{{ end }}
+
+{{ $sets := sort .Page.Params.sets "date" "desc" }}
+{{ $upcoming := .Get "upcoming" }}
+
+<dl>
+{{ range $sets }}
+{{   $when := time.AsTime .date }}
+{{   if $upcoming }}
+{{     if $when.After time.Now }}
+{{       template "entry" . }}
+{{     end }}
+{{   else }}
+{{     template "entry" . }}
+{{   end }}
+{{ end }}
 </dl>
