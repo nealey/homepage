@@ -28,6 +28,18 @@ amy:
     bond-girl: 3
     car: 2
 ginnie:
+    opening-stunt-sequence: 1
+    opening-title: 4
+    title-song: 5
+    villain: 1
+    henchmen: 3
+    evil-weapon: 4
+    evil-plot: 1
+    evil-lair: 5
+    zingers: 2
+    gadgets: 1
+    bond-girl: 1
+    car: 3
 ---
 
 # Neale
