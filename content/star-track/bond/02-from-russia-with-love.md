@@ -58,12 +58,12 @@ the title sequence!
 That spy briefcase is cool as heck.
 
 I don't know what it is about this movie, but I get such a strong
-sense of place with it.  When they're in the water undegraund, I felt
+sense of place with it.  When they're in the water underground, I felt
 like I knew how to get there and where everything was in relation to
 them. The spy periscope is a cool touch.
 
 The extended belly dancing scene spurred me to create a new
-`maze-gaze` rating. Immediately after, we saw the introduction of
+`male-gaze` rating. Immediately after, we saw the introduction of
 colored teams, with two women (green vs red) fighting over who could
 marry the chief's son. For the entertainment of the dinner guests, it
 seems. We'll see color-identified teams again.
