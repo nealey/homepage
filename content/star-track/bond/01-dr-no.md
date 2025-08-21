@@ -28,7 +28,26 @@ amy:
     bond-girl: 3
     car: 2
 ginnie:
+    opening-stunt-sequence: 1
+    opening-title: 4
+    title-song: 5
+    villain: 1
+    henchmen: 3
+    evil-weapon: 4
+    evil-plot: 1
+    evil-lair: 5
+    zingers: 3
+    gadgets: 1
+    bond-girl: 1
+    car: 3
+    moneypenny: 4
 ---
+
+# Statistics
+
+Booty Count
+: 2
+
 
 # Neale
 
@@ -82,3 +101,9 @@ I almost fell asleep during the slow-moving nuclear reactor scene at the end.
 # Ginnie
 
 {{< ratings "ginnie" >}}
+
+Fine movie. The plot, villain, and girl were confused. The "dragon"
+was neat, but made the island natives look dumb. Bond's hat trick was
+cool, and Dr. No actually told us what SPECTRE stands for, which is
+important in later movies. Bond had a cute little car and did neat spy
+tricks in his hotel room.
