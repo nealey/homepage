@@ -23,7 +23,7 @@ amy:
     gadgets: 5
     henchman: 5
     male-gaze: 5
-    opening-studnt-sequence: 5
+    opening-stunt-sequence: 5
     opening-title: 5
     title-song: 5
     villain: 5
