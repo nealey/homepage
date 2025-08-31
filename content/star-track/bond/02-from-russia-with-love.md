@@ -41,6 +41,20 @@ amy:
     gadgets: 4
     bond-girl: 4
     car: 3
+ginnie:
+    opening-stunt-sequence: 4
+    opening-title: 3
+    title-song: 3
+    villain: 3
+    henchmen: 2
+    evil-weapon: 4
+    evil-plot: 1
+    evil-lair: 1
+    zingers: 2
+    gadgets: 3
+    bond-girl: 4
+    car: 1
+    relevance-today: 3
 ---
 # Statistics
 
@@ -86,6 +100,11 @@ He didn't have a car!
 
 They should have let Matt Monro sing the title song all the way through.
 
+007 movies always or at least usually have an epilogue.  It's the
+little panic bump that comes after the plot tension seems to be
+resolved and brings a brief but disruptive moment of distress that
+ends well for Bond and restores calm.  This one gets a 3.
+
 # Amy
 
 {{< ratings "amy" >}}
@@ -103,3 +122,9 @@ The sidekick from Istanbul that got killed off was the only person whose lines I
 Overall, this is still stands up as a pretty good Bond movie.
 
 Hey do you think it's interesting that when we go back to Venice in a few decades in Casino Royale, we come back around to the theme of the Bond girl as a potential villian who might betray James Bum? Makes you go hmmmm.....
+
+# Ginnie
+
+{{< ratings "ginnie" >}}
+
+I liked the watch-strangling-floss and knife boots. There was no point to the hidden gadgets - sorry, Q. The Bond girl was a spy, too, and had a somewhat interesting life outside of James Bum, but she folded like an omelette. The belly dancer was cool, I didn't like the fish fight.
