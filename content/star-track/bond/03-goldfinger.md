@@ -29,6 +29,20 @@ amy:
     villain: 5
     zingers: 5
     aged-well: 4
+neale:
+    opening-stunt-sequence: 2
+    opening-title: 2
+    title-song: 3
+    villain: 4
+    henchman: 5
+    evil-weapon: 4
+    evil-plot: 5
+    evil-lair: 2
+    zingers: 5
+    gadgets: 4
+    bond-girl: 2
+    car: 3
+    male-gaze: 2
 ---
 # Statistics
 
@@ -65,3 +79,37 @@ Intimate partner violence: not impressive, didn't age well.
 Do I want the male gaze to rate 5/5? I'm unsure if this should be a high or low rating.
 
 This is probably in the top 2-3 Bond movies. It's a keeper!
+
+
+# Neale
+
+{{< ratings "neale" >}}
+
+It took me a week to write this, so my memory is already rusty.
+
+I'm already tired of close-ups of lady bits with words on them.
+I suppose it sets the tone, but it just seems uncreative.
+
+I have mixed feelings about the title song! I know it's iconic,
+but it's also not very good: "he loves gold, he just loves gold"?
+
+The zingers here are top notch.
+"No, Mister Bond, I expect you to die" is series-defining.
+
+Pussy Galore really feels like an afterthought to me!
+The whole story would have worked just as well without her,
+she was just thrown in.
+
+Weapons were ace. The industrial laser aimed at his crotch is great.
+Odd Job's hat is another Bond-ism that will live forever.
+Death by gilding is another.
+
+This is the first movie where the car becomes a gadget,
+and it's okay I guess. I don't even remember if he had any
+other gadgets.
+
+The evil plot would be excellent if nuclear chemistry actually
+worked that way. Still pretty clever though.
+And Goldfinger's evil lair is pretty good.
+It looks evil, it's a lair, but it doesn't have the
+panache that we saw in Dr. No.
