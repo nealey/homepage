@@ -32,7 +32,7 @@ ginnie:
     opening-title: 4
     title-song: 5
     villain: 1
-    henchmen: 3
+    henchman: 3
     evil-weapon: 4
     evil-plot: 1
     evil-lair: 5
