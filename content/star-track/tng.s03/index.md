@@ -31,3 +31,9 @@ I actually liked this episode although Riker just looked...weird. Riker and Dean
 "The Bonding"
 
 This entire episode was setting up the scene for Wesley to call out Picard for being involved in his father's death. In the leadup, Worf feels responsible for causing some kid to lose his mother and commits to being involved in this kid's life - pretty decent guy right? 
+
+# s03e06: I have no memory of this episode
+
+"Booby Trap"
+
+See above. 
