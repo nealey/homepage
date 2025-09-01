@@ -49,6 +49,8 @@ Unwanted sexual advances
 
 # Neale
 
+{{< ratings "neale" >}}
+
 The opening stunt sequence was ridiculous.
 The jetpack is just goofy.
 And the car has a thing that goes up to take bullets and not break the rear windshield.
@@ -95,6 +97,8 @@ I think I liked this one better than Goldfinger!
 
 
 # Steve
+
+{{< ratings "steve" >}}
 
 3 Fords and a Lincoln.
 
